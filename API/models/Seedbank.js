@@ -1,0 +1,1 @@
+// Modell für Seedbank-Verwaltung

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "template1",
+    "name": "Kompaktes Zelt",
+    "width": 1.2,
+    "length": 1.2,
+    "height": 2.0
+  },
+  {
+    "id": "template2",
+    "name": "Standard Zelt",
+    "width": 1.5,
+    "length": 1.5,
+    "height": 2.0
+  },
+  {
+    "id": "template3",
+    "name": "Gro\u00dfes Zelt",
+    "width": 2.0,
+    "length": 2.0,
+    "height": 2.2
+  }
+]
