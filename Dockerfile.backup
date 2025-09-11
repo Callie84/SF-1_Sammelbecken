@@ -1,0 +1,8 @@
+# Dockerfile für persistentes Backup-Volume
+FROM node:20
+
+WORKDIR /app
+COPY . .
+RUN npm install
+
+CMD ["node", "API/cron/backupCron.js"]
