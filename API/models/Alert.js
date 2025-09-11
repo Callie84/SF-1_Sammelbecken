@@ -1,0 +1,1 @@
+// Mongoose Modell für Preisalarme

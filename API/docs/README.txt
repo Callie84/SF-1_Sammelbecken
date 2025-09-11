@@ -1,0 +1,1 @@
+Swagger erreichbar unter /api-docs nach Installation von swagger-ui-express
