@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SF-1 Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+  <h1 class="text-3xl font-bold mb-6">📊 SF-1 Live-Dashboard</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-white shadow p-4 rounded">
+      <h2 class="text-xl font-semibold mb-2">Status</h2>
+      <ul id="statusList" class="list-disc pl-5 text-sm"></ul>
+    </div>
+
+    <div class="bg-white shadow p-4 rounded">
+      <h2 class="text-xl font-semibold mb-2">Modul-Fortschritt</h2>
+      <div class="relative pt-1">
+        <div class="overflow-hidden h-4 mb-4 text-xs flex rounded bg-gray-200">
+          <div id="progressBar" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500 transition-all" style="width: 0%"></div>
+        </div>
+        <p id="progressText" class="text-sm text-gray-700">0 / 30 Module</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../src/js/dashboard.js"></script>
+</body>
+</html>
