@@ -1,0 +1,1 @@
+// Preis-Controller mit Mongo-Abfragen
