@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SF-1 Affiliate-System</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-50 text-gray-800 p-6">
+  <h1 class="text-3xl font-bold mb-4">🔗 SF-1 Affiliate-Manager</h1>
+
+  <div class="mb-4">
+    <label for="contextSelect" class="block mb-2 font-medium">Menüpunkt wählen:</label>
+    <select id="contextSelect" onchange="loadAffiliate()" class="p-2 border rounded">
+      <option value="seeds">Seeds</option>
+      <option value="light">Beleuchtung</option>
+      <option value="grow">Growzubehör</option>
+      <option value="shop">Shops</option>
+    </select>
+  </div>
+
+  <div id="affiliateBox" class="p-4 border rounded bg-white shadow text-sm"></div>
+
+  <script src="../src/js/affiliate.js"></script>
+</body>
+</html>
