@@ -1,0 +1,1 @@
+Hilfsfunktionen und Preisparser folgen hier.
