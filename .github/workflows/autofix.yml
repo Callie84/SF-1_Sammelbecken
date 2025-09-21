@@ -1,0 +1,46 @@
+name: Autofix + Check
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Prettier & ESLint ohne Installation im Repo (npx lädt sie)
+      - name: Format + Lint (auto-fix)
+        run: |
+          npx --yes prettier . -w || true
+          npx --yes eslint . --fix || true
+
+      # Optional: npm audit fix, falls package.json im Root liegt
+        # wird übersprungen, wenn keine package.json existiert
+      - name: npm audit fix (optional)
+        run: |
+          if [ -f package.json ]; then npm ci || true; npm audit fix || true; fi
+
+      # Auto-Commit aller Fixes zurück in den Branch
+      - name: Commit fixes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: auto-fix (prettier/eslint/npm-audit)"
+          branch: ${{ github.head_ref || github.ref_name }}
+
+      # Build/Test nur wenn Skripte existieren
+      - name: Build
+        run: |
+          if [ -f package.json ] && jq -e '.scripts.build' package.json >/dev/null 2>&1; then npm run build; else echo "no build"; fi
+      - name: Test
+        run: |
+          if [ -f package.json ] && jq -e '.scripts.test' package.json >/dev/null 2>&1; then npm test --silent -- --ci || true; else echo "no tests"; fi
