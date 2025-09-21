@@ -19,6 +19,10 @@ exports.login = async (req, res) => {
   const isMatch = await user.comparePassword(password);
   if (!isMatch) return res.status(401).json({ error: "Falsches Passwort" });
 
-  const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET, { expiresIn: "7d" });
+  const token = jwt.sign(
+    { id: user._id, role: user.role },
+    process.env.JWT_SECRET,
+    { expiresIn: "7d" },
+  );
   res.json({ token });
 };

@@ -1,4 +1,7 @@
-const { compareScenarios, exportScenariosCSV } = require('../services/compareService');
+const {
+  compareScenarios,
+  exportScenariosCSV,
+} = require("../services/compareService");
 
 exports.compare = async (req, res) => {
   const { scenarios } = req.body;
@@ -9,7 +12,7 @@ exports.compare = async (req, res) => {
 exports.exportCSV = async (req, res) => {
   const { scenarios } = req.body;
   const csv = await exportScenariosCSV(scenarios);
-  res.header('Content-Type', 'text/csv');
-  res.attachment('scenarios.csv');
+  res.header("Content-Type", "text/csv");
+  res.attachment("scenarios.csv");
   res.send(csv);
 };

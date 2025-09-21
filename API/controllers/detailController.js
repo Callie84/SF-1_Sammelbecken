@@ -1,4 +1,4 @@
-const { getSeedDetail } = require('../services/detailService');
+const { getSeedDetail } = require("../services/detailService");
 
 exports.detail = async (req, res) => {
   try {

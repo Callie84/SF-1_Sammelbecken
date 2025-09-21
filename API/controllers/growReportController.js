@@ -1,4 +1,8 @@
-const { getGrowthTimeline, exportCycleDataCSV, getAggregateYieldStats } = require('../services/growReportService');
+const {
+  getGrowthTimeline,
+  exportCycleDataCSV,
+  getAggregateYieldStats,
+} = require("../services/growReportService");
 
 exports.timeline = async (req, res) => {
   try {
@@ -12,7 +16,7 @@ exports.timeline = async (req, res) => {
 exports.downloadCSV = async (req, res) => {
   try {
     const csv = await exportCycleDataCSV(req.user.id, req.params.id);
-    res.header('Content-Type', 'text/csv');
+    res.header("Content-Type", "text/csv");
     res.attachment(`cycle_${req.params.id}.csv`);
     res.send(csv);
   } catch (err) {

@@ -1,6 +1,7 @@
 # Sicherheit
 
 Bitte **keine** Sicherheitslücken öffentlich melden.
+
 - Nutze GitHub Security Advisories (Tab „Security“ → „Advisories“ → „Report a vulnerability“).
 - Alternativ: privaten Issue mit minimalen Reproduktionsschritten.
 

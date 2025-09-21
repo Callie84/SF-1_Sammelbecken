@@ -1,4 +1,7 @@
-const { calculatePowerCost, estimateYield } = require('../services/calcService');
+const {
+  calculatePowerCost,
+  estimateYield,
+} = require("../services/calcService");
 
 // POST /calc/power
 exports.powerCost = (req, res) => {

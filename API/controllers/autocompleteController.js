@@ -1,4 +1,4 @@
-const { getSuggestions } = require('../services/autocompleteService');
+const { getSuggestions } = require("../services/autocompleteService");
 
 exports.autocomplete = async (req, res) => {
   const { q, limit } = req.query;

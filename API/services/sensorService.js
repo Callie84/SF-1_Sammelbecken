@@ -1,4 +1,4 @@
-const SensorReading = require('../models/SensorReading');
+const SensorReading = require("../models/SensorReading");
 
 // Neue Lesung speichern
 async function addReading({ sensorId, type, value, timestamp }) {

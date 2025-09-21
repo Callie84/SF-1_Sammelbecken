@@ -1,4 +1,7 @@
-const { getPowerHistory, getYieldHistory } = require('../services/historyService');
+const {
+  getPowerHistory,
+  getYieldHistory,
+} = require("../services/historyService");
 
 exports.powerHistory = async (req, res) => {
   const { sensorId, start, end } = req.query;

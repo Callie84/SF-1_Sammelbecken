@@ -1,6 +1,6 @@
 // späteres Mongoose Schema oder JSON Modell
 module.exports = {
-  strain: '',
-  seedbank: '',
-  price: 0.0
+  strain: "",
+  seedbank: "",
+  price: 0.0,
 };

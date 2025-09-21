@@ -1,4 +1,7 @@
-const { searchPartnerProducts, addToPartnerCart } = require('../services/partnerApiService');
+const {
+  searchPartnerProducts,
+  addToPartnerCart,
+} = require("../services/partnerApiService");
 
 // GET /planner/partner/search?q=<query>
 exports.searchProducts = async (req, res) => {

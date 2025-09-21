@@ -1,13 +1,13 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const PushSubscriptionSchema = new mongoose.Schema({
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   endpoint: String,
   keys: {
     p256dh: String,
-    auth: String
+    auth: String,
   },
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('PushSubscription', PushSubscriptionSchema);
+module.exports = mongoose.model("PushSubscription", PushSubscriptionSchema);

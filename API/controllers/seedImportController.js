@@ -1,4 +1,4 @@
-const { importSeeds } = require('../services/seedImportService');
+const { importSeeds } = require("../services/seedImportService");
 
 // POST /seeds/import
 exports.runImport = async (req, res) => {

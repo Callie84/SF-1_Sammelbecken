@@ -9,7 +9,10 @@ exports.updateUserRole = async (req, res) => {
   const { role } = req.body;
   const user = await User.findByIdAndUpdate(id, { role }, { new: true });
   if (!user) return res.status(404).json({ error: "Nutzer nicht gefunden" });
-  await logAction(req.user.id, "UPDATE_USER_ROLE", { targetUser: id, newRole: role });
+  await logAction(req.user.id, "UPDATE_USER_ROLE", {
+    targetUser: id,
+    newRole: role,
+  });
   res.json(user);
 };
 

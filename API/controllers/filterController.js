@@ -3,9 +3,18 @@ const Seed = require("../models/Seed");
 exports.applyFilters = async (req, res) => {
   try {
     const {
-      seedbank, genetics, flowering_time, indoor_yield,
-      minThc, maxThc, minCbd, maxCbd,
-      sortBy, order, limit, page
+      seedbank,
+      genetics,
+      flowering_time,
+      indoor_yield,
+      minThc,
+      maxThc,
+      minCbd,
+      maxCbd,
+      sortBy,
+      order,
+      limit,
+      page,
     } = req.query;
 
     let query = {};

@@ -5,7 +5,7 @@ const StatistikSchema = new mongoose.Schema({
   views: { type: Number, default: 0 },
   searches: { type: Number, default: 0 },
   clicks: { type: Number, default: 0 },
-  updatedAt: { type: Date, default: Date.now }
+  updatedAt: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model("Statistik", StatistikSchema);

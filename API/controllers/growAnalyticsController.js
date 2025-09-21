@@ -1,4 +1,7 @@
-const { getOverallStats, getCycleStats } = require('../services/growAnalyticsService');
+const {
+  getOverallStats,
+  getCycleStats,
+} = require("../services/growAnalyticsService");
 
 exports.overall = async (req, res) => {
   try {

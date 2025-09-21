@@ -1,4 +1,8 @@
-const { getPlanStats, getUserStats, getGrowUsage } = require('../services/adminReportService');
+const {
+  getPlanStats,
+  getUserStats,
+  getGrowUsage,
+} = require("../services/adminReportService");
 
 exports.planStats = async (req, res) => {
   res.json(await getPlanStats());

@@ -19,6 +19,8 @@ exports.listSeedbanks = async (req, res) => {
 };
 
 exports.listAlerts = async (req, res) => {
-  const alerts = await PriceAlert.find().select("userId strain seedbank targetPrice notified createdAt");
+  const alerts = await PriceAlert.find().select(
+    "userId strain seedbank targetPrice notified createdAt",
+  );
   res.json(alerts);
 };

@@ -1,9 +1,9 @@
-const fs = require('fs');
-const Seedbank = require('../models/Seedbank');
-const path = require('path');
+const fs = require("fs");
+const Seedbank = require("../models/Seedbank");
+const path = require("path");
 
 async function importSeedbanks() {
-  const filePath = path.join(__dirname, '../data/seedbanks.json');
+  const filePath = path.join(__dirname, "../data/seedbanks.json");
   const raw = fs.readFileSync(filePath);
   const list = JSON.parse(raw);
   for (const sb of list) {

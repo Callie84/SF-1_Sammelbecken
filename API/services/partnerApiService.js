@@ -2,8 +2,18 @@
 async function searchPartnerProducts(query) {
   // Simuliert Rückgabe von Produkten
   return [
-    { id: 'p1', name: `${query} Growlicht 600W`, price: 120.00, url: 'https://partner.example.com/p1' },
-    { id: 'p2', name: `${query} Belüfter`, price: 45.50, url: 'https://partner.example.com/p2' }
+    {
+      id: "p1",
+      name: `${query} Growlicht 600W`,
+      price: 120.0,
+      url: "https://partner.example.com/p1",
+    },
+    {
+      id: "p2",
+      name: `${query} Belüfter`,
+      price: 45.5,
+      url: "https://partner.example.com/p2",
+    },
   ];
 }
 

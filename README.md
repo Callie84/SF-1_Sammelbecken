@@ -46,11 +46,13 @@ SF-1/
 ## ⚙️ Installation (lokal)
 
 ### Voraussetzungen
+
 - Node.js >= 20
 - MongoDB >= 6
 - Git
 
 ### Schritte
+
 ```bash
 # Repo klonen
 git clone https://github.com/Callie84/SF-1_Sammelbecken.git
@@ -98,7 +100,7 @@ npm run dev
 
 ## 🤝 Contribution
 
-Pull Requests willkommen. Bitte Issues für Bugs oder Feature-Requests eröffnen.  
+Pull Requests willkommen. Bitte Issues für Bugs oder Feature-Requests eröffnen.
 
 ---
 

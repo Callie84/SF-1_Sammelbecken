@@ -1,4 +1,4 @@
-const { trainModel } = require('../services/trainingService');
+const { trainModel } = require("../services/trainingService");
 
 // POST /diagnose/train
 exports.train = async (req, res) => {

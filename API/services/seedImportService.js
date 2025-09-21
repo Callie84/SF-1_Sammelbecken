@@ -1,19 +1,19 @@
-const fs = require('fs');
-const path = require('path');
-const csv = require('csv-parser');
-const Seed = require('../models/Seed');
+const fs = require("fs");
+const path = require("path");
+const csv = require("csv-parser");
+const Seed = require("../models/Seed");
 
 // Importiert Samen-Daten aus CSV im data/seed_data.csv
 async function importSeeds() {
-  const filePath = path.resolve(__dirname, '../data/seed_data.csv');
+  const filePath = path.resolve(__dirname, "../data/seed_data.csv");
   return new Promise((resolve, reject) => {
     const seeds = [];
     fs.createReadStream(filePath)
       .pipe(csv())
-      .on('data', (row) => {
+      .on("data", (row) => {
         seeds.push(row);
       })
-      .on('end', async () => {
+      .on("end", async () => {
         for (const r of seeds) {
           const filter = { strain: r.strain };
           const update = {
@@ -23,13 +23,17 @@ async function importSeeds() {
             cbd: parseFloat(r.cbd),
             floweringTime: r.floweringTime,
             indoorYield: r.indoorYield,
-            images: r.images ? r.images.split('|') : [],
+            images: r.images ? r.images.split("|") : [],
           };
-          await Seed.findOneAndUpdate(filter, update, { upsert: true, new: true, setDefaultsOnInsert: true });
+          await Seed.findOneAndUpdate(filter, update, {
+            upsert: true,
+            new: true,
+            setDefaultsOnInsert: true,
+          });
         }
         resolve(`Imported ${seeds.length} seeds`);
       })
-      .on('error', reject);
+      .on("error", reject);
   });
 }
 

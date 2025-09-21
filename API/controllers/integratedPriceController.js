@@ -1,10 +1,13 @@
-const { updateAllPrices, getCombinedOffers } = require('../services/integratedPriceService');
+const {
+  updateAllPrices,
+  getCombinedOffers,
+} = require("../services/integratedPriceService");
 
 // POST /affiliate/update-all
 exports.updateAll = async (req, res) => {
   try {
     await updateAllPrices();
-    res.json({ message: 'Alle Preise aktualisiert (Scraping & APIs)' });
+    res.json({ message: "Alle Preise aktualisiert (Scraping & APIs)" });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

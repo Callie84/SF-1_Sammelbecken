@@ -1,5 +1,5 @@
-const Subscription = require('../models/Subscription');
-const { createCheckoutSession } = require('../services/paymentService');
+const Subscription = require("../models/Subscription");
+const { createCheckoutSession } = require("../services/paymentService");
 
 // Subscription checkout starten
 exports.startSubscription = async (req, res) => {
@@ -11,8 +11,8 @@ exports.startSubscription = async (req, res) => {
 // Webhook endpoint
 exports.webhook = async (req, res) => {
   const event = req.body;
-  await require('../services/paymentService').handleWebhook(event);
-  res.status(200).send('Received');
+  await require("../services/paymentService").handleWebhook(event);
+  res.status(200).send("Received");
 };
 
 // Abo-Daten abrufen

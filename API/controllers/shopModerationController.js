@@ -4,9 +4,14 @@ const { logAction } = require("../services/adminLogService");
 
 // Aktualisieren Shop-Daten (Admin)
 exports.updateShop = async (req, res) => {
-  const shop = await Shop.findByIdAndUpdate(req.params.id, req.body, { new: true });
+  const shop = await Shop.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+  });
   if (!shop) return res.status(404).json({ error: "Shop nicht gefunden" });
-  await logAction(req.user.id, "UPDATE_SHOP", { shopId: req.params.id, data: req.body });
+  await logAction(req.user.id, "UPDATE_SHOP", {
+    shopId: req.params.id,
+    data: req.body,
+  });
   res.json(shop);
 };
 

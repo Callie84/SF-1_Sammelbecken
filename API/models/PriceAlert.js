@@ -7,7 +7,7 @@ const PriceAlertSchema = new mongoose.Schema({
   targetPrice: Number,
   currency: { type: String, default: "EUR" },
   createdAt: { type: Date, default: Date.now },
-  notified: { type: Boolean, default: false }
+  notified: { type: Boolean, default: false },
 });
 
 module.exports = mongoose.model("PriceAlert", PriceAlertSchema);

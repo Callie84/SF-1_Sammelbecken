@@ -1,5 +1,5 @@
-const speakeasy = require('speakeasy');
-const User = require('../models/User');
+const speakeasy = require("speakeasy");
+const User = require("../models/User");
 
 async function generateMfaSecret(user) {
   const secret = speakeasy.generateSecret({ length: 20 });
@@ -11,9 +11,9 @@ async function generateMfaSecret(user) {
 async function verifyMfaToken(user, token) {
   const verified = speakeasy.totp.verify({
     secret: user.mfaSecret,
-    encoding: 'base32',
+    encoding: "base32",
     token,
-    window: 1
+    window: 1,
   });
   return verified;
 }

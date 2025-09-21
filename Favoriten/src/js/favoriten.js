@@ -1,21 +1,21 @@
 let favs = [];
 
 function loadFavs() {
-  const stored = localStorage.getItem('sf1_favs');
+  const stored = localStorage.getItem("sf1_favs");
   if (stored) favs = JSON.parse(stored);
   renderFavs();
 }
 
 function saveFavs() {
-  localStorage.setItem('sf1_favs', JSON.stringify(favs));
+  localStorage.setItem("sf1_favs", JSON.stringify(favs));
 }
 
 function addFav() {
-  const input = document.getElementById('favInput');
+  const input = document.getElementById("favInput");
   const val = input.value.trim();
   if (!val || favs.includes(val)) return;
   favs.push(val);
-  input.value = '';
+  input.value = "";
   saveFavs();
   renderFavs();
 }
@@ -27,11 +27,13 @@ function removeFav(i) {
 }
 
 function renderFavs() {
-  const ul = document.getElementById('favList');
-  ul.innerHTML = '';
+  const ul = document.getElementById("favList");
+  ul.innerHTML = "";
   favs.forEach((f, i) => {
-    const li = document.createElement('li');
-    li.innerHTML = f + ` <button onclick="removeFav(${i})" class="text-red-500 ml-2">✖</button>`;
+    const li = document.createElement("li");
+    li.innerHTML =
+      f +
+      ` <button onclick="removeFav(${i})" class="text-red-500 ml-2">✖</button>`;
     ul.appendChild(li);
   });
 }

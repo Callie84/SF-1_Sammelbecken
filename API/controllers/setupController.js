@@ -1,5 +1,5 @@
-const { addItem, calculateBudget } = require('../services/setupService');
-const SetupItem = require('../models/SetupItem');
+const { addItem, calculateBudget } = require("../services/setupService");
+const SetupItem = require("../models/SetupItem");
 
 // POST /setup/items → neuen Eintrag hinzufügen
 exports.createItem = async (req, res) => {
@@ -24,7 +24,7 @@ exports.markPurchased = async (req, res) => {
   const item = await SetupItem.findOneAndUpdate(
     { _id: req.params.id, userId: req.user.id },
     { purchased: true },
-    { new: true }
+    { new: true },
   );
   res.json(item);
 };

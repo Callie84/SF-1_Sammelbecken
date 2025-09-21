@@ -1,5 +1,5 @@
-const Channel = require('../models/Channel');
-const Message = require('../models/Message');
+const Channel = require("../models/Channel");
+const Message = require("../models/Message");
 
 // Channels
 exports.listChannels = async (req, res) => {

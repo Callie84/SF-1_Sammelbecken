@@ -20,8 +20,11 @@ exports.create = async (req, res) => {
 // Seedbank aktualisieren
 exports.update = async (req, res) => {
   try {
-    const bank = await Seedbank.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    if (!bank) return res.status(404).json({ error: "Seedbank nicht gefunden" });
+    const bank = await Seedbank.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+    if (!bank)
+      return res.status(404).json({ error: "Seedbank nicht gefunden" });
     res.json(bank);
   } catch (err) {
     res.status(400).json({ error: err.message });

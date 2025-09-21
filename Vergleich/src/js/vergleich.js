@@ -1,12 +1,12 @@
 const fakeDB = {
-  "Banana": { thc: 22, cbd: 0.5, flower: "8-9 Wochen", yield: "500g/m²" },
-  "Jell-O-Nate": { thc: 24, cbd: 0.3, flower: "7-8 Wochen", yield: "550g/m²" }
+  Banana: { thc: 22, cbd: 0.5, flower: "8-9 Wochen", yield: "500g/m²" },
+  "Jell-O-Nate": { thc: 24, cbd: 0.3, flower: "7-8 Wochen", yield: "550g/m²" },
 };
 
 function compare() {
-  const s1 = document.getElementById('strain1').value.trim();
-  const s2 = document.getElementById('strain2').value.trim();
-  const r = document.getElementById('result');
+  const s1 = document.getElementById("strain1").value.trim();
+  const s2 = document.getElementById("strain2").value.trim();
+  const r = document.getElementById("result");
 
   if (!fakeDB[s1] || !fakeDB[s2]) {
     r.innerHTML = "⚠️ Eine oder beide Sorten wurden nicht gefunden.";

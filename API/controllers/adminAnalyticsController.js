@@ -1,4 +1,8 @@
-const { getChannelStats, getMessageStats, getEventStats } = require('../services/adminAnalyticsService');
+const {
+  getChannelStats,
+  getMessageStats,
+  getEventStats,
+} = require("../services/adminAnalyticsService");
 
 exports.channelStats = async (req, res) => {
   const stats = await getChannelStats();

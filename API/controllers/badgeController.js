@@ -1,4 +1,4 @@
-const { Badge, UserBadge } = require('../models/Badge');
+const { Badge, UserBadge } = require("../models/Badge");
 
 // Badge erstellen (Admin)
 exports.createBadge = async (req, res) => {
@@ -17,6 +17,8 @@ exports.awardBadge = async (req, res) => {
 
 // Liste aller Badges eines Nutzers
 exports.listUserBadges = async (req, res) => {
-  const ub = await UserBadge.find({ userId: req.params.userId }).populate('badgeId');
+  const ub = await UserBadge.find({ userId: req.params.userId }).populate(
+    "badgeId",
+  );
   res.json(ub);
 };

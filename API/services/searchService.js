@@ -1,9 +1,18 @@
-const Seed = require('../models/Seed');
-const PriceEntry = require('../models/PriceEntry');
+const Seed = require("../models/Seed");
+const PriceEntry = require("../models/PriceEntry");
 
-async function searchSeeds({ query, seedbank, minPrice, maxPrice, sortBy, order, limit, page }) {
+async function searchSeeds({
+  query,
+  seedbank,
+  minPrice,
+  maxPrice,
+  sortBy,
+  order,
+  limit,
+  page,
+}) {
   const q = {};
-  if (query) q.strain = { $regex: query, $options: 'i' };
+  if (query) q.strain = { $regex: query, $options: "i" };
   if (seedbank) q.seedbank = seedbank;
 
   const priceMatch = {};
@@ -15,26 +24,26 @@ async function searchSeeds({ query, seedbank, minPrice, maxPrice, sortBy, order,
     { $match: q },
     {
       $lookup: {
-        from: 'priceentries',
-        localField: 'strain',
-        foreignField: 'strain',
-        as: 'prices'
-      }
-    }
+        from: "priceentries",
+        localField: "strain",
+        foreignField: "strain",
+        as: "prices",
+      },
+    },
   ];
   if (minPrice !== undefined || maxPrice !== undefined) {
-    pipeline.push({ $unwind: '$prices' });
-    pipeline.push({ $match: { 'prices.price': priceMatch } });
+    pipeline.push({ $unwind: "$prices" });
+    pipeline.push({ $match: { "prices.price": priceMatch } });
   }
   // Projection with lowest price
   pipeline.push({
     $addFields: {
-      lowestPrice: { $min: '$prices.price' }
-    }
+      lowestPrice: { $min: "$prices.price" },
+    },
   });
   // Sorting
-  const sortField = sortBy || 'strain';
-  const sortOrder = order === 'desc' ? -1 : 1;
+  const sortField = sortBy || "strain";
+  const sortOrder = order === "desc" ? -1 : 1;
   pipeline.push({ $sort: { [sortField]: sortOrder } });
   // Pagination
   const lim = parseInt(limit) || 20;
