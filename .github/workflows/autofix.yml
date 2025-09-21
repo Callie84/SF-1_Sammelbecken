@@ -1,4 +1,4 @@
-name: Autofix + Check
+name: Autofix + Lauffähigkeit
 on:
   push:
     branches: [ main, master ]
@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # 1) Auto-Fixes
       - name: Prettier (auto-fix)
         run: npx --yes prettier . -w || true
 
@@ -29,17 +29,15 @@ jobs:
             echo "kein ESLint-Config gefunden → übersprungen"
           fi
 
-      - name: npm audit fix (nur wenn package.json im Root)
+      - name: npm audit fix (Root, falls vorhanden)
         run: |
-          if [ -f package.json ]; then npm ci || true; npm audit fix || true; else echo "kein package.json → übersprungen"; fi
+          if [ -f package.json ]; then npm ci || true; npm audit fix || true; else echo "kein package.json im Root"; fi
 
-      # Workflows niemals committen: Änderungen verwerfen
+      # 2) Workflows nie committen
       - name: Revert workflow changes
-        run: |
-          git checkout -- .github/workflows || true
+        run: git checkout -- .github || true
 
-      # Nur Nicht-Workflow-Dateien committen
-      - name: Commit fixes (Workflows ausschließen)
+      - name: Commit fixes (Workflows ausgeschlossen)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "ci: auto-fix (prettier/eslint/npm-audit)"
@@ -47,3 +45,50 @@ jobs:
           file_pattern: |
             .
             :!./.github/**
+
+      # 3) Lauffähigkeits-Prüfung für alle Node-Projekte
+      - name: Build + Start Smoke-Test pro package.json
+        shell: bash
+        run: |
+          set -e
+          mapfile -t projects < <(git ls-files -- package.json | xargs -n1 dirname | sort -u)
+          if [ ${#projects[@]} -eq 0 ]; then
+            echo "keine package.json gefunden → nichts zu prüfen"; exit 0
+          fi
+
+          for dir in "${projects[@]}"; do
+            echo "=== Prüfe Projekt: $dir ==="
+            pushd "$dir" >/dev/null
+
+            # Dependencies
+            if [ -f package-lock.json ]; then npm ci; else npm i --no-audit --no-fund; fi
+
+            # Build wenn Script existiert
+            if jq -e '.scripts.build' package.json >/dev/null 2>&1; then
+              echo "[Build] npm run build"
+              npm run build
+            else
+              echo "[Build] kein build-script → übersprungen"
+            fi
+
+            # Start kurz anwerfen, wenn Script existiert
+            if jq -e '.scripts.start' package.json >/dev/null 2>&1; then
+              echo "[Start] kurzer Smoke-Test (12s)"
+              set +e
+              timeout 12s npm start > .start.log 2>&1
+              code=$?
+              set -e
+              # 0 = beendet sauber; 124 = Timeout nach erfolgreichem Start (ok)
+              if [ $code -ne 0 ] && [ $code -ne 124 ]; then
+                echo "::error title=Start fehlgeschlagen::$dir → npm start Exit-Code $code"
+                tail -n 200 .start.log || true
+                exit 1
+              fi
+            else
+              echo "[Start] kein start-script → übersprungen"
+            fi
+
+            popd >/dev/null
+          done
+
+          echo "Alle gefundenen Node-Projekte gebaut und Smoke-getestet."
