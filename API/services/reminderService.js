@@ -1,11 +1,11 @@
-const GrowCycle = require('../models/GrowCycle');
-const { sendEmail } = require('../services/emailService');
-const { sendWebPush } = require('../services/webpushService');
+const GrowCycle = require("../models/GrowCycle");
+const { sendEmail } = require("../services/emailService");
+const { sendWebPush } = require("../services/webpushService");
 
 // Prüft alle GrowCycles auf fällige Reminders und sendet Alerts
 async function processReminders() {
   const now = new Date();
-  const cycles = await GrowCycle.find({ 'reminders.sent': false });
+  const cycles = await GrowCycle.find({ "reminders.sent": false });
   for (const cycle of cycles) {
     for (const rem of cycle.reminders) {
       if (!rem.sent && new Date(rem.date) <= now) {

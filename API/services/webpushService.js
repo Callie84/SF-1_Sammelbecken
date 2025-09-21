@@ -1,10 +1,10 @@
-const webpush = require('web-push');
-const PushSubscription = require('../models/PushSubscription');
+const webpush = require("web-push");
+const PushSubscription = require("../models/PushSubscription");
 
 webpush.setVapidDetails(
   process.env.WEBPUSH_SUBJECT,
   process.env.WEBPUSH_PUBLIC_KEY,
-  process.env.WEBPUSH_PRIVATE_KEY
+  process.env.WEBPUSH_PRIVATE_KEY,
 );
 
 async function sendWebPush(userId, payload) {
@@ -13,7 +13,7 @@ async function sendWebPush(userId, payload) {
     try {
       await webpush.sendNotification(sub, JSON.stringify(payload));
     } catch (err) {
-      console.error('WebPush fehlgeschlagen für', sub.endpoint, err);
+      console.error("WebPush fehlgeschlagen für", sub.endpoint, err);
     }
   }
 }

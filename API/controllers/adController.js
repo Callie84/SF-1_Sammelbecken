@@ -19,7 +19,9 @@ exports.createAd = async (req, res) => {
 // Ad aktualisieren
 exports.updateAd = async (req, res) => {
   try {
-    const ad = await Ad.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    const ad = await Ad.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
     if (!ad) return res.status(404).json({ error: "Ad nicht gefunden" });
     res.json(ad);
   } catch (err) {
@@ -47,8 +49,13 @@ exports.createAffiliate = async (req, res) => {
 };
 exports.updateAffiliate = async (req, res) => {
   try {
-    const link = await AffiliateLink.findByIdAndUpdate(req.params.id, req.body, { new: true });
-    if (!link) return res.status(404).json({ error: "AffiliateLink nicht gefunden" });
+    const link = await AffiliateLink.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true },
+    );
+    if (!link)
+      return res.status(404).json({ error: "AffiliateLink nicht gefunden" });
     res.json(link);
   } catch (err) {
     res.status(400).json({ error: err.message });

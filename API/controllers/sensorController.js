@@ -1,4 +1,4 @@
-const { addReading, getLatestReadings } = require('../services/sensorService');
+const { addReading, getLatestReadings } = require("../services/sensorService");
 
 // POST /monitor/readings
 exports.postReading = async (req, res) => {
@@ -15,8 +15,12 @@ exports.postReading = async (req, res) => {
 exports.getReadings = async (req, res) => {
   const { sensorId, type, limit } = req.query;
   if (!sensorId || !type) {
-    return res.status(400).json({ error: 'sensorId und type erforderlich' });
+    return res.status(400).json({ error: "sensorId und type erforderlich" });
   }
-  const readings = await getLatestReadings(sensorId, type, parseInt(limit) || 50);
+  const readings = await getLatestReadings(
+    sensorId,
+    type,
+    parseInt(limit) || 50,
+  );
   res.json(readings);
 };

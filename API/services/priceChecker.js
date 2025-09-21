@@ -11,7 +11,7 @@ async function checkPriceAlerts() {
       strain: alert.strain,
       seedbank: alert.seedbank,
       price: { $lte: alert.targetPrice },
-      currency: alert.currency
+      currency: alert.currency,
     });
 
     if (match) {
@@ -19,7 +19,9 @@ async function checkPriceAlerts() {
       await alert.save();
 
       // TODO: hier könnte später eine echte Benachrichtigung rein
-      console.log(`ALARM für ${alert.strain} bei ${alert.seedbank}: ${match.price} EUR`);
+      console.log(
+        `ALARM für ${alert.strain} bei ${alert.seedbank}: ${match.price} EUR`,
+      );
     }
   }
 }

@@ -1,7 +1,9 @@
-const Group = require('../models/Group');
+const Group = require("../models/Group");
 
 exports.getGroups = async (req, res) => {
-  const groups = await Group.find({ userId: req.user.id }).populate('wishlistIds');
+  const groups = await Group.find({ userId: req.user.id }).populate(
+    "wishlistIds",
+  );
   res.json(groups);
 };
 
@@ -16,7 +18,7 @@ exports.addListToGroup = async (req, res) => {
   const { groupId } = req.params;
   const { wishlistId } = req.body;
   const group = await Group.findOne({ _id: groupId, userId: req.user.id });
-  if (!group) return res.status(404).json({ error: 'Gruppe nicht gefunden' });
+  if (!group) return res.status(404).json({ error: "Gruppe nicht gefunden" });
   if (!group.wishlistIds.includes(wishlistId)) {
     group.wishlistIds.push(wishlistId);
     await group.save();
@@ -27,8 +29,10 @@ exports.addListToGroup = async (req, res) => {
 exports.removeListFromGroup = async (req, res) => {
   const { groupId, wishlistId } = req.params;
   const group = await Group.findOne({ _id: groupId, userId: req.user.id });
-  if (!group) return res.status(404).json({ error: 'Gruppe nicht gefunden' });
-  group.wishlistIds = group.wishlistIds.filter(id => id.toString() !== wishlistId);
+  if (!group) return res.status(404).json({ error: "Gruppe nicht gefunden" });
+  group.wishlistIds = group.wishlistIds.filter(
+    (id) => id.toString() !== wishlistId,
+  );
   await group.save();
   res.json(group);
 };
@@ -36,5 +40,5 @@ exports.removeListFromGroup = async (req, res) => {
 exports.deleteGroup = async (req, res) => {
   const { groupId } = req.params;
   await Group.deleteOne({ _id: groupId, userId: req.user.id });
-  res.json({ message: 'Gruppe gelöscht' });
+  res.json({ message: "Gruppe gelöscht" });
 };

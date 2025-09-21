@@ -1,4 +1,4 @@
-const adminLogService = require('../services/adminLogService');
+const adminLogService = require("../services/adminLogService");
 
 // Moderations-Logs filtern und auflisten
 exports.getModerationLogs = async (req, res) => {

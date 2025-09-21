@@ -1,4 +1,4 @@
-const UserTemplate = require('../models/UserTemplate');
+const UserTemplate = require("../models/UserTemplate");
 
 async function upsertTemplate(userId, data) {
   const { id, name, layoutData } = data;
@@ -6,7 +6,7 @@ async function upsertTemplate(userId, data) {
     return UserTemplate.findOneAndUpdate(
       { _id: id, userId },
       { name, layoutData },
-      { new: true }
+      { new: true },
     );
   } else {
     const tpl = new UserTemplate({ userId, name, layoutData });

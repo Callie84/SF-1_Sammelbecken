@@ -1,4 +1,4 @@
-const { listModels, deleteModel } = require('../services/modelRegistryService');
+const { listModels, deleteModel } = require("../services/modelRegistryService");
 
 // GET /diagnose/models
 exports.getModels = (req, res) => {

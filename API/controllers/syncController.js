@@ -5,10 +5,7 @@ exports.getSyncData = async (req, res) => {
   const since = req.query.since ? new Date(req.query.since) : new Date(0);
   const items = await FavoriteItem.find({
     userId: req.user.id,
-    $or: [
-      { updatedAt: { $gte: since } },
-      { deletedAt: { $gte: since } }
-    ]
+    $or: [{ updatedAt: { $gte: since } }, { deletedAt: { $gte: since } }],
   }).lean();
   res.json({ serverTime: new Date(), items });
 };
@@ -24,7 +21,13 @@ exports.postSyncData = async (req, res) => {
     let item = await FavoriteItem.findOne({ userId: req.user.id, strain });
     if (!item) {
       if (!deleted) {
-        item = new FavoriteItem({ userId: req.user.id, strain, note, updatedAt: ts, deletedAt: null });
+        item = new FavoriteItem({
+          userId: req.user.id,
+          strain,
+          note,
+          updatedAt: ts,
+          deletedAt: null,
+        });
         await item.save();
       }
     } else {

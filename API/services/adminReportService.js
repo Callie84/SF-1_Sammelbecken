@@ -1,11 +1,11 @@
-const Subscription = require('../models/Subscription');
-const User = require('../models/User');
-const GrowCycle = require('../models/GrowCycle');
+const Subscription = require("../models/Subscription");
+const User = require("../models/User");
+const GrowCycle = require("../models/GrowCycle");
 
 // Anzahl User pro Plan
 async function getPlanStats() {
-  const freeCount = await Subscription.countDocuments({ plan: 'free' });
-  const premiumCount = await Subscription.countDocuments({ plan: 'premium' });
+  const freeCount = await Subscription.countDocuments({ plan: "free" });
+  const premiumCount = await Subscription.countDocuments({ plan: "premium" });
   return { freeCount, premiumCount };
 }
 
@@ -13,7 +13,7 @@ async function getPlanStats() {
 async function getUserStats() {
   const totalUsers = await User.countDocuments();
   const newLastMonth = await User.countDocuments({
-    createdAt: { $gte: new Date(Date.now() - 30*24*3600*1000) }
+    createdAt: { $gte: new Date(Date.now() - 30 * 24 * 3600 * 1000) },
   });
   return { totalUsers, newLastMonth };
 }

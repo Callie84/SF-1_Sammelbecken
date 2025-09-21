@@ -1,5 +1,11 @@
 // Placeholder: Simuliert Bildanalyse und erkennt zufällige Symptome
-const symptomsPool = ['Schimmel', 'Nährstoffmangel', 'Saugschädlinge', 'Pilzbefall', 'Kalzium-Mangel'];
+const symptomsPool = [
+  "Schimmel",
+  "Nährstoffmangel",
+  "Saugschädlinge",
+  "Pilzbefall",
+  "Kalzium-Mangel",
+];
 
 function analyzeImage(imagePath) {
   // Hier würde ein echtes ML-Modell stehen

@@ -1,4 +1,8 @@
-const { getAdsByPosition, recordImpression, recordClick } = require("../services/adService");
+const {
+  getAdsByPosition,
+  recordImpression,
+  recordClick,
+} = require("../services/adService");
 
 // Liefert eine Ad für eine Position
 exports.serveAd = async (req, res) => {

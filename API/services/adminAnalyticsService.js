@@ -1,6 +1,6 @@
-const Channel = require('../models/Channel');
-const Message = require('../models/Message');
-const GroupEvent = require('../models/GroupEvent');
+const Channel = require("../models/Channel");
+const Message = require("../models/Message");
+const GroupEvent = require("../models/GroupEvent");
 
 // Statistiken: Anzahl Kanäle, Nachrichten, Events
 async function getChannelStats() {
@@ -11,14 +11,17 @@ async function getChannelStats() {
 async function getMessageStats() {
   const total = await Message.countDocuments();
   const perChannel = await Message.aggregate([
-    { $group: { _id: "$channelId", count: { $sum: 1 } } }
+    { $group: { _id: "$channelId", count: { $sum: 1 } } },
   ]);
   return { totalMessages: total, messagesPerChannel: perChannel };
 }
 
 async function getEventStats() {
   const totalGE = await GroupEvent.countDocuments();
-  const upcoming = await GroupEvent.countDocuments({ type: 'event', eventDate: { $gte: new Date() } });
+  const upcoming = await GroupEvent.countDocuments({
+    type: "event",
+    eventDate: { $gte: new Date() },
+  });
   return { totalGroupsEvents: totalGE, upcomingEvents: upcoming };
 }
 

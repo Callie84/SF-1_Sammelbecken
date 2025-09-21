@@ -1,4 +1,4 @@
-const Threshold = require('../models/Threshold');
+const Threshold = require("../models/Threshold");
 
 // Schwellenwert erstellen
 exports.createThreshold = async (req, res) => {
@@ -16,5 +16,5 @@ exports.listThresholds = async (req, res) => {
 // Schwellenwert löschen
 exports.deleteThreshold = async (req, res) => {
   await Threshold.deleteOne({ _id: req.params.id, userId: req.user.id });
-  res.json({ message: 'Threshold gelöscht' });
+  res.json({ message: "Threshold gelöscht" });
 };

@@ -1,5 +1,5 @@
-const fs = require('fs');
-const csv = require('csv-parser');
+const fs = require("fs");
+const csv = require("csv-parser");
 const Seedbank = require("../models/Seedbank");
 
 async function importSeedbanksFromCSV(filePath) {
@@ -7,27 +7,37 @@ async function importSeedbanksFromCSV(filePath) {
     const results = [];
     fs.createReadStream(filePath)
       .pipe(csv())
-      .on('data', data => results.push(data))
-      .on('end', async () => {
+      .on("data", (data) => results.push(data))
+      .on("end", async () => {
         try {
           for (const row of results) {
-            const { name, url, countries, paymentMethods, rating, affiliateId, shippingCost, shippingCurrency, shippingDays } = row;
+            const {
+              name,
+              url,
+              countries,
+              paymentMethods,
+              rating,
+              affiliateId,
+              shippingCost,
+              shippingCurrency,
+              shippingDays,
+            } = row;
             await Seedbank.updateOne(
               { name },
               {
                 name,
                 url,
-                countries: countries.split('|'),
-                paymentMethods: paymentMethods.split('|'),
+                countries: countries.split("|"),
+                paymentMethods: paymentMethods.split("|"),
                 rating: parseFloat(rating),
                 affiliateId,
                 shipping: {
                   cost: parseFloat(shippingCost),
                   currency: shippingCurrency,
-                  estimatedDays: parseInt(shippingDays)
-                }
+                  estimatedDays: parseInt(shippingDays),
+                },
               },
-              { upsert: true }
+              { upsert: true },
             );
           }
           resolve({ inserted: results.length });

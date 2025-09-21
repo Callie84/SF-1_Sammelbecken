@@ -1,13 +1,13 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
   port: process.env.EMAIL_PORT,
-  secure: process.env.EMAIL_SECURE === 'true', 
+  secure: process.env.EMAIL_SECURE === "true",
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS
-  }
+    pass: process.env.EMAIL_PASS,
+  },
 });
 
 async function sendEmail(to, subject, text, html) {
@@ -16,9 +16,9 @@ async function sendEmail(to, subject, text, html) {
     to,
     subject,
     text,
-    html
+    html,
   });
-  console.log('Email gesendet:', info.messageId);
+  console.log("Email gesendet:", info.messageId);
   return info;
 }
 

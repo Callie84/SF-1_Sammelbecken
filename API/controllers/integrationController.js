@@ -1,11 +1,16 @@
-const IntegrationSettings = require('../models/IntegrationSettings');
-const { sendSMS } = require('../services/smsService');
-const { fetchExternalSensorData } = require('../services/externalSensorService');
+const IntegrationSettings = require("../models/IntegrationSettings");
+const { sendSMS } = require("../services/smsService");
+const {
+  fetchExternalSensorData,
+} = require("../services/externalSensorService");
 
 // Einstellungen speichern
 exports.saveSettings = async (req, res) => {
   const { service, config } = req.body;
-  let setting = await IntegrationSettings.findOne({ userId: req.user.id, service });
+  let setting = await IntegrationSettings.findOne({
+    userId: req.user.id,
+    service,
+  });
   if (setting) {
     setting.config = config;
   } else {

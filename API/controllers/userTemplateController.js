@@ -1,4 +1,8 @@
-const { upsertTemplate, listTemplates, deleteTemplate } = require('../services/userTemplateService');
+const {
+  upsertTemplate,
+  listTemplates,
+  deleteTemplate,
+} = require("../services/userTemplateService");
 
 exports.saveTemplate = async (req, res) => {
   const tpl = await upsertTemplate(req.user.id, req.body);
@@ -12,5 +16,5 @@ exports.getTemplates = async (req, res) => {
 
 exports.removeTemplate = async (req, res) => {
   await deleteTemplate(req.user.id, req.params.id);
-  res.json({ message: 'Template gelöscht' });
+  res.json({ message: "Template gelöscht" });
 };

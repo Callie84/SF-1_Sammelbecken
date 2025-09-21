@@ -1,4 +1,7 @@
-const { fetchSeedExpressOffers, fetchGreenShopOffers } = require('../services/affiliateConnectorService');
+const {
+  fetchSeedExpressOffers,
+  fetchGreenShopOffers,
+} = require("../services/affiliateConnectorService");
 
 // GET /affiliate/connect/seedexpress/:strain
 exports.seedExpress = async (req, res) => {

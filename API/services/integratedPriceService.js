@@ -1,7 +1,10 @@
-const { fetchSeedExpressOffers, fetchGreenShopOffers } = require('./affiliateConnectorService');
-const { scrapePrices } = require('./priceScraperService');
-const PriceEntry = require('../models/PriceEntry');
-const Seed = require('../models/Seed');
+const {
+  fetchSeedExpressOffers,
+  fetchGreenShopOffers,
+} = require("./affiliateConnectorService");
+const { scrapePrices } = require("./priceScraperService");
+const PriceEntry = require("../models/PriceEntry");
+const Seed = require("../models/Seed");
 
 // Kombiniert Scraper- und API-Daten für Preisvergleich
 async function updateAllPrices() {
@@ -23,11 +26,11 @@ async function updateAllPrices() {
             strain,
             seedbank: offer.seedbank,
             price: offer.priceEur,
-            currency: 'EUR',
+            currency: "EUR",
             url: offer.url,
-            timestamp: offer.lastUpdated
+            timestamp: offer.lastUpdated,
           },
-          { upsert: true }
+          { upsert: true },
         );
       }
     } catch (err) {

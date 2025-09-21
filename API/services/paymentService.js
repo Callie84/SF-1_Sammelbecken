@@ -1,7 +1,10 @@
 // Stub für Payment-Provider (z.B., Stripe)
 async function createCheckoutSession(userId, plan) {
   // Simuliere Session
-  return { sessionId: 'sess_123', url: 'https://checkout.example.com/session/sess_123' };
+  return {
+    sessionId: "sess_123",
+    url: "https://checkout.example.com/session/sess_123",
+  };
 }
 
 async function handleWebhook(event) {

@@ -1,11 +1,11 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const MODEL_DIR = path.resolve(__dirname, '../../ml/models');
+const MODEL_DIR = path.resolve(__dirname, "../../ml/models");
 
 // Listet alle verfügbaren Modelle
 function listModels() {
-  return fs.readdirSync(MODEL_DIR).filter(f => f.endsWith('.h5'));
+  return fs.readdirSync(MODEL_DIR).filter((f) => f.endsWith(".h5"));
 }
 
 // Löscht altes Modell

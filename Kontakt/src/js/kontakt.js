@@ -1,5 +1,5 @@
-document.getElementById('supportForm').addEventListener('submit', function (e) {
+document.getElementById("supportForm").addEventListener("submit", function (e) {
   e.preventDefault();
-  document.getElementById('feedback').classList.remove('hidden');
+  document.getElementById("feedback").classList.remove("hidden");
   this.reset();
 });

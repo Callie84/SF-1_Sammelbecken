@@ -6,7 +6,7 @@ const ShopSchema = new mongoose.Schema({
   paymentMethods: [String],
   affiliateId: String,
   rating: { type: Number, min: 0, max: 5 },
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model("Shop", ShopSchema);

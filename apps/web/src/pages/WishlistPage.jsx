@@ -1,5 +1,5 @@
-import React from 'react';
-import WishlistDashboard from '../components/WishlistDashboard';
+import React from "react";
+import WishlistDashboard from "../components/WishlistDashboard";
 
 export default function WishlistPage() {
   return (

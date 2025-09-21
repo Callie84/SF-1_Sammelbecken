@@ -1,4 +1,4 @@
-const GrowCycle = require('../models/GrowCycle');
+const GrowCycle = require("../models/GrowCycle");
 
 // Neue Grow-Zyklus erstellen
 exports.createCycle = async (req, res) => {
@@ -15,13 +15,16 @@ exports.getCycles = async (req, res) => {
 
 // Einzelnen Zyklus abrufen
 exports.getCycle = async (req, res) => {
-  const cycle = await GrowCycle.findOne({ _id: req.params.id, userId: req.user.id });
-  if (!cycle) return res.status(404).json({ error: 'Zyklus nicht gefunden' });
+  const cycle = await GrowCycle.findOne({
+    _id: req.params.id,
+    userId: req.user.id,
+  });
+  if (!cycle) return res.status(404).json({ error: "Zyklus nicht gefunden" });
   res.json(cycle);
 };
 
 // Zyklus löschen
 exports.deleteCycle = async (req, res) => {
   await GrowCycle.deleteOne({ _id: req.params.id, userId: req.user.id });
-  res.json({ message: 'Zyklus gelöscht' });
+  res.json({ message: "Zyklus gelöscht" });
 };

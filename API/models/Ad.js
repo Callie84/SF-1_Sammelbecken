@@ -9,10 +9,10 @@ const AdSchema = new mongoose.Schema({
   impressions: { type: Number, default: 0 },
   clicks: { type: Number, default: 0 },
   createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
+  updatedAt: { type: Date, default: Date.now },
 });
 
-AdSchema.pre("save", function(next) {
+AdSchema.pre("save", function (next) {
   this.updatedAt = Date.now();
   next();
 });

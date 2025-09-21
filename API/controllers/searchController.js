@@ -1,4 +1,4 @@
-const { searchSeeds } = require('../services/searchService');
+const { searchSeeds } = require("../services/searchService");
 
 exports.search = async (req, res) => {
   try {
@@ -10,7 +10,7 @@ exports.search = async (req, res) => {
       sortBy: req.query.sortBy,
       order: req.query.order,
       limit: req.query.limit,
-      page: req.query.page
+      page: req.query.page,
     });
     res.json(results);
   } catch (err) {

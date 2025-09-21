@@ -1,11 +1,14 @@
-const FavoriteItem = require('../models/FavoriteItem');
+const FavoriteItem = require("../models/FavoriteItem");
 
 // Konfliktauflösung: letzter `updatedAt` gewinnt
 function resolveConflicts(local, server) {
   const merged = {};
-  [...local, ...server].forEach(item => {
+  [...local, ...server].forEach((item) => {
     const key = item.strain;
-    if (!merged[key] || new Date(item.updatedAt) > new Date(merged[key].updatedAt)) {
+    if (
+      !merged[key] ||
+      new Date(item.updatedAt) > new Date(merged[key].updatedAt)
+    ) {
       merged[key] = item;
     }
   });
@@ -14,14 +17,14 @@ function resolveConflicts(local, server) {
 
 async function backgroundSync(userId, localChanges) {
   // Hole Server-Daten seit lokalster Änderung
-  const since = localChanges.reduce((max, c) => c.timestamp > max ? c.timestamp : max, new Date(0));
+  const since = localChanges.reduce(
+    (max, c) => (c.timestamp > max ? c.timestamp : max),
+    new Date(0),
+  );
   // Hole serverseitig Änderungen
   const serverItems = await FavoriteItem.find({
     userId,
-    $or: [
-      { updatedAt: { $gte: since } },
-      { deletedAt: { $gte: since } }
-    ]
+    $or: [{ updatedAt: { $gte: since } }, { deletedAt: { $gte: since } }],
   }).lean();
   // Konfliktauflösung
   const resolved = resolveConflicts(localChanges, serverItems);
@@ -30,7 +33,7 @@ async function backgroundSync(userId, localChanges) {
     await FavoriteItem.updateOne(
       { userId, strain: item.strain },
       { ...item },
-      { upsert: true }
+      { upsert: true },
     );
   }
   return resolved;

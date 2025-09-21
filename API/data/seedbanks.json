@@ -2,16 +2,8 @@
   {
     "name": "Zamnesia",
     "url": "https://zamnesia.com",
-    "countries": [
-      "DE",
-      "NL",
-      "ES"
-    ],
-    "paymentMethods": [
-      "PayPal",
-      "Credit Card",
-      "SEPA"
-    ],
+    "countries": ["DE", "NL", "ES"],
+    "paymentMethods": ["PayPal", "Credit Card", "SEPA"],
     "rating": 4.7,
     "affiliateId": "AFF123ZAM",
     "shipping": {
@@ -23,15 +15,8 @@
   {
     "name": "Royal Queen Seeds",
     "url": "https://royalqueenseeds.com",
-    "countries": [
-      "DE",
-      "UK",
-      "FR"
-    ],
-    "paymentMethods": [
-      "PayPal",
-      "Credit Card"
-    ],
+    "countries": ["DE", "UK", "FR"],
+    "paymentMethods": ["PayPal", "Credit Card"],
     "rating": 4.5,
     "affiliateId": "AFF789RQS",
     "shipping": {
@@ -43,14 +28,8 @@
   {
     "name": "Philosopher Seeds",
     "url": "https://philosopherseeds.com",
-    "countries": [
-      "ES",
-      "IT"
-    ],
-    "paymentMethods": [
-      "Credit Card",
-      "Bank Transfer"
-    ],
+    "countries": ["ES", "IT"],
+    "paymentMethods": ["Credit Card", "Bank Transfer"],
     "rating": 4.2,
     "affiliateId": "AFF456PHS",
     "shipping": {
@@ -62,14 +41,8 @@
   {
     "name": "Dinafem Seeds",
     "url": "https://dinafem.org",
-    "countries": [
-      "ES",
-      "DE"
-    ],
-    "paymentMethods": [
-      "PayPal",
-      "Credit Card"
-    ],
+    "countries": ["ES", "DE"],
+    "paymentMethods": ["PayPal", "Credit Card"],
     "rating": 4.3,
     "affiliateId": "AFF321DNA",
     "shipping": {
@@ -81,16 +54,8 @@
   {
     "name": "Barney's Farm",
     "url": "https://barneysfarm.com",
-    "countries": [
-      "NL",
-      "GB",
-      "US"
-    ],
-    "paymentMethods": [
-      "PayPal",
-      "Credit Card",
-      "Bitcoin"
-    ],
+    "countries": ["NL", "GB", "US"],
+    "paymentMethods": ["PayPal", "Credit Card", "Bitcoin"],
     "rating": 4.6,
     "affiliateId": "AFF654BFS",
     "shipping": {

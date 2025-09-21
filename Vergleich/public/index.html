@@ -1,22 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SF-1 Sortenvergleich</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-purple-50 text-gray-900 p-6">
-  <h1 class="text-3xl font-bold mb-4">📊 Sorten vergleichen</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SF-1 Sortenvergleich</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-purple-50 text-gray-900 p-6">
+    <h1 class="text-3xl font-bold mb-4">📊 Sorten vergleichen</h1>
 
-  <div class="grid md:grid-cols-2 gap-4 mb-4">
-    <input id="strain1" type="text" placeholder="Sorte 1" class="p-2 border rounded w-full">
-    <input id="strain2" type="text" placeholder="Sorte 2" class="p-2 border rounded w-full">
-  </div>
-  <button onclick="compare()" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800">Vergleichen</button>
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <input
+        id="strain1"
+        type="text"
+        placeholder="Sorte 1"
+        class="p-2 border rounded w-full"
+      />
+      <input
+        id="strain2"
+        type="text"
+        placeholder="Sorte 2"
+        class="p-2 border rounded w-full"
+      />
+    </div>
+    <button
+      onclick="compare()"
+      class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800"
+    >
+      Vergleichen
+    </button>
 
-  <div id="result" class="mt-6 bg-white p-4 rounded shadow text-sm"></div>
+    <div id="result" class="mt-6 bg-white p-4 rounded shadow text-sm"></div>
 
-  <script src="../src/js/vergleich.js"></script>
-</body>
+    <script src="../src/js/vergleich.js"></script>
+  </body>
 </html>
