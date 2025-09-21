@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const priceRoutes = require("./src/routes/price");
+const priceRoutes = require('./API/src/routes/price');
 
 app.use(cors());
 app.use(express.json());
