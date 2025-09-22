@@ -138,9 +138,7 @@ async function run() {
   const wishlistDoc = await Wishlist.findOne({ userId }).lean();
 
   console.log(importMessage);
-  console.log(
-    `Wishlist name: ${wishlistDoc ? wishlistDoc.name : "<missing>"}`,
-  );
+  console.log(`Wishlist name: ${wishlistDoc ? wishlistDoc.name : "<missing>"}`);
   console.log(
     `Wishlist item count: ${
       wishlistDoc && Array.isArray(wishlistDoc.items)
