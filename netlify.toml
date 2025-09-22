@@ -1,0 +1,14 @@
+[build]
+command = "bash ./netlify-build.sh"
+publish = "public"
+
+[build.environment]
+NODE_VERSION = "20"
+NPM_FLAGS = "--no-fund --no-audit"
+CI = "true"
+
+[functions]
+node_bundler = "esbuild"
+
+[[plugins]]
+package = "@netlify/plugin-cache"
