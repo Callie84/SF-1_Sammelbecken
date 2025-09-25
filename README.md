@@ -107,3 +107,6 @@ Pull Requests willkommen. Bitte Issues für Bugs oder Feature-Requests eröffnen
 ## 📄 Lizenz
 
 Dieses Projekt steht unter der **MIT-Lizenz**.
+
+![CI](https://github.com/Callie84/SF-1_Sammelbecken/actions/workflows/run.yml/badge.svg)
+
