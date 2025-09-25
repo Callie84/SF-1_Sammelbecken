@@ -11,4 +11,4 @@ NPM_FLAGS = "--no-audit --no-fund"
 node_bundler = "esbuild"
 
 [[plugins]]
-package = "@netlify/plugin-cache"
+package = "netlify-plugin-cache"
