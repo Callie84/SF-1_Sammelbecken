@@ -1,34 +1,10 @@
-﻿[build]
-base = "netlify"
-publish = "public"
-command = "bash ./netlify-build.sh"
-
 [build.environment]
 NODE_VERSION = "20.18.1"
 NPM_FLAGS = "--no-audit --no-fund"
 
-[functions]
-node_bundler = "esbuild"
+[build]
+base = "."
+command = "npm run build"
 
 [[plugins]]
-package = "netlify-plugin-cache"# === SPA-Routing, Security, Caching ===
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "no-referrer"
-    Permissions-Policy = "geolocation=(), microphone=()"
-    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-
-[[headers]]
-  for = "/static/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-command = "bash ./netlify-build.sh"
+package = "@netlify/plugin-nextjs"
