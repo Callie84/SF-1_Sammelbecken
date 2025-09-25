@@ -1,56 +1,8 @@
-﻿name: run
+name: ping
 on:
-  push:
-    branches: [ main ]
-  workflow_dispatch: {}
-
-permissions:
-  contents: write
-
-concurrency:
-  group: run-${{ github.ref }}
-  cancel-in-progress: true
-
+  workflow_dispatch:
 jobs:
-  run:
-    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'ci: auto-fix') }}
+  echo:
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout (full history)
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Prettier
-        run: npx --yes prettier . -w || true
-
-      - name: Root install + audit (non-breaking)
-        run: |
-          if [ -f package.json ]; then
-            npm ci || npm install
-            npm audit fix || true
-          else
-            echo "kein package.json im Root"
-          fi
-
-      - name: Rebase latest main
-        run: |
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config user.name "github-actions[bot]"
-          git fetch origin main
-          git rebase origin/main || { git rebase --abort; echo "Rebase-Konflikt"; exit 1; }
-
-      - name: Auto-commit (ohne .github)
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'ci: auto-fix (prettier/eslint/npm-audit)'
-          branch: main
-          file_pattern: |
-            .
-            :!./.github/**
+      - run: echo OK
