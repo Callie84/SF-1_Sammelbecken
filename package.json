@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test:wishlist-csv": "node API/scripts/verifyWishlistCSVService.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "csv-parser": "^3.2.0",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2",
+    "express": "^4.21.2",
     "helmet": "^7.0.0",
-    "json2csv": "^6.0.0-alpha.2",
     "mongoose": "^7.3.1",
     "node-cron": "^3.0.2",
     "puppeteer": "^21.3.8",
