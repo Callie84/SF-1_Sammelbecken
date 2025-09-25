@@ -1,14 +1,14 @@
-﻿[build]
-  base    = "netlify"
-  publish = "public"
-  command = "bash ./netlify-build.sh"
+[build]
+base = "netlify"
+publish = "public"
+command = "bash ./netlify-build.sh"
+
+[build.environment]
+NODE_VERSION = "20.18.1"
+NPM_FLAGS = "--no-audit --no-fund"
 
 [functions]
-  node_bundler = "esbuild"
+node_bundler = "esbuild"
 
 [[plugins]]
-  package = "@netlify/plugin-cache"
-[build.environment]
-  NODE_VERSION = "20.18.1"
-  NPM_FLAGS = "--no-audit --no-fund"
-
+package = "@netlify/plugin-cache"
