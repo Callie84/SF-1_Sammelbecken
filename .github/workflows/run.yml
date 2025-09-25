@@ -15,18 +15,22 @@ jobs:
   run:
     if: ${{ !contains(github.event.head_commit.message, 'ci: auto-fix') }}
     runs-on: ubuntu-24.04
+    timeout-minutes: 20
     steps:
       - name: Checkout (full history)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+
       - name: Prettier
         run: npx --yes prettier . -w || true
+
       - name: ESLint (if config)
         run: |
           if ls -1 .eslintrc* eslint.config.* >/dev/null 2>&1; then
@@ -34,6 +38,7 @@ jobs:
           else
             echo "kein ESLint-Config → skip"
           fi
+
       - name: Root install + audit (non-breaking)
         run: |
           if [ -f package.json ]; then
@@ -42,12 +47,29 @@ jobs:
           else
             echo "kein package.json im Root"
           fi
+
+      - name: Monorepo Sweep (install + optional build/test)
+        run: |
+          set -e
+          mapfile -t PKGS < <(find . -type f -name package.json -not -path "*/node_modules/*")
+          echo "Gefundene package.json: ${#PKGS[@]}"
+          for pj in "${PKGS[@]}"; do
+            dir="$(dirname "$pj")"
+            echo "== $dir =="
+            cd "$dir"
+            npm ci || npm install
+            node -e "let p=require('./package.json'); if(p.scripts&&p.scripts.build){process.exit(0)}else{process.exit(1)}" && npm run build || echo "kein build-script"
+            node -e "let p=require('./package.json'); if(p.scripts&&p.scripts.test){process.exit(0)}else{process.exit(1)}" && npm test --silent || echo "kein test-script"
+            cd - >/dev/null
+          done
+
       - name: Rebase latest main
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git fetch origin main
           git rebase origin/main || { git rebase --abort; echo "Rebase-Konflikt"; exit 1; }
+
       - name: Auto-commit (ohne .github)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
