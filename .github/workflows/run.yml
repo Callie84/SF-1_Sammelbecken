@@ -1,8 +1,20 @@
 name: run
 on:
   workflow_dispatch:
+    inputs:
+      reason:
+        description: "Manueller Startgrund"
+        required: false
+        default: "manual"
   push:
     branches: [ main ]
+
+concurrency:
+  group: "run-${{ github.ref }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: write
 
 jobs:
   ci:
@@ -17,6 +29,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
-      - name: Echo
-        run: node -v && npm -v && echo OK
+      - name: Root install + audit (tolerant)
+        run: |
+          if [ -f package.json ]; then
+            npm ci || npm install
+            npm audit fix || true
+          else
+            echo "kein package.json im Root"
+          fi
+
+      - name: Prettier (tolerant)
+        run: npx --yes prettier . -w || true
