@@ -1,6 +1,6 @@
-[build]
+﻿[build]
   base    = "netlify"
-  publish = "netlify/public"
+  publish = "public"
   command = "bash ./netlify-build.sh"
 
 [functions]
@@ -11,3 +11,4 @@
 [build.environment]
   NODE_VERSION = "20.18.1"
   NPM_FLAGS = "--no-audit --no-fund"
+
