@@ -1,13 +1,11 @@
 {
-  "private": true,
-  "devDependencies": {
-    "@netlify/plugin-cache": "^5.0.0",
-    "@netlify/plugin-nextjs": "^5.0.0",
-    "@commandbar/netlify-plugin-commandbar": "^1.0.0"
-  },
-  "name": "sf1-netlify-base",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "bash ./netlify-build.sh"
-  }
+    "private":  true,
+    "devDependencies":  {
+                            "@netlify/plugin-cache":  "^5.0.0"
+                        },
+    "name":  "sf1-netlify-base",
+    "version":  "1.0.0",
+    "scripts":  {
+                    "build":  "bash ./netlify-build.sh"
+                }
 }

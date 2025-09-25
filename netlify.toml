@@ -8,3 +8,6 @@
 
 [[plugins]]
   package = "@netlify/plugin-cache"
+[build.environment]
+  NODE_VERSION = "20.18.1"
+  NPM_FLAGS = "--no-audit --no-fund"
