@@ -31,3 +31,4 @@ package = "netlify-plugin-cache"# === SPA-Routing, Security, Caching ===
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+command = "bash ./netlify-build.sh"
