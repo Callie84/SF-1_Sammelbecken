@@ -4,6 +4,13 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: run-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   run:
     runs-on: ubuntu-24.04
@@ -17,9 +24,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Prettier
         run: npx --yes prettier . -w || true
+
+      - name: ESLint (if config)
+        run: |
+          if ls -1 .eslintrc* eslint.config.* >/dev/null 2>&1; then
+            npx --yes eslint . --fix || true
+          else
+            echo "kein ESLint-Config → skip"
+          fi
 
       - name: Root install + audit (non-breaking)
         run: |
