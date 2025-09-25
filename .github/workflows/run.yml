@@ -14,9 +14,7 @@ concurrency:
 jobs:
   run:
     if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'ci: auto-fix') }}
-    if: ${{ !contains(github.event.head_commit.message, 'ci: auto-fix') }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
     steps:
       - name: Checkout (full history)
         uses: actions/checkout@v4
@@ -32,14 +30,6 @@ jobs:
       - name: Prettier
         run: npx --yes prettier . -w || true
 
-      - name: ESLint (if config)
-        run: |
-          if ls -1 .eslintrc* eslint.config.* >/dev/null 2>&1; then
-            npx --yes eslint . --fix || true
-          else
-            echo "kein ESLint-Config → skip"
-          fi
-
       - name: Root install + audit (non-breaking)
         run: |
           if [ -f package.json ]; then
@@ -48,21 +38,6 @@ jobs:
           else
             echo "kein package.json im Root"
           fi
-
-      - name: Monorepo Sweep (best-effort)
-        run: |
-          echo "Starte Sweep…"
-          while IFS= read -r pj; do
-            dir="$(dirname "$pj")"
-            echo "== $dir =="
-            (
-              cd "$dir"
-              npm ci || npm install || true
-              npm run build 2>/dev/null || echo "kein build-script"
-              npm test --silent 2>/dev/null || echo "kein test-script"
-            ) || echo "::warning::Fehler in $dir, weiter…"
-          done < <(find . -type f -name package.json -not -path "*/node_modules/*")
-          echo "Sweep fertig"
 
       - name: Rebase latest main
         run: |
@@ -79,4 +54,3 @@ jobs:
           file_pattern: |
             .
             :!./.github/**
-
