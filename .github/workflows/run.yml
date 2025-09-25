@@ -1,8 +1,55 @@
-name: ping
+name: run
+
 on:
   workflow_dispatch:
+    inputs:
+      reason:
+        description: "Manueller Startgrund"
+        required: false
+        default: "manual"
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: run-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  echo:
+  ci:
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'ci: auto-fix') }}
     runs-on: ubuntu-24.04
     steps:
-      - run: echo OK
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Root install + audit (non-breaking)
+        run: |
+          if [ -f package.json ]; then
+            npm ci || npm install
+            npm audit fix || true
+          else
+            echo "kein package.json im Root"
+          fi
+
+      - name: Prettier (tolerant)
+        run: npx --yes prettier . -w || true
+
+      - name: Auto-commit (ohne .github)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: auto-fix (prettier/eslint/npm-audit)"
+          branch: main
+          file_pattern: |
+            .
+            :!./.github/**
