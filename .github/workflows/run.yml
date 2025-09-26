@@ -25,18 +25,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Git konfigurieren + Arbeitsbaum säubern
+      - name: Git konfigurieren + Arbeitsbaum sÃ¤ubern
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config core.autocrlf false
           git reset --hard
 
-      - name: Pre-commit ausstehender Änderungen
+      - name: Pre-commit ausstehender Ã„nderungen
         run: |
           git add -A
           git commit -m "ci: pre-commit pending changes" || true
 
+      - name: Heartbeat-Datei
+        run: |
+          echo "$(date -u +%FT%TZ) $GITHUB_RUN_ID" >> ci_heartbeat.txt
       - name: Auto-commit (ohne .github)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
