@@ -1,0 +1,24 @@
+jobs:
+  smoke_ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo SMOKE-PING
+
+  # dein bestehender smoke-Job bleibt darunter unverändert
+name: Smoke
+on:
+  push:
+    branches: [ "main", "chore/smoke-ci" ]
+    paths-ignore: [ "**/*.md", "**/*.png", "**/*.jpg", "**/*.svg" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch: {}
+
+permissions: { contents: read }
+
+concurrency:
+  group: smoke-${{ github.ref }}
+  cancel-in-progress: false  # temporär für Diagnose
+
+env:
+  CI: 'true'
