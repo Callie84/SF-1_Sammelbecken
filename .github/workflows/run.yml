@@ -18,36 +18,29 @@ permissions:
 
 jobs:
   ci:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version:  20.18.1
-          cache: npm
-
-      - name: Root install + audit (tolerant)
+      - name: Git konfigurieren + Arbeitsbaum säubern
         run: |
-          if [ -f package.json ]; then
-            npm ci || npm install
-            npm audit fix || true
-          else
-            echo "kein package.json im Root"
-          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config core.autocrlf false
+          git reset --hard
 
-      - name: Prettier (tolerant)
-        run: npx --yes prettier . -w || true
+      - name: Pre-commit ausstehender Änderungen
+        run: |
+          git add -A
+          git commit -m "ci: pre-commit pending changes" || true
 
       - name: Auto-commit (ohne .github)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "ci: auto-fix (prettier/eslint/npm-audit)"
+          skip_checkout: true
+          file_pattern: ':!**/.github/**'
+          commit_message: 'ci: auto-commit'
           branch: main
-          file_pattern: |
-            .
-            :!./.github/**
