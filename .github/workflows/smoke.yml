@@ -3,8 +3,7 @@ on:
   push:
   pull_request:
   workflow_dispatch:
-  schedule:
-    - cron: '0 7 * * *'   # täglich 07:00 UTC
+
 concurrency:
   group: smoke-${{ github.ref }}
   cancel-in-progress: true
@@ -19,13 +18,10 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-      - name: Install deps (Windows, PowerShell)
-        shell: pwsh
-        run: |
-          if (Test-Path package-lock.json) { npm ci } else { npm install }
-      - name: Smoke
-        shell: pwsh
-        run: npm run test:smoke
+      - run: npm ci || npm install
+      - run: npm run check:format
+      - run: npm run check:lint
+      - run: npm run test:smoke
 
   ubuntu:
     runs-on: ubuntu-latest
@@ -36,14 +32,20 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-      - name: Install deps (Ubuntu, Bash)
+      - name: Install deps
         run: npm ci || npm install
+      - name: Check format
+        run: npm run check:format
+      - name: Lint
+        run: npm run check:lint
       - name: Start server
         run: |
           PORT=3000 node server.js > server.log 2>&1 &
-          for i in {1..30}; do curl -sf "http://127.0.0.1:${PORT:-3000}/health" && break || sleep 1; done
+          for i in {1..30}; do
+            curl -fsS "http://127.0.0.1:${PORT:-3000}/health" && break || sleep 1
+          done
       - name: Health
-        run: curl -sf "http://127.0.0.1:${PORT:-3000}/health"
+        run: curl -fsS "http://127.0.0.1:${PORT:-3000}/health" >/dev/null
       - name: Show server log on failure
         if: ${{ failure() }}
         run: sed -n '1,200p' server.log || true
