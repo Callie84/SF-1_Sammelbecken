@@ -3,23 +3,50 @@ on:
   push:
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * *'   # täglich 07:00 UTC
+concurrency:
+  group: smoke-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   win:
     runs-on: windows-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: '20' }
-      - run: npm ci || npm install
-      - run: npm run test:smoke
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install deps (Windows, PowerShell)
+        shell: pwsh
+        run: |
+          if (Test-Path package-lock.json) { npm ci } else { npm install }
+      - name: Smoke
+        shell: pwsh
+        run: npm run test:smoke
+
   ubuntu:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: '20' }
-      - run: npm ci || npm install
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install deps (Ubuntu, Bash)
+        run: npm ci || npm install
       - name: Start server
-        run: PORT=3000 node server.js & sleep 2
+        run: |
+          PORT=3000 node server.js > server.log 2>&1 &
+          for i in {1..30}; do curl -sf "http://127.0.0.1:${PORT:-3000}/health" && break || sleep 1; done
       - name: Health
-        run: node -e "require('http').get('http://127.0.0.1:'+(process.env.PORT||3000)+'/health',r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"
+        run: curl -sf "http://127.0.0.1:${PORT:-3000}/health"
+      - name: Show server log on failure
+        if: ${{ failure() }}
+        run: sed -n '1,200p' server.log || true
+      - name: Stop server
+        if: always()
+        run: pkill -f "node server.js" || true
