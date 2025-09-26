@@ -1,14 +1,1 @@
-* text=auto eol=lf
-*.sh linguist-language=Shell
-*.md linguist-detectable=true
-*.ps1 text eol=crlf
-
-# Zeilenenden-Regeln
-*.ps1 text eol=crlf
-*.bat text eol=crlf
-*.sh text eol=lf
-
-*.yml text eol=lf
-*.yaml text eol=lf
-
-ci_heartbeat.txt merge=ours
+﻿* text=auto eol=lf
