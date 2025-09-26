@@ -27,14 +27,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Git konfigurieren + Arbeitsbaum sÃƒÂ¤ubern
+      - name: Git konfigurieren + Arbeitsbaum sÃƒÆ’Ã‚Â¤ubern
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config core.autocrlf false
           git reset --hard
 
-      - name: Pre-commit ausstehender Ãƒâ€žnderungen
+      - name: Pre-commit ausstehender ÃƒÆ’Ã¢â‚¬Å¾nderungen
         run: |
           git add -A
           git commit -m "ci: pre-commit pending changes" || true
@@ -46,6 +46,8 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           skip_checkout: true
-          file_pattern: ':!**/.github/**'
-          commit_message: 'ci: auto-commit'
           branch: main
+          commit_message: 'ci: auto-commit'
+          file_pattern: |
+            .
+            :!**/.github/**
