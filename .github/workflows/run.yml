@@ -27,14 +27,22 @@ jobs:
         with:
           fetch-depth: 0
 
+<<<<<<< Updated upstream
       - name: Git konfigurieren + Arbeitsbaum sÃƒÆ’Ã‚Â¤ubern
+=======
+      - name: Git konfigurieren + Arbeitsbaum sÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ubern
+>>>>>>> Stashed changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config core.autocrlf false
           git reset --hard
 
+<<<<<<< Updated upstream
       - name: Pre-commit ausstehender ÃƒÆ’Ã¢â‚¬Å¾nderungen
+=======
+      - name: Pre-commit ausstehender ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾nderungen
+>>>>>>> Stashed changes
         run: |
           git add -A
           git commit -m "ci: pre-commit pending changes" || true

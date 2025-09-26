@@ -4,10 +4,13 @@
   "main": "server.js",
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "node server.js",
     "start": "node server.js",
     "lint": "eslint .",
-    "format": "prettier . -w"
+    "format": "prettier . -w",
+    "test:smoke": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_smoke.ps1",
+    "test:health": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_health.ps1",
+    "test:health:spawn": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_health_spawn.ps1"
   },
   "dependencies": {
     "cors": "^2.8.5",

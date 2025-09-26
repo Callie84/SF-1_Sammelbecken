@@ -11,3 +11,4 @@
 *.yml text eol=lf
 *.yaml text eol=lf
 
+ci_heartbeat.txt merge=ours
