@@ -1,5 +1,7 @@
 name: run
 on:
+  schedule:
+    - cron: "0 3 * * *"
   workflow_dispatch:
     inputs:
       reason:
@@ -25,14 +27,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Git konfigurieren + Arbeitsbaum sÃ¤ubern
+      - name: Git konfigurieren + Arbeitsbaum sÃƒÂ¤ubern
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config core.autocrlf false
           git reset --hard
 
-      - name: Pre-commit ausstehender Ã„nderungen
+      - name: Pre-commit ausstehender Ãƒâ€žnderungen
         run: |
           git add -A
           git commit -m "ci: pre-commit pending changes" || true
