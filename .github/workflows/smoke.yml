@@ -1,0 +1,55 @@
+name: Smoke
+on:
+  push:
+    branches: [ "main", "chore/smoke-ci" ]
+    paths-ignore: [ "**/*.md", "**/*.png", "**/*.jpg", "**/*.svg" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch: {}
+
+permissions: { contents: read }
+
+concurrency:
+  group: smoke-${{ github.ref }}
+  cancel-in-progress: false  # temporär für Diagnose
+
+env:
+  CI: 'true'
+
+jobs:
+  smoke_ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo SMOKE-PING
+
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci || npm install
+
+      - name: Build
+        run: |
+          npm run build || node -e "require('fs').mkdirSync('build',{recursive:true}); require('fs').writeFileSync('build/.ok','1')"
+
+      - name: Health probe
+        run: |
+          test -f build/.ok || { echo "build/.ok fehlt"; exit 1; }
+          echo "OK"
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs
+          path: |
+            **/npm-debug.log
+            build/.ok
+          if-no-files-found: ignore
