@@ -1,32 +1,39 @@
-{
-  "name": "sf1-backend",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "build": "next build",
-    "dev": "node server.js",
-    "start": "node server.js",
-    "lint": "eslint .",
-    "format": "prettier . -w",
-    "test:smoke": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_smoke.ps1",
-    "test:health": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_health.ps1",
-    "test:health:spawn": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_health_spawn.ps1"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.21.2",
-    "helmet": "^7.0.0",
-    "mongoose": "^7.3.1",
-    "node-cron": "^3.0.2",
-    "puppeteer": "^21.3.8",
-    "winston": "^3.10.0"
-  },
-  "devDependencies": {
-    "@netlify/plugin-nextjs": "^5.13.3",
-    "netlify-cli": "^23.7.3",
-    "eslint": "^9.12.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.3.3"
-  }
+﻿{
+    "name":  "sf1-backend",
+    "version":  "1.0.0",
+    "main":  "server.js",
+    "scripts":  {
+                    "build":  "next build",
+                    "dev":  "node server.js",
+                    "start":  "node server.js",
+                    "lint":  "eslint .",
+                    "format":  "prettier . -w",
+                    "test:smoke":  "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_smoke.ps1",
+                    "test:health":  "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_health.ps1",
+                    "test:health:spawn":  "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sf1_health_spawn.ps1",
+                    "start:prod":  "node server.js",
+                    "check:lint":  "eslint .",
+                    "check:format":  "prettier -c .",
+                    "lint:fix":  "eslint . --fix",
+                    "format:fix":  "prettier -w ."
+                },
+    "dependencies":  {
+                         "cors":  "^2.8.5",
+                         "dotenv":  "^16.3.1",
+                         "express":  "^4.21.2",
+                         "helmet":  "^7.0.0",
+                         "mongoose":  "^7.3.1",
+                         "node-cron":  "^3.0.2",
+                         "puppeteer":  "^21.3.8",
+                         "winston":  "^3.10.0"
+                     },
+    "devDependencies":  {
+                            "@eslint/js":  "^9.36.0",
+                            "@netlify/plugin-nextjs":  "^5.13.3",
+                            "eslint":  "^9.12.0",
+                            "eslint-config-prettier":  "^9.1.2",
+                            "globals":  "^16.4.0",
+                            "netlify-cli":  "^23.7.3",
+                            "prettier":  "^3.3.3"
+                        }
 }
