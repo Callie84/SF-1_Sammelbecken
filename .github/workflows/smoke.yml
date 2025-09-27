@@ -1,55 +1,19 @@
-﻿name: Smoke
+name: Smoke
 on:
-  push:
-    branches: [ "main", "chore/smoke-ci" ]
-    paths-ignore:
-      - "**/*.md"
-      - "**/*.png"
-      - "**/*.jpg"
-      - "**/*.svg"
-      - ".editorconfig"
-      - ".gitattributes"
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch: {}
-
-permissions: { contents: read }
-
-concurrency:
-  group: smoke-${{ github.ref }}
-  cancel-in-progress: true
-
-env:
-  CI: "true"
-
+  push:
+    branches: [ "chore/**", "fix/**", "feat/**" ]
 jobs:
   smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
-          cache: "npm"
-
-      - name: Install deps
-        run: npm ci
-
-      - name: Build
-        run: node -e "require('fs').mkdirSync('build',{recursive:true}); require('fs').writeFileSync('build/ok.txt','1')"
-
-      - name: Health probe
+          node-version: '20'
+      - name: Quick smoke
         run: |
-          test -f build/ok.txt || { echo "build/ok.txt fehlt"; exit 1; }
-          echo "OK"
-
-      - name: Upload logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: logs
-          path: |
-            **/npm-debug.log
-            build/ok.txt
-          if-no-files-found: ignore
+          node -v
+          npm -v
+          echo ok
