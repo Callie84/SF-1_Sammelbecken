@@ -33,3 +33,7 @@ logs/
 **/node_modules/
 
 netlify/node_modules/
+
+_backup_sf1_*
+
+.ci-session.log
