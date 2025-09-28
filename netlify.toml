@@ -1,4 +1,4 @@
-[build]
+﻿[build]
 base = "apps/frontend"
 publish = "build"
 command = "npm ci --legacy-peer-deps && npm run build"
@@ -6,12 +6,8 @@ command = "npm ci --legacy-peer-deps && npm run build"
 [build.environment]
 NODE_VERSION = "20"
 NPM_FLAGS = "--legacy-peer-deps"
-
-[functions]
-node_bundler = "esbuild"
-
-[context.production.environment]
-NODE_ENV = "production"
+NPM_CONFIG_PRODUCTION = "false"
+CI = "false"
 
 [context.deploy-preview]
 command = "npm ci --legacy-peer-deps && npm run build"
