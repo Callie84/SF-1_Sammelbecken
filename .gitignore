@@ -37,3 +37,6 @@ netlify/node_modules/
 _backup_sf1_*
 
 .ci-session.log
+Fix-CI-Netlify-Cra.ps1
+apps/frontend/20.0.0
+bp.json

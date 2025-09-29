@@ -1,13 +1,16 @@
-[build.environment]
-NODE_VERSION = "20.18.1"
-NPM_FLAGS = "--no-audit --no-fund"
-
 [build]
-base = "."
-command = "npm run build"
+base = "apps/frontend"
+publish = "build"
+command = "npm ci --legacy-peer-deps --include=dev && npm run build"
 
-[[plugins]]
-package = "@netlify/plugin-nextjs"[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[build.environment]
+NODE_VERSION = "20"
+NPM_FLAGS = "--legacy-peer-deps --include=dev"
+NPM_CONFIG_PRODUCTION = "false"
+CI = "false"
+
+[build.processing]
+skip_processing = true
+
+[context.deploy-preview]
+command = "npm ci --legacy-peer-deps --include=dev && npm run build"
