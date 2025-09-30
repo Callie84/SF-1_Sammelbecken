@@ -1,15 +1,12 @@
-[build]
-  base = "apps/frontend"
-  command = "npm install && npm run build"
-  publish = "build"
+﻿[build]
+  command = "npm run build"
+  publish = "netlify/dist"
+  base = "netlify"
 
-[[redirects]]
-  from = "/api/*"
-  to = "http://localhost:3001/api/:splat"
-  status = 200
-  force = true
+[build.environment]
+  NODE_VERSION = "20.18.1"
+  NPM_FLAGS = "--no-audit --no-fund"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  pinned_version = "4"
