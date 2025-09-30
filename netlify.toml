@@ -1,0 +1,14 @@
+﻿[build]
+  command = "cd apps/frontend && npm install && npm run build"
+  publish = "apps/frontend/build"
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://localhost:3001/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
