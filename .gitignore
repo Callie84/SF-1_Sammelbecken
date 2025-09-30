@@ -40,3 +40,7 @@ _backup_sf1_*
 Fix-CI-Netlify-Cra.ps1
 apps/frontend/20.0.0
 bp.json
+
+
+#Ignore vscode AI rules
+.github\instructions\codacy.instructions.md
