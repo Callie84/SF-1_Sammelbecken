@@ -1,6 +1,6 @@
 * text=auto
 
-# Force LF fÃ¼r Code/Config
+# Force LF für Code/Config
 *.yml  text eol=lf
 *.yaml text eol=lf
 *.sh   text eol=lf
@@ -17,7 +17,7 @@
 *.bat  text eol=crlf
 *.ps1  text eol=crlf
 
-# BinÃ¤rdateien
+# Binärdateien
 *.png  binary
 *.jpg  binary
 *.jpeg binary
