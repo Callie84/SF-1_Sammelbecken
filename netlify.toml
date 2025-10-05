@@ -1,12 +1,8 @@
-[build]
+﻿[build]
+  base = "apps/frontend"
   command = "npm run build"
-  publish = "netlify/dist"
-  base = "netlify"
+  publish = "apps/frontend/dist"
 
 [build.environment]
   NODE_VERSION = "20.18.1"
   NPM_FLAGS = "--no-audit --no-fund"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  pinned_version = "4"
