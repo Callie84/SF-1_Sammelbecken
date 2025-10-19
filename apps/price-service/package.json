@@ -8,7 +8,9 @@
     "test:watch": "vitest",
     "test:fixtures": "vitest run tests/scrapers/parse.fixture.spec.ts",
     "snapshot:zamnesia": "node scripts/snapshot-zamnesia.mjs",
-    "snapshot:zamnesia:de": "node scripts/snapshot-zamnesia-de.mjs"
+    "snapshot:zamnesia:de": "node scripts/snapshot-zamnesia-de.mjs",
+    "snapshot:discover": "node scripts/discover-and-snapshot.mjs",
+    "test:discover": "vitest run tests/scrapers/parse.all.spec.ts"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.35",
