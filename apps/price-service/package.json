@@ -1,0 +1,21 @@
+{
+  "name": "price-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:fixtures": "vitest run tests/scrapers/parse.fixture.spec.ts",
+    "snapshot:zamnesia": "node scripts/snapshot-zamnesia.mjs",
+    "snapshot:zamnesia:de": "node scripts/snapshot-zamnesia-de.mjs"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^22.7.5",
+    "cheerio": "^1.1.2",
+    "playwright-chromium": "^1.56.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.1"
+  }
+}
