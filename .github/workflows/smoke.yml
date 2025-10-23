@@ -1,19 +1,20 @@
 name: Smoke
+
 on:
-  pull_request:
-    branches: [ "main" ]
-  push:
-    branches: [ "chore/**", "fix/**", "feat/**" ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'  # alle 6 Stunden
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Quick smoke
+      - name: Check Frontend
         run: |
-          node -v
-          npm -v
-          echo ok
+          set -e
+          curl -fsSL https://seedfinderpro.de/ | head -c 200 >/dev/null
+
+      - name: Check Backend Health
+        run: |
+          set -e
+          curl -fsSL https://seedfinderpro.de/api/health | jq -e '.status=="ok"' >/dev/null || exit 1

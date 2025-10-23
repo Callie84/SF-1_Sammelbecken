@@ -1,0 +1,12 @@
+{
+  "name": "sf1-tests",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:e2e": "playwright test --reporter=list"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.47.2"
+  }
+}

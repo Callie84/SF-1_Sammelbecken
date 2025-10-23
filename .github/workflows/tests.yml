@@ -1,0 +1,38 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, develop, feature/** ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '15 3 * * *'  # tÃ¤glich 03:15
+
+jobs:
+  e2e:
+    name: Playwright E2E
+    runs-on: ubuntu-latest
+    env:
+      BASE_URL: ${{ vars.BASE_URL || 'https://seedfinderpro.de' }}
+      HEALTH_URL: ${{ vars.HEALTH_URL || 'https://seedfinderpro.de/api/health' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install deps
+        working-directory: apps/tests
+        run: npm ci
+      - name: Install browsers
+        working-directory: apps/tests
+        run: npx playwright install --with-deps
+      - name: Run tests
+        working-directory: apps/tests
+        run: npm run test:e2e
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ github.run_id }}
+          path: apps/tests/playwright-report
+          if-no-files-found: ignore

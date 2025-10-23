@@ -1,0 +1,854 @@
+﻿"Name","URL","Status","ContentType","Kind","Keys","Sample","Error"
+"Sensi Seeds","https://sensiseeds.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Sensi Seeds"",
+    ""description"":  ""Die modernsten Cannabis-Nachrichten, Forschungen und Anwendungen"",
+    ""url"":  ""https://sensiseeds.com/blog"",
+    ""home"":  ""https://sensiseeds.com"",
+    ""gmt_offset"":  ""1"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  1822,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""akismet/v1"",
+                       ""yoast/v1"",
+                       ""wp-super-cache/v1"",
+                       ""aam/v2"",
+                       ""aam/v2/service"",
+                       ""aam/v1"",
+                       ""pll/v1"",
+                       ""contextual-related-posts/v1"",
+                       ""spectra/v1"",
+                       ""uag/v1"",
+    ",""
+"Sensi Seeds","https://sensiseeds.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Sensi Seeds Research","https://sensiseeds.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Sensi Seeds"",
+    ""description"":  ""Die modernsten Cannabis-Nachrichten, Forschungen und Anwendungen"",
+    ""url"":  ""https://sensiseeds.com/blog"",
+    ""home"":  ""https://sensiseeds.com"",
+    ""gmt_offset"":  ""1"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  1822,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""akismet/v1"",
+                       ""yoast/v1"",
+                       ""wp-super-cache/v1"",
+                       ""aam/v2"",
+                       ""aam/v2/service"",
+                       ""aam/v1"",
+                       ""pll/v1"",
+                       ""contextual-related-posts/v1"",
+                       ""spectra/v1"",
+                       ""uag/v1"",
+    ",""
+"Sensi Seeds Research","https://sensiseeds.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Nirvana","https://nirvanashop.com/products.json","200","application/json","object","products","{
+    ""products"":  [
+                     {
+                         ""id"":  10541118914824,
+                         ""title"":  ""Zkittlez Feminized 100 Seeds"",
+                         ""handle"":  ""zkittlez-feminized-100-seeds"",
+                         ""body_html"":  null,
+                         ""published_at"":  ""2025-10-06T14:36:25+02:00"",
+                         ""created_at"":  ""2025-10-03T13:49:33+02:00"",
+                         ""updated_at"":  ""2025-10-10T20:29:10+02:00"",
+                         ""vendor"":  ""Nirvana Shop"",
+                         ""product_type"":  """",
+                         ""tags"":  ""Wholesale"",
+                         ""variants"":  """",
+                         ""images"":  """",
+                         ""options"":  """"
+                     },
+           ",""
+"Spliff Seeds","https://spliffseeds.nl/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Spliff Seeds"",
+    ""description"":  ""Cultivating Quality Cannabis Seeds Since 1995"",
+    ""url"":  ""http://www.spliffseeds.nl"",
+    ""home"":  ""https://www.spliffseeds.nl"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Amsterdam"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  509,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""age-gate/v3"",
+                       ""rankmath/v1"",
+                       ""rankmath/v1/setupWizard"",
+                       ""rankmath/v1/an"",
+                       ""siteground-settings/v1"",
+                       ""siteground-optimizer/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       """,""
+"Spliff Seeds","https://spliffseeds.nl/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Ace Seeds","https://aceseeds.org/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""ACE Seeds"",
+    ""description"":  """",
+    ""url"":  ""https://www.aceseeds.org"",
+    ""home"":  ""https://www.aceseeds.org"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Madrid"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  23114,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""contact-form-7/v1"",
+                       ""cky/v1"",
+                       ""post-smtp/v1"",
+                       ""post-smtp/v2"",
+                       ""psd/v1"",
+                       ""rankmath/v1"",
+                       ""rankmath/v1/setupWizard"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wpml/st/v1"",
+                       ""wpm",""
+"Ace Seeds","https://aceseeds.org/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Blimburn Seeds","https://blimburnseeds.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Blimburn Seeds"",
+    ""description"":  ""Blimburn Seeds Bank Store | UNIQUE STRAINS SINCE 2002"",
+    ""url"":  ""https://blimburnseeds.com"",
+    ""home"":  ""https://blimburnseeds.com"",
+    ""gmt_offset"":  -7,
+    ""timezone_string"":  ""America/Los_Angeles"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  364382,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""mwai-ui/v1"",
+                       ""mwai/v1"",
+                       ""checkoutwc/v1"",
+                       ""wc-analytics"",
+                       ""code-snippets/v1"",
+                       ""contact-form-7/v1"",
+                       ""klaviyo/v1"",
+                       ""meow-licenser/mwainotif/v1"",
+                       ""nab/v1"",
+            ",""
+"Blimburn Seeds","https://blimburnseeds.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Bulk Seed Bank","https://bulkseedbank.org/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Bulk Seed Bank"",
+    ""description"":  ""Original Genetic Seed Specialist"",
+    ""url"":  ""https://bulkseedbank.org"",
+    ""home"":  ""https://bulkseedbank.org"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Ljubljana"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  59,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""akismet/v1"",
+                       ""contact-form-7/v1"",
+                       ""litespeed/v1"",
+                       ""litespeed/v3"",
+                       ""wc-ast/v3"",
+                       ""wc/v1"",
+                       ""wc/v2"",
+                       ""wc/v3"",
+                       ""wc-shipment-tracking/v3"",
+                       ""yoa",""
+"Bulk Seed Bank","https://bulkseedbank.org/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Bulldog Seeds","https://thebulldogseeds.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""The Bulldog Seeds"",
+    ""description"":  """",
+    ""url"":  ""https://thebulldogseeds.com"",
+    ""home"":  ""https://thebulldogseeds.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  1278,
+    ""page_on_front"":  1925,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""klaviyo/v1"",
+                       ""templately/v1"",
+                       ""webp-converter/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""yoast/v1"",
+                       ""woofunnel_customer/v1"",
+                       ""funnelkit-app"",
+                       ""wffn"",
+                       ""jetpack/v4"",
+                       ""complianz/v1"",
+                  ",""
+"Bulldog Seeds","https://thebulldogseeds.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"CBD Crew","https://cbdcrew.org/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,namespaces,authentication,routes,site_logo,_links","{
+    ""name"":  ""CBD Crew"",
+    ""description"":  ""CBD Crew, bringing you stabile CBD/THC enriched seeds."",
+    ""url"":  ""https://cbdcrew.org"",
+    ""home"":  ""https://cbdcrew.org"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""foogallery/v1"",
+                       ""litespeed/v1"",
+                       ""regenerate-thumbnails/v1"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1""
+                   ],
+    ""authentication"":  {
+                           ""application-passwords"":  {
+                                                         ""endpoints"":  ""@{authorization=https://cbdcrew.org/wp-admin/authorize-application.php}""
+                                            ",""
+"CBD Crew","https://cbdcrew.org/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"DNA Genetics","https://dnagenetics.com/wp-json/","200","text/html","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""DNA Genetics Cannabis Seeds"",
+    ""description"":  ""Buy Cannabis Seeds in USA"",
+    ""url"":  ""https://dnagenetics.com"",
+    ""home"":  ""https://dnagenetics.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  25,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""cbdaffs/v1"",
+                       ""klaviyo/v1"",
+                       ""wc/v2"",
+                       ""redirection/v1"",
+                       ""revoffers/v1"",
+                       ""simple-history/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wordfence/v1"",
+                       ""wordlift/v1"",
+                       ""yoast/v1"",
+     ",""
+"DNA Genetics","https://dnagenetics.com/wp-json/wp/v2/","200","text/html","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Dr. Underground Seeds","https://drunderground.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,namespaces,authentication,routes,_links","{
+    ""name"":  ""Dr Underground"",
+    ""description"":  ""feminized seeds"",
+    ""url"":  ""https://drunderground.com"",
+    ""home"":  ""https://drunderground.com"",
+    ""gmt_offset"":  1,
+    ""timezone_string"":  ""Europe/London"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""finale/v1"",
+                       ""SBR/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/st/v1"",
+                       ""pum/v1"",
+                       ""wc/blocks"",
+                       ""wc/store"",
+                       ""wc/v1"",
+                       ""wc/v2"",
+                       ""wc/v3"",
+                       ""wccom-site/v1"",
+                       ""wc-analytics"",
+                       ""wc-admin"",
+                       ""mailchimp-for-woocomm",""
+"Dr. Underground Seeds","https://drunderground.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Genehtik Seeds","https://genehtik.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Genehtik"",
+    ""description"":  ""Banco de semillas de cannabis feminizadas y autoflorecientes de calidad y garantía"",
+    ""url"":  ""https://www.genehtik.com"",
+    ""home"":  ""https://www.genehtik.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""contact-form-7/v1"",
+                       ""cookieyes/v1"",
+                       ""saswp-output"",
+                       ""wc/v3"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/ate/v1"",
+                       ""wpml/st/v1"",
+                       ""jetpack/v4"",
+                       ""sl-insta"",
+         ",""
+"Genehtik Seeds","https://genehtik.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Green Bodhi","https://greenbodhi.org/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""GREEN BODHI"",
+    ""description"":  ""INTENTIONAL HORTICULTURE"",
+    ""url"":  ""https://greenbodhi.org"",
+    ""home"":  ""https://greenbodhi.org"",
+    ""gmt_offset"":  ""-7"",
+    ""timezone_string"":  """",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""age-gate/v3"",
+                       ""akismet/v1"",
+                       ""redirection/v1"",
+                       ""wc/v3"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""mpp/v2"",
+                       ""mpp/v1"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""optimization-detec",""
+"Green Bodhi","https://greenbodhi.org/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Humboldt Seed Company","https://humboldtseedcompany.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Cannabis Seeds | Humboldt Seed Company"",
+    ""description"":  ""The Best Seeds In the U.S."",
+    ""url"":  ""https://humboldtseedcompany.com"",
+    ""home"":  ""https://humboldtseedcompany.com"",
+    ""gmt_offset"":  -7,
+    ""timezone_string"":  ""America/Los_Angeles"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  11,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpe/cache-plugin/v1"",
+                       ""wpe_sign_on_plugin/v1"",
+                       ""code-snippets/v1"",
+                       ""performance-lab/v1"",
+                       ""redirection/v1"",
+                       ""yoast/v1"",
+                       ""wp-recipe-maker/v1"",
+                       ""awb/instagram"",
+                       ""a",""
+"Humboldt Seed Company","https://humboldtseedcompany.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Hyp3rids","https://hyp3rids.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Hyp3rids"",
+    ""description"":  """",
+    ""url"":  ""http://hyp3rids.com"",
+    ""home"":  ""https://hyp3rids.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""contact-form-7/v1"",
+                       ""ultp"",
+                       ""ultp/v1"",
+                       ""ultp/v2"",
+                       ""ultp/v3"",
+                       ""wc/v3"",
+                       ""wordfence/v1"",
+                       ""jetpack/v4"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""payments/woopay"",
+                       ""wc/v2"",
+",""
+"Hyp3rids","https://hyp3rids.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Kannabia","https://kannabia.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Kannabia"",
+    ""description"":  ""Cannabis Seeds Bank"",
+    ""url"":  ""https://www.kannabia.com"",
+    ""home"":  ""https://www.kannabia.com"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Madrid"",
+    ""page_for_posts"":  24780,
+    ""page_on_front"":  24876,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""clientify/v1"",
+                       ""contact-form-7/v1"",
+                       ""wc-analytics"",
+                       ""viabill"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""wpml/st/v1"",
+                       ""flexible-shipping/v1"",
+    ",""
+"Kannabia","https://kannabia.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"K.C. Brains","https://kcbrains.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""K.C. Brains Seeds Holland | HIGH QUALITY DUTCH CANNABIS SEEDS!"",
+    ""description"":  ""Multiple Award Winning Cannabis Seeds"",
+    ""url"":  ""https://kcbrains.com"",
+    ""home"":  ""https://kcbrains.com"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Amsterdam"",
+    ""page_for_posts"":  418,
+    ""page_on_front"":  423,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""two-factor"",
+                       ""wpaas/v1"",
+                       ""contact-form-7/v1"",
+                       ""sliderrevolution"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""mc4wp/v1"",
+                       ""g",""
+"K.C. Brains","https://kcbrains.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"La Semilla Automatica","https://lasemillaautomatica.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""La Semilla Automática"",
+    ""description"":  ""Semillas de Colección"",
+    ""url"":  ""https://lasemillaautomatica.com"",
+    ""home"":  ""https://lasemillaautomatica.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  381,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""redux/v1/templates"",
+                       ""oembed/1.0"",
+                       ""redux/descriptors/v1"",
+                       ""age-gate/v1"",
+                       ""contact-form-7/v1"",
+                       ""cookieyes/v1"",
+                       ""groups/groups-blocks"",
+                       ""saswp-output"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""monsterin",""
+"La Semilla Automatica","https://lasemillaautomatica.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Paradise Seeds","https://paradise-seeds.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Paradise Seeds"",
+    ""description"":  ""Cannabis Seeds Webshop"",
+    ""url"":  ""https://www.paradise-seeds.com"",
+    ""home"":  ""https://www.paradise-seeds.com"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Amsterdam"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  121630,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpe/cache-plugin/v1"",
+                       ""wpe_sign_on_plugin/v1"",
+                       ""fluent-smtp"",
+                       ""wpml/v1"",
+                       ""age-gate/v3"",
+                       ""gr4wp/v1"",
+                       ""rankmath/v1"",
+                       ""rankmath/v1/setupWizard"",
+                       ""rankmath/v1/an"",
+                       ""wc/v3",""
+"Paradise Seeds","https://paradise-seeds.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Strain Hunters Seedbank","https://strainhunters.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Strain Hunters - Purveyors of Fine Landraces"",
+    ""description"":  """",
+    ""url"":  ""https://strainhunters.com"",
+    ""home"":  ""https://strainhunters.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  1671,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+
+                   ],
+    ""authentication"":  {
+                           ""application-passwords"":  {
+                                                         ""endpoints"":  ""@{authorization=https://strainhunters.com/office/authorize-application.php}""
+                                                     }
+                       },
+    ""routes"":  [
+
+               ],
+    ""site_logo"":  6031,
+    ""site_icon"":  6573,
+    ""site_icon_url"":  ""https://st",""
+"Strain Hunters Seedbank","https://strainhunters.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"The North Coast Genetics","https://northcoastgenetics.com/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""North Coast Genetics"",
+    ""description"":  """",
+    ""url"":  ""https://northcoastgenetics.com"",
+    ""home"":  ""https://northcoastgenetics.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  1547,
+    ""page_on_front"":  736,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""coupons/v1"",
+                       ""store-credits/v1"",
+                       ""wc-store-credits/v1"",
+                       ""akismet/v1"",
+                       ""code-snippets/v1"",
+                       ""envato-elements/v2"",
+                       ""siteground-settings/v1"",
+                       ""siteground-optimizer/v1"",
+                       ""sg-security/v1"",
+                       ""wc/v3"",
+   ",""
+"The North Coast Genetics","https://northcoastgenetics.com/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""
+"Vision Seeds","https://visionseeds.nl/wp-json/","200","application/json","object","name,description,url,home,gmt_offset,timezone_string,page_for_posts,page_on_front,show_on_front,namespaces,authentication,routes,site_logo,site_icon,site_icon_url,_links","{
+    ""name"":  ""Vision Seeds"",
+    ""description"":  ""for a dream catching grow experience!"",
+    ""url"":  ""https://www.visionseeds.nl"",
+    ""home"":  ""https://www.visionseeds.nl"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Amsterdam"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  2,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""age-gate/v3"",
+                       ""akismet/v1"",
+                       ""contact-form-7/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""wcmb"",
+                       ""wc-admin"",
+                       ""wc-analytics",""
+"Vision Seeds","https://visionseeds.nl/wp-json/wp/v2/","200","application/json","object","namespace,routes,_links","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                     ",""

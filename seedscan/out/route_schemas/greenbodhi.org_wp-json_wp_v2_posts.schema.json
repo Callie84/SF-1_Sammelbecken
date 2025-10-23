@@ -1,0 +1,357 @@
+{
+    "author":  {
+                   "type":  "number"
+               },
+    "template":  {
+                     "type":  "string"
+                 },
+    "meta":  {
+                 "type":  "object",
+                 "props":  {
+                               "footnotes":  {
+                                                 "type":  "string"
+                                             }
+                           }
+             },
+    "modified_gmt":  {
+                         "type":  "string"
+                     },
+    "class_list":  {
+                       "type":  "object",
+                       "props":  {
+                                     "7":  {
+                                               "type":  "string"
+                                           },
+                                     "9":  {
+                                               "type":  "string"
+                                           },
+                                     "3":  {
+                                               "type":  "string"
+                                           },
+                                     "4":  {
+                                               "type":  "string"
+                                           },
+                                     "2":  {
+                                               "type":  "string"
+                                           },
+                                     "1":  {
+                                               "type":  "string"
+                                           },
+                                     "0":  {
+                                               "type":  "string"
+                                           },
+                                     "5":  {
+                                               "type":  "string"
+                                           },
+                                     "8":  {
+                                               "type":  "string"
+                                           }
+                                 }
+                   },
+    "content":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "date":  {
+                 "type":  "string"
+             },
+    "excerpt":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "type":  {
+                 "type":  "string"
+             },
+    "format":  {
+                   "type":  "string"
+               },
+    "ping_status":  {
+                        "type":  "string"
+                    },
+    "title":  {
+                  "type":  "object",
+                  "props":  {
+                                "rendered":  {
+                                                 "type":  "string"
+                                             }
+                            }
+              },
+    "categories":  {
+                       "type":  "array\u003cnumber\u003e"
+                   },
+    "comment_status":  {
+                           "type":  "string"
+                       },
+    "link":  {
+                 "type":  "string"
+             },
+    "modified":  {
+                     "type":  "string"
+                 },
+    "yoast_head":  {
+                       "type":  "string"
+                   },
+    "status":  {
+                   "type":  "string"
+               },
+    "id":  {
+               "type":  "number"
+           },
+    "sticky":  {
+                   "type":  "boolean"
+               },
+    "slug":  {
+                 "type":  "string"
+             },
+    "tags":  {
+                 "type":  "array\u003cempty\u003e"
+             },
+    "featured_media":  {
+                           "type":  "number"
+                       },
+    "date_gmt":  {
+                     "type":  "string"
+                 },
+    "guid":  {
+                 "type":  "object",
+                 "props":  {
+                               "rendered":  {
+                                                "type":  "string"
+                                            }
+                           }
+             },
+    "yoast_head_json":  {
+                            "type":  "object",
+                            "props":  {
+                                          "twitter_misc":  {
+                                                               "type":  "object",
+                                                               "props":  {
+                                                                             "Est. reading time":  {
+                                                                                                       "type":  "string"
+                                                                                                   },
+                                                                             "Written by":  {
+                                                                                                "type":  "string"
+                                                                                            }
+                                                                         }
+                                                           },
+                                          "og_url":  {
+                                                         "type":  "string"
+                                                     },
+                                          "author":  {
+                                                         "type":  "string"
+                                                     },
+                                          "og_site_name":  {
+                                                               "type":  "string"
+                                                           },
+                                          "article_published_time":  {
+                                                                         "type":  "string"
+                                                                     },
+                                          "robots":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "max-snippet":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                       "max-video-preview":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                       "max-image-preview":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                       "follow":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                       "index":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                   }
+                                                     },
+                                          "schema":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "@context":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                       "@graph":  {
+                                                                                      "type":  "array"
+                                                                                  }
+                                                                   }
+                                                     },
+                                          "title":  {
+                                                        "type":  "string"
+                                                    },
+                                          "og_image":  {
+                                                           "type":  "array\u003cobject\u003e",
+                                                           "props":  {
+                                                                         "type":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                         "url":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                         "width":  {
+                                                                                       "type":  "number"
+                                                                                   },
+                                                                         "height":  {
+                                                                                        "type":  "number"
+                                                                                    }
+                                                                     }
+                                                       },
+                                          "og_type":  {
+                                                          "type":  "string"
+                                                      },
+                                          "twitter_card":  {
+                                                               "type":  "string"
+                                                           },
+                                          "canonical":  {
+                                                            "type":  "string"
+                                                        },
+                                          "og_title":  {
+                                                           "type":  "string"
+                                                       },
+                                          "article_modified_time":  {
+                                                                        "type":  "string"
+                                                                    },
+                                          "og_locale":  {
+                                                            "type":  "string"
+                                                        },
+                                          "og_description":  {
+                                                                 "type":  "string"
+                                                             }
+                                      }
+                        },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "version-history":  {
+                                                         "type":  "array\u003cobject\u003e",
+                                                         "props":  {
+                                                                       "count":  {
+                                                                                     "type":  "number"
+                                                                                 },
+                                                                       "href":  {
+                                                                                    "type":  "string"
+                                                                                }
+                                                                   }
+                                                     },
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "replies":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        }
+                                                           }
+                                             },
+                                 "wp:term":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "taxonomy":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        },
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              }
+                                                           }
+                                             },
+                                 "curies":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "templated":  {
+                                                                                "type":  "boolean"
+                                                                            },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                              "name":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "author":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "embeddable":  {
+                                                                                 "type":  "boolean"
+                                                                             },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "predecessor-version":  {
+                                                             "type":  "array\u003cobject\u003e",
+                                                             "props":  {
+                                                                           "id":  {
+                                                                                      "type":  "number"
+                                                                                  },
+                                                                           "href":  {
+                                                                                        "type":  "string"
+                                                                                    }
+                                                                       }
+                                                         },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           },
+                                 "wp:attachment":  {
+                                                       "type":  "array\u003cobject\u003e",
+                                                       "props":  {
+                                                                     "href":  {
+                                                                                  "type":  "string"
+                                                                              }
+                                                                 }
+                                                   },
+                                 "wp:featuredmedia":  {
+                                                          "type":  "array\u003cobject\u003e",
+                                                          "props":  {
+                                                                        "embeddable":  {
+                                                                                           "type":  "boolean"
+                                                                                       },
+                                                                        "href":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                    }
+                                                      }
+                             }
+               }
+}

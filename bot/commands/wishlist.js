@@ -13,7 +13,7 @@ exports.exec = async (bot, chatId, args) => {
       },
       body: JSON.stringify({ strain }),
     });
-    bot.sendMessage(chatId, `âœ… "${strain}" hinzugefÃ¼gt.`);
+    bot.sendMessage(chatId, `ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ "${strain}" hinzugefÃƒÆ’Ã‚Â¼gt.`);
   } else if (subcmd === "list") {
     const res = await fetch(process.env.API_URL + "/wishlist/lists/default", {
       headers: { Authorization: "Bearer " + process.env.API_TOKEN },
@@ -21,7 +21,7 @@ exports.exec = async (bot, chatId, args) => {
     const list = await res.json();
     if (!list.items.length)
       return bot.sendMessage(chatId, "Deine Wunschliste ist leer.");
-    const msg = list.items.map((i) => `â€¢ ${i.strain}`).join("\n");
+    const msg = list.items.map((i) => `ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ${i.strain}`).join("\n");
     bot.sendMessage(chatId, `Deine Favoriten:\n${msg}`);
   } else {
     bot.sendMessage(chatId, "Unbekannter Wishlist-Befehl.");

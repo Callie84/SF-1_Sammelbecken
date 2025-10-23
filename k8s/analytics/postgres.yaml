@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: pg-secret
+  namespace: analytics
+stringData:
+  POSTGRES_PASSWORD: PlausiblePg!2025
+  POSTGRES_USER: plausible
+  POSTGRES_DB: plausible
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: pg
+  namespace: analytics
+spec:
+  serviceName: pg
+  replicas: 1
+  selector:
+    matchLabels: { app: pg }
+  template:
+    metadata:
+      labels: { app: pg }
+    spec:
+      containers:
+      - name: pg
+        image: bitnami/postgresql:16
+        env:
+        - name: POSTGRESQL_PASSWORD
+          valueFrom: { secretKeyRef: { name: pg-secret, key: POSTGRES_PASSWORD } }
+        - name: POSTGRESQL_USERNAME
+          valueFrom: { secretKeyRef: { name: pg-secret, key: POSTGRES_USER } }
+        - name: POSTGRESQL_DATABASE
+          valueFrom: { secretKeyRef: { name: pg-secret, key: POSTGRES_DB } }
+        ports: [{ containerPort: 5432 }]
+        volumeMounts:
+        - name: data
+          mountPath: /bitnami/postgresql
+  volumeClaimTemplates:
+  - metadata:
+      name: data
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 10Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pg
+  namespace: analytics
+spec:
+  selector: { app: pg }
+  ports:
+  - port: 5432
+    targetPort: 5432

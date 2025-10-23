@@ -1,0 +1,10 @@
+﻿[
+  {
+    "id": "zamnesia",
+    "locales": [
+      { "code": "us", "listUrl": "https://www.zamnesia.com/us/295-feminized-seeds" },
+      { "code": "de", "listUrl": "https://www.zamnesia.com/de/556-feminized-seeds" }
+    ]
+  }
+  // weitere Seedbanks hier eintragen, gleiche Struktur
+]

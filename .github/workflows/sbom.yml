@@ -1,0 +1,99 @@
+name: Build, SBOM & Attest
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "apps/backend/**"
+      - "apps/frontend/**"
+      - ".github/workflows/sbom.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  packages: write
+  id-token: write   # erforderlich für keyless cosign
+  attestations: write
+
+jobs:
+  build-and-attest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        component: [ "backend", "frontend" ]
+        include:
+          - component: backend
+            context: apps/backend
+            dockerfile: apps/backend/Dockerfile
+            port: "3000"
+          - component: frontend
+            context: apps/frontend
+            dockerfile: apps/frontend/Dockerfile
+            port: "8080"
+    env:
+      REGISTRY: ghcr.io
+      OWNER: ${{ github.repository_owner }}
+      IMAGE: ghcr.io/${{ github.repository_owner }}/sf1-${{ matrix.component }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build & Push image
+        uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.context }}
+          file: ${{ matrix.dockerfile }}
+          push: true
+          tags: |
+            ${{ env.IMAGE }}:${{ github.sha }}
+            ${{ env.IMAGE }}:stable
+          labels: |
+            org.opencontainers.image.source=${{ github.repository }}
+            org.opencontainers.image.revision=${{ github.sha }}
+
+      - name: Install Syft
+        uses: anchore/sbom-action/download-syft@v0.17.8
+
+      - name: Generate SBOM (SPDX)
+        run: |
+          syft $IMAGE:${GITHUB_SHA} -o spdx-json > sbom-${{ matrix.component }}.spdx.json
+
+      - name: Upload SBOM artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-${{ matrix.component }}
+          path: sbom-${{ matrix.component }}.spdx.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@v3.7.0
+
+      - name: Attest SBOM to image (keyless OIDC)
+        env:
+          COSIGN_YES: "true"
+        run: |
+          cosign attest \
+            --predicate sbom-${{ matrix.component }}.spdx.json \
+            --type spdx \
+            $IMAGE:${GITHUB_SHA}
+
+      - name: Verify attestation (sanity check)
+        run: |
+          cosign verify-attestation \
+            --type spdx \
+            $IMAGE:${GITHUB_SHA} | jq '.'

@@ -1,0 +1,4125 @@
+{
+  "Sensi Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 53035,
+      "url": "https://sensiseeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 52945,
+      "url": "https://sensiseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 642837,
+      "url": "https://sensiseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 558911,
+      "url": "https://sensiseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 53245,
+      "url": "https://sensiseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 53095,
+      "url": "https://sensiseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 52975,
+      "url": "https://sensiseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 53125,
+      "url": "https://sensiseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 53305,
+      "url": "https://sensiseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 53275,
+      "url": "https://sensiseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 53065,
+      "url": "https://sensiseeds.com/json/"
+    }
+  },
+  "Sensi Seeds Research": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 53035,
+      "url": "https://sensiseeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 52945,
+      "url": "https://sensiseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 642837,
+      "url": "https://sensiseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 558911,
+      "url": "https://sensiseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 53245,
+      "url": "https://sensiseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 53095,
+      "url": "https://sensiseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 52975,
+      "url": "https://sensiseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 53125,
+      "url": "https://sensiseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 53305,
+      "url": "https://sensiseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 53275,
+      "url": "https://sensiseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 53065,
+      "url": "https://sensiseeds.com/json/"
+    }
+  },
+  "Nirvana": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 607436,
+      "url": "https://nirvanashop.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 607235,
+      "url": "https://nirvanashop.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 607436,
+      "url": "https://nirvanashop.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 607235,
+      "url": "https://nirvanashop.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 200,
+      "is_json": true,
+      "length": 32431,
+      "url": "https://nirvanashop.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://nirvanashop.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 607436,
+      "url": "https://nirvanashop.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": true,
+      "length": 0,
+      "url": "https://nirvanashop.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 607235,
+      "url": "https://nirvanashop.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 607235,
+      "url": "https://nirvanashop.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 607235,
+      "url": "https://nirvanashop.com/json/"
+    }
+  },
+  "Greenhouse": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 6664,
+      "url": "https://greenhouseseeds.nl/json/"
+    }
+  },
+  "Serious Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 45352,
+      "url": "https://seriousseeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 45351,
+      "url": "https://seriousseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 45360,
+      "url": "https://seriousseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 45366,
+      "url": "https://seriousseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 45370,
+      "url": "https://seriousseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 45360,
+      "url": "https://seriousseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 45353,
+      "url": "https://seriousseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 45362,
+      "url": "https://seriousseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 45362,
+      "url": "https://seriousseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 45361,
+      "url": "https://seriousseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 45354,
+      "url": "https://seriousseeds.com/json/"
+    }
+  },
+  "Spliff Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 136484,
+      "url": "https://spliffseeds.nl/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 136483,
+      "url": "https://spliffseeds.nl/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1776988,
+      "url": "https://spliffseeds.nl/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 336877,
+      "url": "https://spliffseeds.nl/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 136493,
+      "url": "https://spliffseeds.nl/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 136488,
+      "url": "https://spliffseeds.nl/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 110287,
+      "url": "https://spliffseeds.nl/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 136489,
+      "url": "https://spliffseeds.nl/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 136493,
+      "url": "https://spliffseeds.nl/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 136492,
+      "url": "https://spliffseeds.nl/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 136485,
+      "url": "https://spliffseeds.nl/json/"
+    }
+  },
+  "Ace Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 215299,
+      "url": "https://aceseeds.org/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 215287,
+      "url": "https://aceseeds.org/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1898696,
+      "url": "https://aceseeds.org/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 272648,
+      "url": "https://aceseeds.org/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 215325,
+      "url": "https://aceseeds.org/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 213227,
+      "url": "https://aceseeds.org/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 82862,
+      "url": "https://aceseeds.org/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 215313,
+      "url": "https://aceseeds.org/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 215326,
+      "url": "https://aceseeds.org/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 215323,
+      "url": "https://aceseeds.org/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 215302,
+      "url": "https://aceseeds.org/json/"
+    }
+  },
+  "Anaconda Seeds": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /api/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /api (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /products.json (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /feed.xml (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /feed (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /data.json (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /rest/products (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /ajax/product (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='anacondaseeds.com', port=443): Max retries exceeded with url: /json/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'anacondaseeds.com'. (_ssl.c:1032)\")))"
+    }
+  },
+  "Barney's Farm": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/productdata": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "error": null
+    }
+  },
+  "Blimburn Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 215974,
+      "url": "https://blimburnseeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 215974,
+      "url": "https://blimburnseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1392730,
+      "url": "https://blimburnseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 269955,
+      "url": "https://blimburnseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 215974,
+      "url": "https://blimburnseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 215974,
+      "url": "https://blimburnseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 472120,
+      "url": "https://blimburnseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 215974,
+      "url": "https://blimburnseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 215974,
+      "url": "https://blimburnseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 215974,
+      "url": "https://blimburnseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 215974,
+      "url": "https://blimburnseeds.com/json/"
+    }
+  },
+  "Bulk Seed Bank": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 88545,
+      "url": "https://bulkseedbank.org/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 88545,
+      "url": "https://bulkseedbank.org/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1722259,
+      "url": "https://bulkseedbank.org/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 258570,
+      "url": "https://bulkseedbank.org/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 88552,
+      "url": "https://bulkseedbank.org/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 88561,
+      "url": "https://bulkseedbank.org/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 16672,
+      "url": "https://bulkseedbank.org/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 88555,
+      "url": "https://bulkseedbank.org/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 88555,
+      "url": "https://bulkseedbank.org/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 88553,
+      "url": "https://bulkseedbank.org/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 88549,
+      "url": "https://bulkseedbank.org/json/"
+    }
+  },
+  "Bulldog Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 163143,
+      "url": "https://thebulldogseeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 163143,
+      "url": "https://thebulldogseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1815305,
+      "url": "https://thebulldogseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 397317,
+      "url": "https://thebulldogseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 163153,
+      "url": "https://thebulldogseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 163148,
+      "url": "https://thebulldogseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 270590,
+      "url": "https://thebulldogseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 163149,
+      "url": "https://thebulldogseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 163054,
+      "url": "https://thebulldogseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 163052,
+      "url": "https://thebulldogseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 163144,
+      "url": "https://thebulldogseeds.com/json/"
+    }
+  },
+  "Cannabella Genetics": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 11018,
+      "url": "https://cannabellagenetics.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 11018,
+      "url": "https://cannabellagenetics.com/api"
+    },
+    "/wp-json/": {
+      "status": 403,
+      "is_json": false,
+      "length": 19,
+      "url": "https://cannabellagenetics.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 403,
+      "is_json": false,
+      "length": 19,
+      "url": "https://cannabellagenetics.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://cannabellagenetics.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://cannabellagenetics.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 366192,
+      "url": "https://cannabellagenetics.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://cannabellagenetics.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 11018,
+      "url": "https://cannabellagenetics.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 11018,
+      "url": "https://cannabellagenetics.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 11018,
+      "url": "https://cannabellagenetics.com/json/"
+    }
+  },
+  "CBD Crew": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 11935,
+      "url": "https://cbdcrew.org/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 11935,
+      "url": "https://cbdcrew.org/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 119153,
+      "url": "https://cbdcrew.org/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 108772,
+      "url": "https://cbdcrew.org/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 11935,
+      "url": "https://cbdcrew.org/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 11934,
+      "url": "https://cbdcrew.org/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 80417,
+      "url": "https://cbdcrew.org/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 11936,
+      "url": "https://cbdcrew.org/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 11934,
+      "url": "https://cbdcrew.org/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 11935,
+      "url": "https://cbdcrew.org/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 11936,
+      "url": "https://cbdcrew.org/json/"
+    }
+  },
+  "Delicious Seeds": {
+    "/api/": {
+      "status": 500,
+      "is_json": false,
+      "length": 269,
+      "url": "https://deliciousseeds.com/api/"
+    },
+    "/api": {
+      "status": 500,
+      "is_json": false,
+      "length": 269,
+      "url": "https://deliciousseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 89164,
+      "url": "https://deliciousseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 89293,
+      "url": "https://deliciousseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 89277,
+      "url": "https://deliciousseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 89164,
+      "url": "https://deliciousseeds.com/feed.xml"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='deliciousseeds.com', port=443): Max retries exceeded with url: /feed (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 89195,
+      "url": "https://deliciousseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 89277,
+      "url": "https://deliciousseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 89261,
+      "url": "https://deliciousseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 89101,
+      "url": "https://deliciousseeds.com/json/"
+    }
+  },
+  "DNA Genetics": {
+    "/api/": {
+      "status": 403,
+      "is_json": false,
+      "length": 280,
+      "url": "https://dnagenetics.com/api/"
+    },
+    "/api": {
+      "status": 403,
+      "is_json": false,
+      "length": 280,
+      "url": "https://dnagenetics.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1917034,
+      "url": "https://dnagenetics.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 414693,
+      "url": "https://dnagenetics.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 164295,
+      "url": "https://dnagenetics.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 164295,
+      "url": "https://dnagenetics.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 192289,
+      "url": "https://dnagenetics.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 164295,
+      "url": "https://dnagenetics.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 164295,
+      "url": "https://dnagenetics.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 164295,
+      "url": "https://dnagenetics.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 164295,
+      "url": "https://dnagenetics.com/json/"
+    }
+  },
+  "Dr. Underground Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 35119,
+      "url": "https://drunderground.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 35119,
+      "url": "https://drunderground.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 895600,
+      "url": "https://drunderground.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 118375,
+      "url": "https://drunderground.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 35119,
+      "url": "https://drunderground.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 35119,
+      "url": "https://drunderground.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 39818,
+      "url": "https://drunderground.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 35119,
+      "url": "https://drunderground.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 35119,
+      "url": "https://drunderground.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 35119,
+      "url": "https://drunderground.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 35119,
+      "url": "https://drunderground.com/json/"
+    }
+  },
+  "Dutch Passion": {
+    "/api/": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://dutch-passion.com/api/"
+    },
+    "/api": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://dutch-passion.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 203631,
+      "url": "https://dutch-passion.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 199905,
+      "url": "https://dutch-passion.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 199899,
+      "url": "https://dutch-passion.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 199884,
+      "url": "https://dutch-passion.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 199872,
+      "url": "https://dutch-passion.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 199887,
+      "url": "https://dutch-passion.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 203618,
+      "url": "https://dutch-passion.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 203615,
+      "url": "https://dutch-passion.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 203619,
+      "url": "https://dutch-passion.com/json/"
+    }
+  },
+  "Empire Seeds": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='empireseeds.com', port=443): Max retries exceeded with url: /api/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
+    },
+    "/api": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://empireseeds.com/api"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='empireseeds.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://empireseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://empireseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://empireseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://empireseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://empireseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://empireseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://empireseeds.com/ajax/product"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='empireseeds.com', port=443): Max retries exceeded with url: /json/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
+    }
+  },
+  "Exotic Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 35340,
+      "url": "https://exoticseed.eu/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 35338,
+      "url": "https://exoticseed.eu/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 35352,
+      "url": "https://exoticseed.eu/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 35364,
+      "url": "https://exoticseed.eu/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 35367,
+      "url": "https://exoticseed.eu/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 35352,
+      "url": "https://exoticseed.eu/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 35341,
+      "url": "https://exoticseed.eu/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 35355,
+      "url": "https://exoticseed.eu/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 35359,
+      "url": "https://exoticseed.eu/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 35357,
+      "url": "https://exoticseed.eu/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 35343,
+      "url": "https://exoticseed.eu/json/"
+    }
+  },
+  "Fast Buds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 5742,
+      "url": "https://fastbuds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 453637,
+      "url": "https://fastbuds.com/json/"
+    }
+  },
+  "Female Seeds": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /api/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /api (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /wp-json/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /products.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /feed.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /feed (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /data.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /rest/products (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /ajax/product (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='femaleseeds.nl', port=443): Max retries exceeded with url: /json/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
+    }
+  },
+  "G13 Labs": {
+    "/api/": {
+      "status": 500,
+      "is_json": false,
+      "length": 3420,
+      "url": "https://g13labs.com/api/"
+    },
+    "/api": {
+      "status": 500,
+      "is_json": false,
+      "length": 3420,
+      "url": "https://g13labs.com/api"
+    },
+    "/wp-json/": {
+      "status": 500,
+      "is_json": false,
+      "length": 3420,
+      "url": "https://g13labs.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 500,
+      "is_json": false,
+      "length": 3420,
+      "url": "https://g13labs.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 301,
+      "url": "https://g13labs.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 301,
+      "url": "https://g13labs.com/feed.xml"
+    },
+    "/feed": {
+      "status": 500,
+      "is_json": false,
+      "length": 3420,
+      "url": "https://g13labs.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 301,
+      "url": "https://g13labs.com/data.json"
+    },
+    "/rest/products": {
+      "status": 500,
+      "is_json": false,
+      "length": 3420,
+      "url": "https://g13labs.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 500,
+      "is_json": false,
+      "length": 3420,
+      "url": "https://g13labs.com/ajax/product"
+    },
+    "/json/": {
+      "status": 500,
+      "is_json": false,
+      "length": 3420,
+      "url": "https://g13labs.com/json/"
+    }
+  },
+  "Genehtik Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 104211,
+      "url": "https://genehtik.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 104211,
+      "url": "https://genehtik.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1429706,
+      "url": "https://genehtik.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 246687,
+      "url": "https://genehtik.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 99185,
+      "url": "https://genehtik.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 99185,
+      "url": "https://genehtik.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 62155,
+      "url": "https://genehtik.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 99185,
+      "url": "https://genehtik.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 104211,
+      "url": "https://genehtik.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 200,
+      "is_json": false,
+      "length": 113033,
+      "url": "https://genehtik.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 104211,
+      "url": "https://genehtik.com/json/"
+    }
+  },
+  "Green Bodhi": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 64874,
+      "url": "https://greenbodhi.org/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 64871,
+      "url": "https://greenbodhi.org/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1435231,
+      "url": "https://greenbodhi.org/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 221320,
+      "url": "https://greenbodhi.org/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 64891,
+      "url": "https://greenbodhi.org/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 64882,
+      "url": "https://greenbodhi.org/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 84766,
+      "url": "https://greenbodhi.org/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 64883,
+      "url": "https://greenbodhi.org/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 64892,
+      "url": "https://greenbodhi.org/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 64891,
+      "url": "https://greenbodhi.org/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 64876,
+      "url": "https://greenbodhi.org/json/"
+    }
+  },
+  "House of the Great Gardener": {
+    "/api/": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/api/"
+    },
+    "/api": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/feed"
+    },
+    "/data.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/data.json"
+    },
+    "/rest/products": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/ajax/product"
+    },
+    "/json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 54170,
+      "url": "https://houseofthegreatgardener.com/json/"
+    }
+  },
+  "Humboldt Seed Company": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://humboldtseedcompany.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://humboldtseedcompany.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 384111,
+      "url": "https://humboldtseedcompany.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 307988,
+      "url": "https://humboldtseedcompany.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://humboldtseedcompany.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://humboldtseedcompany.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 430435,
+      "url": "https://humboldtseedcompany.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://humboldtseedcompany.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://humboldtseedcompany.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://humboldtseedcompany.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://humboldtseedcompany.com/json/"
+    }
+  },
+  "Humboldt Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 36282,
+      "url": "https://humboldtseeds.net/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 36282,
+      "url": "https://humboldtseeds.net/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 36314,
+      "url": "https://humboldtseeds.net/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 36362,
+      "url": "https://humboldtseeds.net/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 36362,
+      "url": "https://humboldtseeds.net/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 36322,
+      "url": "https://humboldtseeds.net/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 36290,
+      "url": "https://humboldtseeds.net/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 36330,
+      "url": "https://humboldtseeds.net/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 36362,
+      "url": "https://humboldtseeds.net/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 36354,
+      "url": "https://humboldtseeds.net/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 36290,
+      "url": "https://humboldtseeds.net/json/"
+    }
+  },
+  "Hyp3rids": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 55026,
+      "url": "https://hyp3rids.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 55026,
+      "url": "https://hyp3rids.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1542638,
+      "url": "https://hyp3rids.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 236981,
+      "url": "https://hyp3rids.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 55026,
+      "url": "https://hyp3rids.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 55026,
+      "url": "https://hyp3rids.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 53286,
+      "url": "https://hyp3rids.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 55026,
+      "url": "https://hyp3rids.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 55026,
+      "url": "https://hyp3rids.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 55026,
+      "url": "https://hyp3rids.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 55026,
+      "url": "https://hyp3rids.com/json/"
+    }
+  },
+  "Kalashnikov Seeds": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /api/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x03DA1B30>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /api (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x042377C0>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04237870>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04237A80>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /products.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04237920>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04237450>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /feed (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x042373A0>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /data.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04237D40>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /rest/products (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04239030>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /ajax/product (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04239240>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='kalashnikov-seeds.com', port=443): Max retries exceeded with url: /json/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04239450>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    }
+  },
+  "Kannabia": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 291315,
+      "url": "https://kannabia.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 291315,
+      "url": "https://kannabia.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 2046287,
+      "url": "https://kannabia.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 508530,
+      "url": "https://kannabia.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 403,
+      "is_json": false,
+      "length": 199,
+      "url": "https://kannabia.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 289210,
+      "url": "https://kannabia.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 800540,
+      "url": "https://kannabia.com/feed"
+    },
+    "/data.json": {
+      "status": 403,
+      "is_json": false,
+      "length": 199,
+      "url": "https://kannabia.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 291315,
+      "url": "https://kannabia.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 291315,
+      "url": "https://kannabia.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 291315,
+      "url": "https://kannabia.com/json/"
+    }
+  },
+  "K.C. Brains": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='kcbrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 160188,
+      "url": "https://kcbrains.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1573912,
+      "url": "https://kcbrains.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 245991,
+      "url": "https://kcbrains.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 160198,
+      "url": "https://kcbrains.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 160193,
+      "url": "https://kcbrains.com/feed.xml"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='kcbrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 160194,
+      "url": "https://kcbrains.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 160198,
+      "url": "https://kcbrains.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 160197,
+      "url": "https://kcbrains.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 160190,
+      "url": "https://kcbrains.com/json/"
+    }
+  },
+  "krauTHCollective": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://krauthcollective.com/json/"
+    }
+  },
+  "La Semilla Automatica": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 143503,
+      "url": "https://lasemillaautomatica.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 143501,
+      "url": "https://lasemillaautomatica.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1045281,
+      "url": "https://lasemillaautomatica.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 232613,
+      "url": "https://lasemillaautomatica.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 143531,
+      "url": "https://lasemillaautomatica.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 143516,
+      "url": "https://lasemillaautomatica.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 2425,
+      "url": "https://lasemillaautomatica.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 143519,
+      "url": "https://lasemillaautomatica.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 143523,
+      "url": "https://lasemillaautomatica.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 143519,
+      "url": "https://lasemillaautomatica.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 143506,
+      "url": "https://lasemillaautomatica.com/json/"
+    }
+  },
+  "Mallorca Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 280,
+      "url": "https://mallorcaseeds.com/json/"
+    }
+  },
+  "Mandala": {
+    "/api/": {
+      "status": 200,
+      "is_json": false,
+      "length": 15983,
+      "url": "https://mandalaseeds.com/api/"
+    },
+    "/api": {
+      "status": 200,
+      "is_json": false,
+      "length": 15983,
+      "url": "https://mandalaseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 15983,
+      "url": "https://mandalaseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://mandalaseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://mandalaseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://mandalaseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 15983,
+      "url": "https://mandalaseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://mandalaseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://mandalaseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 1251,
+      "url": "https://mandalaseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 15983,
+      "url": "https://mandalaseeds.com/json/"
+    }
+  },
+  "Medical Seeds Co.": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /api/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /api (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /products.json (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /feed.xml (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /feed (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /data.json (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /rest/products (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /ajax/product (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='medicalseeds.com', port=443): Max retries exceeded with url: /json/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'medicalseeds.com'. (_ssl.c:1032)\")))"
+    }
+  },
+  "Ministry of Cannabis": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 149978,
+      "url": "https://ministryofcannabis.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 149973,
+      "url": "https://ministryofcannabis.com/api"
+    },
+    "/wp-json/": {
+      "status": 403,
+      "is_json": true,
+      "length": 381,
+      "url": "https://ministryofcannabis.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 401,
+      "is_json": true,
+      "length": 110,
+      "url": "https://ministryofcannabis.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 150013,
+      "url": "https://ministryofcannabis.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 134167,
+      "url": "https://ministryofcannabis.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 122990,
+      "url": "https://ministryofcannabis.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 149997,
+      "url": "https://ministryofcannabis.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 150014,
+      "url": "https://ministryofcannabis.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 150010,
+      "url": "https://ministryofcannabis.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 149982,
+      "url": "https://ministryofcannabis.com/json/"
+    }
+  },
+  "Paradise Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://paradise-seeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://paradise-seeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1693911,
+      "url": "https://paradise-seeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 257266,
+      "url": "https://paradise-seeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://paradise-seeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://paradise-seeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 9505,
+      "url": "https://paradise-seeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://paradise-seeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://paradise-seeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://paradise-seeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 60,
+      "url": "https://paradise-seeds.com/json/"
+    }
+  },
+  "Philosopher Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 50611,
+      "url": "https://philosopherseeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 50607,
+      "url": "https://philosopherseeds.com/json/"
+    }
+  },
+  "Positronics": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /api/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DA1C90>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DA1A80>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DA1BE0>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DA1F50>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /products.json (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DA1B30>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /feed.xml (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x042399D0>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /feed (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239870>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /data.json (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x042390E0>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /rest/products (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239030>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /ajax/product (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x042393A0>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='positronicseeds.com', port=443): Max retries exceeded with url: /json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239500>: Failed to resolve 'positronicseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    }
+  },
+  "Prana Medical Seeds": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /api/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239450>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239660>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239D40>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239EA0>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /products.json (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04237030>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /feed.xml (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04237190>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /feed (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239EA0>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /data.json (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239D40>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /rest/products (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239660>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /ajax/product (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239450>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='pranamedicalseeds.com', port=443): Max retries exceeded with url: /json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239500>: Failed to resolve 'pranamedicalseeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    }
+  },
+  "Pyramid Seeds": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /api/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /api (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /products.json (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /feed.xml (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /feed (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /data.json (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /rest/products (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /ajax/product (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='pyramidseeds.com', port=443): Max retries exceeded with url: /json/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyramidseeds.com'. (_ssl.c:1032)\")))"
+    }
+  },
+  "Regular Seeds French Legacy": {
+    "/api/": {
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='regularseeds.fr', port=443): Max retries exceeded with url: /api (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x03DA1A80>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/wp-json/": {
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='regularseeds.fr', port=443): Max retries exceeded with url: /products.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04239B30>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/feed.xml": {
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='regularseeds.fr', port=443): Max retries exceeded with url: /feed (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x042390E0>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='regularseeds.fr', port=443): Max retries exceeded with url: /data.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04239190>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='regularseeds.fr', port=443): Max retries exceeded with url: /rest/products (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04239500>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='regularseeds.fr', port=443): Max retries exceeded with url: /ajax/product (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x042395B0>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='regularseeds.fr', port=443): Max retries exceeded with url: /json/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x04239D40>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte'))"
+    }
+  },
+  "Resin Seeds": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /api/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /api (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /wp-json/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /products.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /feed.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /feed (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /data.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /rest/products (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /ajax/product (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='resinseeds.net', port=443): Max retries exceeded with url: /json/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))"
+    }
+  },
+  "Ripper Seeds": {
+    "/api/": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://ripperseeds.com/api/"
+    },
+    "/api": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://ripperseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 93678,
+      "url": "https://ripperseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 93686,
+      "url": "https://ripperseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 93682,
+      "url": "https://ripperseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 93677,
+      "url": "https://ripperseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 93673,
+      "url": "https://ripperseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 93678,
+      "url": "https://ripperseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 93683,
+      "url": "https://ripperseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 93682,
+      "url": "https://ripperseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 93675,
+      "url": "https://ripperseeds.com/json/"
+    }
+  },
+  "Royal Queen Seeds": {
+    "/api/": {
+      "status": 401,
+      "is_json": false,
+      "length": 0,
+      "url": "https://royalqueenseeds.com/api/"
+    },
+    "/api": {
+      "status": 401,
+      "is_json": false,
+      "length": 0,
+      "url": "https://royalqueenseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 166797,
+      "url": "https://royalqueenseeds.com/json/"
+    }
+  },
+  "Samsara Seeds": {
+    "/api/": {
+      "status": 500,
+      "is_json": false,
+      "length": 269,
+      "url": "https://samsaraseeds.com/api/"
+    },
+    "/api": {
+      "status": 500,
+      "is_json": false,
+      "length": 269,
+      "url": "https://samsaraseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 64583,
+      "url": "https://samsaraseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 64703,
+      "url": "https://samsaraseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 64687,
+      "url": "https://samsaraseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 64583,
+      "url": "https://samsaraseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 64507,
+      "url": "https://samsaraseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 64611,
+      "url": "https://samsaraseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 64687,
+      "url": "https://samsaraseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 64671,
+      "url": "https://samsaraseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 64523,
+      "url": "https://samsaraseeds.com/json/"
+    }
+  },
+  "Seedsman": {
+    "/api/": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/api/"
+    },
+    "/api": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/api"
+    },
+    "/wp-json/": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/feed.xml"
+    },
+    "/feed": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/feed"
+    },
+    "/data.json": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/data.json"
+    },
+    "/rest/products": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/ajax/product"
+    },
+    "/json/": {
+      "status": 403,
+      "is_json": false,
+      "length": 153,
+      "url": "https://seedsman.com/json/"
+    }
+  },
+  "Seed Stockers": {
+    "/api/": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://seedstockers.com/api/"
+    },
+    "/api": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://seedstockers.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 574156,
+      "url": "https://seedstockers.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 569300,
+      "url": "https://seedstockers.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 569295,
+      "url": "https://seedstockers.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 569285,
+      "url": "https://seedstockers.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 574147,
+      "url": "https://seedstockers.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 569287,
+      "url": "https://seedstockers.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 572709,
+      "url": "https://seedstockers.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 572707,
+      "url": "https://seedstockers.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 574150,
+      "url": "https://seedstockers.com/json/"
+    }
+  },
+  "Seedy Simon": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='seedysimon.com', port=443): Max retries exceeded with url: /api/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
+    },
+    "/api": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/feed"
+    },
+    "/data.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/data.json"
+    },
+    "/rest/products": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/ajax/product"
+    },
+    "/json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 114,
+      "url": "https://seedysimon.com/json/"
+    }
+  },
+  "Silent Seeds": {
+    "/api/": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://silent-seeds.com/api/"
+    },
+    "/api": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://silent-seeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 87995,
+      "url": "https://silent-seeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 88021,
+      "url": "https://silent-seeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 88014,
+      "url": "https://silent-seeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 87993,
+      "url": "https://silent-seeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 87978,
+      "url": "https://silent-seeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 87997,
+      "url": "https://silent-seeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 88015,
+      "url": "https://silent-seeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 88011,
+      "url": "https://silent-seeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 87983,
+      "url": "https://silent-seeds.com/json/"
+    }
+  },
+  "Strain Hunters Seedbank": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 72964,
+      "url": "https://strainhunters.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 72964,
+      "url": "https://strainhunters.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 914,
+      "url": "https://strainhunters.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 234491,
+      "url": "https://strainhunters.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 72964,
+      "url": "https://strainhunters.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 72964,
+      "url": "https://strainhunters.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 4942,
+      "url": "https://strainhunters.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 72964,
+      "url": "https://strainhunters.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 72964,
+      "url": "https://strainhunters.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 72964,
+      "url": "https://strainhunters.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 72964,
+      "url": "https://strainhunters.com/json/"
+    }
+  },
+  "Sumo Seeds": {
+    "/api/": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/api/"
+    },
+    "/api": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 414324,
+      "url": "https://sumoseeds.com/json/"
+    }
+  },
+  "Super Sativa Seed Club": {
+    "/api/": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://supersativaseedclub.com/api/"
+    },
+    "/api": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://supersativaseedclub.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 67698,
+      "url": "https://supersativaseedclub.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": false,
+      "length": 67698,
+      "url": "https://supersativaseedclub.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 41206,
+      "url": "https://supersativaseedclub.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 41201,
+      "url": "https://supersativaseedclub.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 67698,
+      "url": "https://supersativaseedclub.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 41202,
+      "url": "https://supersativaseedclub.com/data.json"
+    },
+    "/rest/products": {
+      "status": 200,
+      "is_json": false,
+      "length": 67698,
+      "url": "https://supersativaseedclub.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 200,
+      "is_json": false,
+      "length": 67698,
+      "url": "https://supersativaseedclub.com/ajax/product"
+    },
+    "/json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 67698,
+      "url": "https://supersativaseedclub.com/json/"
+    }
+  },
+  "Super Strains": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='superstrains.com', port=443): Read timed out. (read timeout=5.0)"
+    }
+  },
+  "Sweet Seeds": {
+    "/api/": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://sweetseeds.com/api/"
+    },
+    "/api": {
+      "status": 401,
+      "is_json": false,
+      "length": 16,
+      "url": "https://sweetseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 126239,
+      "url": "https://sweetseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 126259,
+      "url": "https://sweetseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 126253,
+      "url": "https://sweetseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 126238,
+      "url": "https://sweetseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 126226,
+      "url": "https://sweetseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 126241,
+      "url": "https://sweetseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 126254,
+      "url": "https://sweetseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 126251,
+      "url": "https://sweetseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 126230,
+      "url": "https://sweetseeds.com/json/"
+    }
+  },
+  "The Cali Connection": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 33020,
+      "url": "https://thecaliconnection.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 33002,
+      "url": "https://thecaliconnection.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 33048,
+      "url": "https://thecaliconnection.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 33056,
+      "url": "https://thecaliconnection.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 33052,
+      "url": "https://thecaliconnection.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 33047,
+      "url": "https://thecaliconnection.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 33043,
+      "url": "https://thecaliconnection.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 33048,
+      "url": "https://thecaliconnection.com/data.json"
+    },
+    "/rest/products": {
+      "status": 400,
+      "is_json": true,
+      "length": 52,
+      "url": "https://thecaliconnection.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 33052,
+      "url": "https://thecaliconnection.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 33045,
+      "url": "https://thecaliconnection.com/json/"
+    }
+  },
+  "The North Coast Genetics": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 87640,
+      "url": "https://northcoastgenetics.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 87640,
+      "url": "https://northcoastgenetics.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1610535,
+      "url": "https://northcoastgenetics.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 250043,
+      "url": "https://northcoastgenetics.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 87640,
+      "url": "https://northcoastgenetics.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 87640,
+      "url": "https://northcoastgenetics.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 1064,
+      "url": "https://northcoastgenetics.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 87640,
+      "url": "https://northcoastgenetics.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 87640,
+      "url": "https://northcoastgenetics.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 87640,
+      "url": "https://northcoastgenetics.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 87640,
+      "url": "https://northcoastgenetics.com/json/"
+    }
+  },
+  "The Plug Seedbank": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /api/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DA1F50>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DA1B30>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DA1870>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239B30>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /products.json (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239870>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /feed.xml (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239030>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /feed (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x042393A0>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /data.json (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239190>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /rest/products (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239450>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /ajax/product (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239660>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='theplugseedbank.com', port=443): Max retries exceeded with url: /json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x042395B0>: Failed to resolve 'theplugseedbank.com' ([Errno 11001] getaddrinfo failed)\"))"
+    }
+  },
+  "T.H. Seeds": {
+    "/api/": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/api/"
+    },
+    "/api": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 247615,
+      "url": "https://thseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 200,
+      "is_json": false,
+      "length": 247622,
+      "url": "https://thseeds.com/json/"
+    }
+  },
+  "Top Tao Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 0,
+      "url": "https://toptaoseeds.com/json/"
+    }
+  },
+  "Victory Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 71901,
+      "url": "https://victory-seeds.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 71872,
+      "url": "https://victory-seeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 71790,
+      "url": "https://victory-seeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 71947,
+      "url": "https://victory-seeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 71783,
+      "url": "https://victory-seeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 71776,
+      "url": "https://victory-seeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 71748,
+      "url": "https://victory-seeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 71804,
+      "url": "https://victory-seeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 71817,
+      "url": "https://victory-seeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 71746,
+      "url": "https://victory-seeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 71811,
+      "url": "https://victory-seeds.com/json/"
+    }
+  },
+  "Vision Seeds": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 60225,
+      "url": "https://visionseeds.nl/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 60225,
+      "url": "https://visionseeds.nl/api"
+    },
+    "/wp-json/": {
+      "status": 200,
+      "is_json": true,
+      "length": 1243830,
+      "url": "https://visionseeds.nl/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 200,
+      "is_json": true,
+      "length": 275779,
+      "url": "https://visionseeds.nl/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 60225,
+      "url": "https://visionseeds.nl/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 60225,
+      "url": "https://visionseeds.nl/feed.xml"
+    },
+    "/feed": {
+      "status": 200,
+      "is_json": false,
+      "length": 3693,
+      "url": "https://visionseeds.nl/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 60225,
+      "url": "https://visionseeds.nl/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 60225,
+      "url": "https://visionseeds.nl/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 60225,
+      "url": "https://visionseeds.nl/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 60225,
+      "url": "https://visionseeds.nl/json/"
+    }
+  },
+  "White Label Seeds": {
+    "/api/": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /api/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239EA0>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/api": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /api (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239D40>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/wp-json/": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /wp-json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DE9500>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/wp-json/wp/v2/": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /wp-json/wp/v2/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x03DE93A0>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/products.json": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /products.json (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239D40>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/feed.xml": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /feed.xml (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239EA0>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/feed": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /feed (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x042395B0>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/data.json": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /data.json (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239660>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/rest/products": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /rest/products (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239450>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/ajax/product": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /ajax/product (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x04239190>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    "/json/": {
+      "error": "HTTPSConnectionPool(host='white-label-seeds.com', port=443): Max retries exceeded with url: /json/ (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x042393A0>: Failed to resolve 'white-label-seeds.com' ([Errno 11001] getaddrinfo failed)\"))"
+    }
+  },
+  "World of Seeds": {
+    "/api/": {
+      "status": 500,
+      "is_json": false,
+      "length": 269,
+      "url": "https://worldofseeds.com/api/"
+    },
+    "/api": {
+      "status": 500,
+      "is_json": false,
+      "length": 269,
+      "url": "https://worldofseeds.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 170718,
+      "url": "https://worldofseeds.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 170844,
+      "url": "https://worldofseeds.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 170813,
+      "url": "https://worldofseeds.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 170718,
+      "url": "https://worldofseeds.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 170621,
+      "url": "https://worldofseeds.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 170734,
+      "url": "https://worldofseeds.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 170813,
+      "url": "https://worldofseeds.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 170797,
+      "url": "https://worldofseeds.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 170652,
+      "url": "https://worldofseeds.com/json/"
+    }
+  },
+  "Barneyâ€™s Farm": {
+    "/api/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1186,
+      "url": "https://barneysfarm.com/api/"
+    },
+    "/api": {
+      "status": 404,
+      "is_json": false,
+      "length": 1186,
+      "url": "https://barneysfarm.com/api"
+    },
+    "/wp-json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1186,
+      "url": "https://barneysfarm.com/wp-json/"
+    },
+    "/wp-json/wp/v2/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1186,
+      "url": "https://barneysfarm.com/wp-json/wp/v2/"
+    },
+    "/products.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 315,
+      "url": "https://barneysfarm.com/products.json"
+    },
+    "/feed.xml": {
+      "status": 404,
+      "is_json": false,
+      "length": 315,
+      "url": "https://barneysfarm.com/feed.xml"
+    },
+    "/feed": {
+      "status": 404,
+      "is_json": false,
+      "length": 1186,
+      "url": "https://barneysfarm.com/feed"
+    },
+    "/data.json": {
+      "status": 404,
+      "is_json": false,
+      "length": 315,
+      "url": "https://barneysfarm.com/data.json"
+    },
+    "/rest/products": {
+      "status": 404,
+      "is_json": false,
+      "length": 1186,
+      "url": "https://barneysfarm.com/rest/products"
+    },
+    "/ajax/product": {
+      "status": 404,
+      "is_json": false,
+      "length": 1186,
+      "url": "https://barneysfarm.com/ajax/product"
+    },
+    "/json/": {
+      "status": 404,
+      "is_json": false,
+      "length": 1186,
+      "url": "https://barneysfarm.com/json/"
+    }
+  }
+}

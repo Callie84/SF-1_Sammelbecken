@@ -1,0 +1,61 @@
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Baseline (wird von data-theme ÃƒÆ’Ã‚Â¼berschrieben) */
+:root {
+  --color-bg: #ffffff;
+  --color-fg: #0f172a; /* slate-900 */
+  --color-muted: #475569; /* slate-600 */
+  --color-primary: #0ea5e9; /* sky-500 */
+  --color-accent: #a78bfa; /* violet-400 */
+}
+
+/* Light */
+:root[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #0f172a;
+  --color-muted: #475569;
+  --color-primary: #0ea5e9;
+  --color-accent: #a78bfa;
+}
+
+/* Dark */
+:root[data-theme="dark"] {
+  --color-bg: #0b1220;
+  --color-fg: #e2e8f0;
+  --color-muted: #94a3b8;
+  --color-primary: #22d3ee; /* cyan-400 */
+  --color-accent: #f472b6; /* pink-400 */
+}
+
+/* SpiderFarmer Skin */
+:root[data-theme="sf-spiderfarmer"] {
+  --color-bg: #0f1a0f;
+  --color-fg: #e7fee7;
+  --color-muted: #93c5aa;
+  --color-primary: #22c55e; /* green-500 */
+  --color-accent: #f97316; /* orange-500 */
+}
+
+/* MarsHydro Skin */
+:root[data-theme="sf-marshydro"] {
+  --color-bg: #0e1726;
+  --color-fg: #e5f4ff;
+  --color-muted: #9cc3d8;
+  --color-primary: #16b8ff; /* azure */
+  --color-accent: #22c55e;  /* green */
+}
+
+/* Utility Klassen (optional) */
+.theme-surface {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.theme-primary { color: var(--color-primary); }
+.theme-accent { color: var(--color-accent); }
+.theme-muted { color: var(--color-muted); }

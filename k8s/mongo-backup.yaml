@@ -1,0 +1,30 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: mongo-dump
+  namespace: sf1
+spec:
+  schedule: "0 2 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: dump
+            image: mongo:6
+            envFrom:
+            - secretRef:
+                name: mongo-secret
+            command: ["/bin/sh","-c"]
+            args:
+            - mongodump --host=mongo.sf1.svc.cluster.local:27017 \
+              -u $MONGO_INITDB_ROOT_USERNAME -p $MONGO_INITDB_ROOT_PASSWORD \
+              --archive=/backup/backup-$(date +%F).gz --gzip && ls -lah /backup
+            volumeMounts:
+            - name: backup
+              mountPath: /backup
+          volumes:
+          - name: backup
+            persistentVolumeClaim:
+              claimName: mongo-data-mongo-0

@@ -1,0 +1,61 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: sf1-slo-alerts
+  namespace: monitoring
+  labels:
+    role: slo
+    app: sf1
+spec:
+  groups:
+    - name: api.slo.alerts
+      rules:
+        # Schnelle Eskalation: sehr hohe Burnâ€‘Rate in 5m & 1h
+        - alert: SF1ApiHighBurnRate
+          expr: job:burnrate:5m > 14 and job:burnrate:1h > 14
+          for: 2m
+          labels:
+            severity: critical
+          annotations:
+            summary: "API Burnâ€‘Rate sehr hoch"
+            description: "Fehlerrate Ã¼ber SLOâ€‘Budget (x14) â€” 5m und 1h Fenster. PrÃ¼fe Deployments, AbhÃ¤ngigkeiten."
+
+        # Mittlere Eskalation: anhaltend Ã¼ber Budget
+        - alert: SF1ApiBurnRateSustained
+          expr: job:burnrate:5m > 7 and job:burnrate:1h > 7
+          for: 15m
+          labels:
+            severity: warning
+          annotations:
+            summary: "API Burnâ€‘Rate erhÃ¶ht"
+            description: "Fehlerrate Ã¼ber Budget (x7)."
+
+        # Latenzâ€‘SLO verletzt
+        - alert: SF1ApiLatencyP95High
+          expr: job:latency:p95:5m > 0.3
+          for: 10m
+          labels:
+            severity: warning
+          annotations:
+            summary: "API p95 Latenz > 300ms"
+            description: "p95 Ã¼ber 5m liegt Ã¼ber 300ms. PrÃ¼fe Hotpaths/DB."
+
+        - alert: SF1ApiLatencyP99High
+          expr: job:latency:p99:5m > 0.6
+          for: 10m
+          labels:
+            severity: critical
+          annotations:
+            summary: "API p99 Latenz > 600ms"
+            description: "p99 Ã¼ber 5m liegt Ã¼ber 600ms."
+
+    - name: ext.availability.alerts
+      rules:
+        - alert: SF1ExternalAvailabilityLow
+          expr: ext:availability:rate5m < 0.999
+          for: 10m
+          labels:
+            severity: critical
+          annotations:
+            summary: "Externe VerfÃ¼gbarkeit < 99,9%"
+            description: "Blackbox probe_success unter 0.999 im 5mâ€‘Fenster."

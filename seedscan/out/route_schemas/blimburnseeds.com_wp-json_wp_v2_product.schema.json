@@ -1,0 +1,259 @@
+{
+    "template":  {
+                     "type":  "string"
+                 },
+    "id":  {
+               "type":  "number"
+           },
+    "type":  {
+                 "type":  "string"
+             },
+    "product_tag":  {
+                        "type":  "array\u003cempty\u003e"
+                    },
+    "acf":  {
+                "type":  "array\u003cempty\u003e"
+            },
+    "modified_gmt":  {
+                         "type":  "string"
+                     },
+    "slug":  {
+                 "type":  "string"
+             },
+    "excerpt":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "class_list":  {
+                       "type":  "object",
+                       "props":  {
+                                     "3":  {
+                                               "type":  "string"
+                                           },
+                                     "12":  {
+                                                "type":  "string"
+                                            },
+                                     "10":  {
+                                                "type":  "string"
+                                            },
+                                     "2":  {
+                                               "type":  "string"
+                                           },
+                                     "8":  {
+                                               "type":  "string"
+                                           },
+                                     "0":  {
+                                               "type":  "string"
+                                           },
+                                     "11":  {
+                                                "type":  "string"
+                                            },
+                                     "1":  {
+                                               "type":  "string"
+                                           },
+                                     "17":  {
+                                                "type":  "string"
+                                            },
+                                     "9":  {
+                                               "type":  "string"
+                                           },
+                                     "16":  {
+                                                "type":  "string"
+                                            },
+                                     "7":  {
+                                               "type":  "string"
+                                           },
+                                     "15":  {
+                                                "type":  "string"
+                                            },
+                                     "6":  {
+                                               "type":  "string"
+                                           },
+                                     "4":  {
+                                               "type":  "string"
+                                           },
+                                     "13":  {
+                                                "type":  "string"
+                                            }
+                                 }
+                   },
+    "product_brand":  {
+                          "type":  "array\u003cempty\u003e"
+                      },
+    "featured_media":  {
+                           "type":  "number"
+                       },
+    "modified":  {
+                     "type":  "string"
+                 },
+    "title":  {
+                  "type":  "object",
+                  "props":  {
+                                "rendered":  {
+                                                 "type":  "string"
+                                             }
+                            }
+              },
+    "guid":  {
+                 "type":  "object",
+                 "props":  {
+                               "rendered":  {
+                                                "type":  "string"
+                                            }
+                           }
+             },
+    "date_gmt":  {
+                     "type":  "string"
+                 },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "targetHints":  {
+                                                                                "type":  "object"
+                                                                            },
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "wp:term":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "taxonomy":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        },
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              }
+                                                           }
+                                             },
+                                 "curies":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "templated":  {
+                                                                                "type":  "boolean"
+                                                                            },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                              "name":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "version-history":  {
+                                                         "type":  "array\u003cobject\u003e",
+                                                         "props":  {
+                                                                       "count":  {
+                                                                                     "type":  "number"
+                                                                                 },
+                                                                       "href":  {
+                                                                                    "type":  "string"
+                                                                                }
+                                                                   }
+                                                     },
+                                 "predecessor-version":  {
+                                                             "type":  "array\u003cobject\u003e",
+                                                             "props":  {
+                                                                           "id":  {
+                                                                                      "type":  "number"
+                                                                                  },
+                                                                           "href":  {
+                                                                                        "type":  "string"
+                                                                                    }
+                                                                       }
+                                                         },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           },
+                                 "wp:attachment":  {
+                                                       "type":  "array\u003cobject\u003e",
+                                                       "props":  {
+                                                                     "href":  {
+                                                                                  "type":  "string"
+                                                                              }
+                                                                 }
+                                                   },
+                                 "wp:featuredmedia":  {
+                                                          "type":  "array\u003cobject\u003e",
+                                                          "props":  {
+                                                                        "embeddable":  {
+                                                                                           "type":  "boolean"
+                                                                                       },
+                                                                        "href":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                    }
+                                                      }
+                             }
+               },
+    "content":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "meta":  {
+                 "type":  "object",
+                 "props":  {
+                               "_glsr_ranking":  {
+                                                     "type":  "number"
+                                                 },
+                               "_glsr_average":  {
+                                                     "type":  "number"
+                                                 },
+                               "footnotes":  {
+                                                 "type":  "string"
+                                             },
+                               "_glsr_reviews":  {
+                                                     "type":  "number"
+                                                 },
+                               "_acf_changed":  {
+                                                    "type":  "boolean"
+                                                }
+                           }
+             },
+    "status":  {
+                   "type":  "string"
+               },
+    "date":  {
+                 "type":  "string"
+             },
+    "link":  {
+                 "type":  "string"
+             },
+    "product_cat":  {
+                        "type":  "array\u003cnumber\u003e"
+                    }
+}

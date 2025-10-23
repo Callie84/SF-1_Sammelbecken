@@ -50,3 +50,7 @@ bp.json
 
 # Sicherheitsdateien
 token.txt
+
+k8s/secrets/pending/
+k8s/secrets/*.env
+k8s/secrets/*.json

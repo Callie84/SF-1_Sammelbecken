@@ -6,5 +6,5 @@ const options = {
   cert: fs.readFileSync(process.env.SSL_CERT_PATH),
 };
 https.createServer(options, app).listen(process.env.PORT || 3001, () => {
-  console.log("HTTPS Server läuft auf Port", process.env.PORT || 3001);
+  console.log("HTTPS Server lÃ¤uft auf Port", process.env.PORT || 3001);
 });

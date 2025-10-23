@@ -1,0 +1,65 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sf1-caddy-config
+  namespace: default
+  labels:
+    app: sf1
+
+data:
+  Caddyfile: |
+    {
+      # Globale Optionen
+      email admin@seedfinderpro.de
+    }
+
+    # Gemeinsame Securityâ€‘Header
+    (sec_headers) {
+      header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+      header X-Content-Type-Options "nosniff"
+      header X-Frame-Options "DENY"
+      header Referrer-Policy "no-referrer-when-downgrade"
+      # Minimalâ€‘CSP (bitte Frontendâ€‘Assets prÃ¼fen)
+      header Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'wasm-unsafe-eval'"
+    }
+
+    # Rateâ€‘Limit Snippets (Caddy v2.7+)
+    (rl_login) {
+      rate_limit {
+        zone login burst=5 rate=10/minute key {remote_host}
+      }
+    }
+
+    (rl_api) {
+      rate_limit {
+        zone api burst=60 rate=120/minute key {remote_host}
+      }
+    }
+
+    # Hauptsite
+    seedfinderpro.de, www.seedfinderpro.de {
+      import sec_headers
+
+      @login path "/auth/login"
+      handle @login {
+        import rl_login
+        reverse_proxy api.default.svc.cluster.local:3000
+      }
+
+      @api path "/api/*"
+      handle @api {
+        import rl_api
+        reverse_proxy api.default.svc.cluster.local:3000
+      }
+
+      # Frontend
+      handle {
+        reverse_proxy web.default.svc.cluster.local:5173
+      }
+
+      # Health
+      @health path "/healthz"
+      handle @health {
+        respond 200
+      }
+    }

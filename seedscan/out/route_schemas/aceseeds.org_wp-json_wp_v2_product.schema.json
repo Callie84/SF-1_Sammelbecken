@@ -1,0 +1,348 @@
+{
+    "template":  {
+                     "type":  "string"
+                 },
+    "id":  {
+               "type":  "number"
+           },
+    "type":  {
+                 "type":  "string"
+             },
+    "product_tag":  {
+                        "type":  "array\u003cempty\u003e"
+                    },
+    "modified_gmt":  {
+                         "type":  "string"
+                     },
+    "slug":  {
+                 "type":  "string"
+             },
+    "excerpt":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "class_list":  {
+                       "type":  "object",
+                       "props":  {
+                                     "11":  {
+                                                "type":  "string"
+                                            },
+                                     "41":  {
+                                                "type":  "string"
+                                            },
+                                     "45":  {
+                                                "type":  "string"
+                                            },
+                                     "42":  {
+                                                "type":  "string"
+                                            },
+                                     "3":  {
+                                               "type":  "string"
+                                           },
+                                     "20":  {
+                                                "type":  "string"
+                                            },
+                                     "56":  {
+                                                "type":  "string"
+                                            },
+                                     "12":  {
+                                                "type":  "string"
+                                            },
+                                     "10":  {
+                                                "type":  "string"
+                                            },
+                                     "17":  {
+                                                "type":  "string"
+                                            },
+                                     "51":  {
+                                                "type":  "string"
+                                            },
+                                     "44":  {
+                                                "type":  "string"
+                                            },
+                                     "40":  {
+                                                "type":  "string"
+                                            },
+                                     "13":  {
+                                                "type":  "string"
+                                            },
+                                     "27":  {
+                                                "type":  "string"
+                                            },
+                                     "30":  {
+                                                "type":  "string"
+                                            },
+                                     "53":  {
+                                                "type":  "string"
+                                            },
+                                     "18":  {
+                                                "type":  "string"
+                                            },
+                                     "36":  {
+                                                "type":  "string"
+                                            },
+                                     "29":  {
+                                                "type":  "string"
+                                            },
+                                     "23":  {
+                                                "type":  "string"
+                                            },
+                                     "19":  {
+                                                "type":  "string"
+                                            },
+                                     "1":  {
+                                               "type":  "string"
+                                           },
+                                     "47":  {
+                                                "type":  "string"
+                                            },
+                                     "59":  {
+                                                "type":  "string"
+                                            },
+                                     "49":  {
+                                                "type":  "string"
+                                            },
+                                     "54":  {
+                                                "type":  "string"
+                                            },
+                                     "52":  {
+                                                "type":  "string"
+                                            },
+                                     "4":  {
+                                               "type":  "string"
+                                           },
+                                     "8":  {
+                                               "type":  "string"
+                                           },
+                                     "58":  {
+                                                "type":  "string"
+                                            },
+                                     "26":  {
+                                                "type":  "string"
+                                            },
+                                     "39":  {
+                                                "type":  "string"
+                                            },
+                                     "14":  {
+                                                "type":  "string"
+                                            },
+                                     "37":  {
+                                                "type":  "string"
+                                            },
+                                     "22":  {
+                                                "type":  "string"
+                                            },
+                                     "28":  {
+                                                "type":  "string"
+                                            },
+                                     "25":  {
+                                                "type":  "string"
+                                            },
+                                     "9":  {
+                                               "type":  "string"
+                                           },
+                                     "33":  {
+                                                "type":  "string"
+                                            },
+                                     "15":  {
+                                                "type":  "string"
+                                            },
+                                     "34":  {
+                                                "type":  "string"
+                                            },
+                                     "21":  {
+                                                "type":  "string"
+                                            },
+                                     "57":  {
+                                                "type":  "string"
+                                            },
+                                     "24":  {
+                                                "type":  "string"
+                                            },
+                                     "46":  {
+                                                "type":  "string"
+                                            },
+                                     "16":  {
+                                                "type":  "string"
+                                            },
+                                     "35":  {
+                                                "type":  "string"
+                                            },
+                                     "32":  {
+                                                "type":  "string"
+                                            },
+                                     "7":  {
+                                               "type":  "string"
+                                           },
+                                     "0":  {
+                                               "type":  "string"
+                                           },
+                                     "43":  {
+                                                "type":  "string"
+                                            },
+                                     "48":  {
+                                                "type":  "string"
+                                            },
+                                     "2":  {
+                                               "type":  "string"
+                                           },
+                                     "38":  {
+                                                "type":  "string"
+                                            },
+                                     "50":  {
+                                                "type":  "string"
+                                            },
+                                     "6":  {
+                                               "type":  "string"
+                                           },
+                                     "31":  {
+                                                "type":  "string"
+                                            }
+                                 }
+                   },
+    "product_brand":  {
+                          "type":  "array\u003cempty\u003e"
+                      },
+    "featured_media":  {
+                           "type":  "number"
+                       },
+    "modified":  {
+                     "type":  "string"
+                 },
+    "title":  {
+                  "type":  "object",
+                  "props":  {
+                                "rendered":  {
+                                                 "type":  "string"
+                                             }
+                            }
+              },
+    "guid":  {
+                 "type":  "object",
+                 "props":  {
+                               "rendered":  {
+                                                "type":  "string"
+                                            }
+                           }
+             },
+    "date_gmt":  {
+                     "type":  "string"
+                 },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "wp:featuredmedia":  {
+                                                          "type":  "array\u003cobject\u003e",
+                                                          "props":  {
+                                                                        "embeddable":  {
+                                                                                           "type":  "boolean"
+                                                                                       },
+                                                                        "href":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                    }
+                                                      },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "targetHints":  {
+                                                                                "type":  "object"
+                                                                            },
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "curies":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "templated":  {
+                                                                                "type":  "boolean"
+                                                                            },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                              "name":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           },
+                                 "wp:attachment":  {
+                                                       "type":  "array\u003cobject\u003e",
+                                                       "props":  {
+                                                                     "href":  {
+                                                                                  "type":  "string"
+                                                                              }
+                                                                 }
+                                                   },
+                                 "wp:term":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "taxonomy":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        },
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              }
+                                                           }
+                                             }
+                             }
+               },
+    "content":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "meta":  {
+                 "type":  "object",
+                 "props":  {
+                               "inline_featured_image":  {
+                                                             "type":  "boolean"
+                                                         }
+                           }
+             },
+    "status":  {
+                   "type":  "string"
+               },
+    "date":  {
+                 "type":  "string"
+             },
+    "link":  {
+                 "type":  "string"
+             },
+    "product_cat":  {
+                        "type":  "array\u003cnumber\u003e"
+                    }
+}

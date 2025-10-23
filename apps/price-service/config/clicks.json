@@ -1,0 +1,16 @@
+﻿[
+  "text=/alle akzeptieren/i",
+  "text=/akzeptieren/i",
+  "text=/zustimmen/i",
+  "text=/accept/i",
+  "text=/agree/i",
+  "text=/weiter/i",
+  "button:has-text(\"Accept\")",
+  "[id*=\"accept\"]",
+  "[data-testid*=\"consent\"]",
+  "[aria-label*=\"Accept\"]",
+  "[class*=\"cookie\"] button",
+  "text=/schließen/i",
+  "text=/close/i",
+  "text=/ok/i"
+]

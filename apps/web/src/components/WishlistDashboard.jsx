@@ -27,7 +27,7 @@ export default function WishlistDashboard() {
             <h3 className="font-bold">{item.strain}</h3>
             {item.note && <p className="text-sm text-gray-600">{item.note}</p>}
             <p className="text-xs text-gray-500">
-              HinzugefÃ¼gt am {new Date(item.addedAt).toLocaleDateString()}
+              HinzugefÃƒÆ’Ã‚Â¼gt am {new Date(item.addedAt).toLocaleDateString()}
             </p>
           </div>
         ))}

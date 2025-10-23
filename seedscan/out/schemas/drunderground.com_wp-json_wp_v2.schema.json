@@ -1,0 +1,1096 @@
+{
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "up":  {
+                                            "type":  "array\u003cobject\u003e",
+                                            "props":  {
+                                                          "href":  {
+                                                                       "type":  "string"
+                                                                   }
+                                                      }
+                                        }
+                             }
+               },
+    "routes":  {
+                   "type":  "object",
+                   "props":  {
+                                 "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                      "type":  "object",
+                                                                                                                      "props":  {
+                                                                                                                                    "endpoints":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  },
+                                                                                                                                    "namespace":  {
+                                                                                                                                                      "type":  "string"
+                                                                                                                                                  },
+                                                                                                                                    "methods":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                }
+                                                                                                                                }
+                                                                                                                  },
+                                 "/wp/v2/categories":  {
+                                                           "type":  "object",
+                                                           "props":  {
+                                                                         "_links":  {
+                                                                                        "type":  "object"
+                                                                                    },
+                                                                         "endpoints":  {
+                                                                                           "type":  "array"
+                                                                                       },
+                                                                         "namespace":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                         "methods":  {
+                                                                                         "type":  "array"
+                                                                                     }
+                                                                     }
+                                                       },
+                                 "/wp/v2/tags/(?P\u003cid\u003e[\\d]+)":  {
+                                                                              "type":  "object",
+                                                                              "props":  {
+                                                                                            "endpoints":  {
+                                                                                                              "type":  "array"
+                                                                                                          },
+                                                                                            "namespace":  {
+                                                                                                              "type":  "string"
+                                                                                                          },
+                                                                                            "methods":  {
+                                                                                                            "type":  "array"
+                                                                                                        }
+                                                                                        }
+                                                                          },
+                                 "/wp/v2/product":  {
+                                                        "type":  "object",
+                                                        "props":  {
+                                                                      "_links":  {
+                                                                                     "type":  "object"
+                                                                                 },
+                                                                      "endpoints":  {
+                                                                                        "type":  "array"
+                                                                                    },
+                                                                      "namespace":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                      "methods":  {
+                                                                                      "type":  "array"
+                                                                                  }
+                                                                  }
+                                                    },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/shortcode)":  {
+                                                                                                  "type":  "object",
+                                                                                                  "props":  {
+                                                                                                                "endpoints":  {
+                                                                                                                                  "type":  "array"
+                                                                                                                              },
+                                                                                                                "namespace":  {
+                                                                                                                                  "type":  "string"
+                                                                                                                              },
+                                                                                                                "methods":  {
+                                                                                                                                "type":  "array"
+                                                                                                                            }
+                                                                                                            }
+                                                                                              },
+                                 "/wp/v2/users/me":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                      "type":  "object",
+                                                                                                                      "props":  {
+                                                                                                                                    "endpoints":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  },
+                                                                                                                                    "namespace":  {
+                                                                                                                                                      "type":  "string"
+                                                                                                                                                  },
+                                                                                                                                    "methods":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                }
+                                                                                                                                }
+                                                                                                                  },
+                                 "/wp/v2/blocks/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                "type":  "object",
+                                                                                "props":  {
+                                                                                              "endpoints":  {
+                                                                                                                "type":  "array"
+                                                                                                            },
+                                                                                              "namespace":  {
+                                                                                                                "type":  "string"
+                                                                                                            },
+                                                                                              "methods":  {
+                                                                                                              "type":  "array"
+                                                                                                          }
+                                                                                          }
+                                                                            },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003esby/sby-feed-block)":  {
+                                                                                                      "type":  "object",
+                                                                                                      "props":  {
+                                                                                                                    "endpoints":  {
+                                                                                                                                      "type":  "array"
+                                                                                                                                  },
+                                                                                                                    "namespace":  {
+                                                                                                                                      "type":  "string"
+                                                                                                                                  },
+                                                                                                                    "methods":  {
+                                                                                                                                    "type":  "array"
+                                                                                                                                }
+                                                                                                                }
+                                                                                                  },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/products-by-attribute)":  {
+                                                                                                                     "type":  "object",
+                                                                                                                     "props":  {
+                                                                                                                                   "endpoints":  {
+                                                                                                                                                     "type":  "array"
+                                                                                                                                                 },
+                                                                                                                                   "namespace":  {
+                                                                                                                                                     "type":  "string"
+                                                                                                                                                 },
+                                                                                                                                   "methods":  {
+                                                                                                                                                   "type":  "array"
+                                                                                                                                               }
+                                                                                                                               }
+                                                                                                                 },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/featured-category)":  {
+                                                                                                                 "type":  "object",
+                                                                                                                 "props":  {
+                                                                                                                               "endpoints":  {
+                                                                                                                                                 "type":  "array"
+                                                                                                                                             },
+                                                                                                                               "namespace":  {
+                                                                                                                                                 "type":  "string"
+                                                                                                                                             },
+                                                                                                                               "methods":  {
+                                                                                                                                               "type":  "array"
+                                                                                                                                           }
+                                                                                                                           }
+                                                                                                             },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/block)":  {
+                                                                                              "type":  "object",
+                                                                                              "props":  {
+                                                                                                            "endpoints":  {
+                                                                                                                              "type":  "array"
+                                                                                                                          },
+                                                                                                            "namespace":  {
+                                                                                                                              "type":  "string"
+                                                                                                                          },
+                                                                                                            "methods":  {
+                                                                                                                            "type":  "array"
+                                                                                                                        }
+                                                                                                        }
+                                                                                          },
+                                 "/wp/v2/media/(?P\u003cid\u003e[\\d]+)":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003esbr/sbr-feed-block)":  {
+                                                                                                      "type":  "object",
+                                                                                                      "props":  {
+                                                                                                                    "endpoints":  {
+                                                                                                                                      "type":  "array"
+                                                                                                                                  },
+                                                                                                                    "namespace":  {
+                                                                                                                                      "type":  "string"
+                                                                                                                                  },
+                                                                                                                    "methods":  {
+                                                                                                                                    "type":  "array"
+                                                                                                                                }
+                                                                                                                }
+                                                                                                  },
+                                 "/wp/v2/media":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp/v2/comments/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                  "type":  "object",
+                                                                                  "props":  {
+                                                                                                "endpoints":  {
+                                                                                                                  "type":  "array"
+                                                                                                              },
+                                                                                                "namespace":  {
+                                                                                                                  "type":  "string"
+                                                                                                              },
+                                                                                                "methods":  {
+                                                                                                                "type":  "array"
+                                                                                                            }
+                                                                                            }
+                                                                              },
+                                 "/wp/v2/settings":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/active-filters)":  {
+                                                                                                              "type":  "object",
+                                                                                                              "props":  {
+                                                                                                                            "endpoints":  {
+                                                                                                                                              "type":  "array"
+                                                                                                                                          },
+                                                                                                                            "namespace":  {
+                                                                                                                                              "type":  "string"
+                                                                                                                                          },
+                                                                                                                            "methods":  {
+                                                                                                                                            "type":  "array"
+                                                                                                                                        }
+                                                                                                                        }
+                                                                                                          },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/categories)":  {
+                                                                                                   "type":  "object",
+                                                                                                   "props":  {
+                                                                                                                 "endpoints":  {
+                                                                                                                                   "type":  "array"
+                                                                                                                               },
+                                                                                                                 "namespace":  {
+                                                                                                                                   "type":  "string"
+                                                                                                                               },
+                                                                                                                 "methods":  {
+                                                                                                                                 "type":  "array"
+                                                                                                                             }
+                                                                                                             }
+                                                                                               },
+                                 "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions":  {
+                                                                                             "type":  "object",
+                                                                                             "props":  {
+                                                                                                           "endpoints":  {
+                                                                                                                             "type":  "array"
+                                                                                                                         },
+                                                                                                           "namespace":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         },
+                                                                                                           "methods":  {
+                                                                                                                           "type":  "array"
+                                                                                                                       }
+                                                                                                       }
+                                                                                         },
+                                 "/wp/v2/pages":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp/v2/types":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/price-filter)":  {
+                                                                                                            "type":  "object",
+                                                                                                            "props":  {
+                                                                                                                          "endpoints":  {
+                                                                                                                                            "type":  "array"
+                                                                                                                                        },
+                                                                                                                          "namespace":  {
+                                                                                                                                            "type":  "string"
+                                                                                                                                        },
+                                                                                                                          "methods":  {
+                                                                                                                                          "type":  "array"
+                                                                                                                                      }
+                                                                                                                      }
+                                                                                                        },
+                                 "/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves":  {
+                                                                                           "type":  "object",
+                                                                                           "props":  {
+                                                                                                         "endpoints":  {
+                                                                                                                           "type":  "array"
+                                                                                                                       },
+                                                                                                         "namespace":  {
+                                                                                                                           "type":  "string"
+                                                                                                                       },
+                                                                                                         "methods":  {
+                                                                                                                         "type":  "array"
+                                                                                                                     }
+                                                                                                     }
+                                                                                       },
+                                 "/wp/v2/blocks/(?P\u003cid\u003e[\\d]+)/autosaves":  {
+                                                                                          "type":  "object",
+                                                                                          "props":  {
+                                                                                                        "endpoints":  {
+                                                                                                                          "type":  "array"
+                                                                                                                      },
+                                                                                                        "namespace":  {
+                                                                                                                          "type":  "string"
+                                                                                                                      },
+                                                                                                        "methods":  {
+                                                                                                                        "type":  "array"
+                                                                                                                    }
+                                                                                                    }
+                                                                                      },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/social-link)":  {
+                                                                                                    "type":  "object",
+                                                                                                    "props":  {
+                                                                                                                  "endpoints":  {
+                                                                                                                                    "type":  "array"
+                                                                                                                                },
+                                                                                                                  "namespace":  {
+                                                                                                                                    "type":  "string"
+                                                                                                                                },
+                                                                                                                  "methods":  {
+                                                                                                                                  "type":  "array"
+                                                                                                                              }
+                                                                                                              }
+                                                                                                },
+                                 "/wp/v2/users":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/product-tag)":  {
+                                                                                                           "type":  "object",
+                                                                                                           "props":  {
+                                                                                                                         "endpoints":  {
+                                                                                                                                           "type":  "array"
+                                                                                                                                       },
+                                                                                                                         "namespace":  {
+                                                                                                                                           "type":  "string"
+                                                                                                                                       },
+                                                                                                                         "methods":  {
+                                                                                                                                         "type":  "array"
+                                                                                                                                     }
+                                                                                                                     }
+                                                                                                       },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/product-best-sellers)":  {
+                                                                                                                    "type":  "object",
+                                                                                                                    "props":  {
+                                                                                                                                  "endpoints":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                },
+                                                                                                                                  "namespace":  {
+                                                                                                                                                    "type":  "string"
+                                                                                                                                                },
+                                                                                                                                  "methods":  {
+                                                                                                                                                  "type":  "array"
+                                                                                                                                              }
+                                                                                                                              }
+                                                                                                                },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/all-reviews)":  {
+                                                                                                           "type":  "object",
+                                                                                                           "props":  {
+                                                                                                                         "endpoints":  {
+                                                                                                                                           "type":  "array"
+                                                                                                                                       },
+                                                                                                                         "namespace":  {
+                                                                                                                                           "type":  "string"
+                                                                                                                                       },
+                                                                                                                         "methods":  {
+                                                                                                                                         "type":  "array"
+                                                                                                                                     }
+                                                                                                                     }
+                                                                                                       },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/reviews-by-product)":  {
+                                                                                                                  "type":  "object",
+                                                                                                                  "props":  {
+                                                                                                                                "endpoints":  {
+                                                                                                                                                  "type":  "array"
+                                                                                                                                              },
+                                                                                                                                "namespace":  {
+                                                                                                                                                  "type":  "string"
+                                                                                                                                              },
+                                                                                                                                "methods":  {
+                                                                                                                                                "type":  "array"
+                                                                                                                                            }
+                                                                                                                            }
+                                                                                                              },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/attribute-filter)":  {
+                                                                                                                "type":  "object",
+                                                                                                                "props":  {
+                                                                                                                              "endpoints":  {
+                                                                                                                                                "type":  "array"
+                                                                                                                                            },
+                                                                                                                              "namespace":  {
+                                                                                                                                                "type":  "string"
+                                                                                                                                            },
+                                                                                                                              "methods":  {
+                                                                                                                                              "type":  "array"
+                                                                                                                                          }
+                                                                                                                          }
+                                                                                                            },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/product-category)":  {
+                                                                                                                "type":  "object",
+                                                                                                                "props":  {
+                                                                                                                              "endpoints":  {
+                                                                                                                                                "type":  "array"
+                                                                                                                                            },
+                                                                                                                              "namespace":  {
+                                                                                                                                                "type":  "string"
+                                                                                                                                            },
+                                                                                                                              "methods":  {
+                                                                                                                                              "type":  "array"
+                                                                                                                                          }
+                                                                                                                          }
+                                                                                                            },
+                                 "/wp/v2/product/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                 "type":  "object",
+                                                                                 "props":  {
+                                                                                               "endpoints":  {
+                                                                                                                 "type":  "array"
+                                                                                                             },
+                                                                                               "namespace":  {
+                                                                                                                 "type":  "string"
+                                                                                                             },
+                                                                                               "methods":  {
+                                                                                                               "type":  "array"
+                                                                                                           }
+                                                                                           }
+                                                                             },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/product-new)":  {
+                                                                                                           "type":  "object",
+                                                                                                           "props":  {
+                                                                                                                         "endpoints":  {
+                                                                                                                                           "type":  "array"
+                                                                                                                                       },
+                                                                                                                         "namespace":  {
+                                                                                                                                           "type":  "string"
+                                                                                                                                       },
+                                                                                                                         "methods":  {
+                                                                                                                                         "type":  "array"
+                                                                                                                                     }
+                                                                                                                     }
+                                                                                                       },
+                                 "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                      "type":  "object",
+                                                                                                                      "props":  {
+                                                                                                                                    "endpoints":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  },
+                                                                                                                                    "namespace":  {
+                                                                                                                                                      "type":  "string"
+                                                                                                                                                  },
+                                                                                                                                    "methods":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                }
+                                                                                                                                }
+                                                                                                                  },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/product-on-sale)":  {
+                                                                                                               "type":  "object",
+                                                                                                               "props":  {
+                                                                                                                             "endpoints":  {
+                                                                                                                                               "type":  "array"
+                                                                                                                                           },
+                                                                                                                             "namespace":  {
+                                                                                                                                               "type":  "string"
+                                                                                                                                           },
+                                                                                                                             "methods":  {
+                                                                                                                                             "type":  "array"
+                                                                                                                                         }
+                                                                                                                         }
+                                                                                                           },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/archives)":  {
+                                                                                                 "type":  "object",
+                                                                                                 "props":  {
+                                                                                                               "endpoints":  {
+                                                                                                                                 "type":  "array"
+                                                                                                                             },
+                                                                                                               "namespace":  {
+                                                                                                                                 "type":  "string"
+                                                                                                                             },
+                                                                                                               "methods":  {
+                                                                                                                               "type":  "array"
+                                                                                                                           }
+                                                                                                           }
+                                                                                             },
+                                 "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                        "type":  "object",
+                                                                                                                        "props":  {
+                                                                                                                                      "endpoints":  {
+                                                                                                                                                        "type":  "array"
+                                                                                                                                                    },
+                                                                                                                                      "namespace":  {
+                                                                                                                                                        "type":  "string"
+                                                                                                                                                    },
+                                                                                                                                      "methods":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  }
+                                                                                                                                  }
+                                                                                                                    },
+                                 "/wp/v2/types/(?P\u003ctype\u003e[\\w-]+)":  {
+                                                                                  "type":  "object",
+                                                                                  "props":  {
+                                                                                                "endpoints":  {
+                                                                                                                  "type":  "array"
+                                                                                                              },
+                                                                                                "namespace":  {
+                                                                                                                  "type":  "string"
+                                                                                                              },
+                                                                                                "methods":  {
+                                                                                                                "type":  "array"
+                                                                                                            }
+                                                                                            }
+                                                                              },
+                                 "/wp/v2":  {
+                                                "type":  "object",
+                                                "props":  {
+                                                              "_links":  {
+                                                                             "type":  "object"
+                                                                         },
+                                                              "endpoints":  {
+                                                                                "type":  "array"
+                                                                            },
+                                                              "namespace":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                              "methods":  {
+                                                                              "type":  "array"
+                                                                          }
+                                                          }
+                                            },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/handpicked-products)":  {
+                                                                                                                   "type":  "object",
+                                                                                                                   "props":  {
+                                                                                                                                 "endpoints":  {
+                                                                                                                                                   "type":  "array"
+                                                                                                                                               },
+                                                                                                                                 "namespace":  {
+                                                                                                                                                   "type":  "string"
+                                                                                                                                               },
+                                                                                                                                 "methods":  {
+                                                                                                                                                 "type":  "array"
+                                                                                                                                             }
+                                                                                                                             }
+                                                                                                               },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/featured-product)":  {
+                                                                                                                "type":  "object",
+                                                                                                                "props":  {
+                                                                                                                              "endpoints":  {
+                                                                                                                                                "type":  "array"
+                                                                                                                                            },
+                                                                                                                              "namespace":  {
+                                                                                                                                                "type":  "string"
+                                                                                                                                            },
+                                                                                                                              "methods":  {
+                                                                                                                                              "type":  "array"
+                                                                                                                                          }
+                                                                                                                          }
+                                                                                                            },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/all-products)":  {
+                                                                                                            "type":  "object",
+                                                                                                            "props":  {
+                                                                                                                          "endpoints":  {
+                                                                                                                                            "type":  "array"
+                                                                                                                                        },
+                                                                                                                          "namespace":  {
+                                                                                                                                            "type":  "string"
+                                                                                                                                        },
+                                                                                                                          "methods":  {
+                                                                                                                                          "type":  "array"
+                                                                                                                                      }
+                                                                                                                      }
+                                                                                                        },
+                                 "/wp/v2/blocks/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                       "type":  "object",
+                                                                                                                       "props":  {
+                                                                                                                                     "endpoints":  {
+                                                                                                                                                       "type":  "array"
+                                                                                                                                                   },
+                                                                                                                                     "namespace":  {
+                                                                                                                                                       "type":  "string"
+                                                                                                                                                   },
+                                                                                                                                     "methods":  {
+                                                                                                                                                     "type":  "array"
+                                                                                                                                                 }
+                                                                                                                                 }
+                                                                                                                   },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/tag-cloud)":  {
+                                                                                                  "type":  "object",
+                                                                                                  "props":  {
+                                                                                                                "endpoints":  {
+                                                                                                                                  "type":  "array"
+                                                                                                                              },
+                                                                                                                "namespace":  {
+                                                                                                                                  "type":  "string"
+                                                                                                                              },
+                                                                                                                "methods":  {
+                                                                                                                                "type":  "array"
+                                                                                                                            }
+                                                                                                            }
+                                                                                              },
+                                 "/wp/v2/comments":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/wp/v2/categories/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                    "type":  "object",
+                                                                                    "props":  {
+                                                                                                  "endpoints":  {
+                                                                                                                    "type":  "array"
+                                                                                                                },
+                                                                                                  "namespace":  {
+                                                                                                                    "type":  "string"
+                                                                                                                },
+                                                                                                  "methods":  {
+                                                                                                                  "type":  "array"
+                                                                                                              }
+                                                                                              }
+                                                                                },
+                                 "/wp/v2/themes":  {
+                                                       "type":  "object",
+                                                       "props":  {
+                                                                     "_links":  {
+                                                                                    "type":  "object"
+                                                                                },
+                                                                     "endpoints":  {
+                                                                                       "type":  "array"
+                                                                                   },
+                                                                     "namespace":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                     "methods":  {
+                                                                                     "type":  "array"
+                                                                                 }
+                                                                 }
+                                                   },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/latest-posts)":  {
+                                                                                                     "type":  "object",
+                                                                                                     "props":  {
+                                                                                                                   "endpoints":  {
+                                                                                                                                     "type":  "array"
+                                                                                                                                 },
+                                                                                                                   "namespace":  {
+                                                                                                                                     "type":  "string"
+                                                                                                                                 },
+                                                                                                                   "methods":  {
+                                                                                                                                   "type":  "array"
+                                                                                                                               }
+                                                                                                               }
+                                                                                                 },
+                                 "/wp/v2/statuses":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/wp/v2/tags":  {
+                                                     "type":  "object",
+                                                     "props":  {
+                                                                   "_links":  {
+                                                                                  "type":  "object"
+                                                                              },
+                                                                   "endpoints":  {
+                                                                                     "type":  "array"
+                                                                                 },
+                                                                   "namespace":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                   "methods":  {
+                                                                                   "type":  "array"
+                                                                               }
+                                                               }
+                                                 },
+                                 "/wp/v2/taxonomies":  {
+                                                           "type":  "object",
+                                                           "props":  {
+                                                                         "_links":  {
+                                                                                        "type":  "object"
+                                                                                    },
+                                                                         "endpoints":  {
+                                                                                           "type":  "array"
+                                                                                       },
+                                                                         "namespace":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                         "methods":  {
+                                                                                         "type":  "array"
+                                                                                     }
+                                                                     }
+                                                       },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/latest-comments)":  {
+                                                                                                        "type":  "object",
+                                                                                                        "props":  {
+                                                                                                                      "endpoints":  {
+                                                                                                                                        "type":  "array"
+                                                                                                                                    },
+                                                                                                                      "namespace":  {
+                                                                                                                                        "type":  "string"
+                                                                                                                                    },
+                                                                                                                      "methods":  {
+                                                                                                                                      "type":  "array"
+                                                                                                                                  }
+                                                                                                                  }
+                                                                                                    },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/product-categories)":  {
+                                                                                                                  "type":  "object",
+                                                                                                                  "props":  {
+                                                                                                                                "endpoints":  {
+                                                                                                                                                  "type":  "array"
+                                                                                                                                              },
+                                                                                                                                "namespace":  {
+                                                                                                                                                  "type":  "string"
+                                                                                                                                              },
+                                                                                                                                "methods":  {
+                                                                                                                                                "type":  "array"
+                                                                                                                                            }
+                                                                                                                            }
+                                                                                                              },
+                                 "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves":  {
+                                                                                         "type":  "object",
+                                                                                         "props":  {
+                                                                                                       "endpoints":  {
+                                                                                                                         "type":  "array"
+                                                                                                                     },
+                                                                                                       "namespace":  {
+                                                                                                                         "type":  "string"
+                                                                                                                     },
+                                                                                                       "methods":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   }
+                                                                                                   }
+                                                                                     },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/calendar)":  {
+                                                                                                 "type":  "object",
+                                                                                                 "props":  {
+                                                                                                               "endpoints":  {
+                                                                                                                                 "type":  "array"
+                                                                                                                             },
+                                                                                                               "namespace":  {
+                                                                                                                                 "type":  "string"
+                                                                                                                             },
+                                                                                                               "methods":  {
+                                                                                                                               "type":  "array"
+                                                                                                                           }
+                                                                                                           }
+                                                                                             },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/rss)":  {
+                                                                                            "type":  "object",
+                                                                                            "props":  {
+                                                                                                          "endpoints":  {
+                                                                                                                            "type":  "array"
+                                                                                                                        },
+                                                                                                          "namespace":  {
+                                                                                                                            "type":  "string"
+                                                                                                                        },
+                                                                                                          "methods":  {
+                                                                                                                          "type":  "array"
+                                                                                                                      }
+                                                                                                      }
+                                                                                        },
+                                 "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/wp/v2/statuses/(?P\u003cstatus\u003e[\\w-]+)":  {
+                                                                                       "type":  "object",
+                                                                                       "props":  {
+                                                                                                     "endpoints":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   },
+                                                                                                     "namespace":  {
+                                                                                                                       "type":  "string"
+                                                                                                                   },
+                                                                                                     "methods":  {
+                                                                                                                     "type":  "array"
+                                                                                                                 }
+                                                                                                 }
+                                                                                   },
+                                 "/wp/v2/search":  {
+                                                       "type":  "object",
+                                                       "props":  {
+                                                                     "_links":  {
+                                                                                    "type":  "object"
+                                                                                },
+                                                                     "endpoints":  {
+                                                                                       "type":  "array"
+                                                                                   },
+                                                                     "namespace":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                     "methods":  {
+                                                                                     "type":  "array"
+                                                                                 }
+                                                                 }
+                                                   },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ecore/search)":  {
+                                                                                               "type":  "object",
+                                                                                               "props":  {
+                                                                                                             "endpoints":  {
+                                                                                                                               "type":  "array"
+                                                                                                                           },
+                                                                                                             "namespace":  {
+                                                                                                                               "type":  "string"
+                                                                                                                           },
+                                                                                                             "methods":  {
+                                                                                                                             "type":  "array"
+                                                                                                                         }
+                                                                                                         }
+                                                                                           },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/reviews-by-category)":  {
+                                                                                                                   "type":  "object",
+                                                                                                                   "props":  {
+                                                                                                                                 "endpoints":  {
+                                                                                                                                                   "type":  "array"
+                                                                                                                                               },
+                                                                                                                                 "namespace":  {
+                                                                                                                                                   "type":  "string"
+                                                                                                                                               },
+                                                                                                                                 "methods":  {
+                                                                                                                                                 "type":  "array"
+                                                                                                                                             }
+                                                                                                                             }
+                                                                                                               },
+                                 "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                      "type":  "object",
+                                                                                                                      "props":  {
+                                                                                                                                    "endpoints":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  },
+                                                                                                                                    "namespace":  {
+                                                                                                                                                      "type":  "string"
+                                                                                                                                                  },
+                                                                                                                                    "methods":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                }
+                                                                                                                                }
+                                                                                                                  },
+                                 "/wp/v2/users/(?P\u003cid\u003e[\\d]+)":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/wp/v2/posts":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves":  {
+                                                                                         "type":  "object",
+                                                                                         "props":  {
+                                                                                                       "endpoints":  {
+                                                                                                                         "type":  "array"
+                                                                                                                     },
+                                                                                                       "namespace":  {
+                                                                                                                         "type":  "string"
+                                                                                                                     },
+                                                                                                       "methods":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   }
+                                                                                                   }
+                                                                                     },
+                                 "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process":  {
+                                                                                            "type":  "object",
+                                                                                            "props":  {
+                                                                                                          "endpoints":  {
+                                                                                                                            "type":  "array"
+                                                                                                                        },
+                                                                                                          "namespace":  {
+                                                                                                                            "type":  "string"
+                                                                                                                        },
+                                                                                                          "methods":  {
+                                                                                                                          "type":  "array"
+                                                                                                                      }
+                                                                                                      }
+                                                                                        },
+                                 "/wp/v2/taxonomies/(?P\u003ctaxonomy\u003e[\\w-]+)":  {
+                                                                                           "type":  "object",
+                                                                                           "props":  {
+                                                                                                         "endpoints":  {
+                                                                                                                           "type":  "array"
+                                                                                                                       },
+                                                                                                         "namespace":  {
+                                                                                                                           "type":  "string"
+                                                                                                                       },
+                                                                                                         "methods":  {
+                                                                                                                         "type":  "array"
+                                                                                                                     }
+                                                                                                     }
+                                                                                       },
+                                 "/wp/v2/blocks":  {
+                                                       "type":  "object",
+                                                       "props":  {
+                                                                     "_links":  {
+                                                                                    "type":  "object"
+                                                                                },
+                                                                     "endpoints":  {
+                                                                                       "type":  "array"
+                                                                                   },
+                                                                     "namespace":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                     "methods":  {
+                                                                                     "type":  "array"
+                                                                                 }
+                                                                 }
+                                                   },
+                                 "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions":  {
+                                                                                             "type":  "object",
+                                                                                             "props":  {
+                                                                                                           "endpoints":  {
+                                                                                                                             "type":  "array"
+                                                                                                                         },
+                                                                                                           "namespace":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         },
+                                                                                                           "methods":  {
+                                                                                                                           "type":  "array"
+                                                                                                                       }
+                                                                                                       }
+                                                                                         },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003ewoocommerce/product-top-rated)":  {
+                                                                                                                 "type":  "object",
+                                                                                                                 "props":  {
+                                                                                                                               "endpoints":  {
+                                                                                                                                                 "type":  "array"
+                                                                                                                                             },
+                                                                                                                               "namespace":  {
+                                                                                                                                                 "type":  "string"
+                                                                                                                                             },
+                                                                                                                               "methods":  {
+                                                                                                                                               "type":  "array"
+                                                                                                                                           }
+                                                                                                                           }
+                                                                                                             }
+                             }
+               },
+    "namespace":  {
+                      "type":  "string"
+                  }
+}
