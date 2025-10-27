@@ -1,6 +1,6 @@
 {
-  "generated": "2025-10-23T03:33:01",
-  "items": 256,
+  "generated": "2025-10-25T03:33:12",
+  "items": 255,
   "hosts": 11,
   "files": [
     "sections_cheapest5_per_host.json",

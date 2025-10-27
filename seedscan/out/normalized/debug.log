@@ -1,58 +1,47 @@
-[2025-10-23T03:30:23] TRY wc_store aceseeds.org https://aceseeds.org/wp-json/wc/store/products
-[2025-10-23T03:30:36] FOUND 170 items for aceseeds.org
-[2025-10-23T03:30:37] TRY wp_product aceseeds.org https://aceseeds.org/wp-json/wp/v2/product
-[2025-10-23T03:30:43] FOUND 170 items for aceseeds.org
-[2025-10-23T03:30:44] TRY wc_store blimburnseeds.com https://blimburnseeds.com/wp-json/wc/store/products
-[2025-10-23T03:30:52] FOUND 250 items for blimburnseeds.com
-[2025-10-23T03:30:52] TRY wp_product blimburnseeds.com https://blimburnseeds.com/wp-json/wp/v2/product
-[2025-10-23T03:30:59] FOUND 250 items for blimburnseeds.com
-[2025-10-23T03:31:00] TRY wc_store bulkseedbank.org https://bulkseedbank.org/wp-json/wc/store/products
-[2025-10-23T03:31:15] FOUND 129 items for bulkseedbank.org
-[2025-10-23T03:31:15] TRY wp_product bulkseedbank.org https://bulkseedbank.org/wp-json/wp/v2/product
-[2025-10-23T03:31:27] FOUND 129 items for bulkseedbank.org
-[2025-10-23T03:31:27] TRY wc_store dnagenetics.com https://dnagenetics.com/wp-json/wc/store/products
-[2025-10-23T03:31:33] FOUND 80 items for dnagenetics.com
-[2025-10-23T03:31:33] TRY wp_product dnagenetics.com https://dnagenetics.com/wp-json/wp/v2/product
-[2025-10-23T03:31:38] FOUND 80 items for dnagenetics.com
-[2025-10-23T03:31:38] TRY wc_store drunderground.com https://drunderground.com/wp-json/wc/store/products
-[2025-10-23T03:31:40] FOUND 19 items for drunderground.com
-[2025-10-23T03:31:40] TRY wp_product drunderground.com https://drunderground.com/wp-json/wp/v2/product
-[2025-10-23T03:31:41] FOUND 19 items for drunderground.com
-[2025-10-23T03:31:41] TRY wc_store genehtik.com https://genehtik.com/wp-json/wc/store/products
-[2025-10-23T03:31:47] FOUND 41 items for genehtik.com
-[2025-10-23T03:31:47] TRY wp_product genehtik.com https://genehtik.com/wp-json/wp/v2/product
-[2025-10-23T03:31:50] FOUND 41 items for genehtik.com
-[2025-10-23T03:31:50] TRY wc_store greenbodhi.org https://greenbodhi.org/wp-json/wc/store/products
-[2025-10-23T03:31:52] FOUND 3 items for greenbodhi.org
-[2025-10-23T03:31:52] TRY wp_product greenbodhi.org https://greenbodhi.org/wp-json/wp/v2/product
-[2025-10-23T03:31:53] FOUND 3 items for greenbodhi.org
-[2025-10-23T03:31:53] TRY wc_store hyp3rids.com https://hyp3rids.com/wp-json/wc/store/products
-[2025-10-23T03:31:55] FOUND 75 items for hyp3rids.com
-[2025-10-23T03:31:56] TRY wc_store kcbrains.com https://kcbrains.com/wp-json/wc/store/products
-[2025-10-23T03:31:58] FOUND 61 items for kcbrains.com
-[2025-10-23T03:31:58] TRY wp_product kcbrains.com https://kcbrains.com/wp-json/wp/v2/product
-[2025-10-23T03:32:00] FOUND 61 items for kcbrains.com
-[2025-10-23T03:32:01] TRY wc_store lasemillaautomatica.com https://lasemillaautomatica.com/wp-json/wc/store/products
-[2025-10-23T03:32:01] FOUND 0 items for lasemillaautomatica.com
-[2025-10-23T03:32:01] TRY wp_product lasemillaautomatica.com https://lasemillaautomatica.com/wp-json/wp/v2/product
-[2025-10-23T03:32:01] FOUND 0 items for lasemillaautomatica.com
-[2025-10-23T03:32:01] TRY shopify nirvanashop.com https://nirvanashop.com/products.json
-[2025-10-23T03:32:02] FOUND 167 items for nirvanashop.com
-[2025-10-23T03:32:03] TRY wc_store northcoastgenetics.com https://northcoastgenetics.com/wp-json/wc/store/products
-[2025-10-23T03:32:08] FOUND 122 items for northcoastgenetics.com
-[2025-10-23T03:32:09] TRY wp_product northcoastgenetics.com https://northcoastgenetics.com/wp-json/wp/v2/product
-[2025-10-23T03:32:14] FOUND 122 items for northcoastgenetics.com
-[2025-10-23T03:32:14] TRY wc_store paradise-seeds.com https://paradise-seeds.com/wp-json/wc/store/products
-[2025-10-23T03:32:22] FOUND 113 items for paradise-seeds.com
-[2025-10-23T03:32:22] TRY wc_store spliffseeds.nl https://spliffseeds.nl/wp-json/wc/store/products
-[2025-10-23T03:32:31] FOUND 58 items for spliffseeds.nl
-[2025-10-23T03:32:31] TRY wp_product spliffseeds.nl https://spliffseeds.nl/wp-json/wp/v2/product
-[2025-10-23T03:32:34] FOUND 58 items for spliffseeds.nl
-[2025-10-23T03:32:34] TRY wc_store thebulldogseeds.com https://thebulldogseeds.com/wp-json/wc/store/products
-[2025-10-23T03:32:37] FOUND 26 items for thebulldogseeds.com
-[2025-10-23T03:32:37] TRY wp_product thebulldogseeds.com https://thebulldogseeds.com/wp-json/wp/v2/product
-[2025-10-23T03:32:38] FOUND 26 items for thebulldogseeds.com
-[2025-10-23T03:32:38] TRY wc_store visionseeds.nl https://visionseeds.nl/wp-json/wc/store/products
-[2025-10-23T03:32:40] FOUND 50 items for visionseeds.nl
-[2025-10-23T03:32:40] TRY wp_product visionseeds.nl https://visionseeds.nl/wp-json/wp/v2/product
-[2025-10-23T03:32:43] FOUND 50 items for visionseeds.nl
+[2025-10-27T03:30:06] TRY wc_store aceseeds.org https://aceseeds.org/wp-json/wc/store/products
+[2025-10-27T03:30:16] FOUND 170 items for aceseeds.org
+[2025-10-27T03:30:18] TRY wp_product aceseeds.org https://aceseeds.org/wp-json/wp/v2/product
+[2025-10-27T03:30:25] FOUND 170 items for aceseeds.org
+[2025-10-27T03:30:26] TRY wc_store blimburnseeds.com https://blimburnseeds.com/wp-json/wc/store/products
+[2025-10-27T03:30:34] FOUND 250 items for blimburnseeds.com
+[2025-10-27T03:30:35] TRY wp_product blimburnseeds.com https://blimburnseeds.com/wp-json/wp/v2/product
+[2025-10-27T03:30:44] FOUND 250 items for blimburnseeds.com
+[2025-10-27T03:30:45] TRY wc_store bulkseedbank.org https://bulkseedbank.org/wp-json/wc/store/products
+[2025-10-27T03:31:00] FOUND 129 items for bulkseedbank.org
+[2025-10-27T03:31:00] TRY wp_product bulkseedbank.org https://bulkseedbank.org/wp-json/wp/v2/product
+[2025-10-27T03:31:13] FOUND 129 items for bulkseedbank.org
+[2025-10-27T03:31:14] TRY wc_store dnagenetics.com https://dnagenetics.com/wp-json/wc/store/products
+[2025-10-27T03:31:21] FOUND 83 items for dnagenetics.com
+[2025-10-27T03:31:21] TRY wp_product dnagenetics.com https://dnagenetics.com/wp-json/wp/v2/product
+[2025-10-27T03:31:28] FOUND 83 items for dnagenetics.com
+[2025-10-27T03:31:28] TRY wc_store drunderground.com https://drunderground.com/wp-json/wc/store/products
+[2025-10-27T03:31:30] FOUND 19 items for drunderground.com
+[2025-10-27T03:31:30] TRY wp_product drunderground.com https://drunderground.com/wp-json/wp/v2/product
+[2025-10-27T03:31:31] FOUND 19 items for drunderground.com
+[2025-10-27T03:31:31] TRY wc_store genehtik.com https://genehtik.com/wp-json/wc/store/products
+[2025-10-27T03:31:36] FOUND 41 items for genehtik.com
+[2025-10-27T03:31:36] TRY wp_product genehtik.com https://genehtik.com/wp-json/wp/v2/product
+[2025-10-27T03:31:40] FOUND 41 items for genehtik.com
+[2025-10-27T03:31:40] TRY wc_store greenbodhi.org https://greenbodhi.org/wp-json/wc/store/products
+[2025-10-27T03:31:41] FOUND 3 items for greenbodhi.org
+[2025-10-27T03:31:41] TRY wp_product greenbodhi.org https://greenbodhi.org/wp-json/wp/v2/product
+[2025-10-27T03:31:42] FOUND 3 items for greenbodhi.org
+[2025-10-27T03:31:42] TRY wc_store hyp3rids.com https://hyp3rids.com/wp-json/wc/store/products
+[2025-10-27T03:31:45] FOUND 75 items for hyp3rids.com
+[2025-10-27T03:31:45] TRY wc_store kcbrains.com https://kcbrains.com/wp-json/wc/store/products
+[2025-10-27T03:31:47] FOUND 61 items for kcbrains.com
+[2025-10-27T03:31:47] TRY wp_product kcbrains.com https://kcbrains.com/wp-json/wp/v2/product
+[2025-10-27T03:31:50] FOUND 61 items for kcbrains.com
+[2025-10-27T03:31:50] TRY wc_store lasemillaautomatica.com https://lasemillaautomatica.com/wp-json/wc/store/products
+[2025-10-27T03:31:51] FOUND 0 items for lasemillaautomatica.com
+[2025-10-27T03:31:51] TRY wp_product lasemillaautomatica.com https://lasemillaautomatica.com/wp-json/wp/v2/product
+[2025-10-27T03:31:51] FOUND 0 items for lasemillaautomatica.com
+[2025-10-27T03:31:51] TRY shopify nirvanashop.com https://nirvanashop.com/products.json
+[2025-10-27T03:31:52] FOUND 167 items for nirvanashop.com
+[2025-10-27T03:31:53] TRY wc_store northcoastgenetics.com https://northcoastgenetics.com/wp-json/wc/store/products
+[2025-10-27T03:31:58] FOUND 122 items for northcoastgenetics.com
+[2025-10-27T03:31:58] TRY wp_product northcoastgenetics.com https://northcoastgenetics.com/wp-json/wp/v2/product
+[2025-10-27T03:32:03] FOUND 122 items for northcoastgenetics.com
+[2025-10-27T03:32:03] TRY wc_store paradise-seeds.com https://paradise-seeds.com/wp-json/wc/store/products
+[2025-10-27T03:32:11] FOUND 113 items for paradise-seeds.com
+[2025-10-27T03:32:12] TRY wc_store spliffseeds.nl https://spliffseeds.nl/wp-json/wc/store/products

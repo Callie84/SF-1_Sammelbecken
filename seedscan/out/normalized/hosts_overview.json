@@ -1,23 +1,23 @@
 [
   {
     "host": "aceseeds.org",
-    "n": 67,
+    "n": 78,
     "min": 11.0,
-    "median": 42.25,
-    "avg": 71.18,
+    "median": 35.0,
+    "avg": 73.63,
     "max": 500.0
   },
   {
     "host": "blimburnseeds.com",
-    "n": 28,
+    "n": 31,
     "min": 17.5,
     "median": 42.0,
-    "avg": 37.91,
-    "max": 72.0
+    "avg": 35.18,
+    "max": 90.0
   },
   {
     "host": "bulkseedbank.org",
-    "n": 31,
+    "n": 34,
     "min": 17.5,
     "median": 17.5,
     "avg": 17.5,
@@ -25,19 +25,19 @@
   },
   {
     "host": "dnagenetics.com",
-    "n": 41,
-    "min": 45.0,
+    "n": 28,
+    "min": 1.0,
     "median": 80.05,
-    "avg": 78.13,
-    "max": 420.0
+    "avg": 66.86,
+    "max": 80.17
   },
   {
     "host": "genehtik.com",
-    "n": 5,
+    "n": 6,
     "min": 9.0,
     "median": 9.0,
-    "avg": 9.0,
-    "max": 9.0
+    "avg": 11.5,
+    "max": 24.0
   },
   {
     "host": "hyp3rids.com",
@@ -49,42 +49,42 @@
   },
   {
     "host": "kcbrains.com",
-    "n": 18,
+    "n": 20,
     "min": 9.5,
     "median": 24.5,
-    "avg": 22.83,
+    "avg": 21.5,
     "max": 24.5
   },
   {
     "host": "northcoastgenetics.com",
-    "n": 13,
+    "n": 10,
     "min": 25.0,
     "median": 50.0,
-    "avg": 51.54,
-    "max": 100.0
+    "avg": 43.0,
+    "max": 50.0
   },
   {
     "host": "spliffseeds.nl",
     "n": 27,
     "min": 9.9,
     "median": 32.5,
-    "avg": 28.26,
+    "avg": 28.01,
     "max": 36.5
   },
   {
     "host": "thebulldogseeds.com",
-    "n": 6,
+    "n": 4,
     "min": 20.0,
     "median": 25.0,
-    "avg": 24.67,
+    "avg": 25.25,
     "max": 29.0
   },
   {
     "host": "visionseeds.nl",
-    "n": 8,
-    "min": 17.5,
+    "n": 5,
+    "min": 15.0,
     "median": 17.5,
-    "avg": 19.69,
+    "avg": 20.5,
     "max": 30.0
   }
 ]
