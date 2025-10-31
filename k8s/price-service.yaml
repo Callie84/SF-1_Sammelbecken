@@ -1,26 +1,26 @@
 ﻿apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sf1-backend
+  name: price-service
   namespace: default
   labels:
-    app: sf1-backend
+    app: price-service
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sf1-backend
+      app: price-service
   template:
     metadata:
       labels:
-        app: sf1-backend
+        app: price-service
     spec:
       containers:
-        - name: sf1-backend
-          image: ghcr.io/callie84/sf-1-backend:latest
+        - name: price-service
+          image: ghcr.io/callie84/sf-1-price-service:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 4000
+            - containerPort: 3000
           env:
             - name: NODE_ENV
               value: "production"
@@ -28,12 +28,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: sf1-backend
+  name: price-service
   namespace: default
 spec:
   selector:
-    app: sf1-backend
+    app: price-service
   ports:
-    - port: 4000
-      targetPort: 4000
+    - port: 3000
+      targetPort: 3000
       protocol: TCP
