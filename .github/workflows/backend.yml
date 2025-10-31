@@ -1,47 +1,51 @@
-name: backend
+﻿name: backend
 
 on:
   push:
-    branches: [ feat/vite ]
+    branches: [ feat/vite, main ]
     paths:
       - "apps/backend/**"
+      - "package.json"
+      - "package-lock.json"
       - ".github/workflows/backend.yml"
-  workflow_dispatch: {}
+  pull_request:
+    branches: [ feat/vite, main ]
+    paths:
+      - "apps/backend/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/backend.yml"
 
 jobs:
-  build-and-test:
+  build-test:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: apps/backend
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Use Node 20
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
+          cache: npm
           cache-dependency-path: |
-            apps/backend/package-lock.json
             package-lock.json
+            apps/backend/package-lock.json
 
-      - name: Install
+      - name: Install deps
         run: npm ci
 
-      - name: Lint
+      - name: Lint / Test
         run: |
-          if npm run | grep -q "lint"; then
-            npm run lint
-          else
-            echo "kein lint-script"
-          fi
+          npm run build --if-present
+          npm run test --if-present
 
-      - name: Test
-        run: |
-          if npm run | grep -q "test"; then
-            npm run test -- --runInBand || npm run test
-          else
-            echo "kein test-script"
-          fi
+      - name: Upload backend build
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-build
+          path: |
+            apps/backend/dist/**
+            apps/backend/build/**

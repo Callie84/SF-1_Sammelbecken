@@ -2,20 +2,22 @@
 
 on:
   push:
-    branches: [ feat/vite ]
+    branches: [ feat/vite, main ]
     paths:
       - "apps/price-service/**"
       - ".github/workflows/price-service.yml"
-  workflow_dispatch:
+  pull_request:
+    branches: [ feat/vite, main ]
+    paths:
+      - "apps/price-service/**"
+      - ".github/workflows/price-service.yml"
 
 jobs:
-  test-and-snapshot:
+  build-test:
     runs-on: ubuntu-latest
-
     defaults:
       run:
         working-directory: apps/price-service
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,13 +27,12 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: |
-            apps/price-service/package-lock.json
+          cache-dependency-path: apps/price-service/package-lock.json
 
       - name: Install deps
         run: npm ci
 
-      - name: Build (tsc)
+      - name: Build
         run: npm run build
 
       - name: Run fixture tests
@@ -39,4 +40,12 @@ jobs:
 
       - name: Run zamnesia snapshot (non-fatal)
         run: |
-          npm run snapshot:zamnesia || echo "snapshot failed – ignored"
+          npm run snapshot:zamnesia || echo "snapshot failed - ignored"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: price-service-fixtures
+          path: |
+            apps/price-service/tests/fixtures/**
+            apps/price-service/dist/**
