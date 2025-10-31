@@ -1,0 +1,56 @@
+name: seedscan
+
+on:
+  push:
+    branches: [ feat/vite ]
+    paths:
+      - "seedscan/**"
+      - ".github/workflows/seedscan.yml"
+  workflow_dispatch: {}
+
+jobs:
+  run-seedscan:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: seedscan
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: |
+            seedscan/package-lock.json
+            package-lock.json
+
+      - name: Install
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Run seedscan
+        run: |
+          if npm run | grep -q "seedscan"; then
+            npm run seedscan
+          elif npm run | grep -q "start"; then
+            npm run start
+          else
+            echo "kein seedscan-script definiert"
+          fi
+
+      - name: Artefakte hochladen (Reports)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seedscan-out
+          path: |
+            seedscan/out/**
+            seedscan/logs/**
+          if-no-files-found: ignore
