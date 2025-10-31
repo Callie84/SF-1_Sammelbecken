@@ -1,0 +1,42 @@
+﻿name: price-service
+
+on:
+  push:
+    branches: [ feat/vite ]
+    paths:
+      - "apps/price-service/**"
+      - ".github/workflows/price-service.yml"
+  workflow_dispatch:
+
+jobs:
+  test-and-snapshot:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: apps/price-service
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            apps/price-service/package-lock.json
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build (tsc)
+        run: npm run build
+
+      - name: Run fixture tests
+        run: npm run test:fixtures
+
+      - name: Run zamnesia snapshot (non-fatal)
+        run: |
+          npm run snapshot:zamnesia || echo "snapshot failed – ignored"
