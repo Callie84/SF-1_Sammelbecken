@@ -1,20 +1,38 @@
-name: Smoke
+﻿name: smoke
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'  # alle 6 Stunden
+  push:
+    branches: [ feat/vite, main ]
+    paths:
+      - "apps/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/smoke.yml"
+  pull_request:
+    branches: [ feat/vite, main ]
+    paths:
+      - "apps/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/smoke.yml"
 
 jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Frontend
-        run: |
-          set -e
-          curl -fsSL https://seedfinderpro.de/ | head -c 200 >/dev/null
+      - uses: actions/checkout@v4
 
-      - name: Check Backend Health
-        run: |
-          set -e
-          curl -fsSL https://seedfinderpro.de/api/health | jq -e '.status=="ok"' >/dev/null || exit 1
+      - name: Use Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            apps/**/package-lock.json
+
+      - name: Install root deps
+        run: npm ci
+
+      - name: Run smoke
+        run: npm run smoke --if-present

@@ -1,0 +1,26 @@
+﻿name: docker-backend
+
+on:
+  push:
+    branches: [ feat/vite, main ]
+    paths:
+      - "apps/backend/**"
+      - "Dockerfile.backend"
+      - ".github/workflows/docker-backend.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile.backend
+          push: false
+          tags: seedfinderpro/backend:latest
