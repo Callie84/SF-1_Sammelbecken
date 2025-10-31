@@ -1,31 +1,30 @@
-import LRU from 'lru-cache';
-import fetch from 'node-fetch';
+// apps/price-service/src/scrapers/base/RobotsCache.ts
+import fetch from "node-fetch";
 
+const CACHE = new Map<string, string>();
 
-const cache = new LRU<string, { allow: (p: string) => boolean; exp: number }>({ max: 128 });
+export async function getRobotsTxt(url: string): Promise<string | null> {
+  const u = new URL(url);
+  const key = `${u.protocol}//${u.host}`;
+  if (CACHE.has(key)) return CACHE.get(key)!;
 
+  const robotsUrl = `${key}/robots.txt`;
+  const res = await fetch(robotsUrl);
+  if (!res.ok) return null;
 
-export async function getRobots(baseUrl: string, ttlSec: number) {
-const key = `rb:${baseUrl}`;
-const now = Date.now();
-const hit = cache.get(key);
-if (hit && hit.exp > now) return hit.allow;
+  const text = await res.text();
+  CACHE.set(key, text);
+  return text;
+}
 
-
-const url = new URL('/robots.txt', baseUrl).toString();
-const res = await fetch(url, { timeout: 8000 as any });
-const text = res.ok ? await res.text() : '';
-
-
-// Minimaler Parser: DisallowÃ¢â‚¬â€˜PrÃƒÂ¤fixe
-const dis: string[] = [];
-text.split('\n').forEach(l => {
-const m = l.match(/^\s*Disallow:\s*(\S+)/i);
-if (m) dis.push(m[1]);
-});
-
-
-const allow = (path: string) => !dis.some(d => path.startsWith(d));
-cache.set(key, { allow, exp: now + ttlSec * 1000 });
-return allow;
+export function isDisallowed(robotsText: string, path: string): boolean {
+  const lines = robotsText.split("\n");
+  for (const line of lines) {
+    const l = line.trim().toLowerCase();
+    if (!l.startsWith("disallow:")) continue;
+    const rule = l.replace("disallow:", "").trim();
+    if (rule === "") continue;
+    if (path.startsWith(rule)) return true;
+  }
+  return false;
 }
