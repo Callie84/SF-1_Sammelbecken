@@ -1,0 +1,4 @@
+﻿{
+  "version": 2,
+  "ignoreCommand": "echo Repo-Root wird nicht gebaut. Bitte apps/frontend nutzen."
+}

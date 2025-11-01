@@ -1,4 +1,10 @@
-{
-  "builds": [{ "src": "vite.config.mjs", "use": "@vercel/static-build", "config": { "distDir": "dist" } }],
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+﻿{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
