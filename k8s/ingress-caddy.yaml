@@ -4,8 +4,7 @@ metadata:
   name: sf1-ingress
   namespace: default
   annotations:
-    kubernetes.io/ingress.class: "caddy"
-    caddy.ingress.kubernetes.io/tls: "internal"
+    kubernetes.io/ingress.class: "traefik"
 spec:
   rules:
     - host: seedfinderpro.de
@@ -25,7 +24,3 @@ spec:
                 name: sf1-backend
                 port:
                   number: 4000
-  tls:
-    - hosts:
-        - seedfinderpro.de
-      secretName: sf1-tls

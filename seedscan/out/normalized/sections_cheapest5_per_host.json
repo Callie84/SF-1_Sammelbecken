@@ -4,33 +4,33 @@
     "host": "aceseeds.org",
     "items": [
       {
+        "title": "Auto Malawi x Northern Lights Feminizada",
+        "price": 5.4,
+        "link": "https://www.aceseeds.org/semillas/auto-malawi-nl-semillas-feminizadas/",
+        "image": ""
+      },
+      {
         "title": "Marruecos Beldia Kif Feminizada",
-        "price": 11.0,
+        "price": 6.6,
         "link": "https://www.aceseeds.org/semillas/marruecos-beldia-kif-semillas-feminizadas/",
         "image": ""
       },
       {
         "title": "Kali China Feminizada",
-        "price": 15.0,
+        "price": 9.0,
         "link": "https://www.aceseeds.org/semillas/kali-china-semillas-feminizadas/",
         "image": ""
       },
       {
-        "title": "African Gas Feminizada",
-        "price": 15.0,
-        "link": "https://www.aceseeds.org/semillas/african-gas-semillas-feminizadas/",
-        "image": ""
-      },
-      {
-        "title": "Honduras x Panama Feminizada",
-        "price": 15.0,
-        "link": "https://www.aceseeds.org/semillas/honduras-x-panama-semillas-feminizadas/",
-        "image": ""
-      },
-      {
         "title": "Haze X Kali China Feminizada",
-        "price": 15.0,
+        "price": 9.0,
         "link": "https://www.aceseeds.org/semillas/hazexkalichina-semillas-feminizadas/",
+        "image": ""
+      },
+      {
+        "title": "Oaxaca A5 Haze feminizada",
+        "price": 9.0,
+        "link": "https://www.aceseeds.org/semillas/oaxaca-x-a5-haze-semillas-feminizadas/",
         "image": ""
       }
     ]
@@ -40,15 +40,21 @@
     "host": "blimburnseeds.com",
     "items": [
       {
-        "title": "Gorilla Punch Auto",
+        "title": "Red Poison Auto",
         "price": 17.5,
-        "link": "https://blimburnseeds.com/gorilla-punch-auto/",
+        "link": "https://blimburnseeds.com/red-poison-auto/",
         "image": ""
       },
       {
-        "title": "Godfather OG Auto",
+        "title": "Lemon Tree x Channel Kush",
         "price": 17.5,
-        "link": "https://blimburnseeds.com/godfather-og-auto/",
+        "link": "https://blimburnseeds.com/lemon-tree-x-channel-kush/",
+        "image": ""
+      },
+      {
+        "title": "Gorilla Punch Auto",
+        "price": 17.5,
+        "link": "https://blimburnseeds.com/gorilla-punch-auto/",
         "image": ""
       },
       {
@@ -58,15 +64,9 @@
         "image": ""
       },
       {
-        "title": "Forbidden Runtz Auto",
+        "title": "Gelato X Purple Punch Auto",
         "price": 17.5,
-        "link": "https://blimburnseeds.com/forbidden-runtz-auto/",
-        "image": ""
-      },
-      {
-        "title": "Santa Marta Haze Auto",
-        "price": 17.5,
-        "link": "https://blimburnseeds.com/santa-marta-haze-auto/",
+        "link": "https://blimburnseeds.com/gelato-x-purple-punch-auto/",
         "image": ""
       }
     ]
@@ -76,9 +76,9 @@
     "host": "bulkseedbank.org",
     "items": [
       {
-        "title": "AUTO STRAWBERRY FERRY",
+        "title": "AUTO SPECIAL SKUNK",
         "price": 17.5,
-        "link": "https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-strawberry-ferry-2/",
+        "link": "https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-special-skunk-2/",
         "image": ""
       },
       {
@@ -88,21 +88,21 @@
         "image": ""
       },
       {
-        "title": "AUTO SWEET TOOTH",
-        "price": 17.5,
-        "link": "https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-sweet-tooth-2/",
-        "image": ""
-      },
-      {
         "title": "AUTO TROPICAL COCONUT",
         "price": 17.5,
         "link": "https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-tropical-coconut-2/",
         "image": ""
       },
       {
-        "title": "AUTO WATERMELON JAM",
+        "title": "AUTO WHITE PRUSSIAN",
         "price": 17.5,
-        "link": "https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-watermelon-jam-2/",
+        "link": "https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-white-prussian-2/",
+        "image": ""
+      },
+      {
+        "title": "AUTO WHITE WIDOW",
+        "price": 17.5,
+        "link": "https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-white-widow-2/",
         "image": ""
       }
     ]
@@ -112,15 +112,15 @@
     "host": "dnagenetics.com",
     "items": [
       {
-        "title": "DNA Auto Mix Pack Cannabis Seeds (Sample)",
-        "price": 1.0,
-        "link": "https://dnagenetics.com/product/dna-auto-mix-pack-cannabis-seeds-sample/",
+        "title": "Gelato Sorbet Fem Cannabis Seeds",
+        "price": 45.0,
+        "link": "https://dnagenetics.com/product/gelato-sorbet/",
         "image": ""
       },
       {
-        "title": "DNA Auto Mix Pack Cannabis Seeds",
+        "title": "You Whoo Fem Cannabis Seeds",
         "price": 45.0,
-        "link": "https://dnagenetics.com/product/dna-auto-mix-pack-cannabis-seeds/",
+        "link": "https://dnagenetics.com/product/you-whoo-fem/",
         "image": ""
       },
       {
@@ -130,15 +130,15 @@
         "image": ""
       },
       {
-        "title": "Skywalker Kush Auto Cannabis Seeds",
+        "title": "Strawberry Sorbet Fem Cannabis Seeds",
         "price": 45.0,
-        "link": "https://dnagenetics.com/product/skywalker-kush-auto/",
+        "link": "https://dnagenetics.com/product/strawberry-sorbet/",
         "image": ""
       },
       {
-        "title": "Mac n Me Autoflower Cannabis Seeds",
+        "title": "Skywalker Kush Auto Cannabis Seeds",
         "price": 45.0,
-        "link": "https://dnagenetics.com/product/mac-n-me/",
+        "link": "https://dnagenetics.com/product/skywalker-kush-auto/",
         "image": ""
       }
     ]
@@ -148,15 +148,21 @@
     "host": "genehtik.com",
     "items": [
       {
-        "title": "Strawbilbo Banana Auto",
+        "title": "semillas de marihuana",
         "price": 9.0,
-        "link": "https://www.genehtik.com/producto/strawbilbo-banana-auto/",
+        "link": "https://www.genehtik.com/producto/semillas-de-marihuana/",
         "image": ""
       },
       {
-        "title": "semillas de marihuana feminizadas",
+        "title": "Amnesia Bilbo Auto",
         "price": 9.0,
-        "link": "https://www.genehtik.com/producto/semillas-de-marihuana-feminizadas/",
+        "link": "https://www.genehtik.com/producto/amnesia-bilbo-auto/",
+        "image": ""
+      },
+      {
+        "title": "Kritikal Bilbo Auto",
+        "price": 9.0,
+        "link": "https://www.genehtik.com/producto/kritikal-bilbo-auto/",
         "image": ""
       },
       {
@@ -166,15 +172,9 @@
         "image": ""
       },
       {
-        "title": "Northern Lights Auto",
+        "title": "semillas de marihuana autoflorecientes",
         "price": 9.0,
-        "link": "https://www.genehtik.com/producto/northern-lights-auto/",
-        "image": ""
-      },
-      {
-        "title": "Nevil Bilbo Auto",
-        "price": 9.0,
-        "link": "https://www.genehtik.com/producto/nevil-bilbo-auto/",
+        "link": "https://www.genehtik.com/producto/semillas-de-marihuana-autoflorecientes/",
         "image": ""
       }
     ]
@@ -184,27 +184,27 @@
     "host": "hyp3rids.com",
     "items": [
       {
-        "title": "REDWOOD HAZE",
+        "title": "BANDIT KUSH",
         "price": 60.0,
-        "link": "https://hyp3rids.com/product/redwood-haze",
+        "link": "https://hyp3rids.com/product/bandit-kush",
         "image": ""
       },
       {
-        "title": "LONG ISLAND HAZE",
+        "title": "BOUILLON HAZE",
         "price": 60.0,
-        "link": "https://hyp3rids.com/product/long-island-haze",
-        "image": ""
-      },
-      {
-        "title": "CBH ‘PURE HAZE’",
-        "price": 60.0,
-        "link": "https://hyp3rids.com/product/cuban-blood-haze-pure-haze-pheno",
+        "link": "https://hyp3rids.com/product/bouillon-haze",
         "image": ""
       },
       {
         "title": "CUBAN BLOOD HAZE ‘EL SQUATO’ PHENO",
         "price": 60.0,
         "link": "https://hyp3rids.com/product/cuban-blood-haze-el-squato-pheno",
+        "image": ""
+      },
+      {
+        "title": "CBH ‘PURE HAZE’",
+        "price": 60.0,
+        "link": "https://hyp3rids.com/product/cuban-blood-haze-pure-haze-pheno",
         "image": ""
       },
       {
@@ -232,21 +232,39 @@
         "image": ""
       },
       {
-        "title": "Leda Uno® Regular",
+        "title": "Haze Special®",
         "price": 9.5,
-        "link": "https://kcbrains.com/shop/cannabis-seeds/regular-seeds/leda-uno-regular/",
+        "link": "https://kcbrains.com/shop/cannabis-seeds/regular-seeds/haze-special/",
         "image": ""
       },
       {
-        "title": "KC 33® Regular",
-        "price": 9.5,
-        "link": "https://kcbrains.com/shop/cannabis-seeds/regular-seeds/kc-33-regular/",
-        "image": ""
-      },
-      {
-        "title": "K.C. 42® (Fem)",
+        "title": "Brains Damage Wedding Cake Feminized",
         "price": 24.5,
-        "link": "https://kcbrains.com/shop/cannabis-seeds/feminized-seeds/kc-42-feminized/",
+        "link": "https://kcbrains.com/shop/cannabis-seeds/feminized-seeds/brains-damage-wed-cake-feminized/",
+        "image": ""
+      },
+      {
+        "title": "Brasil x K.C.® Feminized",
+        "price": 24.5,
+        "link": "https://kcbrains.com/shop/cannabis-seeds/feminized-seeds/brasil-x-kc-feminized/",
+        "image": ""
+      }
+    ]
+  },
+  {
+    "title": "Cheapest at lasemillaautomatica.com",
+    "host": "lasemillaautomatica.com",
+    "items": [
+      {
+        "title": "Lemon Ultra Haze",
+        "price": 7.0,
+        "link": "https://lasemillaautomatica.com/tienda/autoflorecientes/lemon-ultra-haze/",
+        "image": ""
+      },
+      {
+        "title": "MIX Feminizadas",
+        "price": 12.0,
+        "link": "https://lasemillaautomatica.com/tienda/fotodependientes/mix-feminizadas/",
         "image": ""
       }
     ]
@@ -262,27 +280,27 @@
         "image": ""
       },
       {
-        "title": "KILLER GLUE HAZE CAKE F2",
-        "price": 25.0,
-        "link": "https://northcoastgenetics.com/product/killer-glue-haze-cake-f2",
-        "image": ""
-      },
-      {
-        "title": "BLACK DOMINA X MOUNG XAI SATIVA",
+        "title": "Killer Glue Haze",
         "price": 40.0,
-        "link": "https://northcoastgenetics.com/product/black-domina-x-moung-xai-sativa",
+        "link": "https://northcoastgenetics.com/product/killer-glue-haze",
         "image": ""
       },
       {
-        "title": "Burmese Kush",
-        "price": 40.0,
-        "link": "https://northcoastgenetics.com/product/burmese-kush",
-        "image": ""
-      },
-      {
-        "title": "SYRIAN LANDRACE GENETICS/SATIVA HASH PLANT",
+        "title": "1980’s Humboldt Seeds Preservation New York Sour Diesel",
         "price": 50.0,
-        "link": "https://northcoastgenetics.com/product/syrian-landrace",
+        "link": "https://northcoastgenetics.com/product/1980s-humboldt-seeds-preservation-new-york-sour-deisel",
+        "image": ""
+      },
+      {
+        "title": "Feminized Road Kill Skunk",
+        "price": 50.0,
+        "link": "https://northcoastgenetics.com/product/feminized-road-kill-skunk",
+        "image": ""
+      },
+      {
+        "title": "MOLOKAI MOUNTAIN KUSH",
+        "price": 50.0,
+        "link": "https://northcoastgenetics.com/product/molokai-mountain-kush",
         "image": ""
       }
     ]
@@ -292,27 +310,27 @@
     "host": "spliffseeds.nl",
     "items": [
       {
-        "title": "Master Kush Regular Cannabis Seeds",
+        "title": "Haze #1 Regular Cannabis Seeds",
         "price": 9.9,
-        "link": "https://www.spliffseeds.nl/product/master-kush-regular-cannabis-seeds/",
+        "link": "https://www.spliffseeds.nl/product/haze-regular-cannabis-seeds/",
         "image": ""
       },
       {
-        "title": "Afghan Regular Cannabis Seeds",
+        "title": "White Widow Regular Cannabis Seeds",
         "price": 17.5,
-        "link": "https://www.spliffseeds.nl/product/afghan-regular-cannabis-seeds/",
-        "image": ""
-      },
-      {
-        "title": "Royal Thai Regular Cannabis Seeds",
-        "price": 17.5,
-        "link": "https://www.spliffseeds.nl/product/royal-thai-regular-cannabis-seeds/",
+        "link": "https://www.spliffseeds.nl/product/white-widow-regular-cannabis-seeds/",
         "image": ""
       },
       {
         "title": "AK Regular Cannabis Seeds",
         "price": 17.5,
         "link": "https://www.spliffseeds.nl/product/ak-regular-cannabis-seeds/",
+        "image": ""
+      },
+      {
+        "title": "Blue Berry Regular Cannabis Seeds",
+        "price": 17.5,
+        "link": "https://www.spliffseeds.nl/product/blue-berry-regular-cannabis-seeds/",
         "image": ""
       },
       {
@@ -328,9 +346,9 @@
     "host": "thebulldogseeds.com",
     "items": [
       {
-        "title": "TB Strawberry Haze Auto",
+        "title": "TB Lemon Haze Auto",
         "price": 20.0,
-        "link": "https://thebulldogseeds.com/product/tb-strawberry-haze-auto/",
+        "link": "https://thebulldogseeds.com/product/tb-lemon-haze-auto/",
         "image": ""
       },
       {
@@ -340,15 +358,15 @@
         "image": ""
       },
       {
-        "title": "TB Purple CBD Auto",
+        "title": "TB Gelato Auto",
         "price": 27.0,
-        "link": "https://thebulldogseeds.com/product/tb-purple-cbd-auto/",
+        "link": "https://thebulldogseeds.com/product/tb-gelato-auto/",
         "image": ""
       },
       {
-        "title": "TB Mimosa Cannabis Seeds",
-        "price": 29.0,
-        "link": "https://thebulldogseeds.com/product/tb-mimosa/",
+        "title": "TB Skittlez Auto",
+        "price": 27.0,
+        "link": "https://thebulldogseeds.com/product/tb-skittlez-auto/",
         "image": ""
       }
     ]
@@ -358,33 +376,33 @@
     "host": "visionseeds.nl",
     "items": [
       {
-        "title": "Delhi Cheese – AutoFem",
-        "price": 15.0,
-        "link": "https://www.visionseeds.nl/product/delhi-cheese-autofem/",
-        "image": ""
-      },
-      {
-        "title": "Northern Lights – AutoFem",
+        "title": "(Auto) White Widow",
         "price": 17.5,
-        "link": "https://www.visionseeds.nl/product/northern-lights-autofem/",
+        "link": "https://www.visionseeds.nl/product/auto-white-widow/",
         "image": ""
       },
       {
-        "title": "Vision Jack – AutoFem",
+        "title": "(Auto) Northern Lights",
         "price": 17.5,
-        "link": "https://www.visionseeds.nl/product/vision-jack-autofem/",
+        "link": "https://www.visionseeds.nl/product/auto-northern-lights/",
         "image": ""
       },
       {
-        "title": "Vision Gorilla Auto",
-        "price": 22.5,
-        "link": "https://www.visionseeds.nl/product/vision-gorilla-auto/",
+        "title": "(Auto) Lowryder",
+        "price": 17.5,
+        "link": "https://www.visionseeds.nl/product/auto-lowryder/",
         "image": ""
       },
       {
-        "title": "Amnesia x Buddha Kush",
-        "price": 30.0,
-        "link": "https://www.visionseeds.nl/product/amnesia_x_buddha_kush/",
+        "title": "(Auto) Blueberry Bliss",
+        "price": 17.5,
+        "link": "https://www.visionseeds.nl/product/auto-blueberry-bliss/",
+        "image": ""
+      },
+      {
+        "title": "(Auto) Biscotti",
+        "price": 17.5,
+        "link": "https://www.visionseeds.nl/product/auto-biscotti/",
         "image": ""
       }
     ]
