@@ -13,7 +13,7 @@ exports.exec = async (bot, chatId, query) => {
       .slice(0, 5)
       .map((item) => {
         const prices = item.price_per_pack
-          .map((p) => `${p.pack_size} Stk: ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬${p.price_eur.toFixed(2)}`)
+          .map((p) => `${p.pack_size} Stk: €${p.price_eur.toFixed(2)}`)
           .join("\n");
         return `*${item.strain}*\nSeedbank: ${item.seedbank}\n${prices}\n[Shop](${item.url})`;
       })

@@ -43,14 +43,3 @@ bp.json
 
 # local backups
 *.bak
-
-
-#Ignore vscode AI rules
-.github\instructions\codacy.instructions.md
-
-# Sicherheitsdateien
-token.txt
-
-k8s/secrets/pending/
-k8s/secrets/*.env
-k8s/secrets/*.json

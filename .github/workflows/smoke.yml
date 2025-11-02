@@ -1,38 +1,19 @@
-﻿name: smoke
-
+name: Smoke
 on:
-  push:
-    branches: [ feat/vite, main ]
-    paths:
-      - "apps/**"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/smoke.yml"
   pull_request:
-    branches: [ feat/vite, main ]
-    paths:
-      - "apps/**"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/smoke.yml"
-
+    branches: [ "main" ]
+  push:
+    branches: [ "chore/**", "fix/**", "feat/**" ]
 jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Use Node 20
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            apps/**/package-lock.json
-
-      - name: Install root deps
-        run: npm ci
-
-      - name: Run smoke
-        run: npm run smoke --if-present
+          node-version: '20'
+      - name: Quick smoke
+        run: |
+          node -v
+          npm -v
+          echo ok

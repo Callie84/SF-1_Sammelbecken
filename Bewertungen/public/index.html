@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seedbank-Bewertungen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-6 bg-white text-gray-800">
+    <h1 class="text-3xl font-bold mb-6">
+      🌟 Seedbank-Bewertungen & Kommentare
+    </h1>
+
+    <select id="bankSelect" class="p-2 border rounded mb-4">
+      <option value="Zamnesia">Zamnesia</option>
+      <option value="Royal Queen Seeds">Royal Queen Seeds</option>
+      <option value="Sensi Seeds">Sensi Seeds</option>
+    </select>
+
+    <div id="reviews" class="mb-6"></div>
+
+    <form id="reviewForm" class="space-y-2 max-w-lg">
+      <textarea
+        id="comment"
+        rows="3"
+        placeholder="Dein Kommentar..."
+        class="w-full p-2 border rounded"
+        required
+      ></textarea>
+      <select id="rating" class="w-full p-2 border rounded" required>
+        <option value="">Bewertung wählen</option>
+        <option value="5">⭐⭐⭐⭐⭐ Sehr gut</option>
+        <option value="4">⭐⭐⭐⭐ Gut</option>
+        <option value="3">⭐⭐⭐ Okay</option>
+        <option value="2">⭐⭐ Schlecht</option>
+        <option value="1">⭐ Sehr schlecht</option>
+      </select>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
+        Absenden
+      </button>
+    </form>
+
+    <script src="../src/js/bewertungen.js"></script>
+  </body>
+</html>

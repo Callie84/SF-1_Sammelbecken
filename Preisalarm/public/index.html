@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SF-1 Preisalarm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-6 bg-red-50 text-gray-900">
+    <h1 class="text-3xl font-bold mb-4">💸 Preisalarm</h1>
+
+    <div class="space-y-4 max-w-lg">
+      <input
+        id="strainName"
+        type="text"
+        placeholder="Sortenname..."
+        class="w-full p-2 border rounded"
+      />
+      <input
+        id="targetPrice"
+        type="number"
+        placeholder="Maximalpreis (€)"
+        class="w-full p-2 border rounded"
+      />
+      <button
+        onclick="addAlert()"
+        class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
+      >
+        📬 Alarm setzen
+      </button>
+
+      <ul id="alertList" class="text-sm list-disc pl-5 mt-4"></ul>
+    </div>
+
+    <script src="../src/js/preisalarm.js"></script>
+  </body>
+</html>

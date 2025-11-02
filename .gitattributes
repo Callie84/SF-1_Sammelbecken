@@ -6,15 +6,14 @@
 *.sh   text eol=lf
 *.js   text eol=lf
 *.ts   text eol=lf
-*.tsx  text eol=lf
+*.json text eol=lf
 *.css  text eol=lf
 *.scss text eol=lf
 *.html text eol=lf
-*.json text eol=lf
 *.md   text eol=lf
 *.toml text eol=lf
 
-# Windows-Skripte
+# Force CRLF für Windows-Skripte
 *.bat  text eol=crlf
 *.ps1  text eol=crlf
 

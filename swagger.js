@@ -7,7 +7,7 @@ const swaggerDefinition = {
   info: {
     title: "SF-1 API Documentation",
     version: "1.0.0",
-    description: "Swagger UI fÃ¼r SF-1 Grower-App API",
+    description: "Swagger UI für SF-1 Grower-App API",
   },
   servers: [{ url: "http://localhost:3000/api" }],
 };

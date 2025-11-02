@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SF-1 Licht-Tool</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-yellow-50 p-6 text-gray-800">
+    <h1 class="text-3xl font-bold mb-4">💡 SF-1 Licht- & Strom-Rechner</h1>
+    <div class="grid gap-4 md:grid-cols-2">
+      <input
+        id="watt"
+        type="number"
+        class="p-2 border rounded"
+        placeholder="Watt pro Lampe"
+      />
+      <input
+        id="lampen"
+        type="number"
+        class="p-2 border rounded"
+        placeholder="Anzahl Lampen"
+      />
+      <input
+        id="stunden"
+        type="number"
+        class="p-2 border rounded"
+        placeholder="Stunden pro Tag"
+      />
+      <input
+        id="tage"
+        type="number"
+        class="p-2 border rounded"
+        placeholder="Tage Laufzeit"
+      />
+      <input
+        id="kwh"
+        type="number"
+        class="p-2 border rounded"
+        placeholder="Preis pro kWh (z. B. 0.32)"
+      />
+    </div>
+    <button
+      onclick="calcPower()"
+      class="mt-4 px-4 py-2 bg-yellow-600 text-white rounded"
+    >
+      🔌 Strom berechnen
+    </button>
+    <div id="ergebnis" class="mt-6 font-mono text-lg"></div>
+
+    <script src="../src/js/lightingtool.js"></script>
+  </body>
+</html>

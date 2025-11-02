@@ -1,9 +1,9 @@
 exports.exec = (bot, msg) => {
   const helpText = `
 Willkommen beim SF-1 Bot!
-VerfÃƒÆ’Ã‚Â¼gbare Befehle:
+Verfügbare Befehle:
 /search <Sorte> - Suche nach Sorten und Preise
-/wishlist add <Strain> - Zu Favoriten hinzufÃƒÆ’Ã‚Â¼gen
+/wishlist add <Strain> - Zu Favoriten hinzufügen
 /wishlist list - Liste deiner Favoriten
 /help - Zeige diese Hilfe
 `;
