@@ -1,0 +1,75 @@
+﻿[<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeedFinder PRO - Premium AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Patrick+Hand&family=Architects+Daughter&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Architects Daughter', 'Patrick Hand', cursive;
+    }
+    body {
+      background: linear-gradient(135deg, #051510 0%, #0a2a1f 20%, #0f3d2b 40%, #145238 60%, #0f3d2b 80%, #051510 100%);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      min-height: 100vh;
+    }
+    @keyframes gradientFlow {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    .cannabis-gradient {
+      background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 25%, #40916c 50%, #52b788 75%, #74c69d 100%);
+    }
+    .cannabis-gradient-dark {
+      background: linear-gradient(135deg, #0a3d29 0%, #145a3c 25%, #1e7552 50%, #2d9068 75%, #3fab7d 100%);
+    }
+    .neo-deep {
+      background: linear-gradient(145deg, #0f3d2b, #0a2a1f);
+      box-shadow: 15px 15px 30px rgba(5, 21, 16, 0.8), -15px -15px 30px rgba(31, 77, 57, 0.3), inset 3px 3px 6px rgba(255, 255, 255, 0.03), inset -3px -3px 6px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(64, 145, 108, 0.15);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .neo-deep:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 20px 20px 40px rgba(5, 21, 16, 0.9), -20px -20px 40px rgba(31, 77, 57, 0.4), inset 4px 4px 8px rgba(255, 255, 255, 0.05), inset -4px -4px 8px rgba(0, 0, 0, 0.5), 0 0 80px rgba(64, 145, 108, 0.4);
+    }
+    .bubble-soft {
+      background: linear-gradient(145deg, #2d6a4f 0%, #40916c 50%, #52b788 100%);
+      box-shadow: 8px 8px 16px rgba(5, 21, 16, 0.6), -4px -4px 12px rgba(82, 183, 136, 0.2), inset -3px -3px 6px rgba(0, 0, 0, 0.4), inset 3px 3px 6px rgba(255, 255, 255, 0.2);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .bubble-soft::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transform: rotate(45deg);
+      animation: shimmer 3s infinite;
+    }
+    @keyframes shimmer { 0% { transform: translateX(-100%) rotate(45deg); } 100% { transform: translateX(100%) rotate(45deg); } }
+    .bubble-soft:hover { transform: translateY(-4px); }
+    .msg-bubble { background: linear-gradient(135deg, #1a4d2e 0%, #2d6a4f 50%, #40916c 100%); box-shadow: 10px 10px 20px rgba(5, 21, 16, 0.6), -5px -5px 15px rgba(64, 145, 108, 0.2), inset -3px -3px 6px rgba(0, 0, 0, 0.4), inset 3px 3px 6px rgba(255, 255, 255, 0.1); border: 1px solid rgba(82, 183, 136, 0.2); transition: all 0.3s ease; }
+    .avatar-cannabis { background: linear-gradient(135deg, #2d6a4f 0%, #40916c 25%, #52b788 50%, #74c69d 75%, #95d5b2 100%); box-shadow: 8px 8px 16px rgba(5, 21, 16, 0.6), -4px -4px 12px rgba(116, 198, 157, 0.3), inset -3px -3px 6px rgba(0, 0, 0, 0.4), inset 3px 3px 6px rgba(255, 255, 255, 0.3), 0 0 40px rgba(64, 145, 108, 0.5); animation: pulse-green 2s ease-in-out infinite; }
+    @keyframes pulse-green { 0%, 100% { box-shadow: 8px 8px 16px rgba(5, 21, 16, 0.6), -4px -4px 12px rgba(116, 198, 157, 0.3), inset -3px -3px 6px rgba(0, 0, 0, 0.4), inset 3px 3px 6px rgba(255, 255, 255, 0.3), 0 0 40px rgba(64, 145, 108, 0.5); } 50% { box-shadow: 8px 8px 16px rgba(5, 21, 16, 0.6), -4px -4px 12px rgba(116, 198, 157, 0.3), inset -3px -3px 6px rgba(0, 0, 0, 0.4), inset 3px 3px 6px rgba(255, 255, 255, 0.3), 0 0 70px rgba(64, 145, 108, 0.7); } }
+    .strain-card-3d { background: linear-gradient(145deg, #0f3d2b, #0a2a1f); box-shadow: 12px 12px 24px rgba(5, 21, 16, 0.7), -6px -6px 18px rgba(31, 77, 57, 0.3), inset -3px -3px 6px rgba(0, 0, 0, 0.4), inset 3px 3px 6px rgba(255, 255, 255, 0.05); border: 2px solid transparent; background-clip: padding-box; position: relative; transition: all 0.4s; }
+    .icon-emboss { background: linear-gradient(145deg, #40916c, #52b788); box-shadow: 8px 8px 16px rgba(5, 21, 16, 0.7), -4px -4px 12px rgba(116, 198, 157, 0.3), inset -3px -3px 6px rgba(0, 0, 0, 0.5), inset 3px 3px 6px rgba(255, 255, 255, 0.4); }
+    .input-inset { background: linear-gradient(145deg, #0a2a1f, #0f3d2b); box-shadow: inset 8px 8px 16px rgba(5, 21, 16, 0.8), inset -4px -4px 12px rgba(31, 77, 57, 0.3), 3px 3px 6px rgba(0, 0, 0, 0.3); border: 1px solid rgba(64, 145, 108, 0.2); }
+    .tab-btn-3d { background: linear-gradient(145deg, #0f3d2b, #0a2a1f); box-shadow: 8px 8px 16px rgba(5, 21, 16, 0.6), -4px -4px 12px rgba(31, 77, 57, 0.3); }
+    .tab-btn-3d.active { background: linear-gradient(145deg, #40916c, #52b788); box-shadow: inset 6px 6px 12px rgba(26, 77, 46, 0.8), inset -3px -3px 8px rgba(116, 198, 157, 0.4), 0 0 40px rgba(64, 145, 108, 0.5); }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+  </style>
+</head>
+<body class="p-6 md:p-10">
+  <!-- Inhalt aus der Nutzervorlage 1:1 übernommen -->
+</body>
+</html>
+]

@@ -1,0 +1,51 @@
+﻿name: backend
+
+on:
+  push:
+    branches: [ feat/vite, main ]
+    paths:
+      - "apps/backend/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/backend.yml"
+  pull_request:
+    branches: [ feat/vite, main ]
+    paths:
+      - "apps/backend/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/backend.yml"
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            apps/backend/package-lock.json
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Lint / Test
+        run: |
+          npm run build --if-present
+          npm run test --if-present
+
+      - name: Upload backend build
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-build
+          path: |
+            apps/backend/dist/**
+            apps/backend/build/**

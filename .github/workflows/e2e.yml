@@ -1,0 +1,97 @@
+name: e2e
+
+on:
+  push:
+    branches: [ feat/vite ]
+    paths:
+      - "apps/frontend/**"
+      - "apps/backend/**"
+      - "apps/price-service/**"
+      - "tests/e2e/**"
+      - ".github/workflows/e2e.yml"
+  workflow_dispatch: {}
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install root
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Install frontend
+        working-directory: apps/frontend
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Install backend
+        working-directory: apps/backend
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Start backend (background)
+        working-directory: apps/backend
+        run: |
+          if npm run | grep -q "start"; then
+            npm run start &
+            echo $! > /tmp/backend.pid
+            sleep 8
+          else
+            echo "kein backend-start-script"
+          fi
+
+      - name: Start frontend (background)
+        working-directory: apps/frontend
+        run: |
+          if npm run | grep -q "dev"; then
+            npm run dev -- --host 0.0.0.0 --port 4173 &
+            echo $! > /tmp/frontend.pid
+            sleep 8
+          else
+            echo "kein frontend-dev-script"
+          fi
+
+      - name: Run E2E
+        run: |
+          if [ -d tests/e2e ]; then
+            npx playwright install --with-deps
+            npx playwright test
+          else
+            echo "kein tests/e2e-Verzeichnis"
+          fi
+
+      - name: Logs hochladen
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-logs
+          path: |
+            apps/backend/logs/**
+            apps/frontend/logs/**
+          if-no-files-found: ignore
+
+      - name: Dienste stoppen
+        if: always()
+        run: |
+          if [ -f /tmp/backend.pid ]; then kill $(cat /tmp/backend.pid) || true; fi
+          if [ -f /tmp/frontend.pid ]; then kill $(cat /tmp/frontend.pid) || true; fi

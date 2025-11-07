@@ -1,0 +1,118 @@
+{
+    "description":  {
+                        "type":  "string"
+                    },
+    "prices":  {
+                   "type":  "object",
+                   "props":  {
+                                 "price_prefix":  {
+                                                      "type":  "string"
+                                                  },
+                                 "currency_code":  {
+                                                       "type":  "string"
+                                                   },
+                                 "price":  {
+                                               "type":  "number"
+                                           },
+                                 "decimal_separator":  {
+                                                           "type":  "string"
+                                                       },
+                                 "decimals":  {
+                                                  "type":  "number"
+                                              },
+                                 "regular_price":  {
+                                                       "type":  "number"
+                                                   },
+                                 "price_suffix":  {
+                                                      "type":  "string"
+                                                  },
+                                 "price_range":  {
+                                                     "type":  "object",
+                                                     "props":  {
+                                                                   "max_amount":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                   "min_amount":  {
+                                                                                      "type":  "string"
+                                                                                  }
+                                                               }
+                                                 },
+                                 "sale_price":  {
+                                                    "type":  "number"
+                                                },
+                                 "thousand_separator":  {
+                                                            "type":  "string"
+                                                        }
+                             }
+               },
+    "name":  {
+                 "type":  "string"
+             },
+    "has_options":  {
+                        "type":  "boolean"
+                    },
+    "average_rating":  {
+                           "type":  "string"
+                       },
+    "permalink":  {
+                      "type":  "string"
+                  },
+    "is_purchasable":  {
+                           "type":  "boolean"
+                       },
+    "variation":  {
+                      "type":  "string"
+                  },
+    "on_sale":  {
+                    "type":  "boolean"
+                },
+    "sku":  {
+                "type":  "string"
+            },
+    "is_in_stock":  {
+                        "type":  "boolean"
+                    },
+    "id":  {
+               "type":  "number"
+           },
+    "review_count":  {
+                         "type":  "number"
+                     },
+    "add_to_cart":  {
+                        "type":  "object",
+                        "props":  {
+                                      "text":  {
+                                                   "type":  "string"
+                                               },
+                                      "description":  {
+                                                          "type":  "string"
+                                                      }
+                                  }
+                    },
+    "images":  {
+                   "type":  "array\u003cobject\u003e",
+                   "props":  {
+                                 "id":  {
+                                            "type":  "string"
+                                        },
+                                 "sizes":  {
+                                               "type":  "string"
+                                           },
+                                 "src":  {
+                                             "type":  "string"
+                                         },
+                                 "srcset":  {
+                                                "type":  "string"
+                                            },
+                                 "name":  {
+                                              "type":  "string"
+                                          },
+                                 "alt":  {
+                                             "type":  "string"
+                                         },
+                                 "thumbnail":  {
+                                                   "type":  "string"
+                                               }
+                             }
+               }
+}

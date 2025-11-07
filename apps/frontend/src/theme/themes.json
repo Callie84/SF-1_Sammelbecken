@@ -1,0 +1,10 @@
+{
+  "default": "light",
+  "available": [
+    { "key": "system", "label": "System" },
+    { "key": "light", "label": "Light" },
+    { "key": "dark", "label": "Dark" },
+    { "key": "sf-spiderfarmer", "label": "SpiderFarmer" },
+    { "key": "sf-marshydro", "label": "MarsHydro" }
+  ]
+}

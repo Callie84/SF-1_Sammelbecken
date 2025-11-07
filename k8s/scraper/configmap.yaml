@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+name: scraper-config
+namespace: default
+labels:
+app: sf1-scraper
+part: reliability
+data:
+SCRAPER_POLL_MS: "200"
+METRICS_PORT: "9309"

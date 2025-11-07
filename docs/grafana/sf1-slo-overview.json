@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 39,
+  "title": "SF1 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â SLO Overview",
+  "version": 1,
+  "timezone": "browser",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "API Fehlerrate 30d",
+      "gridPos": {"x":0, "y":0, "w":8, "h":4},
+      "targets": [{
+        "expr": "job:http_error_ratio:30d",
+        "refId": "A"
+      }],
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"]}, "colorMode": "value"}
+    },
+    {
+      "type": "stat",
+      "title": "Extern VerfÃƒÆ’Ã‚Â¼gbarkeit 30d",
+      "gridPos": {"x":8, "y":0, "w":8, "h":4},
+      "targets": [{"expr": "ext:availability:30d", "refId": "A"}],
+      "options": {"reduceOptions": {"calcs": ["lastNotNull"]}}
+    },
+    {
+      "type": "timeseries",
+      "title": "API BurnÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ËœRate",
+      "gridPos": {"x":0, "y":4, "w":12, "h":8},
+      "targets": [
+        {"expr": "job:burnrate:5m", "refId": "A"},
+        {"expr": "job:burnrate:1h", "refId": "B"}
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Latenz p95/p99",
+      "gridPos": {"x":12, "y":4, "w":12, "h":8},
+      "targets": [
+        {"expr": "job:latency:p95:5m", "refId": "A"},
+        {"expr": "job:latency:p99:5m", "refId": "B"}
+      ]
+    }
+  ],
+  "templating": {"list": []}
+}

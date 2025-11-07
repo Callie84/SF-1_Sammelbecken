@@ -1,0 +1,13 @@
+{
+"app.name": "SeedFinder PRO",
+"nav.search": "Suche",
+"nav.journal": "Tagebuch",
+"button.buy": "Zum Shop",
+"search.placeholder": "Sorte suchenÃ¢â‚¬Â¦",
+"search.results": "{count, plural, =0 {Keine Treffer} one {# Treffer} other {# Treffer}}",
+"seed.details": "Sortendetails",
+"price.eur": "{value, number, ::currency/EUR}",
+"date.short": "{value, date, ::yyyy.MM.dd}",
+"lang.current": "Sprache: Deutsch",
+"lang.switch": "Sprache wechseln"
+}

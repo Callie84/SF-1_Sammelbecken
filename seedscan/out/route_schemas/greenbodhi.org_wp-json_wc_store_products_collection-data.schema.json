@@ -1,0 +1,14 @@
+{
+    "stock_status_counts":  {
+                                "type":  "null"
+                            },
+    "price_range":  {
+                        "type":  "null"
+                    },
+    "rating_counts":  {
+                          "type":  "null"
+                      },
+    "attribute_counts":  {
+                             "type":  "null"
+                         }
+}

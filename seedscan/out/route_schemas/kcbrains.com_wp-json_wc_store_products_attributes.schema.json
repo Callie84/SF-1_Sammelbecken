@@ -1,0 +1,23 @@
+{
+    "id":  {
+               "type":  "number"
+           },
+    "type":  {
+                 "type":  "string"
+             },
+    "taxonomy":  {
+                     "type":  "string"
+                 },
+    "count":  {
+                  "type":  "number"
+              },
+    "order":  {
+                  "type":  "string"
+              },
+    "has_archives":  {
+                         "type":  "boolean"
+                     },
+    "name":  {
+                 "type":  "string"
+             }
+}

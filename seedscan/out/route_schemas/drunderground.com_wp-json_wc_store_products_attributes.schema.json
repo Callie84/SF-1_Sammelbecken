@@ -1,0 +1,20 @@
+{
+    "slug":  {
+                 "type":  "string"
+             },
+    "id":  {
+               "type":  "number"
+           },
+    "type":  {
+                 "type":  "string"
+             },
+    "order":  {
+                  "type":  "string"
+              },
+    "has_archives":  {
+                         "type":  "boolean"
+                     },
+    "name":  {
+                 "type":  "string"
+             }
+}

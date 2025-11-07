@@ -1,0 +1,46 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: mongodump-daily
+  namespace: backup
+spec:
+  schedule: "0 2 * * *"   # tÃ¤glich 02:00
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: mongodump
+              image: bitnami/mongodb:7.0.14
+              command: ["/bin/bash","-lc"]
+              args:
+                - |
+                  set -euo pipefail
+                  TS=$(date +"%Y%m%d_%H%M")
+                  OUT="/backup/out/mongo"
+                  mkdir -p "$OUT/$TS"
+                  mongodump --uri="$MONGO_URI" --out "$OUT/$TS"
+                  tar -C "$OUT" -czf "/backup/out/latest-mongo-$TS.tar.gz" "$TS"
+                  rm -rf "$OUT/$TS"
+                  # Upload zu S3
+                  aws s3 cp "/backup/out/latest-mongo-$TS.tar.gz" "s3://$AWS_S3_BUCKET/mongo/latest-mongo-$TS.tar.gz" --endpoint-url "$AWS_S3_ENDPOINT"
+                  # lokale Rotation (7 Tage)
+                  find /backup/out -maxdepth 1 -type f -name 'latest-mongo-*.tar.gz' -mtime +7 -delete
+              envFrom:
+                - secretRef: { name: backup-mongo }
+                - secretRef: { name: backup-s3 }
+              volumeMounts:
+                - name: out
+                  mountPath: /backup/out
+            - name: awscli
+              image: amazon/aws-cli:2.17.59
+              command: ["/bin/sh","-c","sleep infinity"]
+              # Sidecar stellt aws-cli bereit, Hauptcontainer ruft es via PATH auf
+          volumes:
+            - name: out
+              persistentVolumeClaim:
+                claimName: backup-out-pvc

@@ -1,0 +1,13 @@
+# Programm: PowerShell
+# Ort: Beliebig, Repo‑Root
+# Aktion: Mongo‑Indizes für Scraper anwenden
+param(
+[Parameter(Mandatory=$false)][string]$MongoUri = $env:MONGODB_URI,
+[Parameter(Mandatory=$false)][string]$MongoDb = ${env:MONGODB_DB}
+)
+if (-not $MongoUri) { Write-Error 'MONGODB_URI fehlt'; exit 1 }
+$scriptPath = Join-Path $PSScriptRoot 'mongo/scraper-indexes.js'
+$env:MONGODB_DB = $MongoDb
+& mongosh $MongoUri $scriptPath
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+Write-Host 'OK: Scraper‑Indizes angewendet.'

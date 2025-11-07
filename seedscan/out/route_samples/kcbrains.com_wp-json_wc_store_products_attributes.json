@@ -1,0 +1,1 @@
+[{"id":3,"name":"Genetics","taxonomy":"pa_genetics","type":"select","order":"menu_order","has_archives":false,"count":4},{"id":2,"name":"Seed type","taxonomy":"pa_seed-type","type":"select","order":"menu_order","has_archives":false,"count":3},{"id":1,"name":"Size","taxonomy":"pa_size","type":"select","order":"menu_order","has_archives":false,"count":5}]

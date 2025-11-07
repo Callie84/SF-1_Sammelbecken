@@ -1,0 +1,23 @@
+{
+  "generated": "2025-11-02T03:33:12",
+  "items": 267,
+  "hosts": 12,
+  "files": [
+    "sections_cheapest5_per_host.json",
+    "seeds_dedup_by_title.csv",
+    "host_price_stats.csv",
+    "feed_seeds_clean.csv",
+    "search_index.jsonl",
+    "hosts_overview.json",
+    "price_buckets_global.csv",
+    "price_buckets_by_host.csv",
+    "cheapest1_per_host.csv",
+    "cheapest5_per_host.csv",
+    "top20_global_cheapest_seeds.csv",
+    "outliers_top5pct_per_host.csv",
+    "outliers_bottom5pct_per_host.csv",
+    "outliers_top_and_bottom.csv",
+    "crosshost_title_spread.csv",
+    "host_anomalies_gt2x_median.csv"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "max_price":  {
+                      "type":  "null"
+                  },
+    "attribute_counts":  {
+                             "type":  "null"
+                         },
+    "rating_counts":  {
+                          "type":  "null"
+                      },
+    "min_price":  {
+                      "type":  "null"
+                  }
+}

@@ -1,0 +1,23 @@
+name: scraper-reliability
+on:
+push:
+paths:
+- 'apps/backend/src/scraper/**'
+- '.github/workflows/scraper-reliability.yml'
+pull_request:
+paths:
+- 'apps/backend/src/scraper/**'
+jobs:
+build_and_test:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- uses: actions/setup-node@v4
+with:
+node-version: 20
+- run: npm ci
+working-directory: apps/backend
+- run: npm run -s build
+working-directory: apps/backend
+- run: npm -s run test --if-present
+working-directory: apps/backend

@@ -1,0 +1,30 @@
+﻿C:\Users\kling\Desktop\Planpaket Dateien\# SF‑1 – Android TWA Build, Bubblewrap & Play‑Console.txt
+C:\Users\kling\Desktop\Planpaket Dateien\# SF‑1 – Auth-DSGVO, Tools‑Formeln, API‑Spez + Code.txt
+C:\Users\kling\Desktop\Planpaket Dateien\# SF‑1 – Kubernetes Deploy & CI Paket.txt
+C:\Users\kling\Desktop\Planpaket Dateien\# SF‑1 – Roadmap, Risiken & Runbooks.txt
+C:\Users\kling\Desktop\Planpaket Dateien\# SF‑1 – Scraper‑Adapter, Normalisierung & CronJobs.txt
+C:\Users\kling\Desktop\Planpaket Dateien\# SF‑1 – Varianten A-B-C (Einzelpläne als Markdown).txt
+C:\Users\kling\Desktop\Planpaket Dateien\Auth-RBAC fürs Journal — SF‑1.txt
+C:\Users\kling\Desktop\Planpaket Dateien\Dokumentations‑Backlinks — SF‑1.txt
+C:\Users\kling\Desktop\Planpaket Dateien\Rate‑Limiting - WAF - CDN — SF‑1.txt
+C:\Users\kling\Desktop\Planpaket Dateien\Restore‑Drill (S3) — SF‑1.txt
+C:\Users\kling\Desktop\Planpaket Dateien\Secrets‑Management — SF‑1.txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Alertmanager Receiver (E-Mail, Telegram, Slack).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Alertmanager Receiver (E‑Mail + Slack).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Backup & Off-Site Sync (Mongo + Files + S3-rsync).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Branding & Theming System.txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — CI-CD Erweiterung (Tests, Lint, Deployment Pipelines).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Dokumentation & Developer-Guide.txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Monitoring & Observability (Loki + Promtail + Prometheus + Grafana).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Monitoring Alerts (Alertmanager + Blackbox + PrometheusRules).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Release-Builds & Versionierung (SemVer, CHANGELOG, Auto-Tagging).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Server Hardening & Security Audit (Debian 12, SSH, Fail2Ban, Auditd, ClamAV).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — Testing & Smoke-Checks (API, Frontend, Scraper).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — UGG‑1 Integration (Grow‑Guide PDF + Viewer).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF-1 — User‑Journal - Grow‑Diary (Fotos + Notizen).txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF‑1 – Affiliate-Ads Redirect, Banner & Analytics Events.txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF‑1 – Android TWA Build, Bubblewrap & Play‑Console.txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF‑1 – Frontend PWA Layout, Suche, Detail, API‑Client.txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF‑1 – Plausible self‑hosted, Traefik‑Routen & Security‑Header.txt
+C:\Users\kling\Desktop\Planpaket Dateien\SF‑1 – Recht & Policies, CSP‑Feintuning,.txt
+C:\Users\kling\Desktop\Planpaket Dateien\SLO-SLI‑Dashboards & Alerts — SF‑1.txt

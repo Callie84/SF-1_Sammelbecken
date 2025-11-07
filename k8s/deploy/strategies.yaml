@@ -1,0 +1,319 @@
+# SF-1 Deploy-Strategien: Blue/Green + Canary (per Subdomain)
+# IngressClass: caddy | Cert-Issuer: letsencrypt | Namespace: default
+
+# -------------------------
+# Backend: Blue/Green Setup
+# -------------------------
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-backend-blue
+  namespace: default
+  labels: { app: sf1-backend, color: blue }
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: sf1-backend, color: blue }
+  template:
+    metadata:
+      labels: { app: sf1-backend, color: blue }
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/callie84/sf1-backend:stable
+          imagePullPolicy: IfNotPresent
+          ports: [{ containerPort: 3000, name: http }]
+          env:
+            - { name: NODE_ENV, value: "production" }
+          readinessProbe:
+            httpGet: { path: /health, port: http }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /health, port: http }
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          resources:
+            requests: { cpu: "300m", memory: "600Mi" }
+            limits:   { cpu: "1000m", memory: "1Gi" }
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-backend-green
+  namespace: default
+  labels: { app: sf1-backend, color: green }
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: sf1-backend, color: green }
+  template:
+    metadata:
+      labels: { app: sf1-backend, color: green }
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/callie84/sf1-backend:stable
+          imagePullPolicy: IfNotPresent
+          ports: [{ containerPort: 3000, name: http }]
+          env:
+            - { name: NODE_ENV, value: "production" }
+          readinessProbe:
+            httpGet: { path: /health, port: http }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /health, port: http }
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          resources:
+            requests: { cpu: "300m", memory: "600Mi" }
+            limits:   { cpu: "1000m", memory: "1Gi" }
+
+---
+# Service zeigt immer auf *eine* Farbe. Umschalten = nur Selector ändern.
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf1-backend
+  namespace: default
+  labels: { app: sf1-backend }
+spec:
+  type: ClusterIP
+  selector: { app: sf1-backend, color: blue }   # << Blue ist live. Für Green: color: green
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+
+# -------------------------
+# Frontend: Blue/Green Setup
+# -------------------------
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-frontend-blue
+  namespace: default
+  labels: { app: sf1-frontend, color: blue }
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: sf1-frontend, color: blue }
+  template:
+    metadata:
+      labels: { app: sf1-frontend, color: blue }
+    spec:
+      containers:
+        - name: web
+          image: ghcr.io/callie84/sf1-frontend:stable
+          imagePullPolicy: IfNotPresent
+          ports: [{ containerPort: 8080, name: http }]
+          readinessProbe:
+            httpGet: { path: /, port: http }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /, port: http }
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          resources:
+            requests: { cpu: "150m", memory: "300Mi" }
+            limits:   { cpu: "500m", memory: "600Mi" }
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-frontend-green
+  namespace: default
+  labels: { app: sf1-frontend, color: green }
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: sf1-frontend, color: green }
+  template:
+    metadata:
+      labels: { app: sf1-frontend, color: green }
+    spec:
+      containers:
+        - name: web
+          image: ghcr.io/callie84/sf1-frontend:stable
+          imagePullPolicy: IfNotPresent
+          ports: [{ containerPort: 8080, name: http }]
+          readinessProbe:
+            httpGet: { path: /, port: http }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /, port: http }
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          resources:
+            requests: { cpu: "150m", memory: "300Mi" }
+            limits:   { cpu: "500m", memory: "600Mi" }
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf1-frontend
+  namespace: default
+  labels: { app: sf1-frontend }
+spec:
+  type: ClusterIP
+  selector: { app: sf1-frontend, color: blue }  # << Blue ist live. Für Green: color: green
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+
+# -------------------------
+# Ingress: Produktion (Hauptdomain)
+# -------------------------
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sf1-main
+  namespace: default
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  ingressClassName: caddy
+  tls:
+    - hosts: [ "seedfinderpro.de", "www.seedfinderpro.de" ]
+      secretName: sf1-tls
+  rules:
+    - host: seedfinderpro.de
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: sf1-backend
+                port: { number: 80 }
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: sf1-frontend
+                port: { number: 80 }
+
+# -------------------------
+# Canary: separater Host (z. B. canary.seedfinderpro.de)
+# Ohne Traffic-Gewichtung. Nur gezielte Tests über Subdomain.
+# -------------------------
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-backend-canary
+  namespace: default
+  labels: { app: sf1-backend, track: canary }
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: sf1-backend, track: canary }
+  template:
+    metadata:
+      labels: { app: sf1-backend, track: canary }
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/callie84/sf1-backend:canary
+          imagePullPolicy: IfNotPresent
+          ports: [{ containerPort: 3000, name: http }]
+          env:
+            - { name: NODE_ENV, value: "production" }
+          readinessProbe:
+            httpGet: { path: /health, port: http }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf1-backend-canary
+  namespace: default
+  labels: { app: sf1-backend, track: canary }
+spec:
+  type: ClusterIP
+  selector: { app: sf1-backend, track: canary }
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-frontend-canary
+  namespace: default
+  labels: { app: sf1-frontend, track: canary }
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: sf1-frontend, track: canary }
+  template:
+    metadata:
+      labels: { app: sf1-frontend, track: canary }
+    spec:
+      containers:
+        - name: web
+          image: ghcr.io/callie84/sf1-frontend:canary
+          imagePullPolicy: IfNotPresent
+          ports: [{ containerPort: 8080, name: http }]
+          readinessProbe:
+            httpGet: { path: /, port: http }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf1-frontend-canary
+  namespace: default
+  labels: { app: sf1-frontend, track: canary }
+spec:
+  type: ClusterIP
+  selector: { app: sf1-frontend, track: canary }
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sf1-canary
+  namespace: default
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  ingressClassName: caddy
+  tls:
+    - hosts: [ "canary.seedfinderpro.de" ]
+      secretName: sf1-canary-tls
+  rules:
+    - host: canary.seedfinderpro.de
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: sf1-backend-canary
+                port: { number: 80 }
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: sf1-frontend-canary
+                port: { number: 80 }

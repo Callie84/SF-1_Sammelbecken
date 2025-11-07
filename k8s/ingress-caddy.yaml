@@ -1,0 +1,26 @@
+﻿apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sf1-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+    - host: seedfinderpro.de
+      http:
+        paths:
+          - path: /api/price
+            pathType: Prefix
+            backend:
+              service:
+                name: price-service
+                port:
+                  number: 3000
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: sf1-backend
+                port:
+                  number: 4000

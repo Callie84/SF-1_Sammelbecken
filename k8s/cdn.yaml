@@ -1,0 +1,28 @@
+# Ingress und Regeln für Bild-Auslieferung
+# Host: img.seedfinderpro.de  → Backend-Service /img
+# TLS: letsencrypt | IngressClass: caddy
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sf1-images
+  namespace: default
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  ingressClassName: caddy
+  tls:
+    - hosts: ["img.seedfinderpro.de"]
+      secretName: sf1-images-tls
+  rules:
+    - host: img.seedfinderpro.de
+      http:
+        paths:
+          - path: /img
+            pathType: Prefix
+            backend:
+              service:
+                name: sf1-backend
+                port:
+                  number: 80

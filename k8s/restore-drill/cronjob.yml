@@ -1,0 +1,70 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sf1-restore-drill
+  namespace: testing
+  labels:
+    app: sf1-restore-drill
+spec:
+  schedule: "0 4 * * 0" # So 04:00
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: sf1-restore-drill
+        spec:
+          restartPolicy: Never
+          volumes:
+            - name: work
+              emptyDir: {}
+          initContainers:
+            - name: fetch-dump
+              image: public.ecr.aws/aws-cli/aws-cli:2.17.59
+              envFrom:
+                - secretRef:
+                    name: sf1-restore-drill
+              volumeMounts:
+                - name: work
+                  mountPath: /work
+              command:
+                - sh
+                - -c
+                - |
+                  set -euo pipefail
+                  echo "[fetch] Liste S3 ..."
+                  LATEST=$(aws s3 ls "s3://$S3_BUCKET/$S3_PREFIX" | awk '{print $4, $1$2}' | sort -k2 | awk '{print $1}' | tail -n1)
+                  if [ -z "$LATEST" ]; then echo "Kein Dump gefunden"; exit 2; fi
+                  echo "[fetch] Neuestes Archiv: $LATEST"
+                  aws s3 cp "s3://$S3_BUCKET/$S3_PREFIX$LATEST" /work/dump.archive.gz
+                  ls -lh /work
+          containers:
+            - name: restore-and-validate
+              # EnthÃ¤lt mongorestore und mongosh
+              image: bitnami/mongodb:7.0.14
+              envFrom:
+                - secretRef:
+                    name: sf1-restore-drill
+              volumeMounts:
+                - name: work
+                  mountPath: /work
+              command:
+                - sh
+                - -c
+                - |
+                  set -euo pipefail
+                  echo "[restore] Starte Wiederherstellung nach $MONGODB_URI"
+                  mongorestore --uri "$MONGODB_URI" --drop --gzip --archive="/work/dump.archive.gz"
+                  echo "[validate] Collections zÃ¤hlen"
+                  mongosh "$MONGODB_URI" --quiet --eval '
+                    const cols = db.getCollectionNames();
+                    const must = ["users","seeds","prices","logs"];
+                    const miss = must.filter(c => !cols.includes(c));
+                    const seed = db.seeds.findOne();
+                    printjson({ collections: cols.length, missing: miss, sampleSeedTitle: seed && seed.title });
+                    if (miss.length > 0) { quit(3); }
+                  '
+                  echo "RESTORE_OK"

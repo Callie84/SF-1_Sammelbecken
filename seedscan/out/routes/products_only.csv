@@ -1,0 +1,572 @@
+﻿"Host","Route","URL","Status","ContentType","Kind","Schema","Sample"
+"bulkseedbank.org","/wc/store/products/reviews","https://bulkseedbank.org/wp-json/wc/store/products/reviews","200","application/json","array","array<empty>",""
+"bulkseedbank.org","/wc/store/products/categories","https://bulkseedbank.org/wp-json/wc/store/products/categories","200","application/json","array","image:null,slug:string,id:number,parent:number,count:number,review_count:number,description:string,name:string,permalink:string","{
+    ""id"":  69,
+    ""name"":  ""Autoflowering Seeds"",
+    ""slug"":  ""autoflowering-seeds"",
+    ""description"":  """",
+    ""parent"":  0,
+    ""count"":  118,
+    ""image"":  null,
+    ""review_count"":  0,
+    ""permalink"":  ""https://bulkseedbank.org/cannabis/autoflowering-seeds/""
+}"
+"bulkseedbank.org","/wc/store/products/tags","https://bulkseedbank.org/wp-json/wc/store/products/tags","200","application/json","array","slug:string,id:number,parent:number,count:number,description:string,name:string","{
+    ""id"":  162,
+    ""name"":  ""Sativa"",
+    ""slug"":  ""sativa"",
+    ""description"":  """",
+    ""parent"":  0,
+    ""count"":  7
+}"
+"bulkseedbank.org","/wc/store/products/collection-data","https://bulkseedbank.org/wp-json/wc/store/products/collection-data","200","application/json","object","stock_status_counts:null,price_range:null,rating_counts:null,attribute_counts:null","{
+    ""price_range"":  null,
+    ""attribute_counts"":  null,
+    ""rating_counts"":  null,
+    ""stock_status_counts"":  null
+}"
+"bulkseedbank.org","/wp/v2/product","https://bulkseedbank.org/wp-json/wp/v2/product","200","application/json","array","template:string,id:number,type:string,product_tag:array<number>,modified_gmt:string,slug:string,excerpt:object,class_list:object,product_brand:array<empty>,featured_media:number,modified:string,title:object,guid:object,yoast_head_json:object,date_gmt:string,_links:object,content:object,yoast_head:string,meta:array<empty>,status:string,date:string,link:string,product_cat:array<number>","{
+    ""id"":  2870,
+    ""date"":  ""2019-11-12T17:13:47"",
+    ""date_gmt"":  ""2019-11-12T16:13:47"",
+    ""guid"":  {
+                 ""rendered"":  ""https://www.dirty-toilets.com/DirtyToilets/product/auto-ak/""
+             },
+    ""modified"":  ""2024-05-29T14:13:52"",
+    ""modified_gmt"":  ""2024-05-29T12:13:52"",
+    ""slug"":  ""auto-ak-2"",
+    ""status"":  ""publish"",
+    ""type"":  ""product"",
+    ""link"":  ""https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-ak-2/"",
+    ""title"":  {
+                  ""rendered"":  ""AUTO AK""
+              },
+    ""content"":  {
+                    ""rendered"":  ""\u003cp\u003eThis is the Automatic Feminised version of our AK. It was created by crossing the legendary mostly Sativa with a Lowryder that was carefully selected to keep the AK original genetics as stable as possible. This Autofeminised version can grow over one meter in height and has an appearance of a bushy Indica plant with a main cola that is surrounded by various lower satellite branches. This variety can also be grown outdoors with little effort and provides a caregiving grower with outstanding yields in 70 days from seed to harvest.\u003c/p\u003e\n"",
+                    ""protected"":  false
+                },
+    ""excerpt"":  {
+                    ""rendered"":  ""\u003cp\u003e70% \u003cstrong\u003eSATIVA\u003c/strong\u003e \u0026#8211; 10% \u003cstrong\u003eINDICA\u003c/strong\u003e \u0026#8211; 20% \u003cstrong\u003eRUDERALIS\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u0"
+"bulkseedbank.org","/wc/store/products","https://bulkseedbank.org/wp-json/wc/store/products?per_page=1","200","application/json","array","description:string,has_options:boolean,variation:string,on_sale:boolean,grouped_products:array<empty>,prices:object,review_count:number,low_stock_remaining:null,is_on_backorder:boolean,add_to_cart:object,is_in_stock:boolean,average_rating:string,categories:array<object>,short_description:string,brands:array<empty>,variations:array<object>,parent:number,attributes:array<object>,price_html:string,id:number,images:array<object>,permalink:string,slug:string,tags:array<object>,extensions:object,type:string,sku:string,is_purchasable:boolean,stock_availability:object,sold_individually:boolean,name:string","{
+    ""id"":  2870,
+    ""name"":  ""AUTO AK"",
+    ""slug"":  ""auto-ak-2"",
+    ""parent"":  0,
+    ""type"":  ""variable"",
+    ""variation"":  """",
+    ""permalink"":  ""https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-ak-2/"",
+    ""sku"":  """",
+    ""short_description"":  ""\u003cp\u003e70% \u003cstrong\u003eSATIVA\u003c/strong\u003e \u0026#8211; 10% \u003cstrong\u003eINDICA\u003c/strong\u003e \u0026#8211; 20% \u003cstrong\u003eRUDERALIS\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTHC\u003c/strong\u003e: 16-21% \u003cstrong\u003eCBD\u003c/strong\u003e: LOW \u003cstrong\u003eCBN\u003c/strong\u003e: N/A\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eGENETICS\u003c/strong\u003e\u003cbr /\u003e\nAK-47 x Lowryder\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eFLAVOUR\u003c/strong\u003e\u003cbr /\u003e\nFruity and spicy flavor and aroma.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eEFFECTS\u003c/strong\u003e\u003cbr /\u003e\nVery body-like, fast hitter.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eFLOWERING INDOOR\u003c/strong\u003e\u003cbr /\u003e\n8-9 weeks flowering time with a yield up to 500 g/m². Can be flowered at any photoperiod between 12 and 18 hours of light per day. 10-11 weeks total crop time.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eFLOWERING OUTDOOR\u003c/strong\u003e\u003cbr /\u003e\n8-9 weeks flowering time with a production up to 40-150 g/plant. Very strong plant, long branching. 50-140 cm total height. 10-11 weeks total crop time. Can"
+"bulkseedbank.org","/wp/v2/product_cat","https://bulkseedbank.org/wp-json/wp/v2/product_cat","200","application/json","array","meta:array<empty>,name:string,id:number,slug:string,taxonomy:string,_links:object,description:string,parent:number,count:number,link:string,yoast_head:string,yoast_head_json:object","{
+    ""id"":  2343,
+    ""count"":  0,
+    ""description"":  """",
+    ""link"":  ""https://bulkseedbank.org/cannabis/all-cannabis-seeds/"",
+    ""name"":  ""All Cannabis Seeds"",
+    ""slug"":  ""all-cannabis-seeds"",
+    ""taxonomy"":  ""product_cat"",
+    ""parent"":  0,
+    ""meta"":  [
+
+             ],
+    ""yoast_head"":  ""\u003c!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ --\u003e\n\u003ctitle\u003eAll Cannabis Seeds | Bulk Seed Bank\u003c/title\u003e\n\u003cmeta name=\""robots\"" content=\""index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\"" /\u003e\n\u003clink rel=\""canonical\"" href=\""https://bulkseedbank.org/cannabis/all-cannabis-seeds/\"" /\u003e\n\u003cmeta property=\""og:locale\"" content=\""en_US\"" /\u003e\n\u003cmeta property=\""og:type\"" content=\""article\"" /\u003e\n\u003cmeta property=\""og:title\"" content=\""All Cannabis Seeds | Bulk Seed Bank\"" /\u003e\n\u003cmeta property=\""og:url\"" content=\""https://bulkseedbank.org/cannabis/all-cannabis-seeds/\"" /\u003e\n\u003cmeta property=\""og:site_name\"" content=\""Bulk Seed Bank\"" /\u003e\n\u003cmeta property=\""og:image\"" content=\""https://bulkseedbank.org/wp-content/uploads/WEB24-7-NOVA-COMP.jpg\"" /\u003e\n\t\u003cmeta property=\""og:image:width\"" content=\""1920\"" /\u003e\n\t\u003cmeta property=\""og:image:height\"" content=\""700\"" /\u003e\n\t\u003cmeta property=\""og:image:type\"" content=\""image/jpeg\"" /\u003e\n\u003cmeta name=\""twitter:card\"" content=\""summary_la"
+"bulkseedbank.org","/wc/store/products/brands","https://bulkseedbank.org/wp-json/wc/store/products/brands","200","application/json","array","array<empty>",""
+"bulkseedbank.org","/wc/store/products/attributes","https://bulkseedbank.org/wp-json/wc/store/products/attributes","200","application/json","array","id:number,type:string,taxonomy:string,count:number,order:string,has_archives:boolean,name:string","{
+    ""id"":  1,
+    ""name"":  ""Best For Beginners"",
+    ""taxonomy"":  ""pa_best-for-beginners"",
+    ""type"":  ""select"",
+    ""order"":  ""menu_order"",
+    ""has_archives"":  false,
+    ""count"":  1
+}"
+"bulkseedbank.org","/wp/v2/product_brand","https://bulkseedbank.org/wp-json/wp/v2/product_brand","200","application/json","array","array<empty>",""
+"bulkseedbank.org","/wp/v2/product_tag","https://bulkseedbank.org/wp-json/wp/v2/product_tag","200","application/json","array","meta:array<empty>,name:string,id:number,slug:string,taxonomy:string,_links:object,description:string,yoast_head_json:object,count:number,link:string,yoast_head:string","{
+    ""id"":  609,
+    ""count"":  0,
+    ""description"":  """",
+    ""link"":  ""https://bulkseedbank.org/product-tag/short-fr/"",
+    ""name"":  ""Short"",
+    ""slug"":  ""short-fr"",
+    ""taxonomy"":  ""product_tag"",
+    ""meta"":  [
+
+             ],
+    ""yoast_head"":  ""\u003c!-- This site is optimized with the Yoast SEO plugin v25.6 - https://yoast.com/wordpress/plugins/seo/ --\u003e\n\u003ctitle\u003eShort | Bulk Seed Bank\u003c/title\u003e\n\u003cmeta name=\""robots\"" content=\""index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\"" /\u003e\n\u003clink rel=\""canonical\"" href=\""https://bulkseedbank.org/product-tag/short-fr/\"" /\u003e\n\u003cmeta property=\""og:locale\"" content=\""en_US\"" /\u003e\n\u003cmeta property=\""og:type\"" content=\""article\"" /\u003e\n\u003cmeta property=\""og:title\"" content=\""Short | Bulk Seed Bank\"" /\u003e\n\u003cmeta property=\""og:url\"" content=\""https://bulkseedbank.org/product-tag/short-fr/\"" /\u003e\n\u003cmeta property=\""og:site_name\"" content=\""Bulk Seed Bank\"" /\u003e\n\u003cmeta property=\""og:image\"" content=\""https://bulkseedbank.org/wp-content/uploads/WEB24-7-NOVA-COMP.jpg\"" /\u003e\n\t\u003cmeta property=\""og:image:width\"" content=\""1920\"" /\u003e\n\t\u003cmeta property=\""og:image:height\"" content=\""700\"" /\u003e\n\t\u003cmeta property=\""og:image:type\"" content=\""image/jpeg\"" /\u003e\n\u003cmeta name=\""twitter:card\"" content=\""summary_large_image\"" /\u003e\n\u003cmeta name=\""twitter:site\"" content=\""@BulkSeedBank\"" /\u003e\n\"
+"aceseeds.org","/wc/store/products/reviews","https://aceseeds.org/wp-json/wc/store/products/reviews","200","application/json","array","array<empty>",""
+"aceseeds.org","/wc/store/products/categories","https://aceseeds.org/wp-json/wc/store/products/categories","200","application/json","array","image:object,slug:string,id:number,parent:number,count:number,review_count:number,description:string,name:string,permalink:string","{
+    ""id"":  890,
+    ""name"":  ""ACE Seeds"",
+    ""slug"":  ""ace-seeds-es"",
+    ""description"":  ""ACE Seeds es un colectivo de criadores y amantes del cannabis, dedicados a la preservación y estudio de esta maravillosa planta.\r\n\r\nEn ACE Seeds queremos contribuir a mejorar la falta de diversidad genética y parar la depresión endogámica que sufren las variedades comerciales actualmente, ofreciendo innovadores híbridos criados a partir de nuestras propias líneas estabilizadas.\r\n\r\nEstamos orgullosos de presentaros las variedades de nuestro nuevo catálogo, procedentes de distintos criadores y coleccionistas privados. Estas genéticas son exclusivas y en algunos casos de stock limitado."",
+    ""parent"":  888,
+    ""count"":  76,
+    ""image"":  {
+                  ""id"":  23251,
+                  ""src"":  ""https://www.aceseeds.org/wp-content/uploads/2023/11/aceseed.jpg"",
+                  ""thumbnail"":  ""https://www.aceseeds.org/wp-content/uploads/2023/11/aceseed-300x288.jpg"",
+                  ""srcset"":  ""https://www.aceseeds.org/wp-content/uploads/2023/11/aceseed.jpg 489w, https://www.aceseeds.org/wp-content/uploads/2023/11/aceseed-300x177.jpg 300w"",
+                  ""sizes"":  ""(max-width: 489px) 100vw, 489px"",
+                  ""name"":  ""aceseed"",
+                  ""alt"":  ""aceseed""
+              },
+    ""review_count"":  0,
+    ""permalink"":  ""https://www.aceseeds.org/ace-seeds-es/""
+}"
+"aceseeds.org","/wc/store/products/(?P<id>[\d]+)","https://aceseeds.org/wp-json/wc/store/products/(?P<id>[\d]+)","200","application/json","object","description:string,has_options:boolean,variation:string,on_sale:boolean,grouped_products:array<empty>,prices:object,review_count:number,low_stock_remaining:null,is_on_backorder:boolean,add_to_cart:object,is_in_stock:boolean,average_rating:string,categories:array<empty>,short_description:string,brands:array<empty>,variations:array<object>,parent:number,attributes:array<object>,price_html:string,id:number,images:array<object>,permalink:string,slug:string,tags:array<empty>,extensions:object,type:string,sku:string,is_purchasable:boolean,stock_availability:object,sold_individually:boolean,name:string","{
+    ""id"":  26056,
+    ""name"":  ""Zamaldelica Feminizada (copia)"",
+    ""slug"":  """",
+    ""parent"":  0,
+    ""type"":  ""variable"",
+    ""variation"":  """",
+    ""permalink"":  ""https://www.aceseeds.org/?post_type=product\u0026p=26056"",
+    ""sku"":  ""Zamaldelica_feminized_seeds-1"",
+    ""short_description"":  ""\u003cp\u003eSUPER SATIVA DE FUERTE EFECTO ESTIMULANTE, EUFÓRICO Y PSICODÉLICO\u003c/p\u003e"",
+    ""description"":  ""\u003cp\u003eZamal es una exótica sativa africana procedente de la Isla Reunión, cerca de Madagascar, famosa por su vigor extremo y su legendario efecto psicodélico.\u003c/p\u003e\n\u003cp\u003eUna excelente madre Zamal, seleccionada por su efecto triposo, por su rápida floración y sus destacadas fragancias a zanahoria dulce y flores, fue polinizada por la potentísima Golden Tiger para crear Zamaldelica, un super híbrido sativa de fuerte efecto euforizante y lisérgico e increíble vigor vegetativo.\u003c/p\u003e\n\u003cp\u003eZamaldelica está teniendo una excelente acogida entre los amantes de las sativas de todo el mundo.\u003c/p\u003e\n\u003cp\u003eSu excepcional potencia, altísimo contenido en THC y la calidad de su efecto no tienen parangón en la cría reciente de sativas.\u003c/p\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cdiv\u003e\u003ca href=\""https://phylos.bio/sims/variety/PGT-193097/ace-seeds/zamaldelica-elite\"" target=\""_blank\"" rel=\""noopener\""\u003e\u003cimg src=\""https://aceseeds.org/wp-content/uploads/2015/12/ZamaldelicaStamp.png\"" alig"
+"aceseeds.org","/wc/store/products/(?P<slug>[\S]+)","https://aceseeds.org/wp-json/wc/store/products/(?P<slug>[\S]+)","200","application/json","object","description:string,has_options:boolean,variation:string,on_sale:boolean,grouped_products:array<empty>,prices:object,review_count:number,low_stock_remaining:null,is_on_backorder:boolean,add_to_cart:object,is_in_stock:boolean,average_rating:string,categories:array<empty>,short_description:string,brands:array<empty>,variations:array<object>,parent:number,attributes:array<object>,price_html:string,id:number,images:array<object>,permalink:string,slug:string,tags:array<empty>,extensions:object,type:string,sku:string,is_purchasable:boolean,stock_availability:object,sold_individually:boolean,name:string","{
+    ""id"":  26056,
+    ""name"":  ""Zamaldelica Feminizada (copia)"",
+    ""slug"":  """",
+    ""parent"":  0,
+    ""type"":  ""variable"",
+    ""variation"":  """",
+    ""permalink"":  ""https://www.aceseeds.org/?post_type=product\u0026p=26056"",
+    ""sku"":  ""Zamaldelica_feminized_seeds-1"",
+    ""short_description"":  ""\u003cp\u003eSUPER SATIVA DE FUERTE EFECTO ESTIMULANTE, EUFÓRICO Y PSICODÉLICO\u003c/p\u003e"",
+    ""description"":  ""\u003cp\u003eZamal es una exótica sativa africana procedente de la Isla Reunión, cerca de Madagascar, famosa por su vigor extremo y su legendario efecto psicodélico.\u003c/p\u003e\n\u003cp\u003eUna excelente madre Zamal, seleccionada por su efecto triposo, por su rápida floración y sus destacadas fragancias a zanahoria dulce y flores, fue polinizada por la potentísima Golden Tiger para crear Zamaldelica, un super híbrido sativa de fuerte efecto euforizante y lisérgico e increíble vigor vegetativo.\u003c/p\u003e\n\u003cp\u003eZamaldelica está teniendo una excelente acogida entre los amantes de las sativas de todo el mundo.\u003c/p\u003e\n\u003cp\u003eSu excepcional potencia, altísimo contenido en THC y la calidad de su efecto no tienen parangón en la cría reciente de sativas.\u003c/p\u003e\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cdiv\u003e\u003ca href=\""https://phylos.bio/sims/variety/PGT-193097/ace-seeds/zamaldelica-elite\"" target=\""_blank\"" rel=\""noopener\""\u003e\u003cimg src=\""https://aceseeds.org/wp-content/uploads/2015/12/ZamaldelicaStamp.png\"" alig"
+"aceseeds.org","/wc/store/products/tags","https://aceseeds.org/wp-json/wc/store/products/tags","200","application/json","array","array<empty>",""
+"aceseeds.org","/wc/store/products/collection-data","https://aceseeds.org/wp-json/wc/store/products/collection-data","200","application/json","object","taxonomy_counts:null,stock_status_counts:null,price_range:null,rating_counts:null,attribute_counts:null","{
+    ""price_range"":  null,
+    ""attribute_counts"":  null,
+    ""rating_counts"":  null,
+    ""stock_status_counts"":  null,
+    ""taxonomy_counts"":  null
+}"
+"aceseeds.org","/wp/v2/product","https://aceseeds.org/wp-json/wp/v2/product","200","application/json","array","template:string,id:number,type:string,product_tag:array<empty>,modified_gmt:string,slug:string,excerpt:object,class_list:object,product_brand:array<empty>,featured_media:number,modified:string,title:object,guid:object,date_gmt:string,_links:object,content:object,meta:object,status:string,date:string,link:string,product_cat:array<number>","{
+    ""id"":  34196,
+    ""date"":  ""2025-09-30T09:53:20"",
+    ""date_gmt"":  ""2025-09-30T07:53:20"",
+    ""guid"":  {
+                 ""rendered"":  ""https://www.aceseeds.org/?post_type=product\u0026#038;p=34196""
+             },
+    ""modified"":  ""2025-10-08T19:34:32"",
+    ""modified_gmt"":  ""2025-10-08T17:34:32"",
+    ""slug"":  ""hangkrarok-cola-gorda-semillas-regulares"",
+    ""status"":  ""publish"",
+    ""type"":  ""product"",
+    ""link"":  ""https://www.aceseeds.org/semillas/hangkrarok-cola-gorda-semillas-regulares/"",
+    ""title"":  {
+                  ""rendered"":  ""Hangkrarok Cola Gorda Regular""
+              },
+    ""content"":  {
+                    ""rendered"":  ""\u003cp\u003eSelección realizada por Prempavee en cultivos de valle, eligiendo plantas Hangkrarok compactas y de alto rendimiento.\u003c/p\u003e\n\u003cp\u003ePueden consumir todo lo que les des, y cuanto más las alimentes, más engordan.\u003c/p\u003e\n\u003ch2\u003eANÁLISIS DE CANNABINOIDES\u003c/h2\u003e\n\u003cp\u003e\u003cimg decoding=\""async\"" class=\""size-full wp-image-34251\"" src=\""https://www.aceseeds.org/wp-content/uploads/2025/09/HangKrarok-Fat-Tail-cannabinoid-analysis.jpg\"" alt=\""HangKrarok Cola Gorda análisis de cannabinoides\"" width=\""799\"" height=\""639\"" srcset=\""https://www.aceseeds.org/wp-content/uploads/2025/09/HangKrarok-Fat-Tail-cannabinoid-analysis.jpg 799w, https://www.aceseeds.org/wp-content/uploads/2025/09/HangKrarok-Fat-Tail-cannabinoid-analysis-300x240.jpg 300w, https://www.aceseeds.org/wp-cont"
+"aceseeds.org","/wc/store/products","https://aceseeds.org/wp-json/wc/store/products?per_page=1","200","application/json","array","description:string,has_options:boolean,variation:string,on_sale:boolean,grouped_products:array<empty>,prices:object,review_count:number,low_stock_remaining:null,is_on_backorder:boolean,add_to_cart:object,is_in_stock:boolean,average_rating:string,categories:array<object>,short_description:string,brands:array<empty>,variations:array<empty>,parent:number,attributes:array<object>,price_html:string,id:number,images:array<object>,permalink:string,slug:string,tags:array<empty>,extensions:object,type:string,sku:string,is_purchasable:boolean,stock_availability:object,sold_individually:boolean,name:string","{
+    ""id"":  31549,
+    ""name"":  ""12 HashTonic Regular"",
+    ""slug"":  ""hashtonic-regular-copia"",
+    ""parent"":  0,
+    ""type"":  ""simple"",
+    ""variation"":  """",
+    ""permalink"":  ""https://www.aceseeds.org/semillas/hashtonic-regular-copia/"",
+    ""sku"":  ""HashTonic_regular_seeds-1"",
+    ""short_description"":  ""\u003cp\u003eVERSIÓN MÁS TEMPRANERA Y AFGANA DE CBD #1, CON QUIMIOTIPOS DE SOLO CBD, Y TAMBIÉN EQUILIBRADOS EN THC-CBD\u003c/p\u003e"",
+    ""description"":  ""\u003cp\u003eHashTonic es una versión de CBD #1 con mayor influencia de la ErdPurt afgana. De flores más densas, con un inicio de floración en exterior más temprano, y tiempos de maduración más rápidos y consistentes que la CBD #1 original. También de mejor resistencia contra el frío, pudiendo ser cultivada en latitudes más norteñas, incluso cercanas a 50º C.\u003c/p\u003e\n\u003cp\u003eComo buen cruce directo de ErdPurt, es el perfil de terpenos terroso, apinado y a hachís clásicos de esta variedad los que dominan de forma consistente en HashTonic, en contraste con CBD #1 donde se encuentra más frecuentemente aromas skunky, diesel, almizclados y a mandarina dulce.\u003c/p\u003e\n\u003cp\u003eOtra diferencia importante con respecto a CBD #1 es que mientras que CBD #1 tiene un único quimiotipo estable muy alto en CBD y sin apenas THC, HashTonic produce a nivel poblacional 2 quimiotipos igualmente frecuentes: el primero (al igual que en CBD #1) produce plantas con solo CBD y sin apenas THC, y el segundo quimiotip"
+"aceseeds.org","/wp/v2/product_cat","https://aceseeds.org/wp-json/wp/v2/product_cat","200","application/json","array","meta:array<empty>,name:string,id:number,slug:string,taxonomy:string,_links:object,description:string,parent:number,count:number,link:string","{
+    ""id"":  890,
+    ""count"":  76,
+    ""description"":  ""ACE Seeds es un colectivo de criadores y amantes del cannabis, dedicados a la preservación y estudio de esta maravillosa planta.\r\n\r\nEn ACE Seeds queremos contribuir a mejorar la falta de diversidad genética y parar la depresión endogámica que sufren las variedades comerciales actualmente, ofreciendo innovadores híbridos criados a partir de nuestras propias líneas estabilizadas.\r\n\r\nEstamos orgullosos de presentaros las variedades de nuestro nuevo catálogo, procedentes de distintos criadores y coleccionistas privados. Estas genéticas son exclusivas y en algunos casos de stock limitado."",
+    ""link"":  ""https://www.aceseeds.org/ace-seeds-es/"",
+    ""name"":  ""ACE Seeds"",
+    ""slug"":  ""ace-seeds-es"",
+    ""taxonomy"":  ""product_cat"",
+    ""parent"":  888,
+    ""meta"":  [
+
+             ],
+    ""_links"":  {
+                   ""self"":  [
+                                {
+                                    ""href"":  ""https://www.aceseeds.org/wp-json/wp/v2/product_cat/890"",
+                                    ""targetHints"":  ""@{allow=System.Object[]}""
+                                }
+                            ],
+                   ""collection"":  [
+                                      {
+                                          ""href"":  ""https://www.aceseeds.org/wp-json/wp/v2/product_cat""
+                                      }
+                                  ],
+                   ""about"":  [
+       "
+"aceseeds.org","/wc/store/products/brands","https://aceseeds.org/wp-json/wc/store/products/brands","200","application/json","array","array<empty>",""
+"aceseeds.org","/wc/store/products/attributes","https://aceseeds.org/wp-json/wc/store/products/attributes","200","application/json","array","id:number,type:string,taxonomy:string,count:number,order:string,has_archives:boolean,name:string","{
+    ""id"":  38,
+    ""name"":  ""Height"",
+    ""taxonomy"":  ""pa_altura"",
+    ""type"":  ""select"",
+    ""order"":  ""menu_order"",
+    ""has_archives"":  true,
+    ""count"":  4
+}"
+"aceseeds.org","/wp/v2/product_brand","https://aceseeds.org/wp-json/wp/v2/product_brand","200","application/json","array","array<empty>",""
+"aceseeds.org","/wp/v2/product_tag","https://aceseeds.org/wp-json/wp/v2/product_tag","200","application/json","array","array<empty>",""
+"blimburnseeds.com","/wc/store/products/reviews","https://blimburnseeds.com/wp-json/wc/store/products/reviews","200","application/json","array","id:number,product_id:number,verified:boolean,date_created_gmt:string,formatted_date_created:string,date_created:string,rating:number,review:string,product_permalink:string,product_name:string,reviewer:string,product_image:object,reviewer_avatar_urls:object","{
+    ""id"":  529971,
+    ""date_created"":  ""2025-07-16T00:00:00"",
+    ""formatted_date_created"":  ""July 16, 2025"",
+    ""date_created_gmt"":  ""2025-07-16T07:00:00"",
+    ""product_id"":  899,
+    ""product_name"":  ""GG4"",
+    ""product_permalink"":  ""https://blimburnseeds.com/gorilla-glue-4/"",
+    ""product_image"":  {
+                          ""id"":  335806,
+                          ""src"":  ""https://blimburnseeds.com/wp-content/uploads/2021/04/gorilla_glue_4.webp"",
+                          ""thumbnail"":  ""https://blimburnseeds.com/wp-content/uploads/2021/04/gorilla_glue_4-300x300.webp"",
+                          ""srcset"":  ""https://blimburnseeds.com/wp-content/uploads/2021/04/gorilla_glue_4.webp 600w, https://blimburnseeds.com/wp-content/uploads/2021/04/gorilla_glue_4-150x150.webp 150w, https://blimburnseeds.com/wp-content/uploads/2021/04/gorilla_glue_4-300x300.webp 300w, https://blimburnseeds.com/wp-content/uploads/2021/04/gorilla_glue_4-60x60.webp 60w, https://blimburnseeds.com/wp-content/uploads/2021/04/gorilla_glue_4-110x110.webp 110w, https://blimburnseeds.com/wp-content/uploads/2021/04/gorilla_glue_4-100x100.webp 100w"",
+                          ""sizes"":  ""(max-width: 600px) 100vw, 600px"",
+                          ""name"":  ""gorilla_glue_#4"",
+                          ""alt"":  ""The Gorilla Glue 4 cannabis plant with dense buds and lush green leaves.""
+                      },
+    ""reviewer"":  ""Carl\r"",
+    ""review"":  ""\u003cp\u003eEasy to grow, great for beginners."
+"blimburnseeds.com","/wc/store/products/categories","https://blimburnseeds.com/wp-json/wc/store/products/categories","200","application/json","array","image:null,slug:string,id:number,parent:number,count:number,review_count:number,description:string,name:string,permalink:string","{
+    ""id"":  7415,
+    ""name"":  ""All Over Printed Hoodies"",
+    ""slug"":  ""all-over-printed-hoodies"",
+    ""description"":  """",
+    ""parent"":  7393,
+    ""count"":  3,
+    ""image"":  null,
+    ""review_count"":  0,
+    ""permalink"":  ""https://blimburnseeds.com/clothes/all-over-printed-hoodies/""
+}"
+"blimburnseeds.com","/wc/store/products/(?P<id>[\d]+)","https://blimburnseeds.com/wp-json/wc/store/products/(?P<id>[\d]+)","200","application/json","object","description:string,has_options:boolean,variation:string,on_sale:boolean,grouped_products:array<empty>,prices:object,review_count:number,low_stock_remaining:null,is_on_backorder:boolean,add_to_cart:object,is_in_stock:boolean,average_rating:string,categories:array<object>,short_description:string,brands:array<empty>,variations:array<object>,parent:number,attributes:array<object>,price_html:string,id:number,images:array<object>,permalink:string,slug:string,tags:array<empty>,extensions:object,type:string,sku:string,is_purchasable:boolean,stock_availability:object,sold_individually:boolean,name:string","{
+    ""id"":  299588,
+    ""name"":  ""Rainbow Sherbet"",
+    ""slug"":  """",
+    ""parent"":  0,
+    ""type"":  ""variable"",
+    ""variation"":  """",
+    ""permalink"":  ""https://blimburnseeds.com/?post_type=product\u0026p=299588"",
+    ""sku"":  ""BF1400"",
+    ""short_description"":  ""\u003cp\u003eExperience relaxation and flavor with \u003cstrong\u003eRainbow Sherbet\u003c/strong\u003e cannabis seeds, a mostly Indica strain perfect for enhancing your grow.\u003c/p\u003e"",
+    ""description"":  ""\u003ch2\u003eLineage Rainbow Sherbet strain\u003c/h2\u003e\n\u003cp\u003eThe strain resulting from the cross between a \u003cstrong\u003eChampagne x Blackberry\u003c/strong\u003e will produce a hybrid strain Mostly Indica. The strain will likely have a Mint, Sweet, Strawberry flavor with a strong Mostly Indica body high.\u003c/p\u003e\n\u003cp\u003eIt also has a \u003cstrong\u003eMedium THC\u003c/strong\u003e 20% \u0026#8211; 22%, making it a great choice for those looking for a strong and relaxing experience.\u003c/p\u003e\n\u003cp\u003eThe \u003cstrong\u003eRainbow Sherbet\u003c/strong\u003e strain is a cross between \u003cstrong\u003eChampagne x Blackberry\u003c/strong\u003e, resulting in a strain with a Mint, Sweet, Strawberry flavor, as well as potent Focused, Happy, Relaxed effects and a combination of cannabis flower, cannabis concentrate, and terpenes.\u003c/p\u003e\n\u003cp\u003eThe terpenes found in \u003cstrong\u003eRainbow Sherbet\u003c/strong\u003e are to include Caryophyllene, Linano"
+"blimburnseeds.com","/wc/store/products/(?P<slug>[\S]+)","https://blimburnseeds.com/wp-json/wc/store/products/(?P<slug>[\S]+)","200","application/json","object","description:string,has_options:boolean,variation:string,on_sale:boolean,grouped_products:array<empty>,prices:object,review_count:number,low_stock_remaining:null,is_on_backorder:boolean,add_to_cart:object,is_in_stock:boolean,average_rating:string,categories:array<object>,short_description:string,brands:array<empty>,variations:array<object>,parent:number,attributes:array<object>,price_html:string,id:number,images:array<object>,permalink:string,slug:string,tags:array<empty>,extensions:object,type:string,sku:string,is_purchasable:boolean,stock_availability:object,sold_individually:boolean,name:string","{
+    ""id"":  299588,
+    ""name"":  ""Rainbow Sherbet"",
+    ""slug"":  """",
+    ""parent"":  0,
+    ""type"":  ""variable"",
+    ""variation"":  """",
+    ""permalink"":  ""https://blimburnseeds.com/?post_type=product\u0026p=299588"",
+    ""sku"":  ""BF1400"",
+    ""short_description"":  ""\u003cp\u003eExperience relaxation and flavor with \u003cstrong\u003eRainbow Sherbet\u003c/strong\u003e cannabis seeds, a mostly Indica strain perfect for enhancing your grow.\u003c/p\u003e"",
+    ""description"":  ""\u003ch2\u003eLineage Rainbow Sherbet strain\u003c/h2\u003e\n\u003cp\u003eThe strain resulting from the cross between a \u003cstrong\u003eChampagne x Blackberry\u003c/strong\u003e will produce a hybrid strain Mostly Indica. The strain will likely have a Mint, Sweet, Strawberry flavor with a strong Mostly Indica body high.\u003c/p\u003e\n\u003cp\u003eIt also has a \u003cstrong\u003eMedium THC\u003c/strong\u003e 20% \u0026#8211; 22%, making it a great choice for those looking for a strong and relaxing experience.\u003c/p\u003e\n\u003cp\u003eThe \u003cstrong\u003eRainbow Sherbet\u003c/strong\u003e strain is a cross between \u003cstrong\u003eChampagne x Blackberry\u003c/strong\u003e, resulting in a strain with a Mint, Sweet, Strawberry flavor, as well as potent Focused, Happy, Relaxed effects and a combination of cannabis flower, cannabis concentrate, and terpenes.\u003c/p\u003e\n\u003cp\u003eThe terpenes found in \u003cstrong\u003eRainbow Sherbet\u003c/strong\u003e are to include Caryophyllene, Linano"
+"blimburnseeds.com","/wc/store/products/tags","https://blimburnseeds.com/wp-json/wc/store/products/tags","200","application/json","array","slug:string,id:number,parent:number,count:number,description:string,name:string","{
+    ""id"":  388,
+    ""name"":  ""Bestseller"",
+    ""slug"":  ""bestseller"",
+    ""description"":  """",
+    ""parent"":  0,
+    ""count"":  14
+}"
+"blimburnseeds.com","/wc/store/products/collection-data","https://blimburnseeds.com/wp-json/wc/store/products/collection-data","200","application/json","object","taxonomy_counts:null,stock_status_counts:null,price_range:null,rating_counts:null,attribute_counts:null","{
+    ""price_range"":  null,
+    ""attribute_counts"":  null,
+    ""rating_counts"":  null,
+    ""stock_status_counts"":  null,
+    ""taxonomy_counts"":  null
+}"
+"blimburnseeds.com","/wp/v2/product","https://blimburnseeds.com/wp-json/wp/v2/product","200","application/json","array","template:string,id:number,type:string,product_tag:array<empty>,acf:array<empty>,modified_gmt:string,slug:string,excerpt:object,class_list:object,product_brand:array<empty>,featured_media:number,modified:string,title:object,guid:object,date_gmt:string,_links:object,content:object,meta:object,status:string,date:string,link:string,product_cat:array<number>","{
+    ""id"":  518004,
+    ""date"":  ""2025-08-14T04:05:20"",
+    ""date_gmt"":  ""2025-08-14T11:05:20"",
+    ""guid"":  {
+                 ""rendered"":  ""https://blimburnseeds.com/?post_type=product\u0026#038;p=518004""
+             },
+    ""modified"":  ""2025-10-07T23:23:18"",
+    ""modified_gmt"":  ""2025-10-08T06:23:18"",
+    ""slug"":  ""shortcut-auto"",
+    ""status"":  ""publish"",
+    ""type"":  ""product"",
+    ""link"":  ""https://blimburnseeds.com/shortcut-auto/"",
+    ""title"":  {
+                  ""rendered"":  ""Shortcut Auto""
+              },
+    ""content"":  {
+                    ""rendered"":  ""\u003ch2\u003eLineage Shortcut Auto Strain\u003c/h2\u003e\n\u003cp\u003eIntroducing the \u003cstrong\u003eShortcut Auto strain\u003c/strong\u003e, a remarkable autoflowering cannabis variety that perfectly balances potency and ease of growth. With a high THC content ranging from \u003cstrong\u003e21% to 30%\u003c/strong\u003e and a low CBD level of 2% to 3.8%, this strain offers a unique experience for both recreational and medicinal users.\u003c/p\u003e\n\u003cp\u003eDerived from the exquisite lineage of\u003cstrong\u003e Pineapple Runtz crossed with Ruderalis\u003c/strong\u003e, Shortcut Auto is a 50/50 hybrid, combining the best of both Sativa and Indica worlds. Ideal for growers seeking a high-yielding strain, it can produce up to 1.31 oz/ft² indoors and an impressive 28.22 oz/plant outdoors. Standing at a height of\u003cstrong\u003e 4.92 ft,\u003c/strong\u003e it\u0026#8217;s perfect for "
+"blimburnseeds.com","/wc/store/products","https://blimburnseeds.com/wp-json/wc/store/products?per_page=1","200","application/json","array","description:string,has_options:boolean,variation:string,on_sale:boolean,grouped_products:array<empty>,prices:object,review_count:number,low_stock_remaining:null,is_on_backorder:boolean,add_to_cart:object,is_in_stock:boolean,average_rating:string,categories:array<object>,short_description:string,brands:array<empty>,variations:array<object>,parent:number,attributes:array<object>,price_html:string,id:number,images:array<object>,permalink:string,slug:string,tags:array<empty>,extensions:object,type:string,sku:string,is_purchasable:boolean,stock_availability:object,sold_individually:boolean,name:string","{
+    ""id"":  518004,
+    ""name"":  ""Shortcut Auto"",
+    ""slug"":  ""shortcut-auto"",
+    ""parent"":  0,
+    ""type"":  ""variable"",
+    ""variation"":  """",
+    ""permalink"":  ""https://blimburnseeds.com/shortcut-auto/"",
+    ""sku"":  ""HVG017"",
+    ""short_description"":  ""\u003cp\u003e\u003cspan data-sheets-root=\""1\""\u003eShortcut Auto is a balanced 50/50 hybrid with a high THC content (21%-30%) and low CBD (2%-3.8%), offering a sweet, tropical pineapple aroma. Ideal for reducing stress and fatigue, this autoflowering strain is perfect for growers seeking high yields in temperate climates year-round.\u003c/span\u003e\u003c/p\u003e"",
+    ""description"":  ""\u003ch2\u003eLineage Shortcut Auto Strain\u003c/h2\u003e\n\u003cp\u003eIntroducing the \u003cstrong\u003eShortcut Auto strain\u003c/strong\u003e, a remarkable autoflowering cannabis variety that perfectly balances potency and ease of growth. With a high THC content ranging from \u003cstrong\u003e21% to 30%\u003c/strong\u003e and a low CBD level of 2% to 3.8%, this strain offers a unique experience for both recreational and medicinal users.\u003c/p\u003e\n\u003cp\u003eDerived from the exquisite lineage of\u003cstrong\u003e Pineapple Runtz crossed with Ruderalis\u003c/strong\u003e, Shortcut Auto is a 50/50 hybrid, combining the best of both Sativa and Indica worlds. Ideal for growers seeking a high-yielding strain, it can produce up to 1.31 oz/ft² indoors and an impressive 28.22 oz/plant outdoors. Standing at a height of\u003cstrong"
+"blimburnseeds.com","/wp/v2/product_cat","https://blimburnseeds.com/wp-json/wp/v2/product_cat","200","application/json","array","meta:array<empty>,name:string,id:number,slug:string,taxonomy:string,_links:object,description:string,parent:number,count:number,acf:array<empty>,link:string","{
+    ""id"":  7180,
+    ""count"":  0,
+    ""description"":  ""Don’t miss out on this opportunity to enhance your grow with premium cannabis seeds at an unbeatable price. Our carefully curated selection offers something for every grower, with top genetics and robust strains that deliver results. Take advantage of this special offer and secure your seeds today, perfect for adding variety to your garden or expanding your collection!"",
+    ""link"":  ""https://blimburnseeds.com/6-seeds-for-39/"",
+    ""name"":  ""6 Seeds for $39"",
+    ""slug"":  ""6-seeds-for-39"",
+    ""taxonomy"":  ""product_cat"",
+    ""parent"":  0,
+    ""meta"":  [
+
+             ],
+    ""acf"":  [
+
+            ],
+    ""_links"":  {
+                   ""self"":  [
+                                {
+                                    ""href"":  ""https://blimburnseeds.com/wp-json/wp/v2/product_cat/7180"",
+                                    ""targetHints"":  ""@{allow=System.Object[]}""
+                                }
+                            ],
+                   ""collection"":  [
+                                      {
+                                          ""href"":  ""https://blimburnseeds.com/wp-json/wp/v2/product_cat""
+                                      }
+                                  ],
+                   ""about"":  [
+                                 {
+                                     ""href"":  ""https://blimburnseeds.com/wp-json/wp/v2/taxonomies/product_cat""
+                                 }
+     "
+"blimburnseeds.com","/wc/store/products/brands","https://blimburnseeds.com/wp-json/wc/store/products/brands","200","application/json","array","array<empty>",""
+"blimburnseeds.com","/wc/store/products/attributes","https://blimburnseeds.com/wp-json/wc/store/products/attributes","200","application/json","array","id:number,type:string,taxonomy:string,count:number,order:string,has_archives:boolean,name:string","{
+    ""id"":  137,
+    ""name"":  ""Aroma"",
+    ""taxonomy"":  ""pa_aroma"",
+    ""type"":  ""select"",
+    ""order"":  ""menu_order"",
+    ""has_archives"":  false,
+    ""count"":  28
+}"
+"blimburnseeds.com","/wp/v2/product_brand","https://blimburnseeds.com/wp-json/wp/v2/product_brand","200","application/json","array","array<empty>",""
+"blimburnseeds.com","/wp/v2/product_tag","https://blimburnseeds.com/wp-json/wp/v2/product_tag","200","application/json","array","meta:array<empty>,name:string,id:number,slug:string,taxonomy:string,_links:object,description:string,count:number,acf:array<empty>,link:string","{
+    ""id"":  388,
+    ""count"":  13,
+    ""description"":  """",
+    ""link"":  ""https://blimburnseeds.com/product-tag/bestseller/"",
+    ""name"":  ""Bestseller"",
+    ""slug"":  ""bestseller"",
+    ""taxonomy"":  ""product_tag"",
+    ""meta"":  [
+
+             ],
+    ""acf"":  [
+
+            ],
+    ""_links"":  {
+                   ""self"":  [
+                                {
+                                    ""href"":  ""https://blimburnseeds.com/wp-json/wp/v2/product_tag/388"",
+                                    ""targetHints"":  ""@{allow=System.Object[]}""
+                                }
+                            ],
+                   ""collection"":  [
+                                      {
+                                          ""href"":  ""https://blimburnseeds.com/wp-json/wp/v2/product_tag""
+                                      }
+                                  ],
+                   ""about"":  [
+                                 {
+                                     ""href"":  ""https://blimburnseeds.com/wp-json/wp/v2/taxonomies/product_tag""
+                                 }
+                             ],
+                   ""wp:post_type"":  [
+                                        {
+                                            ""href"":  ""https://blimburnseeds.com/wp-json/wp/v2/product?product_tag=388""
+                                        }
+                                    ],
+                   ""curies"":  [
+                                  {
+         "
+"nirvanashop.com","/products.json","https://nirvanashop.com/products.json","200","application/json","object","products:array<object>","{
+    ""products"":  [
+                     {
+                         ""id"":  10541118914824,
+                         ""title"":  ""Zkittlez Feminized 100 Seeds"",
+                         ""handle"":  ""zkittlez-feminized-100-seeds"",
+                         ""body_html"":  null,
+                         ""published_at"":  ""2025-10-06T14:36:25+02:00"",
+                         ""created_at"":  ""2025-10-03T13:49:33+02:00"",
+                         ""updated_at"":  ""2025-10-10T22:37:02+02:00"",
+                         ""vendor"":  ""Nirvana Shop"",
+                         ""product_type"":  """",
+                         ""tags"":  ""Wholesale"",
+                         ""variants"":  """",
+                         ""images"":  """",
+                         ""options"":  """"
+                     },
+                     {
+                         ""id"":  10541118521608,
+                         ""title"":  ""Zkittlez Autoflower 100 Seeds"",
+                         ""handle"":  ""zkittlez-autoflower-100-seeds"",
+                         ""body_html"":  null,
+                         ""published_at"":  ""2025-10-06T14:36:25+02:00"",
+                         ""created_at"":  ""2025-10-03T13:48:40+02:00"",
+                         ""updated_at"":  ""2025-10-10T22:37:02+02:00"",
+                         ""vendor"":  ""Nirvana Shop"",
+                         ""product_type"":  """",
+                         ""tags"":  ""Wholesale"",
+                         ""variants"":  """",
+                         ""images"":  """",
+         "
+"spliffseeds.nl","/wc/store/products/reviews","https://spliffseeds.nl/wp-json/wc/store/products/reviews","200","application/json","array","id:number,product_id:number,verified:boolean,date_created_gmt:string,formatted_date_created:string,date_created:string,rating:number,review:string,product_permalink:string,product_name:string,reviewer:string,product_image:object,reviewer_avatar_urls:object","{
+    ""id"":  424,
+    ""date_created"":  ""2025-09-30T20:28:27"",
+    ""formatted_date_created"":  ""September 30, 2025"",
+    ""date_created_gmt"":  ""2025-09-30T18:28:27"",
+    ""product_id"":  111281,
+    ""product_name"":  ""Lemon Cream Kush Female Cannabis Seeds"",
+    ""product_permalink"":  ""https://www.spliffseeds.nl/product/lemon-cream-kush-female-cannabis-seeds/"",
+    ""product_image"":  {
+                          ""id"":  126669,
+                          ""src"":  ""https://www.spliffseeds.nl/wp-content/uploads/2022/08/Lemon-Cream-Kush.jpg"",
+                          ""thumbnail"":  ""https://www.spliffseeds.nl/wp-content/uploads/2022/08/Lemon-Cream-Kush-300x300.jpg"",
+                          ""srcset"":  ""https://www.spliffseeds.nl/wp-content/uploads/2022/08/Lemon-Cream-Kush.jpg 1181w, https://www.spliffseeds.nl/wp-content/uploads/2022/08/Lemon-Cream-Kush-980x980.jpg 980w, https://www.spliffseeds.nl/wp-content/uploads/2022/08/Lemon-Cream-Kush-480x480.jpg 480w"",
+                          ""sizes"":  ""(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1181px, 100vw"",
+                          ""name"":  ""Lemon Cream Kush"",
+                          ""alt"":  ""Lemon Cream Kush Cannabis Seed""
+                      },
+    ""reviewer"":  ""Marco"",
+    ""review"":  ""\u003cp\u003eVon Beginn an fiel mir auf, wie stabil und kräftig die Samen waren. Die Keimrate lag bei mir durchweg bei fast 100 %, und die kleinen Pflänzchen entwicke"
+"spliffseeds.nl","/wc/store/products/categories","https://spliffseeds.nl/wp-json/wc/store/products/categories","200","application/json","array","image:null,slug:string,id:number,parent:number,count:number,review_count:number,description:string,name:string,permalink:string","{
+    ""id"":  23,
+    ""name"":  ""Autoflowering Seeds"",
+    ""slug"":  ""autoflowering-seeds"",
+    ""description"":  ""Find the best autoflowering cannabis seeds for your grow at Spliff Seeds. Enjoy effortless growth and fast results. Diverse strains available."",
+    ""parent"":  0,
+    ""count"":  14,
+    ""image"":  null,
+    ""review_count"":  33,
+    ""permalink"":  ""https://www.spliffseeds.nl/product-category/autoflowering-seeds/""
+}"
+"spliffseeds.nl","/wc/store/products/tags","https://spliffseeds.nl/wp-json/wc/store/products/tags","200","application/json","array","array<empty>",""
+"spliffseeds.nl","/wc/store/products/collection-data","https://spliffseeds.nl/wp-json/wc/store/products/collection-data","200","application/json","object","taxonomy_counts:null,stock_status_counts:null,price_range:null,rating_counts:null,attribute_counts:null","{
+    ""price_range"":  null,
+    ""attribute_counts"":  null,
+    ""rating_counts"":  null,
+    ""stock_status_counts"":  null,
+    ""taxonomy_counts"":  null
+}"
+"spliffseeds.nl","/wp/v2/product","https://spliffseeds.nl/wp-json/wp/v2/product","200","application/json","array","template:string,id:number,type:string,product_tag:array<empty>,acf:array<empty>,modified_gmt:string,slug:string,excerpt:object,class_list:object,product_brand:array<empty>,featured_media:number,comment_status:string,modified:string,title:object,guid:object,date_gmt:string,_links:object,content:object,ping_status:string,meta:object,status:string,date:string,link:string,product_cat:array<number>","{
+    ""id"":  142117,
+    ""date"":  ""2024-05-29T15:09:32"",
+    ""date_gmt"":  ""2024-05-29T13:09:32"",
+    ""guid"":  {
+                 ""rendered"":  ""http://www.spliffseeds.nl/?post_type=product\u0026#038;p=142117""
+             },
+    ""modified"":  ""2025-05-21T14:45:41"",
+    ""modified_gmt"":  ""2025-05-21T12:45:41"",
+    ""slug"":  ""nevilles-haze-female-cannabis-seeds"",
+    ""status"":  ""publish"",
+    ""type"":  ""product"",
+    ""link"":  ""https://www.spliffseeds.nl/product/nevilles-haze-female-cannabis-seeds/"",
+    ""title"":  {
+                  ""rendered"":  ""Neville\u0026#8217;s Haze Female Cannabis Seeds""
+              },
+    ""content"":  {
+                    ""rendered"":  ""\u003ch3\u003eNeville\u0026#8217;s Haze Female Cannabis Seeds\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eNeville’s Haze is an old school, multiple time cup winning hybrid that set the standard for Hazes! A long flowering time. This pure sativa will is tall and require lots of maintenance. Well recommended for sativa lovers who miss the powerful effects of the original Haze.\u003cbr /\u003e\n\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eWe wanted to make a feminized version to honour the Dutch legend Neville Schoenmakers, and are extremely proud of the results. Neville’s Haze will grow at a fast pace, with long, thin fan leaves and a wide internodal spacing. Plant training may be beneficial, such as tying down or topping to help control the final height.\u003c/p\u003e\n\u003cp\u003eFlowering time will b"
+"spliffseeds.nl","/wc/store/products","https://spliffseeds.nl/wp-json/wc/store/products?per_page=1","200","application/json","array","description:string,has_options:boolean,variation:string,on_sale:boolean,grouped_products:array<empty>,prices:object,review_count:number,low_stock_remaining:null,is_on_backorder:boolean,add_to_cart:object,is_in_stock:boolean,average_rating:string,categories:array<object>,short_description:string,brands:array<empty>,variations:array<empty>,parent:number,attributes:array<object>,price_html:string,id:number,images:array<object>,permalink:string,slug:string,tags:array<empty>,extensions:object,type:string,sku:string,is_purchasable:boolean,stock_availability:object,sold_individually:boolean,name:string","{
+    ""id"":  142117,
+    ""name"":  ""Neville\u0026#8217;s Haze Female Cannabis Seeds"",
+    ""slug"":  ""nevilles-haze-female-cannabis-seeds"",
+    ""parent"":  0,
+    ""type"":  ""simple"",
+    ""variation"":  """",
+    ""permalink"":  ""https://www.spliffseeds.nl/product/nevilles-haze-female-cannabis-seeds/"",
+    ""sku"":  ""8954022"",
+    ""short_description"":  ""\u003ctable class=\""responsive display nowrap data-t dataTable no-footer overlayed\"" style=\""width: 100%;border-color: #e0e0e0;border-style: solid\""\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth class=\""wdtheader column-details\"" colspan=\""1\"" rowspan=\""1\"" data-hide=\""phone\""\u003eDetails:\u003c/th\u003e\n\u003cth class=\""wdtheader column-indoor\"" colspan=\""1\"" rowspan=\""1\""\u003eIndoor:\u003c/th\u003e\n\u003cth class=\""wdtheader column-outdoor\"" colspan=\""1\"" rowspan=\""1\""\u003eOutdoor:\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr class=\""even\""\u003e\n\u003ctd class=\""wdtlabel\""\u003eSuited for:\u003c/td\u003e\n\u003ctd\u003eIndoor (I)\u003c/td\u003e\n\u003ctd\u003eOutdoor (E) \u003ca href=\""http://www.spliffseeds.nl/outdoor-grow-zones/\"" target=\""_blank\"" rel=\""noopener noreferrer\""\u003ezone C\u003c/a\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr class=\""odd\""\u003e\n\u003ctd class=\""wdtlabel\""\u003eFlowering:\u003c/td\u003e\n\u003ctd\u003eI) 10-14 weeks\u003c/td\u003e\n\u003ctd\u003eE)November\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr class=\""even\""\u003e\n\u003ctd class=\""wdtlabel\"
+"spliffseeds.nl","/wp/v2/product_cat","https://spliffseeds.nl/wp-json/wp/v2/product_cat","200","application/json","array","meta:array<empty>,name:string,id:number,slug:string,taxonomy:string,_links:object,description:string,parent:number,count:number,acf:array<empty>,link:string","{
+    ""id"":  23,
+    ""count"":  14,
+    ""description"":  ""Find the best autoflowering cannabis seeds for your grow at Spliff Seeds. Enjoy effortless growth and fast results. Diverse strains available."",
+    ""link"":  ""https://www.spliffseeds.nl/product-category/autoflowering-seeds/"",
+    ""name"":  ""Autoflowering Seeds"",
+    ""slug"":  ""autoflowering-seeds"",
+    ""taxonomy"":  ""product_cat"",
+    ""parent"":  0,
+    ""meta"":  [
+
+             ],
+    ""acf"":  [
+
+            ],
+    ""_links"":  {
+                   ""self"":  [
+                                {
+                                    ""href"":  ""https://www.spliffseeds.nl/wp-json/wp/v2/product_cat/23"",
+                                    ""targetHints"":  ""@{allow=System.Object[]}""
+                                }
+                            ],
+                   ""collection"":  [
+                                      {
+                                          ""href"":  ""https://www.spliffseeds.nl/wp-json/wp/v2/product_cat""
+                                      }
+                                  ],
+                   ""about"":  [
+                                 {
+                                     ""href"":  ""https://www.spliffseeds.nl/wp-json/wp/v2/taxonomies/product_cat""
+                                 }
+                             ],
+                   ""wp:post_type"":  [
+                                        {
+                                            ""href"":  ""https://www.spliffseeds.nl/wp-jso"
+"spliffseeds.nl","/wc/store/products/brands","https://spliffseeds.nl/wp-json/wc/store/products/brands","200","application/json","array","array<empty>",""
+"spliffseeds.nl","/wc/store/products/attributes","https://spliffseeds.nl/wp-json/wc/store/products/attributes","200","application/json","array","id:number,type:string,taxonomy:string,count:number,order:string,has_archives:boolean,name:string","{
+    ""id"":  1,
+    ""name"":  ""CBD"",
+    ""taxonomy"":  ""pa_cbd"",
+    ""type"":  ""select"",
+    ""order"":  ""menu_order"",
+    ""has_archives"":  false,
+    ""count"":  3
+}"
+"spliffseeds.nl","/wp/v2/product_brand","https://spliffseeds.nl/wp-json/wp/v2/product_brand","200","application/json","array","array<empty>",""
+"spliffseeds.nl","/wp/v2/product_tag","https://spliffseeds.nl/wp-json/wp/v2/product_tag","200","application/json","array","meta:array<empty>,name:string,id:number,slug:string,taxonomy:string,_links:object,description:string,count:number,acf:array<empty>,link:string","{
+    ""id"":  26,
+    ""count"":  0,
+    ""description"":  """",
+    ""link"":  ""https://www.spliffseeds.nl/product-tag/tag-1/"",
+    ""name"":  ""Tag 1"",
+    ""slug"":  ""tag-1"",
+    ""taxonomy"":  ""product_tag"",
+    ""meta"":  [
+
+             ],
+    ""acf"":  [
+
+            ],
+    ""_links"":  {
+                   ""self"":  [
+                                {
+                                    ""href"":  ""https://www.spliffseeds.nl/wp-json/wp/v2/product_tag/26"",
+                                    ""targetHints"":  ""@{allow=System.Object[]}""
+                                }
+                            ],
+                   ""collection"":  [
+                                      {
+                                          ""href"":  ""https://www.spliffseeds.nl/wp-json/wp/v2/product_tag""
+                                      }
+                                  ],
+                   ""about"":  [
+                                 {
+                                     ""href"":  ""https://www.spliffseeds.nl/wp-json/wp/v2/taxonomies/product_tag""
+                                 }
+                             ],
+                   ""wp:post_type"":  [
+                                        {
+                                            ""href"":  ""https://www.spliffseeds.nl/wp-json/wp/v2/product?product_tag=26""
+                                        }
+                                    ],
+                   ""curies"":  [
+                                  {
+                       "

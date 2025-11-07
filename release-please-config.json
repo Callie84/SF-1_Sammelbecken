@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootstrap-sha": "",
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "changelog-path": "CHANGELOG.md",
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": true,
+      "draft": false
+    },
+    "apps/frontend": {
+      "release-type": "node",
+      "changelog-path": "apps/frontend/CHANGELOG.md",
+      "draft": false
+    },
+    "apps/backend": {
+      "release-type": "node",
+      "changelog-path": "apps/backend/CHANGELOG.md",
+      "draft": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: smoke-script
+  namespace: testing
+
+data:
+  run.sh: |
+    #!/bin/sh
+    set -euo pipefail
+    : "${BASE_URL:=https://seedfinderpro.de}"
+    : "${HEALTH_URL:=https://seedfinderpro.de/api/health}"
+
+    echo "[SF-1] Smoke: $BASE_URL" >&2
+    code=$(curl -fsSL -o /dev/null -w "%{http_code}" "$BASE_URL")
+    if [ "$code" != "200" ]; then
+      echo "Frontend HTTP != 200: $code" >&2
+      exit 1
+    fi
+
+    echo "[SF-1] Smoke: $HEALTH_URL" >&2
+    body=$(curl -fsSL "$HEALTH_URL")
+    echo "$body" | jq -e '.status=="ok"' >/dev/null || {
+      echo "Health JSON unexpected: $body" >&2; exit 1; }
+
+    echo "OK"

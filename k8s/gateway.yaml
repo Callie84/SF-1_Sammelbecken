@@ -1,0 +1,37 @@
+# SF-1 API-Gateway (Caddy Ingress + Routing)
+# Namespace: default | Class: caddy | Cert: letsencrypt
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sf1-api-gateway
+  namespace: default
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  ingressClassName: caddy
+  tls:
+    - hosts: ["seedfinderpro.de", "canary.seedfinderpro.de"]
+      secretName: sf1-api-tls
+  rules:
+    - host: seedfinderpro.de
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: sf1-backend
+                port:
+                  number: 80
+    - host: canary.seedfinderpro.de
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: sf1-backend-canary
+                port:
+                  number: 80

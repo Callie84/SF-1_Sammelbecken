@@ -1,0 +1,8 @@
+:root {
+  --bg: #0a0e12;           /* Tief-Schwarz */
+  --surface: #141820;      /* Cards */
+  --accent: #10b981;       /* Cannabis-GrÃƒÂ¼n */
+  --accent-glow: #10b98140; /* Neon-Glow */
+  --text: #e5f1e8;         /* Soft-WeiÃƒÅ¸ */
+  --danger: #ef4444;       /* Alarm-Rot */
+}

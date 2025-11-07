@@ -1,0 +1,29 @@
+{
+    "image":  {
+                  "type":  "null"
+              },
+    "slug":  {
+                 "type":  "string"
+             },
+    "id":  {
+               "type":  "number"
+           },
+    "parent":  {
+                   "type":  "number"
+               },
+    "count":  {
+                  "type":  "number"
+              },
+    "review_count":  {
+                         "type":  "number"
+                     },
+    "description":  {
+                        "type":  "string"
+                    },
+    "name":  {
+                 "type":  "string"
+             },
+    "permalink":  {
+                      "type":  "string"
+                  }
+}

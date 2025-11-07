@@ -1,0 +1,17 @@
+{
+    "include":  [
+                    "src/server.ts",
+                    "src/routes/**/*.ts",
+                    "src/scraper/**/*.ts",
+                    "src/types/**/*.ts"
+                ],
+    "compilerOptions":  {
+                            "noEmitOnError":  false,
+                            "rootDir":  "src",
+                            "strict":  true,
+                            "outDir":  "dist",
+                            "esModuleInterop":  true,
+                            "module":  "commonjs",
+                            "target":  "ES2020"
+                        }
+}

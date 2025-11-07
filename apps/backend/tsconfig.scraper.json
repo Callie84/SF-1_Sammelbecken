@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "dist-scraper",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmitOnError": false
+  },
+  "files": [
+    "src/server.ts",
+    "src/routes/scraper.ts",
+    "src/scraper/health.ts",
+    "src/types/scraper.ts",
+    "src/scraper/job.model.ts",
+    "src/scraper/queue.ts",
+    "src/scraper/retry.ts",
+    "src/scraper/metrics.ts"
+  ]
+}

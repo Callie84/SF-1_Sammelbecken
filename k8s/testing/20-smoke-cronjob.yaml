@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: smoke-hourly
+  namespace: testing
+spec:
+  schedule: "0 * * * *"  # stÃ¼ndlich
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 5
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: smoke
+              image: alpine:3.20
+              command: ["/bin/sh","-lc"]
+              args: ["apk add --no-cache curl jq >/dev/null; chmod +x /smoke/run.sh; /smoke/run.sh"]
+              env:
+                - name: BASE_URL
+                  value: "https://seedfinderpro.de"
+                - name: HEALTH_URL
+                  value: "https://seedfinderpro.de/api/health"
+              volumeMounts:
+                - name: script
+                  mountPath: /smoke
+          volumes:
+            - name: script
+              configMap:
+                name: smoke-script
+                defaultMode: 0755

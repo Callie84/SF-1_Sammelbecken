@@ -1,0 +1,453 @@
+$ErrorActionPreference="Stop"; $ProgressPreference="SilentlyContinue"
+
+# =========================
+# SF-1 FULL PIPELINE (E2E)
+# =========================
+
+# --- Pfade/Setup ---
+Set-Location (Split-Path -Parent $MyInvocation.MyCommand.Path)
+$BASE = (Get-Location).Path
+$OUT  = (Resolve-Path ".\out\normalized").Path
+$LOG  = Join-Path $OUT "debug.log"
+New-Item -ItemType Directory -Path $OUT -Force | Out-Null
+
+# --- Helpers ---
+function Log([string]$msg){ ("[{0}] {1}" -f (Get-Date -Format s), $msg) | Add-Content -Path $LOG -Encoding UTF8 }
+
+Add-Type -AssemblyName System.Net.Http
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$h=[System.Net.Http.HttpClientHandler]::new(); $h.AllowAutoRedirect=$true
+$c=[System.Net.Http.HttpClient]::new($h)
+$c.Timeout=[TimeSpan]::FromSeconds(25)
+$c.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36")
+$c.DefaultRequestHeaders.Accept.ParseAdd("application/json, text/plain, */*")
+$c.DefaultRequestHeaders.AcceptLanguage.ParseAdd("de-DE,de;q=0.9,en;q=0.8")
+
+function Add-Q([string]$u,[string]$q){
+  if([string]::IsNullOrWhiteSpace($u)){ return $q }
+  if ($u -match '\?') { return ($u + '&' + $q) } else { return ($u + '?' + $q) }
+}
+function Get-Json([string]$url){
+  # 1) HttpClient
+  try{
+    $resp = $c.GetAsync($url).Result
+    $code = [int]$resp.StatusCode
+    $txt  = $resp.Content.ReadAsStringAsync().Result
+    if($code -ge 200 -and $code -lt 300 -and $txt){ return ($txt | ConvertFrom-Json -ErrorAction Stop) }
+  } catch {}
+  # 2) Invoke-WebRequest Fallback
+  try{
+    $r = Invoke-WebRequest -UseBasicParsing -TimeoutSec 25 -Uri $url
+    if($r.StatusCode -ge 200 -and $r.StatusCode -lt 300 -and $r.Content){ return ($r.Content | ConvertFrom-Json -ErrorAction Stop) }
+  } catch {}
+  return $null
+}
+function Get-PropDeep([object]$obj,[string]$path){
+  if($null -eq $obj){return $null}; $cur=$obj
+  foreach($seg in $path.Split('.')){ if($null -eq $cur){return $null}; $p=$cur.PSObject.Properties[$seg]; if($p){$cur=$p.Value}else{return $null} }
+  return $cur
+}
+function FirstNN([string[]]$paths,[object]$obj){ foreach ($p in $paths){ $v=Get-PropDeep $obj $p; if($null -ne $v -and $v -ne ""){ return $v } }; $null }
+function AsText($v){ if($null -eq $v){""} elseif($v -is [string]){$v} else { ($v|ConvertTo-Json -Depth 3) } }
+
+function ToD($s){ if($null -eq $s -or "$s" -eq ''){return [double]::NaN}; $x="$s" -replace ',','.'; try{[double]$x}catch{[double]::NaN} }
+function HtmlDecode($s){ [System.Net.WebUtility]::HtmlDecode("$s") }
+function NormTitle($s){ ($s|HtmlDecode).ToLower() -replace '\s+',' ' -replace '[^\p{L}\p{Nd}\s]+','' -replace '\s+',' ' }
+function Bucket([double]$p){ if($p -lt 5){'0-5'} elseif($p -lt 10){'5-10'} elseif($p -lt 20){'10-20'} elseif($p -lt 50){'20-50'} elseif($p -lt 100){'50-100'} else{'100+'} }
+$ciInv = [System.Globalization.CultureInfo]::InvariantCulture
+function PriceStr([double]$p){ if([double]::IsNaN($p)) { '' } else { $p.ToString('0.##', $ciInv) } }
+
+# --- INPUT: Harvest ---
+$harvestPath = ".\out\routes\harvest_results.json"
+if (-not (Test-Path $harvestPath)) { throw "Fehlt: $harvestPath" }
+$H = Get-Content $harvestPath | ConvertFrom-Json
+
+# --- Targets bauen ---
+$targets = @()
+# Shopify
+$shopify = $H | Where-Object { $_.Status -eq 200 -and $_.URL -like '*products.json*' } | Select-Object -ExpandProperty URL -Unique
+foreach($u in $shopify){ $targets += [pscustomobject]@{ Kind='shopify'; URL=$u; HostName=([Uri]$u).Host } }
+
+# Woo Store (vorhanden + erzwungen aus Basis-URL)
+$storeExisting = $H | Where-Object { $_.Status -eq 200 -and $_.URL -match '/wc/store/products(\?|$)' } | Select-Object -ExpandProperty URL -Unique
+foreach($u in $storeExisting){ $targets += [pscustomobject]@{ Kind='wc_store'; URL=($u -replace '\?.*$',''); HostName=([Uri]$u).Host } }
+
+$storeHosts = $H | Where-Object { $_.Status -eq 200 -and $_.URL -match '/wc/store/' } |
+  ForEach-Object { try { [Uri]$_.URL } catch {} } |
+  ForEach-Object { "{0}://{1}" -f $_.Scheme,$_.Host } | Sort-Object -Unique
+foreach($b in $storeHosts){
+  $u = "$b/wp-json/wc/store/products"
+  if(-not ($targets | Where-Object URL -eq $u)){ $targets += [pscustomobject]@{ Kind='wc_store'; URL=$u; HostName=([Uri]$u).Host } }
+}
+
+# WP v2 product
+$wpProducts = $H | Where-Object { $_.Status -eq 200 -and $_.URL -match '/wp/v2/product([/?]|$)' } | Select-Object -ExpandProperty URL -Unique
+foreach($u in $wpProducts){ $targets += [pscustomobject]@{ Kind='wp_product'; URL=($u -replace '\?.*$',''); HostName=([Uri]$u).Host } }
+
+# De-dupe & persist
+$targets = $targets | Sort-Object URL -Unique
+$tcsv    = Join-Path $OUT "targets.csv"
+$LOG     = Join-Path $OUT "debug.log"
+Remove-Item $tcsv,$LOG -Force -ErrorAction SilentlyContinue
+$targets | Export-Csv $tcsv -NoTypeInformation -Encoding UTF8
+
+# --- Harvest/Normalize ---
+$csv = Join-Path $OUT "normalized.csv"
+$json= Join-Path $OUT "normalized.json"
+Remove-Item $csv,$json -Force -ErrorAction SilentlyContinue
+
+$rows=@()
+$WP_PAGE_SIZE=50; $WP_MAX_PAGES=5; $SHOPIFY_LIMIT=250
+
+foreach($t in $targets){
+  $u0=[string]$t.URL; if([string]::IsNullOrWhiteSpace($u0)){ continue }
+  $hostName=[string]$t.HostName
+  $u = $u0 -replace '([?&])per_page=1(&|$)','$1' -replace '[?&]$',''
+  Log ("TRY {0} {1} {2}" -f $t.Kind, $hostName, $u)
+
+  $items=@()
+  switch ($t.Kind) {
+    'shopify' {
+      $fetch = Add-Q $u ("limit={0}" -f $SHOPIFY_LIMIT)
+      $j = Get-Json $fetch
+      if ($j -and ($j.PSObject.Properties.Name -contains 'products')) { $items = @($j.products) }
+    }
+    'wc_store' {
+      for($pg=1; $pg -le $WP_MAX_PAGES; $pg++){
+        $fetch = Add-Q $u ("per_page={0}&page={1}" -f $WP_PAGE_SIZE,$pg)
+        $arr = Get-Json $fetch
+        if($arr -is [System.Collections.IEnumerable] -and $arr.Count -gt 0){
+          $items += $arr; if($arr.Count -lt $WP_PAGE_SIZE){ break }
+        } else { break }
+      }
+      if($items.Count -eq 0){
+        for($pg=1; $pg -le $WP_MAX_PAGES; $pg++){
+          $fetch = Add-Q $u ("catalog_visibility=visible&per_page={0}&page={1}" -f $WP_PAGE_SIZE,$pg)
+          $arr = Get-Json $fetch
+          if($arr -is [System.Collections.IEnumerable] -and $arr.Count -gt 0){
+            $items += $arr; if($arr.Count -lt $WP_PAGE_SIZE){ break }
+          } else { break }
+        }
+      }
+      if($items.Count -eq 0){
+        $base = ("{0}://{1}" -f ([Uri]$u).Scheme, ([Uri]$u).Host)
+        $wp2 = "$base/wp-json/wp/v2/product"
+        for($pg=1; $pg -le $WP_MAX_PAGES; $pg++){
+          $fetch = Add-Q $wp2 ("per_page={0}&page={1}" -f $WP_PAGE_SIZE,$pg)
+          $arr = Get-Json $fetch
+          if($arr -is [System.Collections.IEnumerable] -and $arr.Count -gt 0){
+            $items += $arr; if($arr.Count -lt $WP_PAGE_SIZE){ break }
+          } else { break }
+        }
+      }
+    }
+    'wp_product' {
+      for($pg=1; $pg -le $WP_MAX_PAGES; $pg++){
+        $fetch = Add-Q $u ("per_page={0}&page={1}" -f $WP_PAGE_SIZE,$pg)
+        $arr = Get-Json $fetch
+        if($arr -is [System.Collections.IEnumerable] -and $arr.Count -gt 0){
+          $items += $arr; if($arr.Count -lt $WP_PAGE_SIZE){ break }
+        } else { break }
+      }
+    }
+  }
+
+  Log ("FOUND {0} items for {1}" -f $items.Count, $hostName)
+
+  foreach($it in $items){
+    $type = if($t.Kind -eq 'shopify'){'shopify_product'}
+            elseif($t.Kind -eq 'wc_store'){'wc_store_product'}
+            elseif($t.Kind -eq 'wp_product'){'wp_product'} else{'unknown'}
+
+    $id     = FirstNN @('id','ID','sku','handle') $it
+    $title  = FirstNN @('title.rendered','title','name','handle') $it
+    $slug   = FirstNN @('slug','handle') $it
+    $link   = FirstNN @('permalink','permalink_url','link','url','href') $it
+    $price  = FirstNN @('prices.price','prices.regular_price','price','regular_price','sale_price','variants.0.price') $it
+    $sku    = FirstNN @('sku') $it
+    $image  = FirstNN @('images.0.src','image.src','images.0.url','_embedded.wp:featuredmedia.0.source_url') $it
+    $vendor = FirstNN @('vendor','brand','_embedded.author.0.name') $it
+    $updated= FirstNN @('updated_at','modified','date_modified','date') $it
+
+    $rows += [pscustomobject]@{
+      host=$hostName; source_url=$u; type=$type;
+      id=AsText $id; slug=AsText $slug; title=AsText $title;
+      price=AsText $price; sku=AsText $sku; link=AsText $link; image=AsText $image; vendor=AsText $vendor; updated=AsText $updated
+    }
+  }
+}
+
+$rows | Export-Csv $csv -NoTypeInformation -Encoding UTF8
+$rows | ConvertTo-Json -Depth 4 | Set-Content $json -Encoding UTF8
+"Rows: $($rows.Count)" | Tee-Object -FilePath (Join-Path $OUT 'SUMMARY.txt')
+
+# --- Transform: Dedup + price_norm ---
+$rowsImp = Import-Csv $csv
+$dedup   = $rowsImp | Sort-Object host,link -Unique
+$ready   = $dedup | Select-Object *, @{
+  Name='price_norm'; Expression={
+    $p = $_.price
+    if ($p -match '^\d+$') { [math]::Round([double]$p/100,2) }
+    elseif ($p -match '^\d+([.,]\d+)?$') { [math]::Round(([double]($p -replace ',','.')),2) }
+    else { $null }
+  }
+}
+$readyCsv = Join-Path $OUT "normalized_ready.csv"
+$ready | Export-Csv $readyCsv -NoTypeInformation -Encoding UTF8
+
+# --- Seeds only (Heuristik) ---
+$ALLOW = '(seed|semilla|semillas|autoflower|autoflorec|feminiz|regular|indica|sativa|haze|kush|auto|fem|reg)'
+$BLOCK = '(pre\s*-?\s*roll|paper|clipper|lighter|shirt|hoodie|cap|merch|sticker|tray|grinder|nutrient|starter\s*kit|cami?seta|filtro|clipper)'
+
+$seeds = $ready | Select-Object *,@{n='title_clean';e={ (HtmlDecode $_.title) }} |
+  Where-Object {
+    $_.type -in @('wc_store_product','shopify_product') -and
+    (ToD $_.price_norm) -gt 0 -and
+    $_.title_clean -match $ALLOW -and
+    $_.title_clean -notmatch $BLOCK -and
+    $_.link -notmatch $BLOCK
+  } |
+  Select-Object host,title,price_norm,link,image,vendor,source_url,type,id,slug
+
+$seedsCsv = Join-Path $OUT "products_seeds_only.csv"
+$seeds = $seeds | Where-Object { (ToD $_.price_norm) -ge 1 }
+$bad = @{}
+if (Test-Path (Join-Path $OUT "bad_links.csv")) {
+  $__links = Import-Csv (Join-Path $OUT "bad_links.csv") | Where-Object { $_.link } | Select-Object -ExpandProperty link
+  foreach($u in $__links){ $bad[$u] = $true }
+}
+$seeds = $seeds | Where-Object { -not $bad.ContainsKey($_.link) }
+$seeds | Export-Csv $seedsCsv -NoTypeInformation -Encoding UTF8
+
+# --- Stats/Reports ---
+# Buckets global
+$rowsBuckets = $seeds | ForEach-Object { $p=ToD $_.price_norm; if(-not [double]::IsNaN($p)){ [pscustomobject]@{ bucket=(Bucket $p) } } }
+$rowsBuckets | Group-Object bucket | Sort-Object Name | Select-Object @{n='bucket';e={$_.Name}},@{n='Count';e={$_.Count}} |
+  Export-Csv (Join-Path $OUT 'price_buckets_global.csv') -NoTypeInformation -Encoding UTF8
+
+# Buckets by host
+$rowsHB = $seeds | ForEach-Object { $p=ToD $_.price_norm; if(-not [double]::IsNaN($p)){ [pscustomobject]@{ host=$_.host; bucket=(Bucket $p) } } }
+$rowsHB | Group-Object host,bucket | ForEach-Object { [pscustomobject]@{ host=$_.Group[0].host; bucket=$_.Group[0].bucket; count=$_.Count } } |
+  Sort-Object host,bucket |
+  Export-Csv (Join-Path $OUT 'price_buckets_by_host.csv') -NoTypeInformation -Encoding UTF8
+
+# Host price stats
+$stats = foreach($g in ($seeds | Group-Object host)){
+  $vals = $g.Group | ForEach-Object { ToD $_.price_norm } | Where-Object { -not [double]::IsNaN($_) } | Sort-Object
+  if($vals.Count -eq 0){ continue }
+  $mid = [int][math]::Floor(($vals.Count-1)/2)
+  [pscustomobject]@{
+    host=$g.Name; n=$vals.Count; min=$vals[0]; median=$vals[$mid]; avg=[math]::Round((($vals | Measure-Object -Average).Average),2); max=$vals[-1]
+  }
+}
+$stats | Export-Csv (Join-Path $OUT 'host_price_stats.csv') -NoTypeInformation -Encoding UTF8
+
+# Cheapest 1/5 per host
+$cheapest1 = $seeds | Sort-Object host,@{e={ ToD $_.price_norm }} | Group-Object host | ForEach-Object { $_.Group | Select-Object -First 1 title,price_norm,host,link }
+$cheapest1 | Export-Csv (Join-Path $OUT 'cheapest1_per_host.csv') -NoTypeInformation -Encoding UTF8
+$cheapest5 = $seeds | Sort-Object host,@{e={ ToD $_.price_norm }} | Group-Object host | ForEach-Object { $_.Group | Select-Object -First 5 title,price_norm,host,link }
+$cheapest5 | Export-Csv (Join-Path $OUT 'cheapest5_per_host.csv') -NoTypeInformation -Encoding UTF8
+
+# Top 20 global cheapest
+$seeds | Sort-Object @{e={ ToD $_.price_norm }} | Select-Object -First 20 title,price_norm,host,link |
+  Export-Csv (Join-Path $OUT 'top20_global_cheapest_seeds.csv') -NoTypeInformation -Encoding UTF8
+
+# Outliers top/bottom 5% je Host
+$top5=@(); $bottom5=@()
+foreach($grp in ($seeds | Group-Object host)){
+  $g = $grp.Group | Where-Object { -not [double]::IsNaN( (ToD $_.price_norm) ) } | Sort-Object @{e={ ToD $_.price_norm }}
+  if($g.Count -eq 0){ continue }
+  $takeTop = [math]::Max(1, [math]::Ceiling($g.Count * 0.05))
+  $takeBot = [math]::Max(1, [math]::Ceiling($g.Count * 0.05))
+  $top5    += $g | Select-Object -Last  $takeTop
+  $bottom5 += $g | Select-Object -First $takeBot
+}
+$top5    | Select-Object host,title,price_norm,link | Export-Csv (Join-Path $OUT 'outliers_top5pct_per_host.csv') -NoTypeInformation -Encoding UTF8
+$bottom5 | Select-Object host,title,price_norm,link | Export-Csv (Join-Path $OUT 'outliers_bottom5pct_per_host.csv') -NoTypeInformation -Encoding UTF8
+$both = (Import-Csv (Join-Path $OUT 'outliers_top5pct_per_host.csv')    | Select-Object host,title,price_norm,link,@{n='which';e={'top5'}}) +
+        (Import-Csv (Join-Path $OUT 'outliers_bottom5pct_per_host.csv') | Select-Object host,title,price_norm,link,@{n='which';e={'bottom5'}})
+$both | Sort-Object host,@{e={ if($_.which -eq 'bottom5'){0}else{1} }}, @{e={ [double](($_.price_norm -replace ',','.')) }} |
+  Export-Csv (Join-Path $OUT 'outliers_top_and_bottom.csv') -NoTypeInformation -Encoding UTF8
+
+# Crosshost Spread (gleiches normalisiertes Title über Hosts)
+$norm = $seeds | Select-Object `
+  @{n='title_norm';e={ NormTitle $_.title }}, `
+  @{n='title';     e={ HtmlDecode $_.title }}, `
+  host, link, `
+  @{n='price';     e={ ToD $_.price_norm }}
+$cross = foreach($g in ($norm | Group-Object title_norm)){
+  $hosts = $g.Group.host | Select-Object -Unique
+  $valid = $g.Group | Where-Object { -not [double]::IsNaN($_.price) } | Sort-Object price
+  if($valid.Count -lt 2){ continue }
+  $min = $valid | Select-Object -First 1
+  $max = $valid | Select-Object -Last 1
+  [pscustomobject]@{
+    title_norm = $g.Name
+    title_min  = $min.title; host_min=$min.host; price_min=$min.price; link_min=$min.link
+    title_max  = $max.title; host_max=$max.host; price_max=$max.price; link_max=$max.link
+    spread_abs = [math]::Round($max.price - $min.price,2)
+    spread_x   = if($min.price -gt 0){ [math]::Round($max.price / $min.price,2) } else { $null }
+    hosts      = ($hosts -join ',')
+  }
+}
+$cross | Sort-Object spread_x -Desc | Export-Csv (Join-Path $OUT 'crosshost_title_spread.csv') -NoTypeInformation -Encoding UTF8
+
+# Host-Anomalien (> 2× Median)
+$anoms = foreach($grp in ($seeds | Group-Object host)){
+  $vals = $grp.Group | ForEach-Object { ToD $_.price_norm } | Where-Object { -not [double]::IsNaN($_) } | Sort-Object
+  if($vals.Count -lt 3){ continue }
+  $mid = [int][math]::Floor(($vals.Count-1)/2); $median = $vals[$mid]
+  foreach($row in $grp.Group){
+    $p = ToD $row.price_norm
+    if(-not [double]::IsNaN($p) -and $p -gt (2*$median)){
+      [pscustomobject]@{ host=$grp.Name; title=(HtmlDecode $row.title); price=$p; median=$median; factor=[math]::Round($p/$median,2); link=$row.link }
+    }
+  }
+}
+$anoms | Sort-Object factor -Desc | Export-Csv (Join-Path $OUT 'host_anomalies_gt2x_median.csv') -NoTypeInformation -Encoding UTF8
+
+# Dedup by title (je Host, günstigste Variante pro Titel)
+$dedupTitle = $seeds | Select-Object *, @{n='title_norm';e={ NormTitle $_.title }} |
+  Sort-Object host, title_norm, @{e={ ToD $_.price_norm }} |
+  Group-Object host,title_norm | ForEach-Object { $_.Group | Select-Object -First 1 host,title,price_norm,link }
+$dedupTitle | Export-Csv (Join-Path $OUT 'seeds_dedup_by_title.csv') -NoTypeInformation -Encoding UTF8
+
+# --- Sections/Overview/Search ---
+# Sections cheapest5 per host (JSON)
+$sections = foreach($g in ($seeds | Sort-Object host,@{e={ ToD $_.price_norm }} | Group-Object host)){
+  [pscustomobject]@{
+    title = "Cheapest at " + $g.Name
+    host  = $g.Name
+    items = @(
+      $g.Group | Select-Object -First 5 `
+        @{n='title';e={ HtmlDecode $_.title }}, `
+        @{n='price';e={ [math]::Round((ToD $_.price_norm),2) }}, `
+        link, image
+    )
+  }
+}
+$sections | ConvertTo-Json -Depth 5 | Set-Content (Join-Path $OUT 'sections_cheapest5_per_host.json') -Encoding UTF8
+
+# Hosts overview (JSON)
+$stats | Sort-Object host | ConvertTo-Json -Depth 4 | Set-Content (Join-Path $OUT 'hosts_overview.json') -Encoding UTF8
+
+# Feed (dezimalpunkt)
+$feed = $seeds | Select-Object host,
+  @{n='title';e={ HtmlDecode $_.title }},
+  @{n='price';e={ PriceStr (ToD $_.price_norm) }},
+  link,image,vendor,source_url,type,id,slug
+$feedPath = Join-Path $OUT 'feed_seeds_clean.csv'
+$feed | Export-Csv $feedPath -NoTypeInformation -Encoding UTF8
+
+# Search index (JSONL)
+$idx = Join-Path $OUT 'search_index.jsonl'
+Remove-Item $idx -Force -ErrorAction SilentlyContinue
+$feed | ForEach-Object {
+  $obj = [pscustomobject]@{ t=$_.title; h=$_.host; p=(ToD $_.price); l=$_.link }
+  ($obj | ConvertTo-Json -Compress) | Add-Content -Path $idx -Encoding UTF8
+}
+
+# --- Manifest ---
+$manifest = [pscustomobject]@{
+  generated = (Get-Date).ToString('s')
+  items     = ($feed | Measure-Object).Count
+  hosts     = ($feed.host | Select-Object -Unique).Count
+  files     = @('sections_cheapest5_per_host.json','seeds_dedup_by_title.csv','host_price_stats.csv','feed_seeds_clean.csv','search_index.jsonl','hosts_overview.json','price_buckets_global.csv','price_buckets_by_host.csv','cheapest1_per_host.csv','cheapest5_per_host.csv','top20_global_cheapest_seeds.csv','outliers_top5pct_per_host.csv','outliers_bottom5pct_per_host.csv','outliers_top_and_bottom.csv','crosshost_title_spread.csv','host_anomalies_gt2x_median.csv')
+}
+$manifestPath = Join-Path $OUT 'manifest.json'
+$manifest | ConvertTo-Json -Depth 4 | Set-Content $manifestPath -Encoding UTF8
+
+# --- Delta (gegen bestehendes ZIP falls vorhanden) ---
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+$zipPath = Join-Path $OUT 'sf1_app_bundle.zip'
+$prevFeedTmp = Join-Path $OUT 'prev_feed.csv'
+Remove-Item $prevFeedTmp -Force -ErrorAction SilentlyContinue
+if(Test-Path $zipPath){
+  $z=[System.IO.Compression.ZipFile]::OpenRead($zipPath)
+  try{
+    $e=$z.Entries | Where-Object FullName -eq 'feed_seeds_clean.csv' | Select-Object -First 1
+    if($e){ $fs=[System.IO.File]::Create($prevFeedTmp); $e.Open().CopyTo($fs); $fs.Dispose() }
+  } finally { $z.Dispose() }
+}
+if(Test-Path $prevFeedTmp){
+  $prev = Import-Csv $prevFeedTmp
+  $curr = Import-Csv $feedPath
+
+  $new = Compare-Object `
+    ($prev | Select-Object -Unique host,link) `
+    ($curr | Select-Object -Unique host,link) `
+    -Property host,link -PassThru | Where-Object SideIndicator -eq '=>'
+  $new | ForEach-Object {
+    $row = $curr | Where-Object { $_.host -eq $_.host -and $_.link -eq $_.link } | Select-Object -First 1
+    [pscustomobject]@{ host=$row.host; title=$row.title; price=$row.price; link=$row.link }
+  } | Export-Csv (Join-Path $OUT 'delta_new_items.csv') -NoTypeInformation -Encoding UTF8
+
+  $lookup=@{}; foreach($r in $prev){ $lookup[$r.host + '|' + $r.link] = $r }
+  $changes = foreach($r in $curr){
+    $k = $r.host + '|' + $r.link
+    if($lookup.ContainsKey($k)){
+      $old=$lookup[$k]; $pOld=ToD $old.price; $pNew=ToD $r.price
+      if(-not [double]::IsNaN($pOld) -and -not [double]::IsNaN($pNew) -and $pOld -ne $pNew){
+        [pscustomobject]@{ host=$r.host; title=$r.title; price_old=$pOld; price_new=$pNew; diff=[math]::Round(($pNew-$pOld),2); link=$r.link }
+      }
+    }
+  }
+  $changes | Export-Csv (Join-Path $OUT 'delta_price_changes.csv') -NoTypeInformation -Encoding UTF8
+}
+
+# --- MIN1 artefacts ---
+try {
+  Import-Csv (Join-Path \C:\Users\kling\Desktop\SF-1_Sammelbecken\seedscan\out\normalized 'feed_seeds_clean.csv') |
+    Where-Object { [double](($_.price -replace ',','.') ) -ge 1 } |
+    Export-Csv (Join-Path \C:\Users\kling\Desktop\SF-1_Sammelbecken\seedscan\out\normalized 'feed_seeds_clean.min1.csv') -NoTypeInformation -Encoding UTF8
+  if (Test-Path (Join-Path \C:\Users\kling\Desktop\SF-1_Sammelbecken\seedscan\out\normalized 'products_seeds_only.csv')) {
+    Import-Csv (Join-Path \C:\Users\kling\Desktop\SF-1_Sammelbecken\seedscan\out\normalized 'products_seeds_only.csv') |
+      Where-Object { [double](($_.price_norm -replace ',','.') ) -ge 1 } |
+      Sort-Object @{e={ [double](($_.price_norm -replace ',','.') ) }} |
+      Select-Object -First 20 title,price_norm,host,link |
+      Export-Csv (Join-Path \C:\Users\kling\Desktop\SF-1_Sammelbecken\seedscan\out\normalized 'top20_global_cheapest_seeds.min1.csv') -NoTypeInformation -Encoding UTF8
+  }
+} catch {}
+
+# --- ZIP: erstellen/aktualisieren ---
+$filesForZip = @(
+  'sections_cheapest5_per_host.json',
+  'seeds_dedup_by_title.csv',
+  'host_price_stats.csv',
+  'feed_seeds_clean.csv',
+  'search_index.jsonl',
+  'hosts_overview.json',
+  'price_buckets_global.csv',
+  'price_buckets_by_host.csv',
+  'cheapest1_per_host.csv',
+  'cheapest5_per_host.csv',
+  'top20_global_cheapest_seeds.csv',
+  'outliers_top5pct_per_host.csv',
+  'outliers_bottom5pct_per_host.csv',
+  'outliers_top_and_bottom.csv',
+  'crosshost_title_spread.csv',
+  'host_anomalies_gt2x_median.csv',
+  'manifest.json'
+) | ForEach-Object { Join-Path $OUT $_ }
+
+if(Test-Path $zipPath){
+  $zipU = [System.IO.Compression.ZipFile]::Open($zipPath,'Update')
+} else {
+  $zipU = [System.IO.Compression.ZipFile]::Open($zipPath,'Create')
+}
+foreach($f in ($filesForZip | Where-Object { Test-Path $_ })){
+  $name = Split-Path $f -Leaf
+  ($zipU.Entries | Where-Object FullName -eq $name) | ForEach-Object { $_.Delete() }
+  [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zipU,(Resolve-Path $f),$name) | Out-Null
+}
+$zipU.Dispose()
+
+# --- Abschluss/Checks ---
+$za=[System.IO.Compression.ZipFile]::OpenRead($zipPath)
+try{
+  $list = $za.Entries | Select FullName,Length | Sort-Object FullName
+  $list | Export-Csv (Join-Path $OUT 'ZIP_CONTENTS.csv') -NoTypeInformation -Encoding UTF8
+  $list | Format-Table -Auto | Out-Host
+} finally { $za.Dispose() }
+
+Write-Host ("DONE  | rows_raw={0}  seeds={1}  zip={2}" -f $rows.Count, (Import-Csv $seedsCsv).Count, $zipPath)

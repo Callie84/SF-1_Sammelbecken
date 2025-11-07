@@ -1,0 +1,14 @@
+# SF-1 Feature-Flags ConfigMap
+# Namespace: default | Quelle für Backend/Frontend
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sf1-feature-flags
+  namespace: default
+data:
+  enablePriceAlerts: "false"
+  enableAffiliateAds: "true"
+  enableUGG1Integration: "true"
+  enableAnalyticsBeta: "false"
+  enableUserJournal: "true"

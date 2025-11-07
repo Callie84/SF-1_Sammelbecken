@@ -1,0 +1,16 @@
+﻿FROM node:20-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+COPY apps/backend/package*.json ./apps/backend/
+RUN npm ci
+COPY . .
+WORKDIR /app/apps/backend
+RUN npm run build
+
+FROM node:20-alpine
+WORKDIR /app
+COPY --from=build /app/apps/backend/dist ./dist
+COPY --from=build /app/apps/backend/package*.json ./
+RUN npm ci --omit=dev
+EXPOSE 3000
+CMD ["node", "dist/server.js"]

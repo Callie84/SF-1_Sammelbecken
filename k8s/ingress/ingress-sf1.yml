@@ -1,0 +1,57 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sf1
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: caddy
+    caddy.ingress.kubernetes.io/caddyfile-path: /config/Caddyfile
+spec:
+  tls:
+    - hosts: ["seedfinderpro.de", "www.seedfinderpro.de"]
+      secretName: sf1-tls
+  rules:
+    - host: seedfinderpro.de
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: web
+                port:
+                  number: 5173
+    - host: www.seedfinderpro.de
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: web
+                port:
+                  number: 5173
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: caddy-config-loader
+  namespace: default
+  labels:
+    app: sf1
+spec:
+  restartPolicy: Never
+  containers:
+    - name: cat
+      image: busybox:1.36
+      command: ['sh','-c','cat /etc/caddy/Caddyfile && echo OK']
+      volumeMounts:
+        - name: caddy-config
+          mountPath: /etc/caddy
+  volumes:
+    - name: caddy-config
+      configMap:
+        name: sf1-caddy-config
+        items:
+          - key: Caddyfile
+            path: Caddyfile

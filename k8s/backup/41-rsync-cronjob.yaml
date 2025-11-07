@@ -1,0 +1,37 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: offsite-rsync-nightly
+  namespace: backup
+spec:
+  schedule: "0 3 * * *"  # tÃ¤glich 03:00
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 5
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: rsync
+              image: alpine:3.20
+              command: ["/bin/sh","-lc"]
+              args:
+                - |
+                  set -euo pipefail
+                  apk add --no-cache rsync openssh-client
+                  mkdir -p /root/.ssh
+                  echo "$RSYNC_SSH_PRIVATE_KEY" > /root/.ssh/id_ed25519
+                  chmod 600 /root/.ssh/id_ed25519
+                  echo "Host remote\n  HostName $RSYNC_HOST\n  User $RSYNC_USER\n  Port $RSYNC_PORT\n  IdentityFile /root/.ssh/id_ed25519\n  StrictHostKeyChecking no" > /root/.ssh/config
+                  rsync -az --delete /backup/out/ remote:$RSYNC_PATH/
+              envFrom:
+                - secretRef: { name: backup-rsync }
+              volumeMounts:
+                - name: out
+                  mountPath: /backup/out
+          volumes:
+            - name: out
+              persistentVolumeClaim:
+                claimName: backup-out-pvc

@@ -1,0 +1,47 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: kubedump-daily
+  namespace: backup
+spec:
+  schedule: "30 2 * * *"  # tÃ¤glich 02:30
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: default
+          restartPolicy: OnFailure
+          containers:
+            - name: kubedump
+              image: bitnami/kubectl:1.30
+              command: ["/bin/bash","-lc"]
+              args:
+                - |
+                  set -euo pipefail
+                  TS=$(date +"%Y%m%d_%H%M")
+                  OUT="/backup/out/kubedump-$TS"
+                  mkdir -p "$OUT"
+                  kubectl get ns -o yaml > "$OUT/namespaces.yaml"
+                  for ns in $(kubectl get ns -o jsonpath='{.items[*].metadata.name}'); do
+                    mkdir -p "$OUT/$ns"
+                    kubectl get all,cm,secret,ingress,sa,roles,rolebindings -n "$ns" -o yaml > "$OUT/$ns/all.yaml"
+                  done
+                  tar -C "/backup/out" -czf "/backup/out/kubedump-$TS.tar.gz" "kubedump-$TS"
+                  rm -rf "$OUT"
+                  aws s3 cp "/backup/out/kubedump-$TS.tar.gz" "s3://$AWS_S3_BUCKET/kubedump/kubedump-$TS.tar.gz" --endpoint-url "$AWS_S3_ENDPOINT"
+                  find /backup/out -maxdepth 1 -type f -name 'kubedump-*.tar.gz' -mtime +7 -delete
+              envFrom:
+                - secretRef: { name: backup-s3 }
+              volumeMounts:
+                - name: out
+                  mountPath: /backup/out
+            - name: awscli
+              image: amazon/aws-cli:2.17.59
+              command: ["/bin/sh","-c","sleep infinity"]
+          volumes:
+            - name: out
+              persistentVolumeClaim:
+                claimName: backup-out-pvc

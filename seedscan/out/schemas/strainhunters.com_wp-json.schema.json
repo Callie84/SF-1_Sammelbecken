@@ -1,0 +1,98 @@
+{
+    "url":  {
+                "type":  "string"
+            },
+    "description":  {
+                        "type":  "string"
+                    },
+    "show_on_front":  {
+                          "type":  "string"
+                      },
+    "site_icon_url":  {
+                          "type":  "string"
+                      },
+    "name":  {
+                 "type":  "string"
+             },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "curies":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "templated":  {
+                                                                                "type":  "boolean"
+                                                                            },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                              "name":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "wp:featuredmedia":  {
+                                                          "type":  "array\u003cobject\u003e",
+                                                          "props":  {
+                                                                        "href":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                        "embeddable":  {
+                                                                                           "type":  "boolean"
+                                                                                       },
+                                                                        "type":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                    }
+                                                      },
+                                 "help":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          }
+                             }
+               },
+    "namespaces":  {
+                       "type":  "array/empty"
+                   },
+    "page_on_front":  {
+                          "type":  "number"
+                      },
+    "routes":  {
+                   "type":  "array/empty"
+               },
+    "gmt_offset":  {
+                       "type":  "string"
+                   },
+    "site_icon":  {
+                      "type":  "number"
+                  },
+    "timezone_string":  {
+                            "type":  "string"
+                        },
+    "page_for_posts":  {
+                           "type":  "number"
+                       },
+    "home":  {
+                 "type":  "string"
+             },
+    "authentication":  {
+                           "type":  "object",
+                           "props":  {
+                                         "application-passwords":  {
+                                                                       "type":  "object",
+                                                                       "props":  {
+                                                                                     "endpoints":  {
+                                                                                                       "type":  "object"
+                                                                                                   }
+                                                                                 }
+                                                                   }
+                                     }
+                       },
+    "site_logo":  {
+                      "type":  "number"
+                  }
+}
