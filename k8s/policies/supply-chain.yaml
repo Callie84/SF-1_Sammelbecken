@@ -1,0 +1,127 @@
+# Kyverno ClusterPolicies für SF-1
+# Voraussetzung: Kyverno installiert. Jetzt NICHT anwenden – nur ablegen.
+
+---
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: disallow-latest-tag
+spec:
+  validationFailureAction: Enforce
+  background: true
+  rules:
+    - name: no-latest-in-containers
+      match:
+        any:
+          - resources:
+              kinds: ["Deployment","StatefulSet","DaemonSet","Job","CronJob"]
+      validate:
+        message: "Image-Tags dürfen nicht ':latest' sein (containers)."
+        pattern:
+          spec:
+            template:
+              spec:
+                containers:
+                  - image: "!*:latest"
+    - name: no-latest-in-initcontainers
+      match:
+        any:
+          - resources:
+              kinds: ["Deployment","StatefulSet","DaemonSet","Job","CronJob"]
+      validate:
+        message: "Image-Tags dürfen nicht ':latest' sein (initContainers)."
+        pattern:
+          spec:
+            template:
+              spec:
+                initContainers:
+                  - image: "!*:latest"
+
+---
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: restrict-image-registry
+spec:
+  validationFailureAction: Enforce
+  background: true
+  rules:
+    - name: only-ghcr-callie84-containers
+      match:
+        any:
+          - resources:
+              kinds: ["Deployment","StatefulSet","DaemonSet","Job","CronJob"]
+      validate:
+        message: "Nur Images von ghcr.io/callie84/ sind erlaubt (containers)."
+        pattern:
+          spec:
+            template:
+              spec:
+                containers:
+                  - image: "ghcr.io/callie84/*"
+    - name: only-ghcr-callie84-initcontainers
+      match:
+        any:
+          - resources:
+              kinds: ["Deployment","StatefulSet","DaemonSet","Job","CronJob"]
+      validate:
+        message: "Nur Images von ghcr.io/callie84/ sind erlaubt (initContainers)."
+        pattern:
+          spec:
+            template:
+              spec:
+                initContainers:
+                  - image: "ghcr.io/callie84/*"
+
+---
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: require-secure-securitycontext
+spec:
+  validationFailureAction: Enforce
+  background: true
+  rules:
+    - name: pod-must-run-as-nonroot
+      match:
+        any:
+          - resources:
+              kinds: ["Deployment","StatefulSet","DaemonSet","Job","CronJob"]
+      validate:
+        message: "Pods müssen als Non-Root laufen (podSecurityContext.runAsNonRoot=true)."
+        pattern:
+          spec:
+            template:
+              spec:
+                securityContext:
+                  runAsNonRoot: true
+    - name: containers-sec-baseline
+      match:
+        any:
+          - resources:
+              kinds: ["Deployment","StatefulSet","DaemonSet","Job","CronJob"]
+      validate:
+        message: "Container: readOnlyRootFilesystem=true und allowPrivilegeEscalation=false."
+        pattern:
+          spec:
+            template:
+              spec:
+                containers:
+                  - securityContext:
+                      readOnlyRootFilesystem: true
+                      allowPrivilegeEscalation: false
+    - name: initcontainers-sec-baseline
+      match:
+        any:
+          - resources:
+              kinds: ["Deployment","StatefulSet","DaemonSet","Job","CronJob"]
+      validate:
+        message: "Init-Container: readOnlyRootFilesystem=true und allowPrivilegeEscalation=false."
+        pattern:
+          spec:
+            template:
+              spec:
+                initContainers:
+                  - securityContext:
+                      readOnlyRootFilesystem: true
+                      allowPrivilegeEscalation: false

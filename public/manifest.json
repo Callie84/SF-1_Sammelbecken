@@ -1,0 +1,21 @@
+{
+  "name": "SeedFinder PRO",
+  "short_name": "SF-1",
+  "display": "standalone",
+  "background_color": "#0a0e12",
+  "theme_color": "#10b981",
+  "orientation": "portrait",
+  "shortcuts": [
+    { "name": "Neuer Eintrag", "url": "/journal/new" },
+    { "name": "Rechner", "url": "/tools" },
+    { "name": "Preise", "url": "/prices" }
+  ],
+  "share_target": {
+    "action": "/journal/new",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [{ "name": "photos", "accept": ["image/*"] }]
+    }
+  }
+}

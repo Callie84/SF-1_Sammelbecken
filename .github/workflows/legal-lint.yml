@@ -1,0 +1,22 @@
+name: legal-lint
+on:
+  push:
+    paths: [
+      'apps/frontend/app/impressum/page.tsx',
+      'apps/frontend/app/datenschutz/page.tsx',
+      'apps/frontend/.env.example'
+    ]
+  workflow_dispatch:
+
+jobs:
+  check-env:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required envs exist in repo secrets or .env
+        run: |
+          missing=0
+          for k in NEXT_PUBLIC_IMPRESSUM_NAME NEXT_PUBLIC_IMPRESSUM_STREET NEXT_PUBLIC_IMPRESSUM_CITY NEXT_PUBLIC_IMPRESSUM_EMAIL; do
+            grep -q "^$k=" apps/frontend/.env.example || missing=1
+          done
+          if [ $missing -ne 0 ]; then echo 'Missing required env template keys'; exit 1; fi

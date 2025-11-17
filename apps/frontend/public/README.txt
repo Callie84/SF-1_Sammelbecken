@@ -1,0 +1,1 @@
+Der Ordner /public wird von Vite als statischer Webroot eingebunden. UGGâ€‘Assets werden jedoch dynamisch aus dem Backend geliefert. Keine Ablage hier nÃ¶tig.

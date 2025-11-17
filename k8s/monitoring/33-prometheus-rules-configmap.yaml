@@ -1,0 +1,77 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-rules
+  namespace: monitoring
+  labels:
+    app.kubernetes.io/name: prometheus
+
+data:
+  sf1-alerts.yml: |
+    groups:
+      - name: sf1-core
+        rules:
+          - alert: InstanceDown
+            expr: up == 0
+            for: 2m
+            labels:
+              severity: critical
+            annotations:
+              summary: "Instance down: {{ $labels.instance }}"
+              description: "{{ $labels.job }} on {{ $labels.instance }} is not responding"
+
+          - alert: GrafanaDown
+            expr: up{job="grafana"} == 0
+            for: 2m
+            labels:
+              severity: warning
+            annotations:
+              summary: "Grafana down"
+              description: "Grafana scrape failed"
+
+          - alert: LokiRequestErrorsHigh
+            expr: increase(loki_request_duration_seconds_count{status=~"5.."}[5m]) > 10
+            for: 5m
+            labels:
+              severity: warning
+            annotations:
+              summary: "Loki 5xx hoch"
+              description: "Anhaltende 5xx in Loki API"
+
+          - alert: PromTargetMissing
+            expr: (sum by (job) (up) < 1)
+            for: 5m
+            labels:
+              severity: warning
+            annotations:
+              summary: "Prometheus target missing"
+              description: "Ein oder mehrere Targets fehlen"
+
+      - name: sf1-blackbox
+        rules:
+          - alert: FrontendDown
+            expr: probe_success{instance="https://seedfinderpro.de"} == 0
+            for: 3m
+            labels:
+              severity: critical
+            annotations:
+              summary: "Frontend down"
+              description: "HTTP Probe auf seedfinderpro.de fehlgeschlagen"
+
+          - alert: APIHealthFail
+            expr: probe_success{instance="https://seedfinderpro.de/api/health"} == 0
+            for: 3m
+            labels:
+              severity: critical
+            annotations:
+              summary: "API Health down"
+              description: "Probe auf /api/health fehlgeschlagen"
+
+          - alert: FrontendLatencyHigh
+            expr: histogram_quantile(0.95, sum(rate(probe_http_duration_seconds_bucket{instance="https://seedfinderpro.de"}[5m])) by (le)) > 1
+            for: 10m
+            labels:
+              severity: warning
+            annotations:
+              summary: "Frontend Latenz 95p > 1s"
+              description: "HTTP 95p Latenz Ã¼ber 1s"

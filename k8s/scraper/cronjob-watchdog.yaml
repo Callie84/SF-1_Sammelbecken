@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+name: sf1-scraper-watchdog
+namespace: default
+spec:
+schedule: "*/5 * * * *"
+successfulJobsHistoryLimit: 1
+failedJobsHistoryLimit: 2
+jobTemplate:
+spec:
+template:
+spec:
+restartPolicy: OnFailure
+containers:
+- name: watchdog
+image: ghcr.io/callie84/sf1-backend:latest
+command: ["node","-e","require('mongodb').MongoClient.connect(process.env.MONGODB_URI).then(async mc=>{const db=mc.db(process.env.MONGODB_DB||'sf1');const now=new Date();const r=await db.collection('scraper.jobs').updateMany({state:'running', leaseUntil:{$lt:now}},{$set:{state:'queued'},$unset:{leaseUntil:''}});console.log('requeued',r.modifiedCount);await mc.close();}).catch(e=>{console.error(e);process.exit(1);});"]
+env:
+- name: MONGODB_URI
+valueFrom:
+secretKeyRef:
+name: sf1-mongo
+key: uri
+- name: MONGODB_DB
+valueFrom:
+secretKeyRef:
+name: sf1-mongo
+key: db

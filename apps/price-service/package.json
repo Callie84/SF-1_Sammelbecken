@@ -1,0 +1,34 @@
+{
+  "name": "price-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:fixtures": "vitest run tests/scrapers/parse.fixture.spec.ts",
+    "snapshot:zamnesia": "node scripts/snapshot-zamnesia.mjs",
+    "snapshot:zamnesia:de": "node scripts/snapshot-zamnesia-de.mjs",
+    "snapshot:discover": "node scripts/discover-and-snapshot.mjs",
+    "snapshot:zamnesia:nightly": "SET NODE_ENV=testing&& node scripts/snapshot-zamnesia.mjs",
+    "test:discover": "vitest run tests/scrapers/parse.all.spec.ts"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^22.18.12",
+    "@types/node-fetch": "^2.6.13",
+    "cheerio": "^1.1.2",
+    "playwright": "^1.56.1",
+    "playwright-chromium": "^1.56.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.1",
+    "zod": "^4.1.12"
+  },
+  "dependencies": {
+    "sf1-backend": "file:../.."
+  }
+}

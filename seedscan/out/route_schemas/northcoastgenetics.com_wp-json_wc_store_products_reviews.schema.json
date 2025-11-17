@@ -1,0 +1,75 @@
+{
+    "id":  {
+               "type":  "number"
+           },
+    "product_id":  {
+                       "type":  "number"
+                   },
+    "verified":  {
+                     "type":  "boolean"
+                 },
+    "date_created_gmt":  {
+                             "type":  "string"
+                         },
+    "formatted_date_created":  {
+                                   "type":  "string"
+                               },
+    "date_created":  {
+                         "type":  "string"
+                     },
+    "rating":  {
+                   "type":  "number"
+               },
+    "review":  {
+                   "type":  "string"
+               },
+    "product_permalink":  {
+                              "type":  "string"
+                          },
+    "product_name":  {
+                         "type":  "string"
+                     },
+    "reviewer":  {
+                     "type":  "string"
+                 },
+    "product_image":  {
+                          "type":  "object",
+                          "props":  {
+                                        "id":  {
+                                                   "type":  "number"
+                                               },
+                                        "sizes":  {
+                                                      "type":  "string"
+                                                  },
+                                        "src":  {
+                                                    "type":  "string"
+                                                },
+                                        "srcset":  {
+                                                       "type":  "string"
+                                                   },
+                                        "name":  {
+                                                     "type":  "string"
+                                                 },
+                                        "alt":  {
+                                                    "type":  "string"
+                                                },
+                                        "thumbnail":  {
+                                                          "type":  "string"
+                                                      }
+                                    }
+                      },
+    "reviewer_avatar_urls":  {
+                                 "type":  "object",
+                                 "props":  {
+                                               "24":  {
+                                                          "type":  "string"
+                                                      },
+                                               "96":  {
+                                                          "type":  "string"
+                                                      },
+                                               "48":  {
+                                                          "type":  "string"
+                                                      }
+                                           }
+                             }
+}

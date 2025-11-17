@@ -1,0 +1,140 @@
+{
+    "meta":  {
+                 "type":  "array\u003cempty\u003e"
+             },
+    "name":  {
+                 "type":  "string"
+             },
+    "id":  {
+               "type":  "number"
+           },
+    "slug":  {
+                 "type":  "string"
+             },
+    "taxonomy":  {
+                     "type":  "string"
+                 },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "curies":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "templated":  {
+                                                                                "type":  "boolean"
+                                                                            },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                              "name":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "wp:post_type":  {
+                                                      "type":  "array\u003cobject\u003e",
+                                                      "props":  {
+                                                                    "href":  {
+                                                                                 "type":  "string"
+                                                                             }
+                                                                }
+                                                  },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "targetHints":  {
+                                                                                "type":  "object"
+                                                                            },
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           }
+                             }
+               },
+    "description":  {
+                        "type":  "string"
+                    },
+    "yoast_head_json":  {
+                            "type":  "object",
+                            "props":  {
+                                          "og_site_name":  {
+                                                               "type":  "string"
+                                                           },
+                                          "og_title":  {
+                                                           "type":  "string"
+                                                       },
+                                          "canonical":  {
+                                                            "type":  "string"
+                                                        },
+                                          "title":  {
+                                                        "type":  "string"
+                                                    },
+                                          "robots":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "max-snippet":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                       "max-video-preview":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                       "max-image-preview":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                       "follow":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                       "index":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                   }
+                                                     },
+                                          "og_url":  {
+                                                         "type":  "string"
+                                                     },
+                                          "og_type":  {
+                                                          "type":  "string"
+                                                      },
+                                          "schema":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "@context":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                       "@graph":  {
+                                                                                      "type":  "array"
+                                                                                  }
+                                                                   }
+                                                     },
+                                          "og_locale":  {
+                                                            "type":  "string"
+                                                        }
+                                      }
+                        },
+    "count":  {
+                  "type":  "number"
+              },
+    "link":  {
+                 "type":  "string"
+             },
+    "yoast_head":  {
+                       "type":  "string"
+                   }
+}

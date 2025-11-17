@@ -1,0 +1,301 @@
+{
+    "template":  {
+                     "type":  "string"
+                 },
+    "id":  {
+               "type":  "number"
+           },
+    "type":  {
+                 "type":  "string"
+             },
+    "smush":  {
+                  "type":  "object",
+                  "props":  {
+                                "sizes":  {
+                                              "type":  "object",
+                                              "props":  {
+                                                            "woocommerce_thumbnail":  {
+                                                                                          "type":  "object"
+                                                                                      },
+                                                            "woocommerce_gallery_thumbnail":  {
+                                                                                                  "type":  "object"
+                                                                                              },
+                                                            "freestyle_edge_large_width":  {
+                                                                                               "type":  "object"
+                                                                                           },
+                                                            "woocommerce_single":  {
+                                                                                       "type":  "object"
+                                                                                   },
+                                                            "medium":  {
+                                                                           "type":  "object"
+                                                                       },
+                                                            "freestyle_edge_large_height":  {
+                                                                                                "type":  "object"
+                                                                                            },
+                                                            "freestyle_edge_square":  {
+                                                                                          "type":  "object"
+                                                                                      },
+                                                            "freestyle_edge_landscape":  {
+                                                                                             "type":  "object"
+                                                                                         },
+                                                            "thumbnail":  {
+                                                                              "type":  "object"
+                                                                          }
+                                                        }
+                                          },
+                                "stats":  {
+                                              "type":  "object",
+                                              "props":  {
+                                                            "percent":  {
+                                                                            "type":  "number"
+                                                                        },
+                                                            "api_version":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                            "size_before":  {
+                                                                                "type":  "number"
+                                                                            },
+                                                            "lossy":  {
+                                                                          "type":  "number"
+                                                                      },
+                                                            "time":  {
+                                                                         "type":  "number"
+                                                                     },
+                                                            "bytes":  {
+                                                                          "type":  "number"
+                                                                      },
+                                                            "keep_exif":  {
+                                                                              "type":  "number"
+                                                                          },
+                                                            "size_after":  {
+                                                                               "type":  "number"
+                                                                           }
+                                                        }
+                                          }
+                            }
+              },
+    "modified_gmt":  {
+                         "type":  "string"
+                     },
+    "slug":  {
+                 "type":  "string"
+             },
+    "post":  {
+                 "type":  "number"
+             },
+    "author":  {
+                   "type":  "number"
+               },
+    "caption":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               }
+                              }
+                },
+    "comment_status":  {
+                           "type":  "string"
+                       },
+    "media_details":  {
+                          "type":  "object",
+                          "props":  {
+                                        "width":  {
+                                                      "type":  "number"
+                                                  },
+                                        "height":  {
+                                                       "type":  "number"
+                                                   },
+                                        "filesize":  {
+                                                         "type":  "number"
+                                                     },
+                                        "sizes":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "woocommerce_thumbnail":  {
+                                                                                                  "type":  "object"
+                                                                                              },
+                                                                    "woocommerce_gallery_thumbnail":  {
+                                                                                                          "type":  "object"
+                                                                                                      },
+                                                                    "freestyle_edge_large_width":  {
+                                                                                                       "type":  "object"
+                                                                                                   },
+                                                                    "woocommerce_single":  {
+                                                                                               "type":  "object"
+                                                                                           },
+                                                                    "freestyle_edge_square":  {
+                                                                                                  "type":  "object"
+                                                                                              },
+                                                                    "full":  {
+                                                                                 "type":  "object"
+                                                                             },
+                                                                    "medium":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "freestyle_edge_large_height":  {
+                                                                                                        "type":  "object"
+                                                                                                    },
+                                                                    "freestyle_edge_landscape":  {
+                                                                                                     "type":  "object"
+                                                                                                 },
+                                                                    "thumbnail":  {
+                                                                                      "type":  "object"
+                                                                                  }
+                                                                }
+                                                  },
+                                        "image_meta":  {
+                                                           "type":  "object",
+                                                           "props":  {
+                                                                         "credit":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                         "title":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                         "aperture":  {
+                                                                                          "type":  "string"
+                                                                                      },
+                                                                         "orientation":  {
+                                                                                             "type":  "string"
+                                                                                         },
+                                                                         "focal_length":  {
+                                                                                              "type":  "string"
+                                                                                          },
+                                                                         "iso":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                         "copyright":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                         "created_timestamp":  {
+                                                                                                   "type":  "string"
+                                                                                               },
+                                                                         "camera":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                         "keywords":  {
+                                                                                          "type":  "array"
+                                                                                      },
+                                                                         "caption":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                         "shutter_speed":  {
+                                                                                               "type":  "string"
+                                                                                           }
+                                                                     }
+                                                       },
+                                        "file":  {
+                                                     "type":  "string"
+                                                 }
+                                    }
+                      },
+    "mime_type":  {
+                      "type":  "string"
+                  },
+    "modified":  {
+                     "type":  "string"
+                 },
+    "title":  {
+                  "type":  "object",
+                  "props":  {
+                                "rendered":  {
+                                                 "type":  "string"
+                                             }
+                            }
+              },
+    "guid":  {
+                 "type":  "object",
+                 "props":  {
+                               "rendered":  {
+                                                "type":  "string"
+                                            }
+                           }
+             },
+    "media_type":  {
+                       "type":  "string"
+                   },
+    "date_gmt":  {
+                     "type":  "string"
+                 },
+    "source_url":  {
+                       "type":  "string"
+                   },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "replies":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        }
+                                                           }
+                                             },
+                                 "author":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "embeddable":  {
+                                                                                 "type":  "boolean"
+                                                                             },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           }
+                             }
+               },
+    "ping_status":  {
+                        "type":  "string"
+                    },
+    "description":  {
+                        "type":  "object",
+                        "props":  {
+                                      "rendered":  {
+                                                       "type":  "string"
+                                                   }
+                                  }
+                    },
+    "meta":  {
+                 "type":  "array\u003cempty\u003e"
+             },
+    "status":  {
+                   "type":  "string"
+               },
+    "date":  {
+                 "type":  "string"
+             },
+    "link":  {
+                 "type":  "string"
+             },
+    "alt_text":  {
+                     "type":  "string"
+                 }
+}

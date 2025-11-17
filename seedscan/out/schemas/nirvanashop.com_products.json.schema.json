@@ -1,0 +1,139 @@
+{
+    "products":  {
+                     "type":  "array\u003cobject\u003e",
+                     "props":  {
+                                   "tags":  {
+                                                "type":  "array/string"
+                                            },
+                                   "published_at":  {
+                                                        "type":  "string"
+                                                    },
+                                   "updated_at":  {
+                                                      "type":  "string"
+                                                  },
+                                   "created_at":  {
+                                                      "type":  "string"
+                                                  },
+                                   "body_html":  {
+                                                     "type":  "null"
+                                                 },
+                                   "product_type":  {
+                                                        "type":  "string"
+                                                    },
+                                   "variants":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "id":  {
+                                                                             "type":  "number"
+                                                                         },
+                                                                  "product_id":  {
+                                                                                     "type":  "number"
+                                                                                 },
+                                                                  "updated_at":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                  "grams":  {
+                                                                                "type":  "number"
+                                                                            },
+                                                                  "compare_at_price":  {
+                                                                                           "type":  "null"
+                                                                                       },
+                                                                  "taxable":  {
+                                                                                  "type":  "boolean"
+                                                                              },
+                                                                  "created_at":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                  "option2":  {
+                                                                                  "type":  "null"
+                                                                              },
+                                                                  "position":  {
+                                                                                   "type":  "number"
+                                                                               },
+                                                                  "title":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                                  "requires_shipping":  {
+                                                                                            "type":  "boolean"
+                                                                                        },
+                                                                  "sku":  {
+                                                                              "type":  "null"
+                                                                          },
+                                                                  "price":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                                  "option1":  {
+                                                                                  "type":  "string"
+                                                                              },
+                                                                  "option3":  {
+                                                                                  "type":  "null"
+                                                                              },
+                                                                  "featured_image":  {
+                                                                                         "type":  "null"
+                                                                                     },
+                                                                  "available":  {
+                                                                                    "type":  "boolean"
+                                                                                }
+                                                              }
+                                                },
+                                   "options":  {
+                                                   "type":  "array\u003cobject\u003e",
+                                                   "props":  {
+                                                                 "position":  {
+                                                                                  "type":  "number"
+                                                                              },
+                                                                 "values":  {
+                                                                                "type":  "array"
+                                                                            },
+                                                                 "name":  {
+                                                                              "type":  "string"
+                                                                          }
+                                                             }
+                                               },
+                                   "title":  {
+                                                 "type":  "string"
+                                             },
+                                   "vendor":  {
+                                                  "type":  "string"
+                                              },
+                                   "id":  {
+                                              "type":  "number"
+                                          },
+                                   "handle":  {
+                                                  "type":  "string"
+                                              },
+                                   "images":  {
+                                                  "type":  "array\u003cobject\u003e",
+                                                  "props":  {
+                                                                "width":  {
+                                                                              "type":  "number"
+                                                                          },
+                                                                "height":  {
+                                                                               "type":  "number"
+                                                                           },
+                                                                "id":  {
+                                                                           "type":  "number"
+                                                                       },
+                                                                "updated_at":  {
+                                                                                   "type":  "string"
+                                                                               },
+                                                                "src":  {
+                                                                            "type":  "string"
+                                                                        },
+                                                                "variant_ids":  {
+                                                                                    "type":  "array"
+                                                                                },
+                                                                "product_id":  {
+                                                                                   "type":  "number"
+                                                                               },
+                                                                "created_at":  {
+                                                                                   "type":  "string"
+                                                                               },
+                                                                "position":  {
+                                                                                 "type":  "number"
+                                                                             }
+                                                            }
+                                              }
+                               }
+                 }
+}

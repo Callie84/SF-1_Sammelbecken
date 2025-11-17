@@ -1,0 +1,8 @@
+use admin
+db.auth('sfroot','Str0ng!Pass')
+use sf1
+db.createUser({user:'sfapp',pwd:'App!Pass2025',roles:[{role:'readWrite',db:'sf1'}]})
+db.createCollection('seeds')
+db.createCollection('priceHistory')
+db.seeds.createIndex({ name: 1 })
+db.priceHistory.createIndex({ seedId: 1, seedbank: 1, date: -1 })

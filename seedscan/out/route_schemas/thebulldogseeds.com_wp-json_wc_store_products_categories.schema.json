@@ -1,0 +1,52 @@
+{
+    "image":  {
+                  "type":  "object",
+                  "props":  {
+                                "id":  {
+                                           "type":  "number"
+                                       },
+                                "sizes":  {
+                                              "type":  "string"
+                                          },
+                                "src":  {
+                                            "type":  "string"
+                                        },
+                                "srcset":  {
+                                               "type":  "string"
+                                           },
+                                "name":  {
+                                             "type":  "string"
+                                         },
+                                "alt":  {
+                                            "type":  "string"
+                                        },
+                                "thumbnail":  {
+                                                  "type":  "string"
+                                              }
+                            }
+              },
+    "slug":  {
+                 "type":  "string"
+             },
+    "id":  {
+               "type":  "number"
+           },
+    "parent":  {
+                   "type":  "number"
+               },
+    "count":  {
+                  "type":  "number"
+              },
+    "review_count":  {
+                         "type":  "number"
+                     },
+    "description":  {
+                        "type":  "string"
+                    },
+    "name":  {
+                 "type":  "string"
+             },
+    "permalink":  {
+                      "type":  "string"
+                  }
+}

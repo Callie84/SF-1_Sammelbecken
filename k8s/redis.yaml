@@ -1,0 +1,106 @@
+# Redis für SF-1
+# - Auth via Secret sf1-secrets.REDIS_PASS
+# - Persistenz per PVC
+# - Zugriff nur von sf1-backend (NetworkPolicy)
+# Hinweis: Secret selbst NICHT in Klartext commiten (Sealed Secrets nutzen).
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf1-redis
+  namespace: default
+  labels: { app: sf1-redis }
+spec:
+  type: ClusterIP
+  selector: { app: sf1-redis }
+  ports:
+    - name: redis
+      port: 6379
+      targetPort: 6379
+
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: sf1-redis
+  namespace: default
+  labels: { app: sf1-redis }
+spec:
+  serviceName: sf1-redis
+  replicas: 1
+  selector:
+    matchLabels: { app: sf1-redis }
+  template:
+    metadata:
+      labels: { app: sf1-redis }
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        fsGroup: 1001
+      containers:
+        - name: redis
+          image: redis:7-alpine
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 6379
+              name: redis
+          env:
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: sf1-secrets
+                  key: REDIS_PASS
+          args:
+            - "redis-server"
+            - "--appendonly"
+            - "yes"
+            - "--save"
+            - "900 1"
+            - "300 10"
+            - "60 10000"
+            - "--requirepass"
+            - "$(REDIS_PASSWORD)"
+            - "--maxmemory-policy"
+            - "allkeys-lru"
+          readinessProbe:
+            tcpSocket: { port: redis }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            tcpSocket: { port: redis }
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          resources:
+            requests: { cpu: "100m", memory: "256Mi" }
+            limits:   { cpu: "500m", memory: "512Mi" }
+          volumeMounts:
+            - name: data
+              mountPath: /data
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 5Gi
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: sf1-redis-allow-backend
+  namespace: default
+spec:
+  podSelector:
+    matchLabels: { app: sf1-redis }
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: sf1-backend
+      ports:
+        - protocol: TCP
+          port: 6379
+  policyTypes: ["Ingress"]

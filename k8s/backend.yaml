@@ -1,0 +1,39 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-backend
+  namespace: default
+  labels:
+    app: sf1-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sf1-backend
+  template:
+    metadata:
+      labels:
+        app: sf1-backend
+    spec:
+      containers:
+        - name: sf1-backend
+          image: ghcr.io/callie84/sf-1-backend:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 4000
+          env:
+            - name: NODE_ENV
+              value: "production"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf1-backend
+  namespace: default
+spec:
+  selector:
+    app: sf1-backend
+  ports:
+    - port: 4000
+      targetPort: 4000
+      protocol: TCP

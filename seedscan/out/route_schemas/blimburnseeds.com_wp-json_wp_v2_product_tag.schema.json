@@ -1,0 +1,83 @@
+{
+    "meta":  {
+                 "type":  "array\u003cempty\u003e"
+             },
+    "name":  {
+                 "type":  "string"
+             },
+    "id":  {
+               "type":  "number"
+           },
+    "slug":  {
+                 "type":  "string"
+             },
+    "taxonomy":  {
+                     "type":  "string"
+                 },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "curies":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "templated":  {
+                                                                                "type":  "boolean"
+                                                                            },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                              "name":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "wp:post_type":  {
+                                                      "type":  "array\u003cobject\u003e",
+                                                      "props":  {
+                                                                    "href":  {
+                                                                                 "type":  "string"
+                                                                             }
+                                                                }
+                                                  },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "targetHints":  {
+                                                                                "type":  "object"
+                                                                            },
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           }
+                             }
+               },
+    "description":  {
+                        "type":  "string"
+                    },
+    "count":  {
+                  "type":  "number"
+              },
+    "acf":  {
+                "type":  "array\u003cempty\u003e"
+            },
+    "link":  {
+                 "type":  "string"
+             }
+}

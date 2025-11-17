@@ -1,0 +1,1 @@
+[{"id":5,"name":"Container","taxonomy":"pa_container","type":"select","order":"name","has_archives":false,"count":5},{"id":3,"name":"Pack","taxonomy":"pa_pack","type":"select","order":"menu_order","has_archives":false,"count":3},{"id":6,"name":"Strain","taxonomy":"pa_strain","type":"select","order":"menu_order","has_archives":false,"count":19}]

@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-frontend
+  namespace: sf1
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: sf1-frontend }
+  template:
+    metadata:
+      labels: { app: sf1-frontend }
+    spec:
+      containers:
+      - name: web
+        image: ghcr.io/callie84/sf1-frontend:main
+        ports: [{containerPort: 3000}]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf1-frontend
+  namespace: sf1
+spec:
+  selector: { app: sf1-frontend }
+  ports:
+  - port: 80
+    targetPort: 3000
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sf1-frontend
+  namespace: sf1
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  ingressClassName: traefik
+  tls:
+  - hosts: ["seedfinderpro.de","www.seedfinderpro.de"]
+    secretName: web-seedfinderpro-tls
+  rules:
+  - host: seedfinderpro.de
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sf1-frontend
+            port:
+              number: 80
+  - host: www.seedfinderpro.de
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+            service:
+              name: sf1-frontend
+              port:
+                number: 80

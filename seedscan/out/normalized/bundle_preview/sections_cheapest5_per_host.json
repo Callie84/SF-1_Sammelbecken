@@ -1,0 +1,110 @@
+[
+    {
+        "host":  "aceseeds.org",
+        "items":  {
+                      "title":  "ErdPurt Feminizada",
+                      "price":  7.5,
+                      "link":  "https://www.aceseeds.org/semillas/erdpurt-semillas-feminizadas/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "blimburnseeds.com",
+        "items":  {
+                      "title":  "Super Boof Auto",
+                      "price":  17.5,
+                      "link":  "https://blimburnseeds.com/super-boof-auto/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "bulkseedbank.org",
+        "items":  {
+                      "title":  "AUTO PSYCHEDELIC",
+                      "price":  17.5,
+                      "link":  "https://bulkseedbank.org/cannabis-seeds/autoflowering-seeds/auto-psychedelic-2/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "dnagenetics.com",
+        "items":  {
+                      "title":  "DNA Auto Mix Pack Cannabis Seeds (Sample)",
+                      "price":  1,
+                      "link":  "https://dnagenetics.com/product/dna-auto-mix-pack-cannabis-seeds-sample/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "drunderground.com",
+        "items":  {
+                      "title":  "Auto King Kong",
+                      "price":  0.15,
+                      "link":  "https://drunderground.com/producto/auto-king-kong/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "genehtik.com",
+        "items":  {
+                      "title":  "semillas de cannabis feminizadas",
+                      "price":  9,
+                      "link":  "https://www.genehtik.com/producto/semillas-de-cannabis-feminizadas/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "hyp3rids.com",
+        "items":  {
+                      "title":  "PURPLE ZACATECAS IBL MEXICO DOUBLE PHENO PACK",
+                      "price":  90,
+                      "link":  "https://hyp3rids.com/product/purple-zacatecas-mexico",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "kcbrains.com",
+        "items":  {
+                      "title":  "KC 36® Regular",
+                      "price":  9.5,
+                      "link":  "https://kcbrains.com/shop/cannabis-seeds/regular-seeds/kc-36-regular/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "northcoastgenetics.com",
+        "items":  {
+                      "title":  "Zamberry – Kaya Seed Company",
+                      "price":  50,
+                      "link":  "https://northcoastgenetics.com/product/zamberryks",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "spliffseeds.nl",
+        "items":  {
+                      "title":  "Haze #1 Regular Cannabis Seeds",
+                      "price":  9.9,
+                      "link":  "https://www.spliffseeds.nl/product/haze-regular-cannabis-seeds/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "thebulldogseeds.com",
+        "items":  {
+                      "title":  "TB Skittlez Auto",
+                      "price":  27,
+                      "link":  "https://thebulldogseeds.com/product/tb-skittlez-auto/",
+                      "image":  ""
+                  }
+    },
+    {
+        "host":  "visionseeds.nl",
+        "items":  {
+                      "title":  "Delhi Cheese – AutoFem",
+                      "price":  15,
+                      "link":  "https://www.visionseeds.nl/product/delhi-cheese-autofem/",
+                      "image":  ""
+                  }
+    }
+]

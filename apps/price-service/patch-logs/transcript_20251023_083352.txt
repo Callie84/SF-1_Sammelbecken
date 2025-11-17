@@ -1,0 +1,32 @@
+﻿**********************
+nStart der Windows PowerShell-Aufzeichnung
+Startzeit: 20251023083352
+Benutzername: LAPTOP-4NF3T4M4\kling
+RunAs-Benutzer: LAPTOP-4NF3T4M4\kling
+Konfigurationsname: 
+Computer: LAPTOP-4NF3T4M4 (Microsoft Windows NT 10.0.19045.0)
+Hostanwendung: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\Apply-PriceParserPatch.ps1
+Prozess-ID: 3372
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>TerminatingError(): "Kein Codeblock für src/parsers/list.debug.js im Patch gefunden."
+>> TerminatingError(): "Kein Codeblock für src/parsers/list.debug.js im Patch gefunden."
+Kein Codeblock für src/parsers/list.debug.js im Patch gefunden.
+Kein Codeblock für src/parsers/list.debug.js im Patch gefunden.
+In C:\Users\kling\Desktop\SF-1_Sammelbecken\Apply-PriceParserPatch.ps1:24 Zeichen:105
++ ... sg)  | Tee-Object -FilePath $LogFile -Append | Out-Null; throw $msg }
++                                                              ~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Kein Codeblock ...Patch gefunden.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Kein Codeblock für src/parsers/list.debug.js im Patch gefunden.
+
+**********************
+Ende der Windows PowerShell-Aufzeichnung
+Endzeit: 20251023083353
+**********************

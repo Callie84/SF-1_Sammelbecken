@@ -1,0 +1,42 @@
+﻿name: seedscan
+
+on:
+  push:
+    branches: [ feat/vite, main ]
+    paths:
+      - "seedscan/**"
+      - ".github/workflows/seedscan.yml"
+  pull_request:
+    branches: [ feat/vite, main ]
+    paths:
+      - "seedscan/**"
+      - ".github/workflows/seedscan.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: seedscan
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: seedscan/package-lock.json
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Run seedscan
+        run: npm run build --if-present
+
+      - name: Upload normalized output
+        uses: actions/upload-artifact@v4
+        with:
+          name: seedscan-out
+          path: |
+            seedscan/out/**

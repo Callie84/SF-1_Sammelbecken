@@ -1,0 +1,2588 @@
+[
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/shipping_classes/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/shipping_classes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/reviews",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/brands/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/brands/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/shipping_classes",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/shipping_classes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/categories",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/shipping_classes",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/shipping_classes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/shipping_classes/slug-suggestion",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/shipping_classes/slug-suggestion",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/media",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/media",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/reviews/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/reviews/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/custom-fields/names",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/custom-fields/names",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/(?P\u003cid\u003e[\\d]+)/duplicate",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/(?P\u003cid\u003e[\\d]+)/duplicate",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/pages",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/pages",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/(?P\u003cslug\u003e[\\S]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/(?P\u003cslug\u003e[\\S]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/categories/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/categories/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/brands/(?P\u003cidentifier\u003e[\\w-]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/brands/(?P\u003cidentifier\u003e[\\w-]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/tags/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/tags/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product_cat/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product_cat/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/categories/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/categories/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/suggested-products",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/suggested-products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/attributes",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/tags",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product_brand/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product_brand/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/generate",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/generate",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/attributes/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/attributes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/categories",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/collection-data",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/collection-data",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/tags",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/reviews",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/brands/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/brands/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/tags/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/tags/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/shipping_classes/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/shipping_classes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product_tag/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product_tag/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/attributes/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/attributes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/reviews/batch",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/reviews/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product_cat",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product_cat",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/tags",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/brands",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/attributes",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/tags",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/posts",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/posts",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/categories",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/store/products/attributes",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/store/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/brands",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/categories",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/brands",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product_brand",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product_brand",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wp/v2/product_tag",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wp/v2/product_tag",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "bulkseedbank.org",
+        "Route":  "/wc/v2/products",
+        "FullUrl":  "https://bulkseedbank.org/wp-json/wc/v2/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/shipping_classes/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/shipping_classes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/reviews",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/brands/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/brands/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/shipping_classes",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/shipping_classes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/categories",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/shipping_classes",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/shipping_classes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/shipping_classes/slug-suggestion",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/shipping_classes/slug-suggestion",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/media",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/media",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/reviews/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/reviews/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/custom-fields/names",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/custom-fields/names",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/(?P\u003cid\u003e[\\d]+)/duplicate",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/(?P\u003cid\u003e[\\d]+)/duplicate",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/pages",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/pages",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/(?P\u003cslug\u003e[\\S]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/(?P\u003cslug\u003e[\\S]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/categories/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/categories/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/brands/(?P\u003cidentifier\u003e[\\w-]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/brands/(?P\u003cidentifier\u003e[\\w-]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/tags/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/tags/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product_cat/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product_cat/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/categories/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/categories/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/suggested-products",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/suggested-products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/attributes",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/tags",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product_brand/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product_brand/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/generate",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/generate",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/attributes/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/attributes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/categories",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/collection-data",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/collection-data",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/tags",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/reviews",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/brands/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/brands/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/tags/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/tags/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/shipping_classes/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/shipping_classes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product_tag/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product_tag/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/attributes/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/attributes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/reviews/batch",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/reviews/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product_cat",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product_cat",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/tags",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/brands",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/attributes",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/tags",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/posts",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/posts",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/categories",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/store/products/attributes",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/store/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/brands",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/categories",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/brands",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product_brand",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product_brand",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wp/v2/product_tag",
+        "FullUrl":  "https://aceseeds.org/wp-json/wp/v2/product_tag",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "aceseeds.org",
+        "Route":  "/wc/v2/products",
+        "FullUrl":  "https://aceseeds.org/wp-json/wc/v2/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/shipping_classes/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/shipping_classes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/reviews",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/brands/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/brands/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/shipping_classes",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/shipping_classes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/categories",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/shipping_classes",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/shipping_classes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/shipping_classes/slug-suggestion",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/shipping_classes/slug-suggestion",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/media",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/media",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/reviews/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/reviews/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/custom-fields/names",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/custom-fields/names",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/(?P\u003cid\u003e[\\d]+)/duplicate",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/(?P\u003cid\u003e[\\d]+)/duplicate",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/pages",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/pages",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/(?P\u003cslug\u003e[\\S]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/(?P\u003cslug\u003e[\\S]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/categories/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/categories/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/brands/(?P\u003cidentifier\u003e[\\w-]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/brands/(?P\u003cidentifier\u003e[\\w-]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/tags/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/tags/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product_cat/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product_cat/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/categories/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/categories/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/suggested-products",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/suggested-products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/attributes",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/tags",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product_brand/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product_brand/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/generate",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/generate",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/attributes/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/attributes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/categories",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/collection-data",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/collection-data",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/tags",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/reviews",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/brands/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/brands/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/tags/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/tags/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/shipping_classes/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/shipping_classes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product_tag/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product_tag/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/attributes/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/attributes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/reviews/batch",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/reviews/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product_cat",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product_cat",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/tags",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/brands",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/attributes",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/tags",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/posts",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/posts",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/categories",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/store/products/attributes",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/store/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/brands",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/categories",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/brands",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product_brand",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product_brand",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wp/v2/product_tag",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wp/v2/product_tag",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "blimburnseeds.com",
+        "Route":  "/wc/v2/products",
+        "FullUrl":  "https://blimburnseeds.com/wp-json/wc/v2/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "nirvanashop.com",
+        "Route":  "/products.json",
+        "FullUrl":  "https://nirvanashop.com/products.json",
+        "Source":  "shopify"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/categories",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/media",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/media",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/tags",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/posts",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/posts",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/pages",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/pages",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "sensiseeds.com",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "FullUrl":  "https://sensiseeds.com/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/shipping_classes/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/shipping_classes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/reviews",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/brands/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/brands/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/shipping_classes",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/shipping_classes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/categories",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/shipping_classes",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/shipping_classes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/shipping_classes/slug-suggestion",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/shipping_classes/slug-suggestion",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/media",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/media",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/reviews/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/reviews/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/custom-fields/names",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/custom-fields/names",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/(?P\u003cid\u003e[\\d]+)/duplicate",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/(?P\u003cid\u003e[\\d]+)/duplicate",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/pages",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/pages",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/(?P\u003cslug\u003e[\\S]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/(?P\u003cslug\u003e[\\S]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/categories/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/categories/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/brands/(?P\u003cidentifier\u003e[\\w-]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/brands/(?P\u003cidentifier\u003e[\\w-]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/tags/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/tags/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product_cat/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product_cat/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/categories/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/categories/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/suggested-products",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/suggested-products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/attributes",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/posts/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/tags",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product_brand/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product_brand/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/generate",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/generate",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/attributes/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/attributes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/categories",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/collection-data",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/collection-data",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/tags",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/reviews",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/reviews",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/brands/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/brands/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/tags/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/tags/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/categories/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/brands/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/shipping_classes/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/shipping_classes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/attributes/(?P\u003cattribute_id\u003e[\\d]+)/terms/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/attributes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/pages/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product_tag/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product_tag/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/attributes/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/attributes/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/reviews/batch",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/reviews/batch",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product_cat",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product_cat",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/tags",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/brands",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/attributes",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/tags",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/tags",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/(?P\u003cproduct_id\u003e[\\d]+)/variations/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/posts",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/posts",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/categories",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/store/products/attributes",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/store/products/attributes",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/brands",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/categories",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/categories",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v3/products/(?P\u003cproduct_id\u003e[\\d]+)/variations",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/brands",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/brands",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product_brand",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product_brand",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/shipping_classes/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products/tags/(?P\u003cid\u003e[\\d]+)",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wp/v2/product_tag",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wp/v2/product_tag",
+        "Source":  "wp"
+    },
+    {
+        "Host":  "spliffseeds.nl",
+        "Route":  "/wc/v2/products",
+        "FullUrl":  "https://spliffseeds.nl/wp-json/wc/v2/products",
+        "Source":  "wp"
+    }
+]

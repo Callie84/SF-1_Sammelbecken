@@ -1,0 +1,41 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: price-service
+  namespace: default
+  labels:
+    app: price-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: price-service
+  template:
+    metadata:
+      labels:
+        app: price-service
+    spec:
+      imagePullSecrets:
+        - name: ghcr-creds
+      containers:
+        - name: price-service
+          image: ghcr.io/callie84/sf-1-price-service:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NODE_ENV
+              value: "production"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: price-service
+  namespace: default
+spec:
+  selector:
+    app: price-service
+  ports:
+    - port: 3000
+      targetPort: 3000
+      protocol: TCP

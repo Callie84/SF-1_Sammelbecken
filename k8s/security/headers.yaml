@@ -1,0 +1,18 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: security-headers
+  namespace: sf1
+spec:
+  headers:
+    forceSTSHeader: true
+    stsSeconds: 31536000
+    stsIncludeSubdomains: true
+    stsPreload: true
+    frameDeny: true
+    referrerPolicy: no-referrer
+    contentTypeNosniff: true
+    browserXssFilter: true
+    customResponseHeaders:
+      X-Content-Security-Policy: "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://api.seedfinderpro.de https://analytics.seedfinderpro.de;"
+      Content-Security-Policy: "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://api.seedfinderpro.de https://analytics.seedfinderpro.de;"

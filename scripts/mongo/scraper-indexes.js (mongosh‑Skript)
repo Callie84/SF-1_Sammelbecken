@@ -1,0 +1,8 @@
+// Nutzung: mongosh "${MONGODB_URI}" /scripts/mongo/scraper-indexes.js
+const dbName = (process.env.MONGODB_DB || 'sf1');
+const c = db.getSiblingDB(dbName).getCollection('scraper.jobs');
+c.createIndex({ uniqueKey: 1 }, { unique: true, name: 'uniq_job_per_day' });
+c.createIndex({ state: 1, nextRunAt: 1 }, { name: 'state_nextRun' });
+c.createIndex({ leaseUntil: 1 }, { name: 'leaseUntil' });
+c.createIndex({ updatedAt: 1 }, { name: 'updatedAt' });
+printjson({ ok: 1 });

@@ -1,0 +1,138 @@
+openapi: 3.1.0
+info:
+  title: SF-1 API
+  description: REST-API für SeedFinder PRO (Backend / Node.js Express)
+  version: 1.0.0
+  contact:
+    name: SeedFinder PRO Maintainers
+    url: https://seedfinderpro.de
+    email: api@seedfinderpro.de
+servers:
+  - url: https://seedfinderpro.de/api
+  - url: https://canary.seedfinderpro.de/api
+tags:
+  - name: Auth
+  - name: Seeds
+  - name: Price
+  - name: User
+paths:
+  /auth/login:
+    post:
+      tags: [Auth]
+      summary: Benutzer-Login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: { type: string, format: email }
+                password: { type: string }
+      responses:
+        "200":
+          description: Erfolgreich eingeloggt
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token: { type: string }
+                  user: { $ref: "#/components/schemas/User" }
+        "401":
+          description: Ungültige Anmeldedaten
+
+  /auth/register:
+    post:
+      tags: [Auth]
+      summary: Benutzer-Registrierung
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewUser"
+      responses:
+        "201": { description: Benutzer angelegt }
+
+  /seeds:
+    get:
+      tags: [Seeds]
+      summary: Liste aller Seeds (gefiltert / paginiert)
+      parameters:
+        - name: q
+          in: query
+          schema: { type: string }
+        - name: host
+          in: query
+          schema: { type: string }
+        - name: page
+          in: query
+          schema: { type: integer, minimum: 1, default: 1 }
+        - name: limit
+          in: query
+          schema: { type: integer, minimum: 1, maximum: 100, default: 20 }
+      responses:
+        "200":
+          description: Erfolg
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total: { type: integer }
+                  items:
+                    type: array
+                    items: { $ref: "#/components/schemas/Seed" }
+
+  /price/{id}:
+    get:
+      tags: [Price]
+      summary: Preisdetails eines Seeds
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Price" }
+        "404": { description: Nicht gefunden }
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id: { type: string }
+        email: { type: string }
+        role: { type: string }
+        premium: { type: boolean }
+    NewUser:
+      type: object
+      required: [email, password]
+      properties:
+        email: { type: string, format: email }
+        password: { type: string, minLength: 8 }
+    Seed:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        breeder: { type: string }
+        thc: { type: number }
+        cbd: { type: number }
+        flowering: { type: string }
+        price: { type: number }
+    Price:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        host: { type: string }
+        url: { type: string }
+        price: { type: number }
+        lastUpdated: { type: string, format: date-time }

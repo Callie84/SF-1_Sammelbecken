@@ -1,0 +1,1574 @@
+{
+    "url":  {
+                "type":  "string"
+            },
+    "description":  {
+                        "type":  "string"
+                    },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "help":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          }
+                             }
+               },
+    "home":  {
+                 "type":  "string"
+             },
+    "site_logo":  {
+                      "type":  "boolean"
+                  },
+    "name":  {
+                 "type":  "string"
+             },
+    "gmt_offset":  {
+                       "type":  "string"
+                   },
+    "timezone_string":  {
+                            "type":  "string"
+                        },
+    "namespaces":  {
+                       "type":  "array/string"
+                   },
+    "routes":  {
+                   "type":  "object",
+                   "props":  {
+                                 "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                      "type":  "object",
+                                                                                                                      "props":  {
+                                                                                                                                    "endpoints":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  },
+                                                                                                                                    "namespace":  {
+                                                                                                                                                      "type":  "string"
+                                                                                                                                                  },
+                                                                                                                                    "methods":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                }
+                                                                                                                                }
+                                                                                                                  },
+                                 "/wp/v2/categories":  {
+                                                           "type":  "object",
+                                                           "props":  {
+                                                                         "_links":  {
+                                                                                        "type":  "object"
+                                                                                    },
+                                                                         "endpoints":  {
+                                                                                           "type":  "array"
+                                                                                       },
+                                                                         "namespace":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                         "methods":  {
+                                                                                         "type":  "array"
+                                                                                     }
+                                                                     }
+                                                       },
+                                 "/wp/v2/tags/(?P\u003cid\u003e[\\d]+)":  {
+                                                                              "type":  "object",
+                                                                              "props":  {
+                                                                                            "endpoints":  {
+                                                                                                              "type":  "array"
+                                                                                                          },
+                                                                                            "namespace":  {
+                                                                                                              "type":  "string"
+                                                                                                          },
+                                                                                            "methods":  {
+                                                                                                            "type":  "array"
+                                                                                                        }
+                                                                                        }
+                                                                          },
+                                 "/wp/v2/templates/(?P\u003cparent\u003e[\\d]+)/revisions":  {
+                                                                                                 "type":  "object",
+                                                                                                 "props":  {
+                                                                                                               "endpoints":  {
+                                                                                                                                 "type":  "array"
+                                                                                                                             },
+                                                                                                               "namespace":  {
+                                                                                                                                 "type":  "string"
+                                                                                                                             },
+                                                                                                               "methods":  {
+                                                                                                                               "type":  "array"
+                                                                                                                           }
+                                                                                                           }
+                                                                                             },
+                                 "/wp/v2/plugins/(?P\u003cplugin\u003e[^.\\/]+(?:\\/[^.\\/]+)?)":  {
+                                                                                                       "type":  "object",
+                                                                                                       "props":  {
+                                                                                                                     "endpoints":  {
+                                                                                                                                       "type":  "array"
+                                                                                                                                   },
+                                                                                                                     "namespace":  {
+                                                                                                                                       "type":  "string"
+                                                                                                                                   },
+                                                                                                                     "methods":  {
+                                                                                                                                     "type":  "array"
+                                                                                                                                 }
+                                                                                                                 }
+                                                                                                   },
+                                 "/litespeed/v1/notify_ucss":  {
+                                                                   "type":  "object",
+                                                                   "props":  {
+                                                                                 "_links":  {
+                                                                                                "type":  "object"
+                                                                                            },
+                                                                                 "endpoints":  {
+                                                                                                   "type":  "array"
+                                                                                               },
+                                                                                 "namespace":  {
+                                                                                                   "type":  "string"
+                                                                                               },
+                                                                                 "methods":  {
+                                                                                                 "type":  "array"
+                                                                                             }
+                                                                             }
+                                                               },
+                                 "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                      "type":  "object",
+                                                                                                                      "props":  {
+                                                                                                                                    "endpoints":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  },
+                                                                                                                                    "namespace":  {
+                                                                                                                                                      "type":  "string"
+                                                                                                                                                  },
+                                                                                                                                    "methods":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                }
+                                                                                                                                }
+                                                                                                                  },
+                                 "/wp/v2/templates/(?P\u003cid\u003e[\\d]+)/autosaves":  {
+                                                                                             "type":  "object",
+                                                                                             "props":  {
+                                                                                                           "endpoints":  {
+                                                                                                                             "type":  "array"
+                                                                                                                         },
+                                                                                                           "namespace":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         },
+                                                                                                           "methods":  {
+                                                                                                                           "type":  "array"
+                                                                                                                       }
+                                                                                                       }
+                                                                                         },
+                                 "/wp/v2/media/(?P\u003cid\u003e[\\d]+)":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/litespeed/v1/ip_validate":  {
+                                                                   "type":  "object",
+                                                                   "props":  {
+                                                                                 "_links":  {
+                                                                                                "type":  "object"
+                                                                                            },
+                                                                                 "endpoints":  {
+                                                                                                   "type":  "array"
+                                                                                               },
+                                                                                 "namespace":  {
+                                                                                                   "type":  "string"
+                                                                                               },
+                                                                                 "methods":  {
+                                                                                                 "type":  "array"
+                                                                                             }
+                                                                             }
+                                                               },
+                                 "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/wp/v2/media":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp/v2/comments/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                  "type":  "object",
+                                                                                  "props":  {
+                                                                                                "endpoints":  {
+                                                                                                                  "type":  "array"
+                                                                                                              },
+                                                                                                "namespace":  {
+                                                                                                                  "type":  "string"
+                                                                                                              },
+                                                                                                "methods":  {
+                                                                                                                "type":  "array"
+                                                                                                            }
+                                                                                            }
+                                                                              },
+                                 "/foogallery/v1/galleries":  {
+                                                                  "type":  "object",
+                                                                  "props":  {
+                                                                                "_links":  {
+                                                                                               "type":  "object"
+                                                                                           },
+                                                                                "endpoints":  {
+                                                                                                  "type":  "array"
+                                                                                              },
+                                                                                "namespace":  {
+                                                                                                  "type":  "string"
+                                                                                              },
+                                                                                "methods":  {
+                                                                                                "type":  "array"
+                                                                                            }
+                                                                            }
+                                                              },
+                                 "/wp/v2/settings":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/wp/v2/blocks/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                       "type":  "object",
+                                                                                                                       "props":  {
+                                                                                                                                     "endpoints":  {
+                                                                                                                                                       "type":  "array"
+                                                                                                                                                   },
+                                                                                                                                     "namespace":  {
+                                                                                                                                                       "type":  "string"
+                                                                                                                                                   },
+                                                                                                                                     "methods":  {
+                                                                                                                                                     "type":  "array"
+                                                                                                                                                 }
+                                                                                                                                 }
+                                                                                                                   },
+                                 "/wp/v2/templates/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                          "type":  "object",
+                                                                                                                          "props":  {
+                                                                                                                                        "endpoints":  {
+                                                                                                                                                          "type":  "array"
+                                                                                                                                                      },
+                                                                                                                                        "namespace":  {
+                                                                                                                                                          "type":  "string"
+                                                                                                                                                      },
+                                                                                                                                        "methods":  {
+                                                                                                                                                        "type":  "array"
+                                                                                                                                                    }
+                                                                                                                                    }
+                                                                                                                      },
+                                 "/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions":  {
+                                                                                             "type":  "object",
+                                                                                             "props":  {
+                                                                                                           "endpoints":  {
+                                                                                                                             "type":  "array"
+                                                                                                                         },
+                                                                                                           "namespace":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         },
+                                                                                                           "methods":  {
+                                                                                                                           "type":  "array"
+                                                                                                                       }
+                                                                                                       }
+                                                                                         },
+                                 "/wp/v2/templates/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                          "type":  "object",
+                                                                                                                          "props":  {
+                                                                                                                                        "endpoints":  {
+                                                                                                                                                          "type":  "array"
+                                                                                                                                                      },
+                                                                                                                                        "namespace":  {
+                                                                                                                                                          "type":  "string"
+                                                                                                                                                      },
+                                                                                                                                        "methods":  {
+                                                                                                                                                        "type":  "array"
+                                                                                                                                                    }
+                                                                                                                                    }
+                                                                                                                      },
+                                 "/wp/v2/widget-types/(?P\u003cid\u003e[a-zA-Z0-9_-]+)":  {
+                                                                                              "type":  "object",
+                                                                                              "props":  {
+                                                                                                            "endpoints":  {
+                                                                                                                              "type":  "array"
+                                                                                                                          },
+                                                                                                            "namespace":  {
+                                                                                                                              "type":  "string"
+                                                                                                                          },
+                                                                                                            "methods":  {
+                                                                                                                            "type":  "array"
+                                                                                                                        }
+                                                                                                        }
+                                                                                          },
+                                 "/litespeed/v1/apikey":  {
+                                                              "type":  "object",
+                                                              "props":  {
+                                                                            "_links":  {
+                                                                                           "type":  "object"
+                                                                                       },
+                                                                            "endpoints":  {
+                                                                                              "type":  "array"
+                                                                                          },
+                                                                            "namespace":  {
+                                                                                              "type":  "string"
+                                                                                          },
+                                                                            "methods":  {
+                                                                                            "type":  "array"
+                                                                                        }
+                                                                        }
+                                                          },
+                                 "/wp/v2/pages":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp/v2/block-types/(?P\u003cnamespace\u003e[a-zA-Z0-9_-]+)/(?P\u003cname\u003e[a-zA-Z0-9_-]+)":  {
+                                                                                                                                       "type":  "object",
+                                                                                                                                       "props":  {
+                                                                                                                                                     "endpoints":  {
+                                                                                                                                                                       "type":  "array"
+                                                                                                                                                                   },
+                                                                                                                                                     "namespace":  {
+                                                                                                                                                                       "type":  "string"
+                                                                                                                                                                   },
+                                                                                                                                                     "methods":  {
+                                                                                                                                                                     "type":  "array"
+                                                                                                                                                                 }
+                                                                                                                                                 }
+                                                                                                                                   },
+                                 "/regenerate-thumbnails/v1/regenerate/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                       "type":  "object",
+                                                                                                       "props":  {
+                                                                                                                     "endpoints":  {
+                                                                                                                                       "type":  "array"
+                                                                                                                                   },
+                                                                                                                     "namespace":  {
+                                                                                                                                       "type":  "string"
+                                                                                                                                   },
+                                                                                                                     "methods":  {
+                                                                                                                                     "type":  "array"
+                                                                                                                                 }
+                                                                                                                 }
+                                                                                                   },
+                                 "/batch/v1":  {
+                                                   "type":  "object",
+                                                   "props":  {
+                                                                 "_links":  {
+                                                                                "type":  "object"
+                                                                            },
+                                                                 "endpoints":  {
+                                                                                   "type":  "array"
+                                                                               },
+                                                                 "namespace":  {
+                                                                                   "type":  "string"
+                                                                               },
+                                                                 "methods":  {
+                                                                                 "type":  "array"
+                                                                             }
+                                                             }
+                                               },
+                                 "/wp/v2/block-types":  {
+                                                            "type":  "object",
+                                                            "props":  {
+                                                                          "_links":  {
+                                                                                         "type":  "object"
+                                                                                     },
+                                                                          "endpoints":  {
+                                                                                            "type":  "array"
+                                                                                        },
+                                                                          "namespace":  {
+                                                                                            "type":  "string"
+                                                                                        },
+                                                                          "methods":  {
+                                                                                          "type":  "array"
+                                                                                      }
+                                                                      }
+                                                        },
+                                 "/oembed/1.0":  {
+                                                     "type":  "object",
+                                                     "props":  {
+                                                                   "_links":  {
+                                                                                  "type":  "object"
+                                                                              },
+                                                                   "endpoints":  {
+                                                                                     "type":  "array"
+                                                                                 },
+                                                                   "namespace":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                   "methods":  {
+                                                                                   "type":  "array"
+                                                                               }
+                                                               }
+                                                 },
+                                 "/wp/v2/plugins":  {
+                                                        "type":  "object",
+                                                        "props":  {
+                                                                      "_links":  {
+                                                                                     "type":  "object"
+                                                                                 },
+                                                                      "endpoints":  {
+                                                                                        "type":  "array"
+                                                                                    },
+                                                                      "namespace":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                      "methods":  {
+                                                                                      "type":  "array"
+                                                                                  }
+                                                                  }
+                                                    },
+                                 "/wp/v2/users":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/edit":  {
+                                                                                    "type":  "object",
+                                                                                    "props":  {
+                                                                                                  "endpoints":  {
+                                                                                                                    "type":  "array"
+                                                                                                                },
+                                                                                                  "namespace":  {
+                                                                                                                    "type":  "string"
+                                                                                                                },
+                                                                                                  "methods":  {
+                                                                                                                  "type":  "array"
+                                                                                                              }
+                                                                                              }
+                                                                                },
+                                 "/wp/v2/widgets":  {
+                                                        "type":  "object",
+                                                        "props":  {
+                                                                      "_links":  {
+                                                                                     "type":  "object"
+                                                                                 },
+                                                                      "endpoints":  {
+                                                                                        "type":  "array"
+                                                                                    },
+                                                                      "namespace":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                      "methods":  {
+                                                                                      "type":  "array"
+                                                                                  }
+                                                                  }
+                                                    },
+                                 "/wp/v2/blocks/(?P\u003cid\u003e[\\d]+)/autosaves":  {
+                                                                                          "type":  "object",
+                                                                                          "props":  {
+                                                                                                        "endpoints":  {
+                                                                                                                          "type":  "array"
+                                                                                                                      },
+                                                                                                        "namespace":  {
+                                                                                                                          "type":  "string"
+                                                                                                                      },
+                                                                                                        "methods":  {
+                                                                                                                        "type":  "array"
+                                                                                                                    }
+                                                                                                    }
+                                                                                      },
+                                 "/wp-site-health/v1":  {
+                                                            "type":  "object",
+                                                            "props":  {
+                                                                          "_links":  {
+                                                                                         "type":  "object"
+                                                                                     },
+                                                                          "endpoints":  {
+                                                                                            "type":  "array"
+                                                                                        },
+                                                                          "namespace":  {
+                                                                                            "type":  "string"
+                                                                                        },
+                                                                          "methods":  {
+                                                                                          "type":  "array"
+                                                                                      }
+                                                                      }
+                                                        },
+                                 "/":  {
+                                           "type":  "object",
+                                           "props":  {
+                                                         "_links":  {
+                                                                        "type":  "object"
+                                                                    },
+                                                         "endpoints":  {
+                                                                           "type":  "array"
+                                                                       },
+                                                         "namespace":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                         "methods":  {
+                                                                         "type":  "array"
+                                                                     }
+                                                     }
+                                       },
+                                 "/foogallery/v1":  {
+                                                        "type":  "object",
+                                                        "props":  {
+                                                                      "_links":  {
+                                                                                     "type":  "object"
+                                                                                 },
+                                                                      "endpoints":  {
+                                                                                        "type":  "array"
+                                                                                    },
+                                                                      "namespace":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                      "methods":  {
+                                                                                      "type":  "array"
+                                                                                  }
+                                                                  }
+                                                    },
+                                 "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                      "type":  "object",
+                                                                                                                      "props":  {
+                                                                                                                                    "endpoints":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  },
+                                                                                                                                    "namespace":  {
+                                                                                                                                                      "type":  "string"
+                                                                                                                                                  },
+                                                                                                                                    "methods":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                }
+                                                                                                                                }
+                                                                                                                  },
+                                 "/wp/v2/users/(?P\u003cuser_id\u003e(?:[\\d]+|me))/application-passwords":  {
+                                                                                                                 "type":  "object",
+                                                                                                                 "props":  {
+                                                                                                                               "endpoints":  {
+                                                                                                                                                 "type":  "array"
+                                                                                                                                             },
+                                                                                                                               "namespace":  {
+                                                                                                                                                 "type":  "string"
+                                                                                                                                             },
+                                                                                                                               "methods":  {
+                                                                                                                                               "type":  "array"
+                                                                                                                                           }
+                                                                                                                           }
+                                                                                                             },
+                                 "/wp/v2/sidebars":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                      "type":  "object",
+                                                                                                                      "props":  {
+                                                                                                                                    "endpoints":  {
+                                                                                                                                                      "type":  "array"
+                                                                                                                                                  },
+                                                                                                                                    "namespace":  {
+                                                                                                                                                      "type":  "string"
+                                                                                                                                                  },
+                                                                                                                                    "methods":  {
+                                                                                                                                                    "type":  "array"
+                                                                                                                                                }
+                                                                                                                                }
+                                                                                                                  },
+                                 "/wp/v2/block-directory/search":  {
+                                                                       "type":  "object",
+                                                                       "props":  {
+                                                                                     "_links":  {
+                                                                                                    "type":  "object"
+                                                                                                },
+                                                                                     "endpoints":  {
+                                                                                                       "type":  "array"
+                                                                                                   },
+                                                                                     "namespace":  {
+                                                                                                       "type":  "string"
+                                                                                                   },
+                                                                                     "methods":  {
+                                                                                                     "type":  "array"
+                                                                                                 }
+                                                                                 }
+                                                                   },
+                                 "/wp/v2/blocks/(?P\u003cparent\u003e[\\d]+)/autosaves/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                                       "type":  "object",
+                                                                                                                       "props":  {
+                                                                                                                                     "endpoints":  {
+                                                                                                                                                       "type":  "array"
+                                                                                                                                                   },
+                                                                                                                                     "namespace":  {
+                                                                                                                                                       "type":  "string"
+                                                                                                                                                   },
+                                                                                                                                     "methods":  {
+                                                                                                                                                     "type":  "array"
+                                                                                                                                                 }
+                                                                                                                                 }
+                                                                                                                   },
+                                 "/wp/v2/pattern-directory/patterns":  {
+                                                                           "type":  "object",
+                                                                           "props":  {
+                                                                                         "_links":  {
+                                                                                                        "type":  "object"
+                                                                                                    },
+                                                                                         "endpoints":  {
+                                                                                                           "type":  "array"
+                                                                                                       },
+                                                                                         "namespace":  {
+                                                                                                           "type":  "string"
+                                                                                                       },
+                                                                                         "methods":  {
+                                                                                                         "type":  "array"
+                                                                                                     }
+                                                                                     }
+                                                                       },
+                                 "/wp/v2/themes/(?P\u003cstylesheet\u003e[\\w-]+)":  {
+                                                                                         "type":  "object",
+                                                                                         "props":  {
+                                                                                                       "endpoints":  {
+                                                                                                                         "type":  "array"
+                                                                                                                     },
+                                                                                                       "namespace":  {
+                                                                                                                         "type":  "string"
+                                                                                                                     },
+                                                                                                       "methods":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   }
+                                                                                                   }
+                                                                                     },
+                                 "/wp/v2":  {
+                                                "type":  "object",
+                                                "props":  {
+                                                              "_links":  {
+                                                                             "type":  "object"
+                                                                         },
+                                                              "endpoints":  {
+                                                                                "type":  "array"
+                                                                            },
+                                                              "namespace":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                              "methods":  {
+                                                                              "type":  "array"
+                                                                          }
+                                                          }
+                                            },
+                                 "/wp/v2/users/(?P\u003cuser_id\u003e(?:[\\d]+|me))/application-passwords/introspect":  {
+                                                                                                                            "type":  "object",
+                                                                                                                            "props":  {
+                                                                                                                                          "endpoints":  {
+                                                                                                                                                            "type":  "array"
+                                                                                                                                                        },
+                                                                                                                                          "namespace":  {
+                                                                                                                                                            "type":  "string"
+                                                                                                                                                        },
+                                                                                                                                          "methods":  {
+                                                                                                                                                          "type":  "array"
+                                                                                                                                                      }
+                                                                                                                                      }
+                                                                                                                        },
+                                 "/wp/v2/search":  {
+                                                       "type":  "object",
+                                                       "props":  {
+                                                                     "_links":  {
+                                                                                    "type":  "object"
+                                                                                },
+                                                                     "endpoints":  {
+                                                                                       "type":  "array"
+                                                                                   },
+                                                                     "namespace":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                     "methods":  {
+                                                                                     "type":  "array"
+                                                                                 }
+                                                                 }
+                                                   },
+                                 "/regenerate-thumbnails/v1/featuredimages":  {
+                                                                                  "type":  "object",
+                                                                                  "props":  {
+                                                                                                "_links":  {
+                                                                                                               "type":  "object"
+                                                                                                           },
+                                                                                                "endpoints":  {
+                                                                                                                  "type":  "array"
+                                                                                                              },
+                                                                                                "namespace":  {
+                                                                                                                  "type":  "string"
+                                                                                                              },
+                                                                                                "methods":  {
+                                                                                                                "type":  "array"
+                                                                                                            }
+                                                                                            }
+                                                                              },
+                                 "/wp-site-health/v1/tests/background-updates":  {
+                                                                                     "type":  "object",
+                                                                                     "props":  {
+                                                                                                   "_links":  {
+                                                                                                                  "type":  "object"
+                                                                                                              },
+                                                                                                   "endpoints":  {
+                                                                                                                     "type":  "array"
+                                                                                                                 },
+                                                                                                   "namespace":  {
+                                                                                                                     "type":  "string"
+                                                                                                                 },
+                                                                                                   "methods":  {
+                                                                                                                   "type":  "array"
+                                                                                                               }
+                                                                                               }
+                                                                                 },
+                                 "/regenerate-thumbnails/v1":  {
+                                                                   "type":  "object",
+                                                                   "props":  {
+                                                                                 "_links":  {
+                                                                                                "type":  "object"
+                                                                                            },
+                                                                                 "endpoints":  {
+                                                                                                   "type":  "array"
+                                                                                               },
+                                                                                 "namespace":  {
+                                                                                                   "type":  "string"
+                                                                                               },
+                                                                                 "methods":  {
+                                                                                                 "type":  "array"
+                                                                                             }
+                                                                             }
+                                                               },
+                                 "/wp/v2/types/(?P\u003ctype\u003e[\\w-]+)":  {
+                                                                                  "type":  "object",
+                                                                                  "props":  {
+                                                                                                "endpoints":  {
+                                                                                                                  "type":  "array"
+                                                                                                              },
+                                                                                                "namespace":  {
+                                                                                                                  "type":  "string"
+                                                                                                              },
+                                                                                                "methods":  {
+                                                                                                                "type":  "array"
+                                                                                                            }
+                                                                                            }
+                                                                              },
+                                 "/oembed/1.0/proxy":  {
+                                                           "type":  "object",
+                                                           "props":  {
+                                                                         "_links":  {
+                                                                                        "type":  "object"
+                                                                                    },
+                                                                         "endpoints":  {
+                                                                                           "type":  "array"
+                                                                                       },
+                                                                         "namespace":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                         "methods":  {
+                                                                                         "type":  "array"
+                                                                                     }
+                                                                     }
+                                                       },
+                                 "/litespeed/v1/err_domains":  {
+                                                                   "type":  "object",
+                                                                   "props":  {
+                                                                                 "_links":  {
+                                                                                                "type":  "object"
+                                                                                            },
+                                                                                 "endpoints":  {
+                                                                                                   "type":  "array"
+                                                                                               },
+                                                                                 "namespace":  {
+                                                                                                   "type":  "string"
+                                                                                               },
+                                                                                 "methods":  {
+                                                                                                 "type":  "array"
+                                                                                             }
+                                                                             }
+                                                               },
+                                 "/wp/v2/comments":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/oembed/1.0/embed":  {
+                                                           "type":  "object",
+                                                           "props":  {
+                                                                         "_links":  {
+                                                                                        "type":  "object"
+                                                                                    },
+                                                                         "endpoints":  {
+                                                                                           "type":  "array"
+                                                                                       },
+                                                                         "namespace":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                         "methods":  {
+                                                                                         "type":  "array"
+                                                                                     }
+                                                                     }
+                                                       },
+                                 "/wp/v2/users/(?P\u003cid\u003e[\\d]+)":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/wp/v2/widgets/(?P\u003cid\u003e[\\w\\-]+)":  {
+                                                                                    "type":  "object",
+                                                                                    "props":  {
+                                                                                                  "endpoints":  {
+                                                                                                                    "type":  "array"
+                                                                                                                },
+                                                                                                  "namespace":  {
+                                                                                                                    "type":  "string"
+                                                                                                                },
+                                                                                                  "methods":  {
+                                                                                                                  "type":  "array"
+                                                                                                              }
+                                                                                              }
+                                                                                },
+                                 "/wp/v2/block-types/(?P\u003cnamespace\u003e[a-zA-Z0-9_-]+)":  {
+                                                                                                    "type":  "object",
+                                                                                                    "props":  {
+                                                                                                                  "endpoints":  {
+                                                                                                                                    "type":  "array"
+                                                                                                                                },
+                                                                                                                  "namespace":  {
+                                                                                                                                    "type":  "string"
+                                                                                                                                },
+                                                                                                                  "methods":  {
+                                                                                                                                  "type":  "array"
+                                                                                                                              }
+                                                                                                              }
+                                                                                                },
+                                 "/wp/v2/templates/(?P\u003cid\u003e[\\/\\w-]+)":  {
+                                                                                       "type":  "object",
+                                                                                       "props":  {
+                                                                                                     "endpoints":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   },
+                                                                                                     "namespace":  {
+                                                                                                                       "type":  "string"
+                                                                                                                   },
+                                                                                                     "methods":  {
+                                                                                                                     "type":  "array"
+                                                                                                                 }
+                                                                                                 }
+                                                                                   },
+                                 "/litespeed/v1/toggle_crawler_state":  {
+                                                                            "type":  "object",
+                                                                            "props":  {
+                                                                                          "_links":  {
+                                                                                                         "type":  "object"
+                                                                                                     },
+                                                                                          "endpoints":  {
+                                                                                                            "type":  "array"
+                                                                                                        },
+                                                                                          "namespace":  {
+                                                                                                            "type":  "string"
+                                                                                                        },
+                                                                                          "methods":  {
+                                                                                                          "type":  "array"
+                                                                                                      }
+                                                                                      }
+                                                                        },
+                                 "/wp/v2/categories/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                    "type":  "object",
+                                                                                    "props":  {
+                                                                                                  "endpoints":  {
+                                                                                                                    "type":  "array"
+                                                                                                                },
+                                                                                                  "namespace":  {
+                                                                                                                    "type":  "string"
+                                                                                                                },
+                                                                                                  "methods":  {
+                                                                                                                  "type":  "array"
+                                                                                                              }
+                                                                                              }
+                                                                                },
+                                 "/wp/v2/themes":  {
+                                                       "type":  "object",
+                                                       "props":  {
+                                                                     "_links":  {
+                                                                                    "type":  "object"
+                                                                                },
+                                                                     "endpoints":  {
+                                                                                       "type":  "array"
+                                                                                   },
+                                                                     "namespace":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                     "methods":  {
+                                                                                     "type":  "array"
+                                                                                 }
+                                                                 }
+                                                   },
+                                 "/wp/v2/statuses":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/wp/v2/widget-types/(?P\u003cid\u003e[a-zA-Z0-9_-]+)/encode":  {
+                                                                                                     "type":  "object",
+                                                                                                     "props":  {
+                                                                                                                   "endpoints":  {
+                                                                                                                                     "type":  "array"
+                                                                                                                                 },
+                                                                                                                   "namespace":  {
+                                                                                                                                     "type":  "string"
+                                                                                                                                 },
+                                                                                                                   "methods":  {
+                                                                                                                                   "type":  "array"
+                                                                                                                               }
+                                                                                                               }
+                                                                                                 },
+                                 "/litespeed/v1/tool/check_ip":  {
+                                                                     "type":  "object",
+                                                                     "props":  {
+                                                                                   "_links":  {
+                                                                                                  "type":  "object"
+                                                                                              },
+                                                                                   "endpoints":  {
+                                                                                                     "type":  "array"
+                                                                                                 },
+                                                                                   "namespace":  {
+                                                                                                     "type":  "string"
+                                                                                                 },
+                                                                                   "methods":  {
+                                                                                                   "type":  "array"
+                                                                                               }
+                                                                               }
+                                                                 },
+                                 "/wp/v2/tags":  {
+                                                     "type":  "object",
+                                                     "props":  {
+                                                                   "_links":  {
+                                                                                  "type":  "object"
+                                                                              },
+                                                                   "endpoints":  {
+                                                                                     "type":  "array"
+                                                                                 },
+                                                                   "namespace":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                   "methods":  {
+                                                                                   "type":  "array"
+                                                                               }
+                                                               }
+                                                 },
+                                 "/wp/v2/taxonomies":  {
+                                                           "type":  "object",
+                                                           "props":  {
+                                                                         "_links":  {
+                                                                                        "type":  "object"
+                                                                                    },
+                                                                         "endpoints":  {
+                                                                                           "type":  "array"
+                                                                                       },
+                                                                         "namespace":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                         "methods":  {
+                                                                                         "type":  "array"
+                                                                                     }
+                                                                     }
+                                                       },
+                                 "/wp/v2/widget-types":  {
+                                                             "type":  "object",
+                                                             "props":  {
+                                                                           "_links":  {
+                                                                                          "type":  "object"
+                                                                                      },
+                                                                           "endpoints":  {
+                                                                                             "type":  "array"
+                                                                                         },
+                                                                           "namespace":  {
+                                                                                             "type":  "string"
+                                                                                         },
+                                                                           "methods":  {
+                                                                                           "type":  "array"
+                                                                                       }
+                                                                       }
+                                                         },
+                                 "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)/autosaves":  {
+                                                                                         "type":  "object",
+                                                                                         "props":  {
+                                                                                                       "endpoints":  {
+                                                                                                                         "type":  "array"
+                                                                                                                     },
+                                                                                                       "namespace":  {
+                                                                                                                         "type":  "string"
+                                                                                                                     },
+                                                                                                       "methods":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   }
+                                                                                                   }
+                                                                                     },
+                                 "/wp-site-health/v1/directory-sizes":  {
+                                                                            "type":  "object",
+                                                                            "props":  {
+                                                                                          "_links":  {
+                                                                                                         "type":  "object"
+                                                                                                     },
+                                                                                          "endpoints":  {
+                                                                                                            "type":  "array"
+                                                                                                        },
+                                                                                          "namespace":  {
+                                                                                                            "type":  "string"
+                                                                                                        },
+                                                                                          "methods":  {
+                                                                                                          "type":  "array"
+                                                                                                      }
+                                                                                      }
+                                                                        },
+                                 "/wp/v2/pages/(?P\u003cid\u003e[\\d]+)":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/litespeed/v1/cdn_status":  {
+                                                                  "type":  "object",
+                                                                  "props":  {
+                                                                                "_links":  {
+                                                                                               "type":  "object"
+                                                                                           },
+                                                                                "endpoints":  {
+                                                                                                  "type":  "array"
+                                                                                              },
+                                                                                "namespace":  {
+                                                                                                  "type":  "string"
+                                                                                              },
+                                                                                "methods":  {
+                                                                                                "type":  "array"
+                                                                                            }
+                                                                            }
+                                                              },
+                                 "/wp-site-health/v1/tests/authorization-header":  {
+                                                                                       "type":  "object",
+                                                                                       "props":  {
+                                                                                                     "_links":  {
+                                                                                                                    "type":  "object"
+                                                                                                                },
+                                                                                                     "endpoints":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   },
+                                                                                                     "namespace":  {
+                                                                                                                       "type":  "string"
+                                                                                                                   },
+                                                                                                     "methods":  {
+                                                                                                                     "type":  "array"
+                                                                                                                 }
+                                                                                                 }
+                                                                                   },
+                                 "/wp/v2/statuses/(?P\u003cstatus\u003e[\\w-]+)":  {
+                                                                                       "type":  "object",
+                                                                                       "props":  {
+                                                                                                     "endpoints":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   },
+                                                                                                     "namespace":  {
+                                                                                                                       "type":  "string"
+                                                                                                                   },
+                                                                                                     "methods":  {
+                                                                                                                     "type":  "array"
+                                                                                                                 }
+                                                                                                 }
+                                                                                   },
+                                 "/wp/v2/users/me":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "_links":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                       "endpoints":  {
+                                                                                         "type":  "array"
+                                                                                     },
+                                                                       "namespace":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                       "methods":  {
+                                                                                       "type":  "array"
+                                                                                   }
+                                                                   }
+                                                     },
+                                 "/litespeed/v1/notify_vpi":  {
+                                                                  "type":  "object",
+                                                                  "props":  {
+                                                                                "_links":  {
+                                                                                               "type":  "object"
+                                                                                           },
+                                                                                "endpoints":  {
+                                                                                                  "type":  "array"
+                                                                                              },
+                                                                                "namespace":  {
+                                                                                                  "type":  "string"
+                                                                                              },
+                                                                                "methods":  {
+                                                                                                "type":  "array"
+                                                                                            }
+                                                                            }
+                                                              },
+                                 "/wp-site-health/v1/tests/loopback-requests":  {
+                                                                                    "type":  "object",
+                                                                                    "props":  {
+                                                                                                  "_links":  {
+                                                                                                                 "type":  "object"
+                                                                                                             },
+                                                                                                  "endpoints":  {
+                                                                                                                    "type":  "array"
+                                                                                                                },
+                                                                                                  "namespace":  {
+                                                                                                                    "type":  "string"
+                                                                                                                },
+                                                                                                  "methods":  {
+                                                                                                                  "type":  "array"
+                                                                                                              }
+                                                                                              }
+                                                                                },
+                                 "/regenerate-thumbnails/v1/attachmentinfo/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                                           "type":  "object",
+                                                                                                           "props":  {
+                                                                                                                         "endpoints":  {
+                                                                                                                                           "type":  "array"
+                                                                                                                                       },
+                                                                                                                         "namespace":  {
+                                                                                                                                           "type":  "string"
+                                                                                                                                       },
+                                                                                                                         "methods":  {
+                                                                                                                                         "type":  "array"
+                                                                                                                                     }
+                                                                                                                     }
+                                                                                                       },
+                                 "/wp/v2/block-renderer/(?P\u003cname\u003e[a-z0-9-]+/[a-z0-9-]+)":  {
+                                                                                                         "type":  "object",
+                                                                                                         "props":  {
+                                                                                                                       "endpoints":  {
+                                                                                                                                         "type":  "array"
+                                                                                                                                     },
+                                                                                                                       "namespace":  {
+                                                                                                                                         "type":  "string"
+                                                                                                                                     },
+                                                                                                                       "methods":  {
+                                                                                                                                       "type":  "array"
+                                                                                                                                   }
+                                                                                                                   }
+                                                                                                     },
+                                 "/wp/v2/blocks/(?P\u003cid\u003e[\\d]+)":  {
+                                                                                "type":  "object",
+                                                                                "props":  {
+                                                                                              "endpoints":  {
+                                                                                                                "type":  "array"
+                                                                                                            },
+                                                                                              "namespace":  {
+                                                                                                                "type":  "string"
+                                                                                                            },
+                                                                                              "methods":  {
+                                                                                                              "type":  "array"
+                                                                                                          }
+                                                                                          }
+                                                                            },
+                                 "/wp/v2/users/(?P\u003cuser_id\u003e(?:[\\d]+|me))/application-passwords/(?P\u003cuuid\u003e[\\w\\-]+)":  {
+                                                                                                                                               "type":  "object",
+                                                                                                                                               "props":  {
+                                                                                                                                                             "endpoints":  {
+                                                                                                                                                                               "type":  "array"
+                                                                                                                                                                           },
+                                                                                                                                                             "namespace":  {
+                                                                                                                                                                               "type":  "string"
+                                                                                                                                                                           },
+                                                                                                                                                             "methods":  {
+                                                                                                                                                                             "type":  "array"
+                                                                                                                                                                         }
+                                                                                                                                                         }
+                                                                                                                                           },
+                                 "/litespeed/v1/check_img":  {
+                                                                 "type":  "object",
+                                                                 "props":  {
+                                                                               "_links":  {
+                                                                                              "type":  "object"
+                                                                                          },
+                                                                               "endpoints":  {
+                                                                                                 "type":  "array"
+                                                                                             },
+                                                                               "namespace":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                               "methods":  {
+                                                                                               "type":  "array"
+                                                                                           }
+                                                                           }
+                                                             },
+                                 "/wp/v2/blocks/(?P\u003cparent\u003e[\\d]+)/revisions":  {
+                                                                                              "type":  "object",
+                                                                                              "props":  {
+                                                                                                            "endpoints":  {
+                                                                                                                              "type":  "array"
+                                                                                                                          },
+                                                                                                            "namespace":  {
+                                                                                                                              "type":  "string"
+                                                                                                                          },
+                                                                                                            "methods":  {
+                                                                                                                            "type":  "array"
+                                                                                                                        }
+                                                                                                        }
+                                                                                          },
+                                 "/wp/v2/posts":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  },
+                                 "/wp-site-health/v1/tests/dotorg-communication":  {
+                                                                                       "type":  "object",
+                                                                                       "props":  {
+                                                                                                     "_links":  {
+                                                                                                                    "type":  "object"
+                                                                                                                },
+                                                                                                     "endpoints":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   },
+                                                                                                     "namespace":  {
+                                                                                                                       "type":  "string"
+                                                                                                                   },
+                                                                                                     "methods":  {
+                                                                                                                     "type":  "array"
+                                                                                                                 }
+                                                                                                 }
+                                                                                   },
+                                 "/wp/v2/posts/(?P\u003cid\u003e[\\d]+)/autosaves":  {
+                                                                                         "type":  "object",
+                                                                                         "props":  {
+                                                                                                       "endpoints":  {
+                                                                                                                         "type":  "array"
+                                                                                                                     },
+                                                                                                       "namespace":  {
+                                                                                                                         "type":  "string"
+                                                                                                                     },
+                                                                                                       "methods":  {
+                                                                                                                       "type":  "array"
+                                                                                                                   }
+                                                                                                   }
+                                                                                     },
+                                 "/wp/v2/media/(?P\u003cid\u003e[\\d]+)/post-process":  {
+                                                                                            "type":  "object",
+                                                                                            "props":  {
+                                                                                                          "endpoints":  {
+                                                                                                                            "type":  "array"
+                                                                                                                        },
+                                                                                                          "namespace":  {
+                                                                                                                            "type":  "string"
+                                                                                                                        },
+                                                                                                          "methods":  {
+                                                                                                                          "type":  "array"
+                                                                                                                      }
+                                                                                                      }
+                                                                                        },
+                                 "/litespeed/v1/notify_img":  {
+                                                                  "type":  "object",
+                                                                  "props":  {
+                                                                                "_links":  {
+                                                                                               "type":  "object"
+                                                                                           },
+                                                                                "endpoints":  {
+                                                                                                  "type":  "array"
+                                                                                              },
+                                                                                "namespace":  {
+                                                                                                  "type":  "string"
+                                                                                              },
+                                                                                "methods":  {
+                                                                                                "type":  "array"
+                                                                                            }
+                                                                            }
+                                                              },
+                                 "/wp/v2/taxonomies/(?P\u003ctaxonomy\u003e[\\w-]+)":  {
+                                                                                           "type":  "object",
+                                                                                           "props":  {
+                                                                                                         "endpoints":  {
+                                                                                                                           "type":  "array"
+                                                                                                                       },
+                                                                                                         "namespace":  {
+                                                                                                                           "type":  "string"
+                                                                                                                       },
+                                                                                                         "methods":  {
+                                                                                                                         "type":  "array"
+                                                                                                                     }
+                                                                                                     }
+                                                                                       },
+                                 "/wp/v2/sidebars/(?P\u003cid\u003e[\\w-]+)":  {
+                                                                                   "type":  "object",
+                                                                                   "props":  {
+                                                                                                 "endpoints":  {
+                                                                                                                   "type":  "array"
+                                                                                                               },
+                                                                                                 "namespace":  {
+                                                                                                                   "type":  "string"
+                                                                                                               },
+                                                                                                 "methods":  {
+                                                                                                                 "type":  "array"
+                                                                                                             }
+                                                                                             }
+                                                                               },
+                                 "/litespeed/v1/token":  {
+                                                             "type":  "object",
+                                                             "props":  {
+                                                                           "_links":  {
+                                                                                          "type":  "object"
+                                                                                      },
+                                                                           "endpoints":  {
+                                                                                             "type":  "array"
+                                                                                         },
+                                                                           "namespace":  {
+                                                                                             "type":  "string"
+                                                                                         },
+                                                                           "methods":  {
+                                                                                           "type":  "array"
+                                                                                       }
+                                                                       }
+                                                         },
+                                 "/wp-site-health/v1/tests/https-status":  {
+                                                                               "type":  "object",
+                                                                               "props":  {
+                                                                                             "_links":  {
+                                                                                                            "type":  "object"
+                                                                                                        },
+                                                                                             "endpoints":  {
+                                                                                                               "type":  "array"
+                                                                                                           },
+                                                                                             "namespace":  {
+                                                                                                               "type":  "string"
+                                                                                                           },
+                                                                                             "methods":  {
+                                                                                                             "type":  "array"
+                                                                                                         }
+                                                                                         }
+                                                                           },
+                                 "/wp/v2/blocks":  {
+                                                       "type":  "object",
+                                                       "props":  {
+                                                                     "_links":  {
+                                                                                    "type":  "object"
+                                                                                },
+                                                                     "endpoints":  {
+                                                                                       "type":  "array"
+                                                                                   },
+                                                                     "namespace":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                     "methods":  {
+                                                                                     "type":  "array"
+                                                                                 }
+                                                                 }
+                                                   },
+                                 "/wp/v2/pages/(?P\u003cparent\u003e[\\d]+)/revisions":  {
+                                                                                             "type":  "object",
+                                                                                             "props":  {
+                                                                                                           "endpoints":  {
+                                                                                                                             "type":  "array"
+                                                                                                                         },
+                                                                                                           "namespace":  {
+                                                                                                                             "type":  "string"
+                                                                                                                         },
+                                                                                                           "methods":  {
+                                                                                                                           "type":  "array"
+                                                                                                                       }
+                                                                                                       }
+                                                                                         },
+                                 "/wp/v2/templates":  {
+                                                          "type":  "object",
+                                                          "props":  {
+                                                                        "_links":  {
+                                                                                       "type":  "object"
+                                                                                   },
+                                                                        "endpoints":  {
+                                                                                          "type":  "array"
+                                                                                      },
+                                                                        "namespace":  {
+                                                                                          "type":  "string"
+                                                                                      },
+                                                                        "methods":  {
+                                                                                        "type":  "array"
+                                                                                    }
+                                                                    }
+                                                      },
+                                 "/litespeed/v1":  {
+                                                       "type":  "object",
+                                                       "props":  {
+                                                                     "_links":  {
+                                                                                    "type":  "object"
+                                                                                },
+                                                                     "endpoints":  {
+                                                                                       "type":  "array"
+                                                                                   },
+                                                                     "namespace":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                     "methods":  {
+                                                                                     "type":  "array"
+                                                                                 }
+                                                                 }
+                                                   },
+                                 "/litespeed/v1/ping":  {
+                                                            "type":  "object",
+                                                            "props":  {
+                                                                          "_links":  {
+                                                                                         "type":  "object"
+                                                                                     },
+                                                                          "endpoints":  {
+                                                                                            "type":  "array"
+                                                                                        },
+                                                                          "namespace":  {
+                                                                                            "type":  "string"
+                                                                                        },
+                                                                          "methods":  {
+                                                                                          "type":  "array"
+                                                                                      }
+                                                                      }
+                                                        },
+                                 "/wp/v2/types":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "_links":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "endpoints":  {
+                                                                                      "type":  "array"
+                                                                                  },
+                                                                    "namespace":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                    "methods":  {
+                                                                                    "type":  "array"
+                                                                                }
+                                                                }
+                                                  }
+                             }
+               },
+    "authentication":  {
+                           "type":  "object",
+                           "props":  {
+                                         "application-passwords":  {
+                                                                       "type":  "object",
+                                                                       "props":  {
+                                                                                     "endpoints":  {
+                                                                                                       "type":  "object"
+                                                                                                   }
+                                                                                 }
+                                                                   }
+                                     }
+                       }
+}

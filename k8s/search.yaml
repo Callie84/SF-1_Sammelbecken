@@ -1,0 +1,83 @@
+# Meilisearch Deployment + Service
+# Namespace: default | Port: 7700 | Auth-Key: sf1-secrets.SEARCH_KEY
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sf1-search
+  namespace: default
+  labels: { app: sf1-search }
+spec:
+  type: ClusterIP
+  selector: { app: sf1-search }
+  ports:
+    - name: http
+      port: 7700
+      targetPort: 7700
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sf1-search
+  namespace: default
+  labels: { app: sf1-search }
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: sf1-search }
+  template:
+    metadata:
+      labels: { app: sf1-search }
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        fsGroup: 1001
+      containers:
+        - name: meilisearch
+          image: getmeili/meilisearch:v1.10.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 7700
+              name: http
+          env:
+            - name: MEILI_MASTER_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: sf1-secrets
+                  key: SEARCH_KEY
+          volumeMounts:
+            - name: data
+              mountPath: /meili_data
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 7700
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          resources:
+            requests: { cpu: "200m", memory: "512Mi" }
+            limits:   { cpu: "1", memory: "1Gi" }
+      volumes:
+        - name: data
+          emptyDir: {}
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: sf1-search-allow-backend
+  namespace: default
+spec:
+  podSelector:
+    matchLabels: { app: sf1-search }
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: sf1-backend
+      ports:
+        - protocol: TCP
+          port: 7700
+  policyTypes: ["Ingress"]

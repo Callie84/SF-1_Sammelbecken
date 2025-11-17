@@ -1,0 +1,32 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: strip-js-prefix
+  namespace: sf1
+spec:
+  stripPrefix:
+    prefixes:
+      - /js
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: web-js-proxy
+  namespace: sf1
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+    traefik.ingress.kubernetes.io/router.middlewares: sf1-strip-js-prefix@kubernetescrd,sf1-security-headers@kubernetescrd
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: seedfinderpro.de
+    http:
+      paths:
+      - path: /js
+        pathType: Prefix
+        backend:
+          service:
+            name: plausible
+            namespace: analytics
+            port:
+              number: 80

@@ -1,0 +1,234 @@
+{
+    "author":  {
+                   "type":  "number"
+               },
+    "description":  {
+                        "type":  "object",
+                        "props":  {
+                                      "rendered":  {
+                                                       "type":  "string"
+                                                   }
+                                  }
+                    },
+    "meta":  {
+                 "type":  "object",
+                 "props":  {
+                               "inline_featured_image":  {
+                                                             "type":  "boolean"
+                                                         }
+                           }
+             },
+    "post":  {
+                 "type":  "number"
+             },
+    "modified_gmt":  {
+                         "type":  "string"
+                     },
+    "class_list":  {
+                       "type":  "array\u003cstring\u003e"
+                   },
+    "date":  {
+                 "type":  "string"
+             },
+    "slug":  {
+                 "type":  "string"
+             },
+    "type":  {
+                 "type":  "string"
+             },
+    "ping_status":  {
+                        "type":  "string"
+                    },
+    "title":  {
+                  "type":  "object",
+                  "props":  {
+                                "rendered":  {
+                                                 "type":  "string"
+                                             }
+                            }
+              },
+    "comment_status":  {
+                           "type":  "string"
+                       },
+    "link":  {
+                 "type":  "string"
+             },
+    "modified":  {
+                     "type":  "string"
+                 },
+    "status":  {
+                   "type":  "string"
+               },
+    "id":  {
+               "type":  "number"
+           },
+    "caption":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               }
+                              }
+                },
+    "source_url":  {
+                       "type":  "string"
+                   },
+    "media_details":  {
+                          "type":  "object",
+                          "props":  {
+                                        "width":  {
+                                                      "type":  "number"
+                                                  },
+                                        "height":  {
+                                                       "type":  "number"
+                                                   },
+                                        "filesize":  {
+                                                         "type":  "number"
+                                                     },
+                                        "sizes":  {
+                                                      "type":  "object",
+                                                      "props":  {
+                                                                    "woocommerce_gallery_thumbnail":  {
+                                                                                                          "type":  "object"
+                                                                                                      },
+                                                                    "thumbnail":  {
+                                                                                      "type":  "object"
+                                                                                  },
+                                                                    "medium":  {
+                                                                                   "type":  "object"
+                                                                               },
+                                                                    "woocommerce_thumbnail":  {
+                                                                                                  "type":  "object"
+                                                                                              },
+                                                                    "full":  {
+                                                                                 "type":  "object"
+                                                                             }
+                                                                }
+                                                  },
+                                        "image_meta":  {
+                                                           "type":  "object",
+                                                           "props":  {
+                                                                         "credit":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                         "title":  {
+                                                                                       "type":  "string"
+                                                                                   },
+                                                                         "aperture":  {
+                                                                                          "type":  "string"
+                                                                                      },
+                                                                         "orientation":  {
+                                                                                             "type":  "string"
+                                                                                         },
+                                                                         "focal_length":  {
+                                                                                              "type":  "string"
+                                                                                          },
+                                                                         "iso":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                         "copyright":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                         "created_timestamp":  {
+                                                                                                   "type":  "string"
+                                                                                               },
+                                                                         "camera":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                         "keywords":  {
+                                                                                          "type":  "array"
+                                                                                      },
+                                                                         "caption":  {
+                                                                                         "type":  "string"
+                                                                                     },
+                                                                         "shutter_speed":  {
+                                                                                               "type":  "string"
+                                                                                           }
+                                                                     }
+                                                       },
+                                        "file":  {
+                                                     "type":  "string"
+                                                 }
+                                    }
+                      },
+    "mime_type":  {
+                      "type":  "string"
+                  },
+    "alt_text":  {
+                     "type":  "string"
+                 },
+    "media_type":  {
+                       "type":  "string"
+                   },
+    "featured_media":  {
+                           "type":  "number"
+                       },
+    "date_gmt":  {
+                     "type":  "string"
+                 },
+    "guid":  {
+                 "type":  "object",
+                 "props":  {
+                               "rendered":  {
+                                                "type":  "string"
+                                            }
+                           }
+             },
+    "template":  {
+                     "type":  "string"
+                 },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "replies":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        }
+                                                           }
+                                             },
+                                 "author":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "embeddable":  {
+                                                                                 "type":  "boolean"
+                                                                             },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "targetHints":  {
+                                                                                "type":  "object"
+                                                                            },
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           }
+                             }
+               }
+}

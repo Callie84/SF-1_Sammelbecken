@@ -1,0 +1,316 @@
+{
+    "template":  {
+                     "type":  "string"
+                 },
+    "id":  {
+               "type":  "number"
+           },
+    "type":  {
+                 "type":  "string"
+             },
+    "product_tag":  {
+                        "type":  "array\u003cempty\u003e"
+                    },
+    "modified_gmt":  {
+                         "type":  "string"
+                     },
+    "slug":  {
+                 "type":  "string"
+             },
+    "excerpt":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "class_list":  {
+                       "type":  "object",
+                       "props":  {
+                                     "9":  {
+                                               "type":  "string"
+                                           },
+                                     "3":  {
+                                               "type":  "string"
+                                           },
+                                     "11":  {
+                                                "type":  "string"
+                                            },
+                                     "4":  {
+                                               "type":  "string"
+                                           },
+                                     "2":  {
+                                               "type":  "string"
+                                           },
+                                     "1":  {
+                                               "type":  "string"
+                                           },
+                                     "12":  {
+                                                "type":  "string"
+                                            },
+                                     "0":  {
+                                               "type":  "string"
+                                           },
+                                     "6":  {
+                                               "type":  "string"
+                                           },
+                                     "10":  {
+                                                "type":  "string"
+                                            },
+                                     "8":  {
+                                               "type":  "string"
+                                           }
+                                 }
+                   },
+    "product_brand":  {
+                          "type":  "array\u003cempty\u003e"
+                      },
+    "featured_media":  {
+                           "type":  "number"
+                       },
+    "comment_status":  {
+                           "type":  "string"
+                       },
+    "modified":  {
+                     "type":  "string"
+                 },
+    "title":  {
+                  "type":  "object",
+                  "props":  {
+                                "rendered":  {
+                                                 "type":  "string"
+                                             }
+                            }
+              },
+    "guid":  {
+                 "type":  "object",
+                 "props":  {
+                               "rendered":  {
+                                                "type":  "string"
+                                            }
+                           }
+             },
+    "yoast_head_json":  {
+                            "type":  "object",
+                            "props":  {
+                                          "twitter_misc":  {
+                                                               "type":  "object",
+                                                               "props":  {
+                                                                             "Estimated reading time":  {
+                                                                                                            "type":  "string"
+                                                                                                        }
+                                                                         }
+                                                           },
+                                          "description":  {
+                                                              "type":  "string"
+                                                          },
+                                          "og_url":  {
+                                                         "type":  "string"
+                                                     },
+                                          "og_site_name":  {
+                                                               "type":  "string"
+                                                           },
+                                          "robots":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "max-snippet":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                       "max-video-preview":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                       "max-image-preview":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                       "follow":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                       "index":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                   }
+                                                     },
+                                          "schema":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "@context":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                       "@graph":  {
+                                                                                      "type":  "array"
+                                                                                  }
+                                                                   }
+                                                     },
+                                          "title":  {
+                                                        "type":  "string"
+                                                    },
+                                          "og_image":  {
+                                                           "type":  "array\u003cobject\u003e",
+                                                           "props":  {
+                                                                         "type":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                         "url":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                                         "width":  {
+                                                                                       "type":  "number"
+                                                                                   },
+                                                                         "height":  {
+                                                                                        "type":  "number"
+                                                                                    }
+                                                                     }
+                                                       },
+                                          "og_type":  {
+                                                          "type":  "string"
+                                                      },
+                                          "twitter_card":  {
+                                                               "type":  "string"
+                                                           },
+                                          "canonical":  {
+                                                            "type":  "string"
+                                                        },
+                                          "og_title":  {
+                                                           "type":  "string"
+                                                       },
+                                          "article_modified_time":  {
+                                                                        "type":  "string"
+                                                                    },
+                                          "og_locale":  {
+                                                            "type":  "string"
+                                                        },
+                                          "og_description":  {
+                                                                 "type":  "string"
+                                                             }
+                                      }
+                        },
+    "date_gmt":  {
+                     "type":  "string"
+                 },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "wp:featuredmedia":  {
+                                                          "type":  "array\u003cobject\u003e",
+                                                          "props":  {
+                                                                        "embeddable":  {
+                                                                                           "type":  "boolean"
+                                                                                       },
+                                                                        "href":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                    }
+                                                      },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "targetHints":  {
+                                                                                "type":  "object"
+                                                                            },
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "replies":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        }
+                                                           }
+                                             },
+                                 "curies":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "templated":  {
+                                                                                "type":  "boolean"
+                                                                            },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                              "name":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           },
+                                 "wp:attachment":  {
+                                                       "type":  "array\u003cobject\u003e",
+                                                       "props":  {
+                                                                     "href":  {
+                                                                                  "type":  "string"
+                                                                              }
+                                                                 }
+                                                   },
+                                 "wp:term":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "taxonomy":  {
+                                                                                "type":  "string"
+                                                                            },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        },
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              }
+                                                           }
+                                             }
+                             }
+               },
+    "content":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "ping_status":  {
+                        "type":  "string"
+                    },
+    "yoast_head":  {
+                       "type":  "string"
+                   },
+    "meta":  {
+                 "type":  "array\u003cempty\u003e"
+             },
+    "status":  {
+                   "type":  "string"
+               },
+    "date":  {
+                 "type":  "string"
+             },
+    "link":  {
+                 "type":  "string"
+             },
+    "product_cat":  {
+                        "type":  "array\u003cnumber\u003e"
+                    }
+}

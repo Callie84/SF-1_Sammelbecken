@@ -1,0 +1,471 @@
+{
+    "translations":  {
+                         "type":  "object",
+                         "props":  {
+                                       "fr":  {
+                                                  "type":  "number"
+                                              },
+                                       "en":  {
+                                                  "type":  "number"
+                                              },
+                                       "es":  {
+                                                  "type":  "number"
+                                              },
+                                       "nl":  {
+                                                  "type":  "number"
+                                              },
+                                       "de":  {
+                                                  "type":  "number"
+                                              }
+                                   }
+                     },
+    "author":  {
+                   "type":  "number"
+               },
+    "template":  {
+                     "type":  "string"
+                 },
+    "meta":  {
+                 "type":  "object",
+                 "props":  {
+                               "_uag_custom_page_level_css":  {
+                                                                  "type":  "string"
+                                                              },
+                               "ast-hfb-mobile-header-display":  {
+                                                                     "type":  "string"
+                                                                 },
+                               "theme-transparent-header-meta":  {
+                                                                     "type":  "string"
+                                                                 },
+                               "last_modified_date":  {
+                                                          "type":  "string"
+                                                      },
+                               "ast-page-background-enabled":  {
+                                                                   "type":  "string"
+                                                               },
+                               "_acf_changed":  {
+                                                    "type":  "boolean"
+                                                },
+                               "site-post-title":  {
+                                                       "type":  "string"
+                                                   },
+                               "ast-page-background-meta":  {
+                                                                "type":  "object",
+                                                                "props":  {
+                                                                              "tablet":  {
+                                                                                             "type":  "object"
+                                                                                         },
+                                                                              "desktop":  {
+                                                                                              "type":  "object"
+                                                                                          },
+                                                                              "mobile":  {
+                                                                                             "type":  "object"
+                                                                                         }
+                                                                          }
+                                                            },
+                               "astra-migrate-meta-layouts":  {
+                                                                  "type":  "string"
+                                                              },
+                               "limit_modified_date":  {
+                                                           "type":  "string"
+                                                       },
+                               "ast-main-header-display":  {
+                                                               "type":  "string"
+                                                           },
+                               "header-main-stick-meta":  {
+                                                              "type":  "string"
+                                                          },
+                               "ast-global-header-display":  {
+                                                                 "type":  "string"
+                                                             },
+                               "ast-content-background-meta":  {
+                                                                   "type":  "object",
+                                                                   "props":  {
+                                                                                 "tablet":  {
+                                                                                                "type":  "object"
+                                                                                            },
+                                                                                 "desktop":  {
+                                                                                                 "type":  "object"
+                                                                                             },
+                                                                                 "mobile":  {
+                                                                                                "type":  "object"
+                                                                                            }
+                                                                             }
+                                                               },
+                               "ast-banner-title-visibility":  {
+                                                                   "type":  "string"
+                                                               },
+                               "footer-sml-layout":  {
+                                                         "type":  "string"
+                                                     },
+                               "site-content-layout":  {
+                                                           "type":  "string"
+                                                       },
+                               "ast-breadcrumbs-content":  {
+                                                               "type":  "string"
+                                                           },
+                               "ast-hfb-below-header-display":  {
+                                                                    "type":  "string"
+                                                                },
+                               "footnotes":  {
+                                                 "type":  "string"
+                                             },
+                               "header-above-stick-meta":  {
+                                                               "type":  "string"
+                                                           },
+                               "ast-featured-img":  {
+                                                        "type":  "string"
+                                                    },
+                               "adv-header-id-meta":  {
+                                                          "type":  "string"
+                                                      },
+                               "site-sidebar-style":  {
+                                                          "type":  "string"
+                                                      },
+                               "ast-hfb-above-header-display":  {
+                                                                    "type":  "string"
+                                                                },
+                               "ast-site-content-layout":  {
+                                                               "type":  "string"
+                                                           },
+                               "site-content-style":  {
+                                                          "type":  "string"
+                                                      },
+                               "site-sidebar-layout":  {
+                                                           "type":  "string"
+                                                       },
+                               "header-below-stick-meta":  {
+                                                               "type":  "string"
+                                                           },
+                               "stick-header-meta":  {
+                                                         "type":  "string"
+                                                     }
+                           }
+             },
+    "modified_gmt":  {
+                         "type":  "string"
+                     },
+    "class_list":  {
+                       "type":  "array\u003cstring\u003e"
+                   },
+    "content":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "pll_sync_post":  {
+                          "type":  "array\u003cempty\u003e"
+                      },
+    "date":  {
+                 "type":  "string"
+             },
+    "excerpt":  {
+                    "type":  "object",
+                    "props":  {
+                                  "rendered":  {
+                                                   "type":  "string"
+                                               },
+                                  "protected":  {
+                                                    "type":  "boolean"
+                                                }
+                              }
+                },
+    "type":  {
+                 "type":  "string"
+             },
+    "lang":  {
+                 "type":  "string"
+             },
+    "uagb_excerpt":  {
+                         "type":  "null"
+                     },
+    "ping_status":  {
+                        "type":  "string"
+                    },
+    "title":  {
+                  "type":  "object",
+                  "props":  {
+                                "rendered":  {
+                                                 "type":  "string"
+                                             }
+                            }
+              },
+    "acf":  {
+                "type":  "array\u003cempty\u003e"
+            },
+    "uagb_comment_info":  {
+                              "type":  "number"
+                          },
+    "comment_status":  {
+                           "type":  "string"
+                       },
+    "link":  {
+                 "type":  "string"
+             },
+    "menu_order":  {
+                       "type":  "number"
+                   },
+    "uagb_author_info":  {
+                             "type":  "object",
+                             "props":  {
+                                           "display_name":  {
+                                                                "type":  "string"
+                                                            },
+                                           "author_link":  {
+                                                               "type":  "string"
+                                                           }
+                                       }
+                         },
+    "modified":  {
+                     "type":  "string"
+                 },
+    "parent":  {
+                   "type":  "number"
+               },
+    "yoast_head":  {
+                       "type":  "string"
+                   },
+    "status":  {
+                   "type":  "string"
+               },
+    "id":  {
+               "type":  "number"
+           },
+    "slug":  {
+                 "type":  "string"
+             },
+    "uagb_featured_image_src":  {
+                                    "type":  "object",
+                                    "props":  {
+                                                  "sensi-blog-related-thumb":  {
+                                                                                   "type":  "boolean"
+                                                                               },
+                                                  "thumbnail":  {
+                                                                    "type":  "boolean"
+                                                                },
+                                                  "sensi-blog-profile":  {
+                                                                             "type":  "boolean"
+                                                                         },
+                                                  "medium_large":  {
+                                                                       "type":  "boolean"
+                                                                   },
+                                                  "alm-thumbnail":  {
+                                                                        "type":  "boolean"
+                                                                    },
+                                                  "medium":  {
+                                                                 "type":  "boolean"
+                                                             },
+                                                  "sensi-blog-col-3":  {
+                                                                           "type":  "boolean"
+                                                                       },
+                                                  "large":  {
+                                                                "type":  "boolean"
+                                                            },
+                                                  "full":  {
+                                                               "type":  "boolean"
+                                                           },
+                                                  "sensi-blog-col-2":  {
+                                                                           "type":  "boolean"
+                                                                       },
+                                                  "2048x2048":  {
+                                                                    "type":  "boolean"
+                                                                },
+                                                  "sensi-blog-col-4":  {
+                                                                           "type":  "boolean"
+                                                                       },
+                                                  "1536x1536":  {
+                                                                    "type":  "boolean"
+                                                                },
+                                                  "crp_thumbnail":  {
+                                                                        "type":  "boolean"
+                                                                    }
+                                              }
+                                },
+    "featured_media":  {
+                           "type":  "number"
+                       },
+    "date_gmt":  {
+                     "type":  "string"
+                 },
+    "guid":  {
+                 "type":  "object",
+                 "props":  {
+                               "rendered":  {
+                                                "type":  "string"
+                                            }
+                           }
+             },
+    "yoast_head_json":  {
+                            "type":  "object",
+                            "props":  {
+                                          "article_publisher":  {
+                                                                    "type":  "string"
+                                                                },
+                                          "og_url":  {
+                                                         "type":  "string"
+                                                     },
+                                          "og_site_name":  {
+                                                               "type":  "string"
+                                                           },
+                                          "twitter_site":  {
+                                                               "type":  "string"
+                                                           },
+                                          "robots":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "max-snippet":  {
+                                                                                           "type":  "string"
+                                                                                       },
+                                                                       "max-video-preview":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                       "max-image-preview":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                       "follow":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                       "index":  {
+                                                                                     "type":  "string"
+                                                                                 }
+                                                                   }
+                                                     },
+                                          "schema":  {
+                                                         "type":  "object",
+                                                         "props":  {
+                                                                       "@context":  {
+                                                                                        "type":  "string"
+                                                                                    },
+                                                                       "@graph":  {
+                                                                                      "type":  "array"
+                                                                                  }
+                                                                   }
+                                                     },
+                                          "title":  {
+                                                        "type":  "string"
+                                                    },
+                                          "og_type":  {
+                                                          "type":  "string"
+                                                      },
+                                          "twitter_card":  {
+                                                               "type":  "string"
+                                                           },
+                                          "canonical":  {
+                                                            "type":  "string"
+                                                        },
+                                          "og_title":  {
+                                                           "type":  "string"
+                                                       },
+                                          "article_modified_time":  {
+                                                                        "type":  "string"
+                                                                    },
+                                          "og_locale":  {
+                                                            "type":  "string"
+                                                        }
+                                      }
+                        },
+    "_links":  {
+                   "type":  "object",
+                   "props":  {
+                                 "version-history":  {
+                                                         "type":  "array\u003cobject\u003e",
+                                                         "props":  {
+                                                                       "count":  {
+                                                                                     "type":  "number"
+                                                                                 },
+                                                                       "href":  {
+                                                                                    "type":  "string"
+                                                                                }
+                                                                   }
+                                                     },
+                                 "collection":  {
+                                                    "type":  "array\u003cobject\u003e",
+                                                    "props":  {
+                                                                  "href":  {
+                                                                               "type":  "string"
+                                                                           }
+                                                              }
+                                                },
+                                 "self":  {
+                                              "type":  "array\u003cobject\u003e",
+                                              "props":  {
+                                                            "targetHints":  {
+                                                                                "type":  "object"
+                                                                            },
+                                                            "href":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                        }
+                                          },
+                                 "replies":  {
+                                                 "type":  "array\u003cobject\u003e",
+                                                 "props":  {
+                                                               "embeddable":  {
+                                                                                  "type":  "boolean"
+                                                                              },
+                                                               "href":  {
+                                                                            "type":  "string"
+                                                                        }
+                                                           }
+                                             },
+                                 "curies":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "templated":  {
+                                                                                "type":  "boolean"
+                                                                            },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       },
+                                                              "name":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "author":  {
+                                                "type":  "array\u003cobject\u003e",
+                                                "props":  {
+                                                              "embeddable":  {
+                                                                                 "type":  "boolean"
+                                                                             },
+                                                              "href":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                          }
+                                            },
+                                 "predecessor-version":  {
+                                                             "type":  "array\u003cobject\u003e",
+                                                             "props":  {
+                                                                           "id":  {
+                                                                                      "type":  "number"
+                                                                                  },
+                                                                           "href":  {
+                                                                                        "type":  "string"
+                                                                                    }
+                                                                       }
+                                                         },
+                                 "about":  {
+                                               "type":  "array\u003cobject\u003e",
+                                               "props":  {
+                                                             "href":  {
+                                                                          "type":  "string"
+                                                                      }
+                                                         }
+                                           },
+                                 "wp:attachment":  {
+                                                       "type":  "array\u003cobject\u003e",
+                                                       "props":  {
+                                                                     "href":  {
+                                                                                  "type":  "string"
+                                                                              }
+                                                                 }
+                                                   }
+                             }
+               }
+}

@@ -1,0 +1,43 @@
+Sf-1 Neustart-anleitung
+SF-1 Neustart-Anleitung
+
+Im neuen Chat hochladen:
+
+C:\Users\kling\Desktop\SF-1_Sammelbecken\docs\canvas-export\2025-11-01_canvas_sf1_gesamtuebersicht.md
+
+und/oder: C:\Users\kling\Desktop\SF-1_Sammelbecken\docs\sf1_uebergabe.md
+
+Direkt danach schreiben:
+
+"Arbeite ab letzter Übergabe weiter. Standard: Deutsch. Projektordner ist C:\Users\kling\Desktop\SF-1_Sammelbecken. Canvas an."
+
+Wenn du nur Status willst:
+
+"Zeig mir SF-1 Arbeitsansicht"
+
+Wenn du in GPT-Builder startest:
+
+12er-Wissen hochladen aus: C:\Users\kling\Desktop\SF-1_Sammelbecken\docs\gpt-knowledge\
+
+Wenn du weiter deployen willst:
+
+"Nutze docs/sf1_k8s_deploy.md und bau mir das PowerShell-Skript dafür."
+
+Mach es so:
+
+Neuen Chat öffnen.
+
+Gleich als Erstes deine Datei hochladen:
+
+C:\Users\kling\Desktop\SF-1_Sammelbecken\docs\canvas-export\2025-11-01_canvas_sf1_gesamtuebersicht.md
+
+oder schneller: C:\Users\kling\Desktop\SF-1_Sammelbecken\docs\sf1_uebergabe.md
+
+Direkt danach reinschreiben (kopieren):
+
+Arbeite ab letzter Übergabe weiter. Sprache Deutsch.
+Projektordner: C:\Users\kling\Desktop\SF-1_Sammelbecken
+Canvas an.
+
+
+Dann ist der neue Chat sofort auf dem Stand von hier.

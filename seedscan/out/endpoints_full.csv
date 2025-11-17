@@ -1,0 +1,1331 @@
+﻿"Name","URL","Host","Status","ContentType","Kind","Schema","Sample","Error"
+"Sensi Seeds","https://sensiseeds.com/wp-json/","sensiseeds.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:string,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""Sensi Seeds"",
+    ""description"":  ""Die modernsten Cannabis-Nachrichten, Forschungen und Anwendungen"",
+    ""url"":  ""https://sensiseeds.com/blog"",
+    ""home"":  ""https://sensiseeds.com"",
+    ""gmt_offset"":  ""1"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  1822,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""akismet/v1"",
+                       ""yoast/v1"",
+                       ""wp-super-cache/v1"",
+                       ""aam/v2"",
+                       ""aam/v2/service"",
+                       ""aam/v1"",
+                       ""pll/v1"",
+                       ""contextual-related-posts/v1"",
+                       ""spectra/v1"",
+                       ""uag/v1"",
+                       ""astra/v1"",
+                       ""astra-addon/v1"",
+                       ""astra_addon/v1"",
+                       ""bsf-core/v1"",
+                       ""zipwp-images/v1"",
+                       ""nps-survey/v1"",
+                       ""zipwp/v1"",
+                       ""gutenberg-templates/v1"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1"",
+                       ""wp-block-editor/v1""
+                   ],
+    ""authentication"":  {
+                           ""application-passwords"":  {
+                                                         ""endpoints"":  ""@{authorization=https://sensiseeds.com/blog/wp-admin/authorize-application.",""
+"Sensi Seeds","https://sensiseeds.com/wp-json/wp/v2/","sensiseeds.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Nirvana","https://nirvanashop.com/products.json","nirvanashop.com","200","application/json","object","products:array<object>","{
+    ""products"":  [
+                     {
+                         ""id"":  10541118914824,
+                         ""title"":  ""Zkittlez Feminized 100 Seeds"",
+                         ""handle"":  ""zkittlez-feminized-100-seeds"",
+                         ""body_html"":  null,
+                         ""published_at"":  ""2025-10-06T14:36:25+02:00"",
+                         ""created_at"":  ""2025-10-03T13:49:33+02:00"",
+                         ""updated_at"":  ""2025-10-10T21:07:49+02:00"",
+                         ""vendor"":  ""Nirvana Shop"",
+                         ""product_type"":  """",
+                         ""tags"":  ""Wholesale"",
+                         ""variants"":  """",
+                         ""images"":  """",
+                         ""options"":  """"
+                     },
+                     {
+                         ""id"":  10541118521608,
+                         ""title"":  ""Zkittlez Autoflower 100 Seeds"",
+                         ""handle"":  ""zkittlez-autoflower-100-seeds"",
+                         ""body_html"":  null,
+                         ""published_at"":  ""2025-10-06T14:36:25+02:00"",
+                         ""created_at"":  ""2025-10-03T13:48:40+02:00"",
+                         ""updated_at"":  ""2025-10-10T21:07:49+02:00"",
+                         ""vendor"":  ""Nirvana Shop"",
+                         ""product_type"":  """",
+                         ""tags"":  ""Wholesale"",
+                         ""variants"":  """",
+                         ""images"":  """",
+         ",""
+"Spliff Seeds","https://spliffseeds.nl/wp-json/","spliffseeds.nl","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""Spliff Seeds"",
+    ""description"":  ""Cultivating Quality Cannabis Seeds Since 1995"",
+    ""url"":  ""http://www.spliffseeds.nl"",
+    ""home"":  ""https://www.spliffseeds.nl"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Amsterdam"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  509,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""age-gate/v3"",
+                       ""rankmath/v1"",
+                       ""rankmath/v1/setupWizard"",
+                       ""rankmath/v1/an"",
+                       ""siteground-settings/v1"",
+                       ""siteground-optimizer/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wpml/st/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/ate/v1"",
+                       ""jetpack/v4"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wp-rollback/v1"",
+                       ""wc/v2"",
+                       ""rankmath/v1/ca"",
+                       ""rankmath/v1/status"",
+                       ""divi/v1"",
+                       ""wc-admin-email"",
+                       ""wc-telemetry"",
+                       ""wccom-site/v3"",
+                       ""otgs/installer/v1"",
+                ",""
+"Spliff Seeds","https://spliffseeds.nl/wp-json/wp/v2/","spliffseeds.nl","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Ace Seeds","https://aceseeds.org/wp-json/","aceseeds.org","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""ACE Seeds"",
+    ""description"":  """",
+    ""url"":  ""https://www.aceseeds.org"",
+    ""home"":  ""https://www.aceseeds.org"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Madrid"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  23114,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""contact-form-7/v1"",
+                       ""cky/v1"",
+                       ""post-smtp/v1"",
+                       ""post-smtp/v2"",
+                       ""psd/v1"",
+                       ""rankmath/v1"",
+                       ""rankmath/v1/setupWizard"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wpml/st/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/ate/v1"",
+                       ""jetpack/v4"",
+                       ""popup-maker/v2"",
+                       ""popup-maker/v1"",
+                       ""pum/v1"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wp-rocket/v1"",
+                       ""wc/v2"",
+                       ""rankmath/v1/ca"",
+                       ""rankmath/v1/an"",
+                       ""rankmath/v1/in"",
+                       ""rankmath/v1/status"",
+                       ""wc-admin-email"",
+                  ",""
+"Ace Seeds","https://aceseeds.org/wp-json/wp/v2/","aceseeds.org","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Blimburn Seeds","https://blimburnseeds.com/wp-json/","blimburnseeds.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""Blimburn Seeds"",
+    ""description"":  ""Blimburn Seeds Bank Store | UNIQUE STRAINS SINCE 2002"",
+    ""url"":  ""https://blimburnseeds.com"",
+    ""home"":  ""https://blimburnseeds.com"",
+    ""gmt_offset"":  -7,
+    ""timezone_string"":  ""America/Los_Angeles"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  364382,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""mwai-ui/v1"",
+                       ""mwai/v1"",
+                       ""checkoutwc/v1"",
+                       ""wc-analytics"",
+                       ""code-snippets/v1"",
+                       ""contact-form-7/v1"",
+                       ""klaviyo/v1"",
+                       ""meow-licenser/mwainotif/v1"",
+                       ""nab/v1"",
+                       ""woo-coupon-usage/v1"",
+                       ""wcusage/v1"",
+                       ""bbs-catalog/v1"",
+                       ""site-reviews/v1"",
+                       ""wc-ast/v3"",
+                       ""wc/v1"",
+                       ""wc/v2"",
+                       ""wc/v3"",
+                       ""wc-shipment-tracking/v3"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""meow-licenser/mwai/v1"",
+                       ""metorik/v1"",
+                       ""wc-admin"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wp-mail-smtp/v1"",
+  ",""
+"Blimburn Seeds","https://blimburnseeds.com/wp-json/wp/v2/","blimburnseeds.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Bulk Seed Bank","https://bulkseedbank.org/wp-json/","bulkseedbank.org","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""Bulk Seed Bank"",
+    ""description"":  ""Original Genetic Seed Specialist"",
+    ""url"":  ""https://bulkseedbank.org"",
+    ""home"":  ""https://bulkseedbank.org"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Ljubljana"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  59,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""akismet/v1"",
+                       ""contact-form-7/v1"",
+                       ""litespeed/v1"",
+                       ""litespeed/v3"",
+                       ""wc-ast/v3"",
+                       ""wc/v1"",
+                       ""wc/v2"",
+                       ""wc/v3"",
+                       ""wc-shipment-tracking/v3"",
+                       ""yoast/v1"",
+                       ""yikes/cpt/v1"",
+                       ""wpml/st/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/ate/v1"",
+                       ""jetpack/v4"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wp-rollback/v1"",
+                       ""wpstg/v1"",
+                       ""google-site-kit/v1"",
+                       ""wc-admin-email"",
+                       ""wc-telemetry"",
+                       ""wccom-site/v3"",
+                       ""otgs/installer/v1"",
+                 ",""
+"Bulk Seed Bank","https://bulkseedbank.org/wp-json/wp/v2/","bulkseedbank.org","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Bulldog Seeds","https://thebulldogseeds.com/wp-json/","thebulldogseeds.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:string,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""The Bulldog Seeds"",
+    ""description"":  """",
+    ""url"":  ""https://thebulldogseeds.com"",
+    ""home"":  ""https://thebulldogseeds.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  1278,
+    ""page_on_front"":  1925,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""klaviyo/v1"",
+                       ""templately/v1"",
+                       ""webp-converter/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""yoast/v1"",
+                       ""woofunnel_customer/v1"",
+                       ""funnelkit-app"",
+                       ""wffn"",
+                       ""jetpack/v4"",
+                       ""complianz/v1"",
+                       ""elementor/v1"",
+                       ""elementor-widgets/v1"",
+                       ""wpraddons/v1/ajaxselect2"",
+                       ""wpraddons/v1"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wp-mail-smtp/v1"",
+                       ""yaymail-license/v1"",
+                       ""wc/v2"",
+                       ""elementor-hello-elementor/v1"",
+                       ""google-site-kit/v1"",
+                       ""jet-engine/v2"",
+                       ""jet-smart-filters-api/v1"",
+                       ""jet-tric",""
+"Bulldog Seeds","https://thebulldogseeds.com/wp-json/wp/v2/","thebulldogseeds.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"CBD Crew","https://cbdcrew.org/wp-json/","cbdcrew.org","200","application/json","object","url:string,description:string,_links:object,home:string,site_logo:boolean,name:string,gmt_offset:string,timezone_string:string,namespaces:array/string,routes:object,authentication:object","{
+    ""name"":  ""CBD Crew"",
+    ""description"":  ""CBD Crew, bringing you stabile CBD/THC enriched seeds."",
+    ""url"":  ""https://cbdcrew.org"",
+    ""home"":  ""https://cbdcrew.org"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""foogallery/v1"",
+                       ""litespeed/v1"",
+                       ""regenerate-thumbnails/v1"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1""
+                   ],
+    ""authentication"":  {
+                           ""application-passwords"":  {
+                                                         ""endpoints"":  ""@{authorization=https://cbdcrew.org/wp-admin/authorize-application.php}""
+                                                     }
+                       },
+    ""routes"":  {
+                   ""/"":  {
+                             ""namespace"":  """",
+                             ""methods"":  ""GET"",
+                             ""endpoints"":  """",
+                             ""_links"":  ""@{self=System.Object[]}""
+                         },
+                   ""/batch/v1"":  {
+                                     ""namespace"":  """",
+                                     ""methods"":  ""POST"",
+                                     ""endpoints"":  """",
+                                     ""_links"":  ""@{self=System.Object[]}""
+                                 },
+                   ""/oembed/1.0"":  {
+                  ",""
+"CBD Crew","https://cbdcrew.org/wp-json/wp/v2/","cbdcrew.org","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"DNA Genetics","https://dnagenetics.com/wp-json/","dnagenetics.com","200","text/html","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:string,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:array/empty,site_logo:number","{
+    ""name"":  ""DNA Genetics Cannabis Seeds"",
+    ""description"":  ""Buy Cannabis Seeds in USA"",
+    ""url"":  ""https://dnagenetics.com"",
+    ""home"":  ""https://dnagenetics.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  25,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""cbdaffs/v1"",
+                       ""klaviyo/v1"",
+                       ""wc/v2"",
+                       ""redirection/v1"",
+                       ""revoffers/v1"",
+                       ""simple-history/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wordfence/v1"",
+                       ""wordlift/v1"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""wc-facebook/v1"",
+                       ""fb_api"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""barn2-setup-wizard/v1/woocommerce-wholesale-pro"",
+                       ""wc-admin-email"",
+                       ""wc-telemetry"",
+                       ""wccom-site/v3"",
+                       ""wc/v3/sc"",
+                       ""barn2-table-generator/v1/woocommerce-product-table"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1"",
+            ","Es ist nicht möglich, eine Methode für einen Ausdruck aufzurufen, der den NULL hat."
+"DNA Genetics","https://dnagenetics.com/wp-json/wp/v2/","dnagenetics.com","200","text/html","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Dr. Underground Seeds","https://drunderground.com/wp-json/","drunderground.com","200","application/json","object","url:string,description:string,_links:object,home:string,name:string,gmt_offset:number,timezone_string:string,namespaces:array/string,routes:object,authentication:array/empty","{
+    ""name"":  ""Dr Underground"",
+    ""description"":  ""feminized seeds"",
+    ""url"":  ""https://drunderground.com"",
+    ""home"":  ""https://drunderground.com"",
+    ""gmt_offset"":  1,
+    ""timezone_string"":  ""Europe/London"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""finale/v1"",
+                       ""SBR/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/st/v1"",
+                       ""pum/v1"",
+                       ""wc/blocks"",
+                       ""wc/store"",
+                       ""wc/v1"",
+                       ""wc/v2"",
+                       ""wc/v3"",
+                       ""wccom-site/v1"",
+                       ""wc-analytics"",
+                       ""wc-admin"",
+                       ""mailchimp-for-woocommerce/v1"",
+                       ""regenerate-thumbnails/v1"",
+                       ""otgs/installer/v1"",
+                       ""wp/v2""
+                   ],
+    ""authentication"":  [
+
+                       ],
+    ""routes"":  {
+                   ""/"":  {
+                             ""namespace"":  """",
+                             ""methods"":  ""GET"",
+                             ""endpoints"":  """",
+                             ""_links"":  ""@{self=System.Object[]}""
+                         },
+                   ""/oembed/1.0"":  {
+                                       ""namespace"":  ""oembed/1.0"",
+                                       ""methods"":  ""GET"",
+                              ",""
+"Dr. Underground Seeds","https://drunderground.com/wp-json/wp/v2/","drunderground.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Genehtik Seeds","https://genehtik.com/wp-json/","genehtik.com","200","application/json","object","url:string,description:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,routes:object,gmt_offset:string,site_icon:number,timezone_string:string,home:string,authentication:array/empty,site_logo:number","{
+    ""name"":  ""Genehtik"",
+    ""description"":  ""Banco de semillas de cannabis feminizadas y autoflorecientes de calidad y garantía"",
+    ""url"":  ""https://www.genehtik.com"",
+    ""home"":  ""https://www.genehtik.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""contact-form-7/v1"",
+                       ""cookieyes/v1"",
+                       ""saswp-output"",
+                       ""wc/v3"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/ate/v1"",
+                       ""wpml/st/v1"",
+                       ""jetpack/v4"",
+                       ""sl-insta"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wp-smush/v1"",
+                       ""google-site-kit/v1"",
+                       ""wc/v1"",
+                       ""wc/v2"",
+                       ""wc-telemetry"",
+                       ""wc/v3/sc"",
+                       ""wccom-site/v3"",
+                       ""otgs/installer/v1"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1"",
+                       ""wp-block-editor/v1""
+                   ],
+    ""authentication"":  [
+
+                       ],
+    ""r",""
+"Genehtik Seeds","https://genehtik.com/wp-json/wp/v2/","genehtik.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Green Bodhi","https://greenbodhi.org/wp-json/","greenbodhi.org","200","application/json","object","url:string,description:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,routes:object,gmt_offset:string,site_icon:number,timezone_string:string,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""GREEN BODHI"",
+    ""description"":  ""INTENTIONAL HORTICULTURE"",
+    ""url"":  ""https://greenbodhi.org"",
+    ""home"":  ""https://greenbodhi.org"",
+    ""gmt_offset"":  ""-7"",
+    ""timezone_string"":  """",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""age-gate/v3"",
+                       ""akismet/v1"",
+                       ""redirection/v1"",
+                       ""wc/v3"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""mpp/v2"",
+                       ""mpp/v1"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""optimization-detective/v1"",
+                       ""wc/v1"",
+                       ""wc/v2"",
+                       ""wc-telemetry"",
+                       ""wccom-site/v3"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1"",
+                       ""wp-block-editor/v1""
+                   ],
+    ""authentication"":  {
+                           ""application-passwords"":  {
+                                                         ""endpoints"":  ""@{authorization=https://greenbodhi.org/wp-admin/authorize-application.php}""
+                                                     }
+                       },
+    ""routes"":  {
+                   ""/"":  {
+                             ""namesp",""
+"Green Bodhi","https://greenbodhi.org/wp-json/wp/v2/","greenbodhi.org","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Humboldt Seed Company","https://humboldtseedcompany.com/wp-json/","humboldtseedcompany.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:boolean,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""Cannabis Seeds | Humboldt Seed Company"",
+    ""description"":  ""The Best Seeds In the U.S."",
+    ""url"":  ""https://humboldtseedcompany.com"",
+    ""home"":  ""https://humboldtseedcompany.com"",
+    ""gmt_offset"":  -7,
+    ""timezone_string"":  ""America/Los_Angeles"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  11,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpe/cache-plugin/v1"",
+                       ""wpe_sign_on_plugin/v1"",
+                       ""code-snippets/v1"",
+                       ""performance-lab/v1"",
+                       ""redirection/v1"",
+                       ""yoast/v1"",
+                       ""wp-recipe-maker/v1"",
+                       ""awb/instagram"",
+                       ""awb"",
+                       ""google-site-kit/v1"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1"",
+                       ""wp-block-editor/v1""
+                   ],
+    ""authentication"":  {
+                           ""application-passwords"":  {
+                                                         ""endpoints"":  ""@{authorization=https://humboldtseedcompany.com/wp-admin/authorize-application.php}""
+                                                     }
+                       },
+    ""routes"":  {
+                   ""/"":  {
+                             ""namespace"":  """",
+                             ""methods"":  ""GET"",
+                             ""endpoi",""
+"Humboldt Seed Company","https://humboldtseedcompany.com/wp-json/wp/v2/","humboldtseedcompany.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Hyp3rids","https://hyp3rids.com/wp-json/","hyp3rids.com","200","application/json","object","url:string,description:string,site_icon_url:boolean,name:string,_links:object,namespaces:array/string,routes:object,gmt_offset:string,site_icon:number,timezone_string:string,home:string,authentication:array/empty,site_logo:number","{
+    ""name"":  ""Hyp3rids"",
+    ""description"":  """",
+    ""url"":  ""http://hyp3rids.com"",
+    ""home"":  ""https://hyp3rids.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""contact-form-7/v1"",
+                       ""ultp"",
+                       ""ultp/v1"",
+                       ""ultp/v2"",
+                       ""ultp/v3"",
+                       ""wc/v3"",
+                       ""wordfence/v1"",
+                       ""jetpack/v4"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""payments/woopay"",
+                       ""wc/v2"",
+                       ""google-site-kit/v1"",
+                       ""wc/v1"",
+                       ""wc-admin-email"",
+                       ""wc-telemetry"",
+                       ""wccom-site/v3"",
+                       ""carbon-fields/v1"",
+                       ""wpforms/v1"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1"",
+                       ""wp-block-editor/v1""
+                   ],
+    ""authentication"":  [
+
+                       ],
+    ""routes"":  {
+                   ""/"":  {
+                             ""namespace"":  """",
+                             ""methods"":  ""GET"",
+                             ""endpoints"":  """",
+                        ",""
+"Hyp3rids","https://hyp3rids.com/wp-json/wp/v2/","hyp3rids.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Kannabia","https://kannabia.com/wp-json/","kannabia.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:array/empty,site_logo:number","{
+    ""name"":  ""Kannabia"",
+    ""description"":  ""Cannabis Seeds Bank"",
+    ""url"":  ""https://www.kannabia.com"",
+    ""home"":  ""https://www.kannabia.com"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Madrid"",
+    ""page_for_posts"":  24780,
+    ""page_on_front"":  24876,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpml/v1"",
+                       ""clientify/v1"",
+                       ""contact-form-7/v1"",
+                       ""wc-analytics"",
+                       ""viabill"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""wpml/st/v1"",
+                       ""flexible-shipping/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/ate/v1"",
+                       ""jetpack/v4"",
+                       ""popup-maker/v2"",
+                       ""popup-maker/v1"",
+                       ""pum/v1"",
+                       ""health-check/v1"",
+                       ""wc-admin"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wp-rocket/v1"",
+                       ""wc/v2"",
+                       ""payment/v1"",
+                       ""yith-wcaf"",
+                       ""ivole/v1"",
+                       ""regenerate-thumbnails/v1"",
+                       ""wc-admin-email"",
+ ",""
+"Kannabia","https://kannabia.com/wp-json/wp/v2/","kannabia.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"K.C. Brains","https://kcbrains.com/wp-json/","kcbrains.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""K.C. Brains Seeds Holland | HIGH QUALITY DUTCH CANNABIS SEEDS!"",
+    ""description"":  ""Multiple Award Winning Cannabis Seeds"",
+    ""url"":  ""https://kcbrains.com"",
+    ""home"":  ""https://kcbrains.com"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Amsterdam"",
+    ""page_for_posts"":  418,
+    ""page_on_front"":  423,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""two-factor"",
+                       ""wpaas/v1"",
+                       ""contact-form-7/v1"",
+                       ""sliderrevolution"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""mc4wp/v1"",
+                       ""gd/v1"",
+                       ""godaddy/mwc/v1"",
+                       ""gdl/v1"",
+                       ""objectcache/v1"",
+                       ""elementor/v1"",
+                       ""hfe/v1"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wp-mail-smtp/v1"",
+                       ""really-simple-security/v1/two-fa/v2"",
+                       ""wc/v2"",
+                       ""elementor/v1/documents"",
+                       ""elementor-ai/v1"",
+                       ""elementor-pro/v1"",
+                       ""wc-admin-em",""
+"K.C. Brains","https://kcbrains.com/wp-json/wp/v2/","kcbrains.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"La Semilla Automatica","https://lasemillaautomatica.com/wp-json/","lasemillaautomatica.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:string,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:array/empty,site_logo:number","{
+    ""name"":  ""La Semilla Automática"",
+    ""description"":  ""Semillas de Colección"",
+    ""url"":  ""https://lasemillaautomatica.com"",
+    ""home"":  ""https://lasemillaautomatica.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  381,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""redux/v1/templates"",
+                       ""oembed/1.0"",
+                       ""redux/descriptors/v1"",
+                       ""age-gate/v1"",
+                       ""contact-form-7/v1"",
+                       ""cookieyes/v1"",
+                       ""groups/groups-blocks"",
+                       ""saswp-output"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""monsterinsights/v1"",
+                       ""wc/store"",
+                       ""wc-analytics"",
+                       ""wc-admin"",
+                       ""elementor/v1"",
+                       ""wc/v1"",
+                       ""wc/v2"",
+                       ""wc/v3"",
+                       ""wccom-site/v1"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1"",
+                       ""wp-block-editor/v1""
+                   ],
+    ""authentication"":  [
+
+                       ],
+    ""routes"":  {
+                   ""/"":  {
+                             ""namespace"":  """",
+                             ""methods"":  ""GET"",
+                             ""endpoints"":  """",
+   ",""
+"La Semilla Automatica","https://lasemillaautomatica.com/wp-json/wp/v2/","lasemillaautomatica.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Paradise Seeds","https://paradise-seeds.com/wp-json/","paradise-seeds.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:array/empty,site_logo:number","{
+    ""name"":  ""Paradise Seeds"",
+    ""description"":  ""Cannabis Seeds Webshop"",
+    ""url"":  ""https://www.paradise-seeds.com"",
+    ""home"":  ""https://www.paradise-seeds.com"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Amsterdam"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  121630,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""wpe/cache-plugin/v1"",
+                       ""wpe_sign_on_plugin/v1"",
+                       ""fluent-smtp"",
+                       ""wpml/v1"",
+                       ""age-gate/v3"",
+                       ""gr4wp/v1"",
+                       ""rankmath/v1"",
+                       ""rankmath/v1/setupWizard"",
+                       ""rankmath/v1/an"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wordfence/v1"",
+                       ""wpml/st/v1"",
+                       ""wpml/tm/v1"",
+                       ""wpml/ate/v1"",
+                       ""jetpack/v4"",
+                       ""complianz/v1"",
+                       ""wc-sendcloudshipping/v2"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wc/v2"",
+                       ""rankmath/v1/in"",
+                       ""rankmath/v1/status"",
+                       ""ivole/v1"",
+                       ""wc-admin-",""
+"Paradise Seeds","https://paradise-seeds.com/wp-json/wp/v2/","paradise-seeds.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Strain Hunters Seedbank","https://strainhunters.com/wp-json/","strainhunters.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/empty,page_on_front:number,routes:array/empty,gmt_offset:string,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:object,site_logo:number","{
+    ""name"":  ""Strain Hunters - Purveyors of Fine Landraces"",
+    ""description"":  """",
+    ""url"":  ""https://strainhunters.com"",
+    ""home"":  ""https://strainhunters.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  1671,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+
+                   ],
+    ""authentication"":  {
+                           ""application-passwords"":  {
+                                                         ""endpoints"":  ""@{authorization=https://strainhunters.com/office/authorize-application.php}""
+                                                     }
+                       },
+    ""routes"":  [
+
+               ],
+    ""site_logo"":  6031,
+    ""site_icon"":  6573,
+    ""site_icon_url"":  ""https://strainhunters.com/milsoocm/2022/04/iconSH.svg"",
+    ""_links"":  {
+                   ""help"":  [
+                                ""@{href=https://developer.wordpress.org/rest-api/}""
+                            ],
+                   ""wp:featuredmedia"":  [
+                                            ""@{embeddable=True; type=site_logo; href=https://strainhunters.com/wp-json/wp/v2/media/6031}"",
+                                            ""@{embeddable=True; type=site_icon; href=https://strainhunters.com/wp-json/wp/v2/media/6573}""
+                                        ],
+                   ""curies"":  [
+                                  ""@{name=wp; href=https://api.w.org/{rel}; templated=Tr",""
+"Strain Hunters Seedbank","https://strainhunters.com/wp-json/wp/v2/","strainhunters.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"The North Coast Genetics","https://northcoastgenetics.com/wp-json/","northcoastgenetics.com","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:string,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:array/empty,site_logo:number","{
+    ""name"":  ""North Coast Genetics"",
+    ""description"":  """",
+    ""url"":  ""https://northcoastgenetics.com"",
+    ""home"":  ""https://northcoastgenetics.com"",
+    ""gmt_offset"":  ""0"",
+    ""timezone_string"":  """",
+    ""page_for_posts"":  1547,
+    ""page_on_front"":  736,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""coupons/v1"",
+                       ""store-credits/v1"",
+                       ""wc-store-credits/v1"",
+                       ""akismet/v1"",
+                       ""code-snippets/v1"",
+                       ""envato-elements/v2"",
+                       ""siteground-settings/v1"",
+                       ""siteground-optimizer/v1"",
+                       ""sg-security/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""elementor/v1"",
+                       ""site-mailer/v1"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wc/v2"",
+                       ""mailchimp-for-woocommerce/v1"",
+                       ""elementor-hello-elementor/v1"",
+                       ""elementor/v1/documents"",
+                       ""elementor-ai/v1"",
+                       ""elementor-pro/v1"",
+   ",""
+"The North Coast Genetics","https://northcoastgenetics.com/wp-json/wp/v2/","northcoastgenetics.com","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
+"Vision Seeds","https://visionseeds.nl/wp-json/","visionseeds.nl","200","application/json","object","url:string,description:string,show_on_front:string,site_icon_url:string,name:string,_links:object,namespaces:array/string,page_on_front:number,routes:object,gmt_offset:number,site_icon:number,timezone_string:string,page_for_posts:number,home:string,authentication:array/empty,site_logo:number","{
+    ""name"":  ""Vision Seeds"",
+    ""description"":  ""for a dream catching grow experience!"",
+    ""url"":  ""https://www.visionseeds.nl"",
+    ""home"":  ""https://www.visionseeds.nl"",
+    ""gmt_offset"":  2,
+    ""timezone_string"":  ""Europe/Amsterdam"",
+    ""page_for_posts"":  0,
+    ""page_on_front"":  2,
+    ""show_on_front"":  ""page"",
+    ""namespaces"":  [
+                       ""oembed/1.0"",
+                       ""age-gate/v3"",
+                       ""akismet/v1"",
+                       ""contact-form-7/v1"",
+                       ""wc/v3"",
+                       ""wc/v1"",
+                       ""wordfence/v1"",
+                       ""yoast/v1"",
+                       ""jetpack/v4"",
+                       ""wcmb"",
+                       ""wc-admin"",
+                       ""wc-analytics"",
+                       ""wc/store"",
+                       ""wc/store/v1"",
+                       ""wc/private"",
+                       ""wc/v2"",
+                       ""awb/instagram"",
+                       ""awb"",
+                       ""wc-admin-email"",
+                       ""wc-telemetry"",
+                       ""wccom-site/v3"",
+                       ""wp/v2"",
+                       ""wp-site-health/v1"",
+                       ""wp-block-editor/v1""
+                   ],
+    ""authentication"":  [
+
+                       ],
+    ""routes"":  {
+                   ""/"":  {
+                             ""namespace"":  """",
+                             ""methods"":  ""GET"",
+           ",""
+"Vision Seeds","https://visionseeds.nl/wp-json/wp/v2/","visionseeds.nl","200","application/json","object","_links:object,routes:object,namespace:string","{
+    ""namespace"":  ""wp/v2"",
+    ""routes"":  {
+                   ""/wp/v2"":  {
+                                  ""namespace"":  ""wp/v2"",
+                                  ""methods"":  ""GET"",
+                                  ""endpoints"":  """",
+                                  ""_links"":  ""@{self=System.Object[]}""
+                              },
+                   ""/wp/v2/posts"":  {
+                                        ""namespace"":  ""wp/v2"",
+                                        ""methods"":  ""GET POST"",
+                                        ""endpoints"":  "" "",
+                                        ""_links"":  ""@{self=System.Object[]}""
+                                    },
+                   ""/wp/v2/posts/(?P\u003cid\u003e[\\d]+)"":  {
+                                                                 ""namespace"":  ""wp/v2"",
+                                                                 ""methods"":  ""GET POST PUT PATCH DELETE"",
+                                                                 ""endpoints"":  ""  ""
+                                                             },
+                   ""/wp/v2/posts/(?P\u003cparent\u003e[\\d]+)/revisions"":  {
+                                                                               ""namespace"":  ""wp/v2"",
+                                                                               ""methods"":  ""GET"",
+                                                                               ""endpoints"":  """"
+              ",""
